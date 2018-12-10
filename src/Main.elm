@@ -179,10 +179,10 @@ portraitView : Model -> Element Msg
 portraitView model =
     column
         [ width fill
-        , spacing 20
         ]
         [ title
         , links
+        , content model.appInfo.route
         ]
 
 
@@ -194,7 +194,7 @@ landscapeView : Model -> Element Msg
 landscapeView model =
     row [ width fill ]
         [ column [ width (px 300) ] [ title, links ]
-        , paragraph [ width fill ] [ text "Content." ]
+        , content model.appInfo.route
         ]
 
 
@@ -205,7 +205,10 @@ landscapeView model =
 title : Element Msg
 title =
     link
-        [ width fill ]
+        [ width fill
+        , paddingXY 0 10
+        , Background.color colours.lightGrey
+        ]
         { url = "/"
         , label =
             paragraph
@@ -219,10 +222,20 @@ title =
         }
 
 
+heading : String -> Element msg
+heading label =
+    paragraph
+        [ titleFont
+        , Font.size <| floor <| scaled 3
+        , Font.bold
+        ]
+        [ text label ]
+
+
 links : Element msg
 links =
     column [ width fill ]
-        [ navLink "About" "/"
+        [ navLink "About" "/about"
         , navLink "People" "/people"
         , navLink "Publications" "/publications"
         , navLink "Tools" "/tools"
@@ -282,4 +295,64 @@ contentFont =
             , url = "https://fonts.googleapis.com/css?family=Raleway"
             }
         , Font.sansSerif
+        ]
+
+
+contentStyling : List (Element.Attribute msg)
+contentStyling =
+    [ contentFont
+    ]
+
+
+
+-- Content
+
+
+content : Route -> Element msg
+content route =
+    el [ width fill, padding 10 ]
+        (case route of
+            About ->
+                about
+
+            People ->
+                people
+
+            Publications ->
+                publications
+
+            Tools ->
+                tools
+        )
+
+
+about : Element msg
+about =
+    paragraph
+        contentStyling
+        [ heading "About"
+        ]
+
+
+people : Element msg
+people =
+    paragraph
+        contentStyling
+        [ heading "People"
+        ]
+
+
+publications : Element msg
+publications =
+    paragraph
+        contentStyling
+        [ heading "Publications"
+        ]
+
+
+tools : Element msg
+tools =
+    paragraph
+        contentStyling
+        [ heading "Tools"
         ]
