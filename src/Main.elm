@@ -11,6 +11,7 @@ import Element.Font as Font
 import Html exposing (Html)
 import Task
 import Url
+import Url.Parser as UrlParser
 
 
 main =
@@ -36,12 +37,20 @@ type alias Model =
 
 type alias AppInfo =
     { mDevice : Maybe Device
+    , route : Route
     }
+
+
+type Route
+    = About
+    | People
+    | Publications
+    | Tools
 
 
 init : () -> Url.Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url key =
-    ( { appInfo = { mDevice = Nothing }, key = key }
+    ( { appInfo = { mDevice = Nothing, route = About }, key = key }
     , Task.perform
         (\viewport ->
             PageResized
@@ -62,6 +71,17 @@ type Msg
     | PageResized Int Int
 
 
+routeParser : UrlParser.Parser (Route -> a) a
+routeParser =
+    UrlParser.oneOf
+        [ UrlParser.map About UrlParser.top
+        , UrlParser.map About (UrlParser.s "about")
+        , UrlParser.map People (UrlParser.s "people")
+        , UrlParser.map Publications (UrlParser.s "publications")
+        , UrlParser.map Tools (UrlParser.s "tools")
+        ]
+
+
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     let
@@ -69,6 +89,30 @@ update msg model =
             model
     in
     case msg of
+        LinkClicked urlRequest ->
+            case urlRequest of
+                Browser.Internal url ->
+                    ( model
+                    , Nav.pushUrl model.key (Url.toString url)
+                    )
+
+                Browser.External url ->
+                    ( model
+                    , Nav.load url
+                    )
+
+        UrlChanged url ->
+            ( { model
+                | appInfo =
+                    { appInfo
+                        | route =
+                            UrlParser.parse routeParser url
+                                |> Maybe.withDefault About
+                    }
+              }
+            , Cmd.none
+            )
+
         PageResized width height ->
             ( { model
                 | appInfo =
@@ -81,9 +125,6 @@ update msg model =
               }
             , Cmd.none
             )
-
-        _ ->
-            ( model, Cmd.none )
 
 
 
