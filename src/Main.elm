@@ -156,7 +156,7 @@ body model =
         { mDevice } =
             appInfo
     in
-    layout [ width fill ]
+    layout [ height fill, width fill ]
         (case mDevice of
             Just device ->
                 case device.orientation of
@@ -178,11 +178,13 @@ body model =
 portraitView : Model -> Element Msg
 portraitView model =
     column
-        [ width fill
+        [ height fill
+        , width fill
         ]
-        [ title
+        [ header
         , links
         , content model.appInfo.route
+        , footer
         ]
 
 
@@ -192,8 +194,10 @@ portraitView model =
 
 landscapeView : Model -> Element Msg
 landscapeView model =
-    row [ width fill ]
-        [ column [ width (px 300) ] [ title, links ]
+    row [ height fill, width fill ]
+        [ column
+            [ height fill, width (px 300), Background.color colours.lightGrey ]
+            [ header, links, footer ]
         , content model.appInfo.route
         ]
 
@@ -202,24 +206,51 @@ landscapeView model =
 -- Common Elements
 
 
-title : Element Msg
-title =
-    link
+header : Element Msg
+header =
+    column
         [ width fill
-        , paddingXY 0 10
+        , padding 30
+        , spacing 30
         , Background.color colours.lightGrey
         ]
-        { url = "/"
-        , label =
-            paragraph
-                [ centerX
-                , titleFont
-                , Font.size <| floor <| scaled 4
-                , Font.bold
-                , Font.center
-                ]
-                [ text "Wells Wood Research Group" ]
-        }
+        [ link
+            [ centerX ]
+            { url = "/"
+            , label =
+                paragraph
+                    [ titleFont
+                    , Font.size <| floor <| scaled 4
+                    , Font.bold
+                    , Font.center
+                    ]
+                    [ text "Wells Wood Research Group" ]
+            }
+        , image [ width (px 200), centerX ]
+            { src = "/static/images/uoe.svg"
+            , description = "University of Edinburgh Logo"
+            }
+        ]
+
+
+footer : Element msg
+footer =
+    column
+        [ alignBottom
+        , width fill
+        , padding 30
+        , spacing 30
+        , Background.color colours.lightGrey
+        , Font.center
+        ]
+        [ heading """Funded By"""
+        , wrappedRow [ centerX ]
+            [ image [ width (px 200) ]
+                { src = "/static/images/epsrc.svg"
+                , description = "EPSRC Logo"
+                }
+            ]
+        ]
 
 
 heading : String -> Element msg
@@ -227,6 +258,16 @@ heading label =
     paragraph
         [ titleFont
         , Font.size <| floor <| scaled 3
+        , Font.bold
+        ]
+        [ text label ]
+
+
+subHeading : String -> Element msg
+subHeading label =
+    paragraph
+        [ titleFont
+        , Font.size <| floor <| scaled 2
         , Font.bold
         ]
         [ text label ]
@@ -246,7 +287,7 @@ navLink : String -> String -> Element msg
 navLink label url =
     link
         [ width fill
-        , paddingXY 0 5
+        , padding 10
         , mouseOver [ Background.color colours.grey ]
         , Background.color colours.darkGrey
         , Font.color colours.white
@@ -301,7 +342,28 @@ contentFont =
 contentStyling : List (Element.Attribute msg)
 contentStyling =
     [ contentFont
+    , Font.size <| floor <| scaled 1
     ]
+
+
+simpleText : String -> Element msg
+simpleText contentText =
+    paragraph [] [ text contentText ]
+
+
+simpleLink : { label : String, url : String } -> Element msg
+simpleLink { label, url } =
+    link
+        [ Font.color colours.grey
+        , Font.underline
+        ]
+        { url = url
+        , label = text label
+        }
+
+
+defaultEach =
+    { left = 0, right = 0, top = 0, bottom = 0 }
 
 
 
@@ -310,7 +372,7 @@ contentStyling =
 
 content : Route -> Element msg
 content route =
-    el [ width fill, padding 10 ]
+    el [ height fill, width fill, padding 30 ]
         (case route of
             About ->
                 about
@@ -328,9 +390,31 @@ content route =
 
 about : Element msg
 about =
-    paragraph
-        contentStyling
-        [ heading "About"
+    textColumn
+        (contentStyling ++ [ width fill, spacing 30 ])
+        [ heading "About Us"
+        , subHeading "Robust and accessible protein design"
+        , """Our research focuses on improving the accessibility and
+reliability of protein design so that it can be adopted more widely as a tool
+for tackling challenges in biotechnology and synthetic biology. To do this,
+we're developing tools that apply machine-learning, computational modelling
+and structural bioinformatics to help guide users through the protein-design
+process."""
+            |> simpleText
+        , paragraph
+            contentStyling
+            [ """We aim to test all the methods we develop in at scale in the
+laboratory. To do this we using the robotics available at Edinburgh, in the
+incredible """
+                |> text
+            , simpleLink
+                { url = "https://www.genomefoundry.org/"
+                , label = "Genome Foundary"
+                }
+            ]
+        , """Our research is publically funded, so we are committed to making
+our data, software and publications open access."""
+            |> simpleText
         ]
 
 
