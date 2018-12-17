@@ -92,8 +92,18 @@ update msg model =
         LinkClicked urlRequest ->
             case urlRequest of
                 Browser.Internal url ->
-                    ( model
-                    , Nav.pushUrl model.key (Url.toString url)
+                    -- This should be changed once self hosted
+                    ( { model
+                        | appInfo =
+                            { appInfo
+                                | route =
+                                    UrlParser.parse routeParser url
+                                        |> Maybe.withDefault About
+                            }
+                    }
+                    --( model
+                    , Cmd.none
+                    --, Nav.pushUrl model.key (Url.toString url)
                     )
 
                 Browser.External url ->
