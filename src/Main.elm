@@ -268,7 +268,7 @@ footer =
 
 content : Route -> Element msg
 content route =
-    el [ height fill, width fill, padding 30 ]
+    el [ height fill, width (fill |> maximum 960), padding 30 ]
         (case route of
             About ->
                 about
