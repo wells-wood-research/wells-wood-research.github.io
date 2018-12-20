@@ -193,7 +193,7 @@ portraitView model =
         ]
         [ header
         , links
-        , content model.appInfo.route
+        , el [ centerX ] (content model.appInfo.route)
         , footer
         ]
 
@@ -204,12 +204,19 @@ portraitView model =
 
 landscapeView : Model -> Element Msg
 landscapeView model =
-    row [ height fill, width fill ]
-        [ column
-            [ height fill, width (px 300), Background.color colours.lightGrey ]
-            [ header, links, footer ]
-        , content model.appInfo.route
-        ]
+    el [ height fill, centerX ]
+        (row [ height fill, width fill ]
+            [ column
+                [ height fill
+                , width (px 300)
+                , scrollbars
+                , Background.color colours.lightGrey
+                ]
+                [ header, links, footer ]
+            , el [ height fill, width (fill |> maximum 960), scrollbars ]
+                (content model.appInfo.route)
+            ]
+        )
 
 
 
@@ -268,20 +275,18 @@ footer =
 
 content : Route -> Element msg
 content route =
-    el [ height fill, width (fill |> maximum 960), padding 30 ]
-        (case route of
-            About ->
-                about
+    case route of
+        About ->
+            about
 
-            People ->
-                people
+        People ->
+            people
 
-            Publications ->
-                publications
+        Publications ->
+            publications
 
-            Tools ->
-                tools
-        )
+        Tools ->
+            tools
 
 
 about : Element msg
@@ -509,7 +514,7 @@ assemblies"""
 
 publicationView : Publication -> Element msg
 publicationView publication =
-    textColumn [ spacing 10 ]
+    column [ spacing 10 ]
         [ newTabLink
             linkStyling
             { url = publication.link, label = subHeading publication.title }
@@ -528,10 +533,115 @@ publicationView publication =
 
 tools : Element msg
 tools =
-    paragraph
-        contentStyling
-        [ heading "Tools"
+    column
+        (contentStyling ++ [ height fill, width (fill |> maximum 960) ])
+        (List.map toolView allTools)
+
+
+type alias Tool msg =
+    { name : String
+    , application : Maybe String
+    , source : Maybe String
+    , description : Element msg
+    , backgroundImageLink : String
+    }
+
+
+allTools : List (Tool msg)
+allTools =
+    [ { name = "CCBuilder/CCBuilder 2"
+      , application = Just "http://coiledcoils.chm.bris.ac.uk/ccbuilder2/builder"
+      , source = Just "https://github.com/woolfson-group/ccbuilder2"
+      , description =
+            paragraph []
+                [ text """CCBuilder is a user-friendly web application for
+creating atomistic models of coiled coils and collagen. It can accurately model
+almost all architectures of coiled coils observed in nature, as well more
+unusual structures like """
+                , simpleLink
+                    { url =
+                        "http://science.sciencemag.org/content/346/6208/485"
+                    , label = "α-helical barrels"
+                    }
+                , text "."
+                ]
+      , backgroundImageLink = "/static/images/tools/ccbuilder.jpg"
+      }
+    , { name = "BAlaS"
+      , application = Just "http://coiledcoils.chm.bris.ac.uk/balas"
+      , source = Just "https://github.com/woolfson-group/balas"
+      , description =
+            paragraph []
+                [ text """BAlaS is a fast, interactive web tool for performing
+computational alanine-scanning mutagenesis. It has a simple user interface that
+allows users to easily submit jobs and visualise results. Powered by """
+                , simpleLink
+                    { url =
+                        "http://www.bris.ac.uk/biochemistry/research/bude"
+                    , label = "BUDE"
+                    }
+                , text " and "
+                , simpleLink
+                    { url =
+                        "https://github.com/isambard-uob/isambard"
+                    , label = "ISAMBARD"
+                    }
+                , text """, users can download and run the scanning engine
+locally when they need to scale up analysis."""
+                ]
+      , backgroundImageLink = "/static/images/tools/balas.jpg"
+      }
+    , { name = "ISAMBARD"
+      , application = Nothing
+      , source = Just "https://github.com/woolfson-group/balas"
+      , description =
+            paragraph []
+                [ text """ISAMBARD (Intelligent System for Analysis, Model
+Building And Rational Design) is a Python library for structural analysis and
+rational design of biomolecules, with a particular focus on parametric
+modelling of proteins."""
+                ]
+      , backgroundImageLink = "/static/images/tools/isambard.jpg"
+      }
+    ]
+
+
+toolView : Tool msg -> Element msg
+toolView tool =
+    let
+        toolLinks =
+            ( tool.application, tool.source )
+    in
+    textColumn
+        [ width fill
+        , padding 30
+        , spacing 10
+        , Background.image tool.backgroundImageLink
         ]
+        ([ subHeading tool.name ]
+            ++ (case toolLinks of
+                    ( Nothing, Nothing ) ->
+                        []
+
+                    ( Just app, Nothing ) ->
+                        [ row [ spacing 10 ]
+                            [ simpleLink { url = app, label = "Application" } ]
+                        ]
+
+                    ( Nothing, Just source ) ->
+                        [ row [ spacing 10 ]
+                            [ simpleLink { url = source, label = "Source" } ]
+                        ]
+
+                    ( Just app, Just source ) ->
+                        [ row [ spacing 10 ]
+                            [ simpleLink { url = app, label = "Application" }
+                            , simpleLink { url = source, label = "Source" }
+                            ]
+                        ]
+               )
+            ++ [ tool.description ]
+        )
 
 
 
@@ -632,12 +742,17 @@ contentStyling =
 
 sectionStyling : List (Element.Attribute msg)
 sectionStyling =
-    contentStyling ++ [ width fill, spacing 30 ]
+    contentStyling
+        ++ [ height fill
+           , width (fill |> maximum 960)
+           , padding 30
+           , spacing 30
+           ]
 
 
 linkStyling : List (Element.Attribute msg)
 linkStyling =
-    [ Font.color colours.grey
+    [ Font.color colours.darkGrey
     , Font.underline
     ]
 
@@ -649,7 +764,7 @@ simpleText contentText =
 
 simpleLink : { label : String, url : String } -> Element msg
 simpleLink { label, url } =
-    link
+    newTabLink
         linkStyling
         { url = url
         , label = text label
