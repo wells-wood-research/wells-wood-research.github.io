@@ -742,7 +742,7 @@ colours =
 
 scaled : Int -> Float
 scaled =
-    modular 20.0 1.25
+    modular 22.0 1.25
 
 
 titleFont : Element.Attribute msg
@@ -778,7 +778,7 @@ sectionStyling : List (Element.Attribute msg)
 sectionStyling =
     contentStyling
         ++ [ height fill
-           , width (fill |> maximum 960)
+           , width fill
            , padding 25
            , spacing 25
            ]
@@ -807,7 +807,7 @@ simpleLink { label, url } =
 
 bullet : String -> Element msg
 bullet string =
-    text <| "⚫  " ++ string
+    text <| "-  " ++ string
 
 
 defaultEach =

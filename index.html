@@ -11625,7 +11625,7 @@ var author$project$Main$advert = A2(
 			mdgriffith$elm_ui$Element$text(' to find out more about current opportunities.')
 		]));
 var author$project$Main$bullet = function (string) {
-	return mdgriffith$elm_ui$Element$text('⚫  ' + string);
+	return mdgriffith$elm_ui$Element$text('-  ' + string);
 };
 var mdgriffith$elm_ui$Internal$Model$ImportFont = F2(
 	function (a, b) {
@@ -11703,7 +11703,7 @@ var mdgriffith$elm_ui$Element$modular = F3(
 	function (normal, ratio, rescale) {
 		return (!rescale) ? normal : ((rescale < 0) ? (normal * A2(elm$core$Basics$pow, ratio, rescale)) : (normal * A2(elm$core$Basics$pow, ratio, rescale - 1)));
 	});
-var author$project$Main$scaled = A2(mdgriffith$elm_ui$Element$modular, 20.0, 1.25);
+var author$project$Main$scaled = A2(mdgriffith$elm_ui$Element$modular, 22.0, 1.25);
 var mdgriffith$elm_ui$Internal$Flag$fontSize = mdgriffith$elm_ui$Internal$Flag$flag(4);
 var mdgriffith$elm_ui$Internal$Model$FontSize = function (a) {
 	return {$: 2, a: a};
@@ -11745,14 +11745,6 @@ var author$project$Main$heading = function (label) {
 				mdgriffith$elm_ui$Element$text(label)
 			]));
 };
-var mdgriffith$elm_ui$Internal$Model$Max = F2(
-	function (a, b) {
-		return {$: 4, a: a, b: b};
-	});
-var mdgriffith$elm_ui$Element$maximum = F2(
-	function (i, l) {
-		return A2(mdgriffith$elm_ui$Internal$Model$Max, i, l);
-	});
 var mdgriffith$elm_ui$Internal$Flag$padding = mdgriffith$elm_ui$Internal$Flag$flag(2);
 var mdgriffith$elm_ui$Internal$Model$PaddingStyle = F5(
 	function (a, b, c, d, e) {
@@ -11775,8 +11767,7 @@ var author$project$Main$sectionStyling = _Utils_ap(
 	_List_fromArray(
 		[
 			mdgriffith$elm_ui$Element$height(mdgriffith$elm_ui$Element$fill),
-			mdgriffith$elm_ui$Element$width(
-			A2(mdgriffith$elm_ui$Element$maximum, 960, mdgriffith$elm_ui$Element$fill)),
+			mdgriffith$elm_ui$Element$width(mdgriffith$elm_ui$Element$fill),
 			mdgriffith$elm_ui$Element$padding(25),
 			mdgriffith$elm_ui$Element$spacing(25)
 		]));
@@ -11847,6 +11838,14 @@ var mdgriffith$elm_ui$Element$paddingXY = F2(
 				x,
 				y,
 				x));
+	});
+var mdgriffith$elm_ui$Internal$Model$Max = F2(
+	function (a, b) {
+		return {$: 4, a: a, b: b};
+	});
+var mdgriffith$elm_ui$Element$maximum = F2(
+	function (i, l) {
+		return A2(mdgriffith$elm_ui$Internal$Model$Max, i, l);
 	});
 var mdgriffith$elm_ui$Internal$Model$Min = F2(
 	function (a, b) {
