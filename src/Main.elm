@@ -213,7 +213,13 @@ landscapeView model =
                 , Background.color colours.lightGrey
                 ]
                 [ header, links, footer ]
-            , el [ height fill, width (fill |> maximum 960), scrollbars ]
+            , el
+                [ height fill
+                , width (fill |> maximum 960)
+                , scrollbars
+                , Border.width 2
+                , Border.color colours.darkGrey
+                ]
                 (content model.appInfo.route)
             ]
         )
@@ -242,9 +248,14 @@ header =
                     ]
                     [ text "Wells Wood Research Group" ]
             }
-        , image [ width (px 200), centerX ]
-            { src = "/static/images/uoe.svg"
-            , description = "University of Edinburgh Logo"
+        , newTabLink
+            [ centerX ]
+            { url = "https://www.ed.ac.uk/"
+            , label =
+                image [ width (px 200) ]
+                    { src = "/static/images/uoe.svg"
+                    , description = "University of Edinburgh Logo"
+                    }
             }
         ]
 
@@ -294,28 +305,34 @@ about =
     textColumn
         sectionStyling
         [ heading "About Us"
-        , subHeading "Building accessible tools for protein design"
+        , subHeading "Making protein design more accessible"
         , simpleText """Our research focuses on improving the accessibility and
 reliability of protein design so that it can be adopted more widely as a method
 for tackling challenges in biotechnology and synthetic biology. To do this,
 we're developing tools that apply machine-learning, computational modelling
 and structural bioinformatics to help guide users through the protein-design
 process."""
+        , subHeading "Rigorously tested methods"
         , paragraph
             contentStyling
             [ """We apply all the methods that we create at scale in the
-laboratory, using the robotics available at Edinburgh, in the incredible """
+laboratory, using the robotics available at Edinburgh through the incredible """
                 |> text
             , simpleLink
                 { url = "https://www.genomefoundry.org/"
                 , label = "Genome Foundary"
                 }
-            , text """. All data and scripts are made publically available so
+            , text """. All data and scripts are made publicly available so
 that users are confident in the effectiveness of the methods and can apply them
 to their fullest."""
             ]
-        , simpleText """Our research is publically funded, so we are committed
-to making our data, software and publications open access."""
+        , subHeading "Committed to open-access research"
+        , paragraph []
+            [ text """Our research is publicly funded, so we are committed
+to making our outputs publicly available, including:"""
+            ]
+        , column [ paddingXY 60 0 ]
+            ([ "data", "software", "publications" ] |> List.map bullet)
         , heading "Join Us"
         , advert
         ]
@@ -745,8 +762,8 @@ sectionStyling =
     contentStyling
         ++ [ height fill
            , width (fill |> maximum 960)
-           , padding 30
-           , spacing 30
+           , padding 25
+           , spacing 25
            ]
 
 
@@ -769,6 +786,11 @@ simpleLink { label, url } =
         { url = url
         , label = text label
         }
+
+
+bullet : String -> Element msg
+bullet string =
+    text <| "⚫  " ++ string
 
 
 defaultEach =
