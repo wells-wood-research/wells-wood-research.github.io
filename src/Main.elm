@@ -234,8 +234,8 @@ landscapeView model =
                 [ height fill
                 , width (fill |> maximum 960)
                 , scrollbars
-                , Border.width 2
-                , Border.color colours.darkGrey
+                , Border.widthEach { defaultEach | right = 2 }
+                , Border.color colours.lightGrey
                 ]
                 (content model.appInfo.route)
             ]
