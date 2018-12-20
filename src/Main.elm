@@ -50,14 +50,22 @@ type Route
 
 init : () -> Url.Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url key =
-    ( { appInfo = { mDevice = Nothing, route = About }, key = key }
-    , Task.perform
-        (\viewport ->
-            PageResized
-                (floor viewport.scene.width)
-                (floor viewport.scene.height)
-        )
-        Browser.Dom.getViewport
+    let
+        ( model, cmds ) =
+            { appInfo = { mDevice = Nothing, route = About }, key = key }
+                |> update (UrlChanged url)
+    in
+    ( model
+    , Cmd.batch
+        [ cmds
+        , Task.perform
+            (\viewport ->
+                PageResized
+                    (floor viewport.scene.width)
+                    (floor viewport.scene.height)
+            )
+            Browser.Dom.getViewport
+        ]
     )
 
 
@@ -73,13 +81,31 @@ type Msg
 
 routeParser : UrlParser.Parser (Route -> a) a
 routeParser =
-    UrlParser.oneOf
-        [ UrlParser.map About UrlParser.top
-        , UrlParser.map About (UrlParser.s "about")
-        , UrlParser.map People (UrlParser.s "people")
-        , UrlParser.map Publications (UrlParser.s "publications")
-        , UrlParser.map Tools (UrlParser.s "tools")
-        ]
+    UrlParser.fragment stringToRoute
+
+
+stringToRoute : Maybe String -> Route
+stringToRoute mString =
+    case mString of
+        Just string ->
+            case string of
+                "about" ->
+                    About
+
+                "people" ->
+                    People
+
+                "publications" ->
+                    Publications
+
+                "tools" ->
+                    Tools
+
+                _ ->
+                    About
+
+        Nothing ->
+            About
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -93,17 +119,8 @@ update msg model =
             case urlRequest of
                 Browser.Internal url ->
                     -- This should be changed once self hosted
-                    ( { model
-                        | appInfo =
-                            { appInfo
-                                | route =
-                                    UrlParser.parse routeParser url
-                                        |> Maybe.withDefault About
-                            }
-                      }
-                      --( model
-                    , Cmd.none
-                      --, Nav.pushUrl model.key (Url.toString url)
+                    ( model
+                    , Nav.pushUrl model.key (Url.toString url)
                     )
 
                 Browser.External url ->
@@ -687,10 +704,10 @@ subHeading label =
 links : Element msg
 links =
     column [ width fill ]
-        [ navLink "About" "/about"
-        , navLink "People" "/people"
-        , navLink "Publications" "/publications"
-        , navLink "Tools" "/tools"
+        [ navLink "About" "/#about"
+        , navLink "People" "/#people"
+        , navLink "Publications" "/#publications"
+        , navLink "Tools" "/#tools"
         ]
 
 
