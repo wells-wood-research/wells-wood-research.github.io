@@ -43,6 +43,7 @@ type alias AppInfo =
 
 type Route
     = About
+    | News
     | People
     | Publications
     | Tools
@@ -91,6 +92,9 @@ stringToRoute mString =
             case string of
                 "about" ->
                     About
+
+                "news" ->
+                    News
 
                 "people" ->
                     People
@@ -307,6 +311,9 @@ content route =
         About ->
             about
 
+        News ->
+            news
+
         People ->
             people
 
@@ -367,6 +374,73 @@ novel proteins? If you're interested in joining us, """
             }
         , text " to find out more about current opportunities."
         ]
+
+
+
+-- ###NEWS###
+
+
+news : Element msg
+news =
+    textColumn
+        sectionStyling
+        ([ heading "News" ] ++ List.map newsItemView newsItems)
+
+
+type alias NewsItem msg =
+    { date : String
+    , title : String
+    , category : String
+    , newsContent : Element msg
+    }
+
+
+newsItemView : NewsItem msg -> Element msg
+newsItemView { date, title, category, newsContent } =
+    column [ spacing 10 ]
+        [ subHeading title
+        , el [ Font.bold ] (text (date ++ ", " ++ category))
+        , newsContent
+        ]
+
+
+newsItems : List (NewsItem msg)
+newsItems =
+    [ { date = "2019-01-01"
+      , title = "Navigating the structural landscape of de novo α-helical bundles"
+      , category = "Preprint"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width fill ]
+                    { src = "/static/images/news/2019-01-01-tetramers.jpg"
+                    , description = "Designed anti-parallel tetramers exhibit structural plasticity."
+                    }
+                , paragraph []
+                    [ text "We've just release a "
+                    , newTabLink
+                        linkStyling
+                        { url = "https://www.biorxiv.org/content/early/2018/12/21/503698"
+                        , label = text "preprint of our latest paper"
+                        }
+                    , text """, where we created mutants of a stable hexameric
+                coiled coil and found that they adopted the anti-parallel
+                conformation. We then discovered that certain mutants would
+                revert back to the parallel hexamer structure when the pH was
+                altered. Finally we used negative design to stablise the
+                anti-parallel conformation, which resulted in apCC-Tet, a
+                hyper-thermostable, anti-parallel tetramer. apCC-Tet is a robust
+                scaffold that can now be used for applications in protein
+                engineering and synthetic biology."""
+                    ]
+                , paragraph []
+                    [ text """This was the last paper I worked on before leaving
+                Dek Woolfson's group in Bristol and it was pretty satisfying to see
+                it come together as it contains the first peptide that I ever
+                made in the lab. Huge thank you to my co-first author, Guto
+                Rhys, it was great fun working with him on the paper.""" ]
+                ]
+      }
+    ]
 
 
 people : Element msg
@@ -449,6 +523,25 @@ type alias Publication =
     , pages : String
     , year : String
     }
+
+
+publicationView : Publication -> Element msg
+publicationView publication =
+    column [ spacing 10 ]
+        [ newTabLink
+            linkStyling
+            { url = publication.link, label = subHeading publication.title }
+        , simpleText publication.authors
+        , simpleText <|
+            publication.journal
+                ++ ", "
+                ++ publication.volume
+                ++ ", "
+                ++ publication.pages
+                ++ ", "
+                ++ publication.year
+                ++ "."
+        ]
 
 
 allPublications : List Publication
@@ -543,26 +636,17 @@ assemblies"""
       , pages = "4132"
       , year = "2018"
       }
+    , { authors = """Rhys, Guto G; Wood, Christopher W; Beesley, Joseph L;
+    Zaccai, Nathan R; Burton, Antony J; Brady, R Leo; Thomson, Andrew R;
+    Woolfson, Derek N"""
+      , title = "PREPRINT: Navigating the structural landscape of de novo α-helical bundles"
+      , journal = "bioRxiv"
+      , link = "https://www.biorxiv.org/content/early/2018/12/21/503698"
+      , volume = "1"
+      , pages = "503698"
+      , year = "2019"
+      }
     ]
-
-
-publicationView : Publication -> Element msg
-publicationView publication =
-    column [ spacing 10 ]
-        [ newTabLink
-            linkStyling
-            { url = publication.link, label = subHeading publication.title }
-        , simpleText publication.authors
-        , simpleText <|
-            publication.journal
-                ++ ", "
-                ++ publication.volume
-                ++ ", "
-                ++ publication.pages
-                ++ ", "
-                ++ publication.year
-                ++ "."
-        ]
 
 
 tools : Element msg
@@ -705,6 +789,7 @@ links : Element msg
 links =
     column [ width fill ]
         [ navLink "About" "/#about"
+        , navLink "News" "/#news"
         , navLink "People" "/#people"
         , navLink "Publications" "/#publications"
         , navLink "Tools" "/#tools"
