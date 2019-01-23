@@ -546,9 +546,9 @@ publicationView publication =
 
 allPublications : List Publication
 allPublications =
-    [ { authors = """Wood, Christopher W; Bruning, Marc; Ibarra, Amaurys A;
+    [ { authors = """Wood, Christopher W*; Bruning, Marc; Ibarra, Amaurys A;
 Bartlett, Gail J; Thomson, Andrew R; Sessions, Richard B; Brady, R Leo;
-Woolfson, Derek N"""
+Woolfson, Derek N*"""
       , title = """CCBuilder: an interactive web-based tool for building,
 designing and assessing coiled-coil protein assemblies"""
       , link = "https://academic.oup.com/bioinformatics/article/30/21/3029/2422267"
@@ -557,8 +557,8 @@ designing and assessing coiled-coil protein assemblies"""
       , pages = "3029-3035"
       , year = "2014"
       }
-    , { authors = """Thomson, Andrew R; Wood, Christopher W; Burton, Antony J;
-Bartlett, Gail J; Sessions, Richard B; Brady, R Leo; Woolfson, Derek N"""
+    , { authors = """Thomson, Andrew R; Wood, Christopher W†; Burton, Antony J†;
+Bartlett, Gail J; Sessions, Richard B; Brady, R Leo; Woolfson, Derek N*"""
       , title = "Computational design of water-soluble α-helical barrels"
       , link = "http://science.sciencemag.org/content/346/6208/485"
       , journal = "Science"
@@ -566,7 +566,7 @@ Bartlett, Gail J; Sessions, Richard B; Brady, R Leo; Woolfson, Derek N"""
       , pages = "485-488"
       , year = "2014"
       }
-    , { authors = """Woolfson, Derek N; Bartlett, Gail J; Burton, Antony J; Heal,
+    , { authors = """Woolfson, Derek N*; Bartlett, Gail J; Burton, Antony J; Heal,
     Jack W; Niitsu, Ai; Thomson, Andrew R; Wood, Christopher W"""
       , title = """De novo protein design: how do we expand into the universe of
 possible protein structures?"""
@@ -578,7 +578,7 @@ possible protein structures?"""
       }
     , { authors = """Burgess, Natasha C; Sharp, Thomas H; Thomas, Franziska;
 Wood, Christopher W; Thomson, Andrew R; Zaccai, Nathan R; Brady, R Leo; Serpell,
-Louise C; Woolfson, Derek N"""
+Louise C; Woolfson, Derek N*"""
       , title = "Modular design of self-assembling peptide-based nanotubes"
       , link = "https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973"
       , journal = "Journal of the American Chemical Society"
@@ -586,9 +586,9 @@ Louise C; Woolfson, Derek N"""
       , pages = "10554-10562"
       , year = "2015"
       }
-    , { authors = """Wood, Christopher W; Heal, Jack W; Thomson, Andrew R;
+    , { authors = """Wood, Christopher W†*; Heal, Jack W†; Thomson, Andrew R;
 Bartlett, Gail J; Ibarra, Amaurys Á; Brady, R Leo; Sessions, Richard B;
-Woolfson, Derek N"""
+Woolfson, Derek N*"""
       , title = """ISAMBARD: an open-source computational environment for
 biomolecular analysis, modelling and design"""
       , link = "https://academic.oup.com/bioinformatics/article/33/19/3043/3861331"
@@ -597,7 +597,7 @@ biomolecular analysis, modelling and design"""
       , pages = "3043-3050"
       , year = "2017"
       }
-    , { authors = "Wood, Christopher W; Woolfson, Derek N"
+    , { authors = "Wood, Christopher W; Woolfson, Derek N*"
       , title = "CCBuilder 2.0: Powerful and accessible coiled‐coil modeling"
       , link = "https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279"
       , journal = "Protein Science"
@@ -607,7 +607,7 @@ biomolecular analysis, modelling and design"""
       }
     , { authors = """Pellizzoni, Michela M; Schwizer, Fabian; Wood, Christopher
 W; Sabatino, Valerio; Cotelle, Yoann; Matile, Stefan; Woolfson, Derek N; Ward,
-Thomas R"""
+Thomas R*"""
       , title = """Chimeric Streptavidins as Host Proteins for Artificial
 Metalloenzymes"""
       , link = "https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773"
@@ -617,7 +617,7 @@ Metalloenzymes"""
       , year = "2018"
       }
     , { authors = """Heal, Jack W; Bartlett, Gail J; Wood, Christopher W;
-Thomson, Andrew R; Woolfson, Derek N"""
+Thomson, Andrew R; Woolfson, Derek N*"""
       , title = """Applying graph theory to protein structures: an atlas of
 coiled coils"""
       , link = "https://academic.oup.com/bioinformatics/article/34/19/3316/4990824"
@@ -627,7 +627,7 @@ coiled coils"""
       , year = "2018"
       }
     , { authors = """Rhys, Guto G; Wood, Christopher W; Lang, Eric JM;
-Mulholland, Adrian J; Brady, R Leo; Thomson, Andrew R; Woolfson, Derek N"""
+Mulholland, Adrian J; Brady, R Leo; Thomson, Andrew R; Woolfson, Derek N*"""
       , title = """Maintaining and breaking symmetry in homomeric coiled-coil
 assemblies"""
       , journal = "Nature Communications"
@@ -636,9 +636,9 @@ assemblies"""
       , pages = "4132"
       , year = "2018"
       }
-    , { authors = """Rhys, Guto G; Wood, Christopher W; Beesley, Joseph L;
+    , { authors = """Rhys, Guto G†; Wood, Christopher W†; Beesley, Joseph L;
     Zaccai, Nathan R; Burton, Antony J; Brady, R Leo; Thomson, Andrew R;
-    Woolfson, Derek N"""
+    Woolfson, Derek N*"""
       , title = "PREPRINT: Navigating the structural landscape of de novo α-helical bundles"
       , journal = "bioRxiv"
       , link = "https://www.biorxiv.org/content/early/2018/12/21/503698"
