@@ -332,16 +332,18 @@ about =
         [ heading "About Us"
         , subHeading "Making protein design more accessible"
         , simpleText """Our research focuses on improving the accessibility and
-reliability of protein design so that it can be adopted more widely as a method
-for tackling challenges in biotechnology and synthetic biology. To do this,
-we're developing tools that apply machine-learning, computational modelling
-and structural bioinformatics to help guide users through the protein-design
-process."""
+            reliability of protein design so that it can be adopted more widely
+            as a method for tackling challenges in biotechnology and synthetic
+            biology. To do this, we're developing tools that apply
+            machine-learning, computational modelling and structural
+            bioinformatics to help guide users through the protein-design
+            process."""
         , subHeading "Rigorously tested methods"
         , paragraph
             contentStyling
             [ """We apply all the methods that we create at scale in the
-laboratory, using the robotics available at Edinburgh through the incredible """
+                laboratory, using the robotics available at Edinburgh through
+                the incredible """
                 |> text
             , simpleLink
                 { url = "https://www.genomefoundry.org/"
@@ -354,10 +356,9 @@ to their fullest."""
         , subHeading "Committed to open-access research"
         , paragraph []
             [ text """Our research is publicly funded, so we are committed
-to making our outputs publicly available, including:"""
+                to making our outputs publicly available, including data
+                software and publications."""
             ]
-        , column [ paddingXY 60 0 ]
-            ([ "data", "software", "publications" ] |> List.map bullet)
         , heading "Join Us"
         , advert
         ]
@@ -367,8 +368,8 @@ advert : Element msg
 advert =
     paragraph []
         [ text """Fancy automating experiments using state-of-the-art robotics?
-How about applying the newest methods in machine-learning to design completely
-novel proteins? If you're interested in joining us, """
+            How about applying the newest methods in machine-learning to design
+            completely novel proteins? If you're interested in joining us, """
         , simpleLink
             { url = "mailto:chris.wood@ed.ac.uk"
             , label = "get in touch"
@@ -407,7 +408,25 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2019-01-01"
+    [ { date = "2019-05-08"
+      , title = "Navigating the structural landscape of de novo α-helical bundles"
+      , category = "New Article"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ paragraph []
+                    [ text """Our research on de novo designed pH sensitive and
+                    highly thermostable helical bundles has now been """
+                    , newTabLink
+                        linkStyling
+                        { url = "https://pubs.acs.org/doi/10.1021/jacs.8b13354"
+                        , label = text "published in JACS"
+                        }
+                    , text """. See the news article from 2019-01-01 for more
+                    information."""
+                    ]
+                ]
+      }
+    , { date = "2019-01-01"
       , title = "Navigating the structural landscape of de novo α-helical bundles"
       , category = "Preprint"
       , newsContent =
@@ -559,6 +578,7 @@ publications =
 type alias Publication =
     { title : String
     , link : String
+    , preprintLink : Maybe String
     , authors : String
     , journal : String
     , volume : String
@@ -573,6 +593,17 @@ publicationView publication =
         [ newTabLink
             linkStyling
             { url = publication.link, label = subHeading publication.title }
+        , case publication.preprintLink of
+            Just preprintLink ->
+                newTabLink
+                    linkStyling
+                    { url = preprintLink
+                    , label =
+                        el [ Font.bold ] (text "Preprint")
+                    }
+
+            Nothing ->
+                none
         , simpleText publication.authors
         , simpleText <|
             publication.journal
@@ -588,52 +619,67 @@ publicationView publication =
 
 allPublications : List Publication
 allPublications =
-    [ { authors = """Wood, Christopher W*; Bruning, Marc; Ibarra, Amaurys A;
-Bartlett, Gail J; Thomson, Andrew R; Sessions, Richard B; Brady, R Leo;
-Woolfson, Derek N*"""
-      , title = """CCBuilder: an interactive web-based tool for building,
-designing and assessing coiled-coil protein assemblies"""
+    [ { authors =
+            "Wood, Christopher W*; Bruning, Marc; Ibarra, Amaurys A; "
+                ++ "Bartlett, Gail J; Thomson, Andrew R; Sessions, Richard B; "
+                ++ "Brady, R Leo; Woolfson, Derek N*"
+      , title =
+            "CCBuilder: an interactive web-based tool for building, "
+                ++ "designing and assessing coiled-coil protein assemblies"
       , link = "https://academic.oup.com/bioinformatics/article/30/21/3029/2422267"
+      , preprintLink = Nothing
       , journal = "Bioinformatics"
       , volume = "30"
       , pages = "3029-3035"
       , year = "2014"
       }
-    , { authors = """Thomson, Andrew R; Wood, Christopher W†; Burton, Antony J†;
-Bartlett, Gail J; Sessions, Richard B; Brady, R Leo; Woolfson, Derek N*"""
+    , { authors =
+            "Thomson, Andrew R; Wood, Christopher W; Burton, Antony J; "
+                ++ "Bartlett, Gail J; Sessions, Richard B; Brady, R Leo; "
+                ++ "Woolfson, Derek N*"
       , title = "Computational design of water-soluble α-helical barrels"
       , link = "http://science.sciencemag.org/content/346/6208/485"
+      , preprintLink = Nothing
       , journal = "Science"
       , volume = "346"
       , pages = "485-488"
       , year = "2014"
       }
-    , { authors = """Woolfson, Derek N*; Bartlett, Gail J; Burton, Antony J; Heal,
-    Jack W; Niitsu, Ai; Thomson, Andrew R; Wood, Christopher W"""
-      , title = """De novo protein design: how do we expand into the universe of
-possible protein structures?"""
+    , { authors =
+            "Woolfson, Derek N*; Bartlett, Gail J; Burton, Antony J; "
+                ++ "Heal, Jack W; Niitsu, Ai; Thomson, Andrew R; Wood, "
+                ++ "Christopher W"
+      , title =
+            "De novo protein design: how do we expand into the universe of "
+                ++ "possible protein structures?"
       , link = "https://www.sciencedirect.com/science/article/pii/S0959440X1500069X"
+      , preprintLink = Nothing
       , journal = "Current opinion in structural biology"
       , volume = "33"
       , pages = "16-26"
       , year = "2015"
       }
-    , { authors = """Burgess, Natasha C; Sharp, Thomas H; Thomas, Franziska;
-Wood, Christopher W; Thomson, Andrew R; Zaccai, Nathan R; Brady, R Leo; Serpell,
-Louise C; Woolfson, Derek N*"""
+    , { authors =
+            "Burgess, Natasha C; Sharp, Thomas H; Thomas, Franziska; "
+                ++ "Wood, Christopher W; Thomson, Andrew R; Zaccai, Nathan R; "
+                ++ "Brady, R Leo; Serpell, Louise C; Woolfson, Derek N*"
       , title = "Modular design of self-assembling peptide-based nanotubes"
       , link = "https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973"
+      , preprintLink = Nothing
       , journal = "Journal of the American Chemical Society"
       , volume = "137"
       , pages = "10554-10562"
       , year = "2015"
       }
-    , { authors = """Wood, Christopher W†*; Heal, Jack W†; Thomson, Andrew R;
-Bartlett, Gail J; Ibarra, Amaurys Á; Brady, R Leo; Sessions, Richard B;
-Woolfson, Derek N*"""
-      , title = """ISAMBARD: an open-source computational environment for
-biomolecular analysis, modelling and design"""
+    , { authors =
+            "Wood, Christopher W*; Heal, Jack W; Thomson, Andrew R; "
+                ++ "Bartlett, Gail J; Ibarra, Amaurys Á; Brady, R Leo; Sessions, "
+                ++ "Richard B; Woolfson, Derek N*"
+      , title =
+            "ISAMBARD: an open-source computational environment for "
+                ++ "biomolecular analysis, modelling and design"
       , link = "https://academic.oup.com/bioinformatics/article/33/19/3043/3861331"
+      , preprintLink = Nothing
       , journal = "Bioinformatics"
       , volume = "33"
       , pages = "3043-3050"
@@ -642,50 +688,61 @@ biomolecular analysis, modelling and design"""
     , { authors = "Wood, Christopher W; Woolfson, Derek N*"
       , title = "CCBuilder 2.0: Powerful and accessible coiled‐coil modeling"
       , link = "https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279"
+      , preprintLink = Nothing
       , journal = "Protein Science"
       , volume = "27"
       , pages = "103-111"
       , year = "2018"
       }
-    , { authors = """Pellizzoni, Michela M; Schwizer, Fabian; Wood, Christopher
-W; Sabatino, Valerio; Cotelle, Yoann; Matile, Stefan; Woolfson, Derek N; Ward,
-Thomas R*"""
-      , title = """Chimeric Streptavidins as Host Proteins for Artificial
-Metalloenzymes"""
+    , { authors =
+            "Pellizzoni, Michela M; Schwizer, Fabian; Wood, "
+                ++ "Christopher W; Sabatino, Valerio; Cotelle, Yoann; "
+                ++ "Matile, Stefan; Woolfson, Derek N; Ward, Thomas R*"
+      , title =
+            "Chimeric Streptavidins as Host Proteins for Artificial "
+                ++ "Metalloenzymes"
       , link = "https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773"
+      , preprintLink = Nothing
       , journal = "ACS Catalysis"
       , volume = "8"
       , pages = "1476-1484"
       , year = "2018"
       }
-    , { authors = """Heal, Jack W; Bartlett, Gail J; Wood, Christopher W;
-Thomson, Andrew R; Woolfson, Derek N*"""
-      , title = """Applying graph theory to protein structures: an atlas of
-coiled coils"""
+    , { authors =
+            "Heal, Jack W; Bartlett, Gail J; Wood, Christopher W; "
+                ++ "Thomson, Andrew R; Woolfson, Derek N*"
+      , title =
+            "Applying graph theory to protein structures: an atlas of "
+                ++ "coiled coils"
       , link = "https://academic.oup.com/bioinformatics/article/34/19/3316/4990824"
+      , preprintLink = Nothing
       , journal = "Bioinformatics"
       , volume = "34"
       , pages = "3316-3323"
       , year = "2018"
       }
-    , { authors = """Rhys, Guto G; Wood, Christopher W; Lang, Eric JM;
-Mulholland, Adrian J; Brady, R Leo; Thomson, Andrew R; Woolfson, Derek N*"""
-      , title = """Maintaining and breaking symmetry in homomeric coiled-coil
-assemblies"""
+    , { authors =
+            "Rhys, Guto G; Wood, Christopher W; Lang, Eric JM; "
+                ++ "Mulholland, Adrian J; Brady, R Leo; Thomson, Andrew R; "
+                ++ "Woolfson, Derek N*"
+      , title = "Maintaining and breaking symmetry in homomeric coiled-coil assemblies"
       , journal = "Nature Communications"
       , link = "https://www.nature.com/articles/s41467-018-06391-y"
+      , preprintLink = Nothing
       , volume = "9"
       , pages = "4132"
       , year = "2018"
       }
-    , { authors = """Rhys, Guto G†; Wood, Christopher W†; Beesley, Joseph L;
-    Zaccai, Nathan R; Burton, Antony J; Brady, R Leo; Thomson, Andrew R;
-    Woolfson, Derek N*"""
-      , title = "PREPRINT: Navigating the structural landscape of de novo α-helical bundles"
-      , journal = "bioRxiv"
-      , link = "https://www.biorxiv.org/content/early/2018/12/21/503698"
-      , volume = "1"
-      , pages = "503698"
+    , { authors =
+            "Rhys, Guto G; Wood, Christopher W; Beesley, Joseph L; "
+                ++ "Zaccai, Nathan R; Burton, Antony J; Brady, R Leo; "
+                ++ "Thomson, Andrew R; Woolfson, Derek N*"
+      , title = "Navigating the structural landscape of de novo α-helical bundles"
+      , journal = "Journal of the American Chemical Society"
+      , link = "https://pubs.acs.org/doi/10.1021/jacs.8b13354"
+      , preprintLink = Just "https://www.biorxiv.org/content/early/2018/12/21/503698"
+      , volume = "141"
+      , pages = "8787-8797"
       , year = "2019"
       }
     ]
@@ -822,7 +879,6 @@ subHeading label =
     paragraph
         [ contentFont
         , Font.size <| floor <| scaled 2
-        , Font.italic
         ]
         [ text label ]
 
@@ -935,7 +991,7 @@ simpleLink { label, url } =
 
 bullet : String -> Element msg
 bullet string =
-    text <| "-  " ++ string
+    text <| "→ " ++ string
 
 
 defaultEach =
