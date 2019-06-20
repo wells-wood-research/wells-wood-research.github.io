@@ -8,6 +8,7 @@ import Element exposing (..)
 import Element.Background as Background
 import Element.Border as Border
 import Element.Font as Font
+import FeatherIcons
 import Html exposing (Html)
 import Task
 import Url
@@ -459,7 +460,9 @@ people =
 type alias Person msg =
     { pictureUrl : String
     , name : String
-    , email : String
+    , email : Maybe String
+    , twitter : Maybe String
+    , github : Maybe String
     , bio : Element msg
     }
 
@@ -468,7 +471,9 @@ allPeople : List (Person msg)
 allPeople =
     [ { pictureUrl = "/static/images/people/chriswellswood.jpg"
       , name = "Chris Wells Wood"
-      , email = "chris.wood@ed.ac.uk"
+      , email = Just "chris.wood@ed.ac.uk"
+      , twitter = Just "https://twitter.com/ChrisWellsWood"
+      , github = Just "https://github.com/ChrisWellsWood"
       , bio =
             paragraph []
                 [ text """Chris took his undergraduate degree in Molecular and Cellular
@@ -490,15 +495,52 @@ group."""
 personView : Person msg -> Element msg
 personView person =
     column [ spacing 30 ]
-        [ subHeading person.name
-        , wrappedRow [ spacing 30 ]
-            [ column []
-                [ image [ width (px 200) ]
+        [ wrappedRow [ spacing 30 ]
+            [ column [ spacing 10 ]
+                [ el [ centerX ] (subHeading person.name)
+                , image [ centerX, width (px 250) ]
                     { src = person.pictureUrl, description = person.name }
-                , simpleLink
-                    { url = "mailto:" ++ person.email
-                    , label = person.email
-                    }
+                , row [ centerX, spacing 10 ]
+                    [ case person.email of
+                        Just emailAccount ->
+                            newTabLink
+                                []
+                                { url = "mailto:" ++ emailAccount
+                                , label =
+                                    FeatherIcons.mail
+                                        |> FeatherIcons.toHtml []
+                                        |> html
+                                }
+
+                        Nothing ->
+                            none
+                    , case person.twitter of
+                        Just twitterAccount ->
+                            newTabLink
+                                []
+                                { url = twitterAccount
+                                , label =
+                                    FeatherIcons.twitter
+                                        |> FeatherIcons.toHtml []
+                                        |> html
+                                }
+
+                        Nothing ->
+                            none
+                    , case person.github of
+                        Just githubAccount ->
+                            newTabLink
+                                []
+                                { url = githubAccount
+                                , label =
+                                    FeatherIcons.github
+                                        |> FeatherIcons.toHtml []
+                                        |> html
+                                }
+
+                        Nothing ->
+                            none
+                    ]
                 ]
             , person.bio
             ]
@@ -856,6 +898,7 @@ contentStyling : List (Element.Attribute msg)
 contentStyling =
     [ contentFont
     , Font.size <| floor <| scaled 1
+    , Background.color colours.white
     ]
 
 
