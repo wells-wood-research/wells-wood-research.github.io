@@ -399,7 +399,12 @@ type alias NewsItem msg =
 
 newsItemView : NewsItem msg -> Element msg
 newsItemView { date, title, category, newsContent } =
-    column [ spacing 10 ]
+    column
+        [ paddingXY 0 30
+        , spacing 15
+        , Border.widthEach
+            { defaultEach | top = 1 }
+        ]
         [ subHeading title
         , el [ Font.bold ] (text (date ++ ", " ++ category))
         , newsContent
@@ -408,7 +413,14 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2019-05-08"
+    [ { date = "2019-07-15"
+      , title = "Conference: Protein Engineering II"
+      , category = "Conference"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                protEngConfNews
+      }
+    , { date = "2019-05-08"
       , title = "Navigating the structural landscape of de novo α-helical bundles"
       , category = "New Article"
       , newsContent =
@@ -423,6 +435,10 @@ newsItems =
                         }
                     , text """. See the news article from 2019-01-01 for more
                     information."""
+                    ]
+                , paragraph []
+                    [ text
+                        """Chris."""
                     ]
                 ]
       }
@@ -442,25 +458,106 @@ newsItems =
                         { url = "https://www.biorxiv.org/content/early/2018/12/21/503698"
                         , label = text "preprint of our latest paper"
                         }
-                    , text """, where we created mutants of a stable hexameric
-                coiled coil and found that they adopted the anti-parallel
-                conformation. We then discovered that certain mutants would
-                revert back to the parallel hexamer structure when the pH was
-                altered. Finally we used negative design to stablise the
-                anti-parallel conformation, which resulted in apCC-Tet, a
-                hyper-thermostable, anti-parallel tetramer. apCC-Tet is a robust
-                scaffold that can now be used for applications in protein
-                engineering and synthetic biology."""
+                    , text
+                        """, where we created mutants of a stable hexameric
+                        coiled coil and found that they adopted the
+                        anti-parallel conformation. We then discovered that
+                        certain mutants would revert back to the parallel
+                        hexamer structure when the pH was altered. Finally we
+                        used negative design to stablise the anti-parallel
+                        conformation, which resulted in apCC-Tet, a
+                        hyper-thermostable, anti-parallel tetramer. apCC-Tet is
+                        a robust scaffold that can now be used for applications
+                        in protein engineering and synthetic biology."""
                     ]
                 , paragraph []
-                    [ text """This was the last paper I worked on before leaving
-                Dek Woolfson's group in Bristol and it was pretty satisfying to see
-                it come together as it contains the first peptide that I ever
-                made in the lab. Huge thank you to my co-first author, Guto
-                Rhys, it was great fun working with him on the paper.""" ]
+                    [ text
+                        """This was the last paper I worked on before leaving
+                        Dek Woolfson's group in Bristol and it was pretty
+                        satisfying to see it come together as it contains the
+                        first peptide that I ever made in the lab. Huge thank
+                        you to my co-first author, Guto Rhys, it was great fun
+                        working with him on the paper."""
+                    ]
+                , paragraph []
+                    [ text
+                        """Chris."""
+                    ]
                 ]
       }
     ]
+
+
+protEngConfNews : List (Element msg)
+protEngConfNews =
+    [ image [ centerX, width fill ]
+        { src = "/static/images/news/2019-07-15-venue.jpg"
+        , description = "Protein Engineering II Venue, University of York"
+        }
+    , paragraph []
+        [ text
+            """This week I went to an excellent conference organised by the """
+        , simpleLink
+            { url = "https://biochemistry.org/"
+            , label = "Biochemical Society"
+            }
+        , text
+            """ called "Protein engineering II: from new molecules to new 
+            processes". There was an amazing array of speakers from a range of
+            areas, both from academia and industry. I think the highlights for
+            me were: Mihriban Tuna from """
+        , simpleLink
+            { url = "http://www.f-star.com/"
+            , label = "F-Star"
+            }
+        , text
+            """ talking about bifunctionalised antibodies as cancer theraputics; 
+            Jana Aupič, from """
+        , simpleLink
+            { url = "https://www.ki.si/en/departments/d12-department-of-synthetic-biology-and-immunology/"
+            , label = "Roman Jerala's group"
+            }
+        , text
+            """ in Slovenia, talking about reusing coiled coil building blocks
+            while making complex protein origami; and """
+        , simpleLink
+            { url = "http://lemkelab.com/"
+            , label = "Edward Lemke's"
+            }
+        , text
+            """ talk on making membraneless organelles.
+            """
+        ]
+    , paragraph []
+        [ text
+            """Many more of the posters and talks were excellent, including my
+            old boss Dek Woolfson and my colleague here at Edinburgh, Louise
+            Horsfall. The venue was excellent (picture attached!) and
+            organisation from the academic organisers and the Biochemical
+            Society was great. It sounds like there's going to be a Protein
+            Engineering III, so definitely come along to that if you're even
+            vaguely in this area!
+            """
+        ]
+    , paragraph []
+        [ text
+            """Finally, I got the oportunity to talk about DE-STRESS, my protein
+            design evaluation web application, which I'm planning to have a
+            closed beta of by the end of the summer, so do get in touch if
+            you're interested in getting involved in that! More information
+            soon.
+            """
+        ]
+    , paragraph []
+        [ text
+            """Chris.
+            """
+        ]
+    ]
+
+
+
+---- PEOPLE ----
 
 
 people : Element msg
@@ -495,17 +592,19 @@ allPeople =
       , github = Just "https://github.com/ChrisWellsWood"
       , bio =
             paragraph []
-                [ text """Chris took his undergraduate degree in Molecular and Cellular
-Biology at the University of Glasgow. He then went on to undertake a PhD and
-postdoc in the lab of """
+                [ text
+                    """Chris took his undergraduate degree in Molecular and
+                    Cellular Biology at the University of Glasgow. He then went
+                    on to undertake a PhD and postdoc in the lab of """
                 , simpleLink
                     { url = "https://woolfsonlab.wordpress.com/"
                     , label = "Prof. Dek Woolfson"
                     }
-                , text """, where he worked on developing and applying tools for
-computational-protein design. In 2018 he was awarded an EPSRC postdoctoral
-fellowship and moved to the University of Edinburgh to establish his research
-group."""
+                , text
+                    """, where he worked on developing and applying tools for
+                    computational-protein design. In 2018 he was awarded an
+                    EPSRC postdoctoral fellowship and moved to the University of
+                    Edinburgh to establish his research group."""
                 ]
       }
     ]
@@ -593,6 +692,16 @@ publicationView publication =
         [ newTabLink
             linkStyling
             { url = publication.link, label = subHeading publication.title }
+        , simpleText publication.authors
+        , simpleText <|
+            publication.journal
+                ++ ", "
+                ++ publication.volume
+                ++ ", "
+                ++ publication.pages
+                ++ ", "
+                ++ publication.year
+                ++ "."
         , case publication.preprintLink of
             Just preprintLink ->
                 newTabLink
@@ -604,16 +713,6 @@ publicationView publication =
 
             Nothing ->
                 none
-        , simpleText publication.authors
-        , simpleText <|
-            publication.journal
-                ++ ", "
-                ++ publication.volume
-                ++ ", "
-                ++ publication.pages
-                ++ ", "
-                ++ publication.year
-                ++ "."
         ]
 
 
@@ -760,38 +859,22 @@ type alias Tool msg =
     , application : Maybe String
     , source : Maybe String
     , description : Element msg
-    , backgroundImageLink : String
+    , backgroundImageLink : Maybe String
     }
 
 
 allTools : List (Tool msg)
 allTools =
-    [ { name = "CCBuilder/CCBuilder 2"
-      , application = Just "http://coiledcoils.chm.bris.ac.uk/ccbuilder2/builder"
-      , source = Just "https://github.com/woolfson-group/ccbuilder2"
-      , description =
-            paragraph []
-                [ text """CCBuilder is a user-friendly web application for
-creating atomistic models of coiled coils and collagen. It can accurately model
-almost all architectures of coiled coils observed in nature, as well more
-unusual structures like """
-                , simpleLink
-                    { url =
-                        "http://science.sciencemag.org/content/346/6208/485"
-                    , label = "α-helical barrels"
-                    }
-                , text "."
-                ]
-      , backgroundImageLink = "/static/images/tools/ccbuilder.jpg"
-      }
-    , { name = "BAlaS"
+    [ { name = "BAlaS"
       , application = Just "http://coiledcoils.chm.bris.ac.uk/balas"
       , source = Just "https://github.com/woolfson-group/balas"
       , description =
             paragraph []
-                [ text """BAlaS is a fast, interactive web tool for performing
-computational alanine-scanning mutagenesis. It has a simple user interface that
-allows users to easily submit jobs and visualise results. Powered by """
+                [ text
+                    """BAlaS is a fast, interactive web tool for performing
+                    computational alanine-scanning mutagenesis. It has a simple
+                    user interface that allows users to easily submit jobs and
+                    visualise results. Powered by """
                 , simpleLink
                     { url =
                         "http://www.bris.ac.uk/biochemistry/research/bude"
@@ -806,19 +889,61 @@ allows users to easily submit jobs and visualise results. Powered by """
                 , text """, users can download and run the scanning engine
 locally when they need to scale up analysis."""
                 ]
-      , backgroundImageLink = "/static/images/tools/balas.jpg"
+      , backgroundImageLink = Just "/static/images/tools/balas.jpg"
+      }
+    , { name = "DE-STRESS -- COMING SOON!"
+      , application = Nothing
+      , source = Nothing
+      , description =
+            paragraph []
+                [ text
+                    """DE-STRESS (DEsigned STRucture Evaluation ServiceS) is a
+                    web application and associate web API that provides
+                    automated assessment of the quality of protein designs with
+                    respect to their intended application. DE-STRESS is
+                    currently under development, but an closed beta is planned
+                    for the end of summer 2019, so please contact """
+                , simpleLink
+                    { url =
+                        "mailto:chris.wood@ed.ac.uk"
+                    , label = "Chris Wood"
+                    }
+                , text
+                    """ if you're interested in getting involved."""
+                ]
+      , backgroundImageLink = Nothing
+      }
+    , { name = "CCBuilder/CCBuilder 2"
+      , application = Just "http://coiledcoils.chm.bris.ac.uk/ccbuilder2/builder"
+      , source = Just "https://github.com/woolfson-group/ccbuilder2"
+      , description =
+            paragraph []
+                [ text
+                    """CCBuilder is a user-friendly web application for creating
+                    atomistic models of coiled coils and collagen. It can
+                    accurately model almost all architectures of coiled coils
+                    observed in nature, as well more unusual structures like """
+                , simpleLink
+                    { url =
+                        "http://science.sciencemag.org/content/346/6208/485"
+                    , label = "α-helical barrels"
+                    }
+                , text "."
+                ]
+      , backgroundImageLink = Just "/static/images/tools/ccbuilder.jpg"
       }
     , { name = "ISAMBARD"
       , application = Nothing
       , source = Just "https://github.com/woolfson-group/balas"
       , description =
             paragraph []
-                [ text """ISAMBARD (Intelligent System for Analysis, Model
-Building And Rational Design) is a Python library for structural analysis and
-rational design of biomolecules, with a particular focus on parametric
-modelling of proteins."""
+                [ text
+                    """ISAMBARD (Intelligent System for Analysis, Model Building
+                    And Rational Design) is a Python library for structural
+                    analysis and rational design of biomolecules, with a
+                    particular focus on parametric modelling of proteins."""
                 ]
-      , backgroundImageLink = "/static/images/tools/isambard.jpg"
+      , backgroundImageLink = Just "/static/images/tools/isambard.jpg"
       }
     ]
 
@@ -833,7 +958,12 @@ toolView tool =
         [ width fill
         , padding 30
         , spacing 10
-        , Background.image tool.backgroundImageLink
+        , case tool.backgroundImageLink of
+            Just imageLink ->
+                Background.image imageLink
+
+            Nothing ->
+                Background.color colours.lightGrey
         ]
         ([ subHeading tool.name ]
             ++ (case toolLinks of
