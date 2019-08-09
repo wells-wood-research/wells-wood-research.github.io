@@ -612,7 +612,12 @@ allPeople =
 
 personView : Person msg -> Element msg
 personView person =
-    column [ spacing 30 ]
+    column
+        [ paddingXY 0 30
+        , spacing 30
+        , Border.widthEach
+            { defaultEach | top = 1 }
+        ]
         [ wrappedRow [ spacing 30 ]
             [ column [ spacing 10 ]
                 [ el [ centerX ] (subHeading person.name)
@@ -688,20 +693,15 @@ type alias Publication =
 
 publicationView : Publication -> Element msg
 publicationView publication =
-    column [ spacing 10 ]
+    column
+        [ paddingXY 0 30
+        , spacing 15
+        , Border.widthEach
+            { defaultEach | top = 1 }
+        ]
         [ newTabLink
             linkStyling
             { url = publication.link, label = subHeading publication.title }
-        , simpleText publication.authors
-        , simpleText <|
-            publication.journal
-                ++ ", "
-                ++ publication.volume
-                ++ ", "
-                ++ publication.pages
-                ++ ", "
-                ++ publication.year
-                ++ "."
         , case publication.preprintLink of
             Just preprintLink ->
                 newTabLink
@@ -713,6 +713,16 @@ publicationView publication =
 
             Nothing ->
                 none
+        , simpleText publication.authors
+        , simpleText <|
+            publication.journal
+                ++ ", "
+                ++ publication.volume
+                ++ ", "
+                ++ publication.pages
+                ++ ", "
+                ++ publication.year
+                ++ "."
         ]
 
 
@@ -842,6 +852,17 @@ allPublications =
       , preprintLink = Just "https://www.biorxiv.org/content/early/2018/12/21/503698"
       , volume = "141"
       , pages = "8787-8797"
+      , year = "2019"
+      }
+    , { authors =
+            """Juan, Jin; Baker, Emily G; Wood, Christopher W; Bath, Jonathan;
+            Woolfson, Derek N*; Turberfield, Andrew J*"""
+      , title = "Peptide Assembly Directed and Quantified Using Megadalton DNA Nanostructures"
+      , journal = "ACS Nano"
+      , link = "https://pubs.acs.org/doi/10.1021/acsnano.9b04251"
+      , preprintLink = Nothing
+      , volume = "XXX"
+      , pages = "XXX-XXX"
       , year = "2019"
       }
     ]
