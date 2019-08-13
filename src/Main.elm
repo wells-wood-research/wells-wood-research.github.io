@@ -729,12 +729,11 @@ publicationView publication =
 allPublications : List Publication
 allPublications =
     [ { authors =
-            "Wood, Christopher W*; Bruning, Marc; Ibarra, Amaurys A; "
-                ++ "Bartlett, Gail J; Thomson, Andrew R; Sessions, Richard B; "
-                ++ "Brady, R Leo; Woolfson, Derek N*"
+            """Wood, CW*; Bruning, M; Ibarra, AA; Bartlett, Gail J; Thomson, AR;
+            Sessions, RB; Brady, RL; Woolfson, DN*"""
       , title =
-            "CCBuilder: an interactive web-based tool for building, "
-                ++ "designing and assessing coiled-coil protein assemblies"
+            """CCBuilder: an interactive web-based tool for building, designing
+            and assessing coiled-coil protein assemblies"""
       , link = "https://academic.oup.com/bioinformatics/article/30/21/3029/2422267"
       , preprintLink = Nothing
       , journal = "Bioinformatics"
@@ -743,9 +742,8 @@ allPublications =
       , year = "2014"
       }
     , { authors =
-            "Thomson, Andrew R; Wood, Christopher W; Burton, Antony J; "
-                ++ "Bartlett, Gail J; Sessions, Richard B; Brady, R Leo; "
-                ++ "Woolfson, Derek N*"
+            """Thomson, AR; Wood, CW; Burton, AJ; Bartlett, GJ; Sessions, RB;
+            Brady, RL; Woolfson, DN*"""
       , title = "Computational design of water-soluble α-helical barrels"
       , link = "http://science.sciencemag.org/content/346/6208/485"
       , preprintLink = Nothing
@@ -755,12 +753,11 @@ allPublications =
       , year = "2014"
       }
     , { authors =
-            "Woolfson, Derek N*; Bartlett, Gail J; Burton, Antony J; "
-                ++ "Heal, Jack W; Niitsu, Ai; Thomson, Andrew R; Wood, "
-                ++ "Christopher W"
+            """Woolfson, DN*; Bartlett, GJ; Burton, AJ; Heal, JW; Niitsu, A;
+            Thomson, AR; Wood, CW"""
       , title =
-            "De novo protein design: how do we expand into the universe of "
-                ++ "possible protein structures?"
+            """De novo protein design: how do we expand into the universe of
+            possible protein structures?"""
       , link = "https://www.sciencedirect.com/science/article/pii/S0959440X1500069X"
       , preprintLink = Nothing
       , journal = "Current opinion in structural biology"
@@ -769,9 +766,8 @@ allPublications =
       , year = "2015"
       }
     , { authors =
-            "Burgess, Natasha C; Sharp, Thomas H; Thomas, Franziska; "
-                ++ "Wood, Christopher W; Thomson, Andrew R; Zaccai, Nathan R; "
-                ++ "Brady, R Leo; Serpell, Louise C; Woolfson, Derek N*"
+            """Burgess, NC; Sharp, TH; Thomas, F; Wood, CW; Thomson, AR;
+            Zaccai, NR; Brady, RL; Serpell, LC; Woolfson, DN*"""
       , title = "Modular design of self-assembling peptide-based nanotubes"
       , link = "https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973"
       , preprintLink = Nothing
@@ -785,8 +781,8 @@ allPublications =
                 ++ "Bartlett, Gail J; Ibarra, Amaurys Á; Brady, R Leo; Sessions, "
                 ++ "Richard B; Woolfson, Derek N*"
       , title =
-            "ISAMBARD: an open-source computational environment for "
-                ++ "biomolecular analysis, modelling and design"
+            """ISAMBARD: an open-source computational environment for
+            biomolecular analysis, modelling and design"""
       , link = "https://academic.oup.com/bioinformatics/article/33/19/3043/3861331"
       , preprintLink = Nothing
       , journal = "Bioinformatics"
@@ -804,9 +800,8 @@ allPublications =
       , year = "2018"
       }
     , { authors =
-            "Pellizzoni, Michela M; Schwizer, Fabian; Wood, "
-                ++ "Christopher W; Sabatino, Valerio; Cotelle, Yoann; "
-                ++ "Matile, Stefan; Woolfson, Derek N; Ward, Thomas R*"
+            """Pellizzoni, MM; Schwizer, F; Wood, CW; Sabatino, V; Cotelle, Y;
+            Matile, S; Woolfson, DN; Ward, TR*"""
       , title =
             "Chimeric Streptavidins as Host Proteins for Artificial "
                 ++ "Metalloenzymes"
@@ -818,11 +813,10 @@ allPublications =
       , year = "2018"
       }
     , { authors =
-            "Heal, Jack W; Bartlett, Gail J; Wood, Christopher W; "
-                ++ "Thomson, Andrew R; Woolfson, Derek N*"
+            "Heal, JW; Bartlett, GJ; Wood, CW; Thomson, AR; Woolfson, DN*"
       , title =
-            "Applying graph theory to protein structures: an atlas of "
-                ++ "coiled coils"
+            """Applying graph theory to protein structures: an atlas of coiled
+            coils"""
       , link = "https://academic.oup.com/bioinformatics/article/34/19/3316/4990824"
       , preprintLink = Nothing
       , journal = "Bioinformatics"
@@ -831,10 +825,11 @@ allPublications =
       , year = "2018"
       }
     , { authors =
-            "Rhys, Guto G; Wood, Christopher W; Lang, Eric JM; "
-                ++ "Mulholland, Adrian J; Brady, R Leo; Thomson, Andrew R; "
-                ++ "Woolfson, Derek N*"
-      , title = "Maintaining and breaking symmetry in homomeric coiled-coil assemblies"
+            """Rhys, GG; Wood, CW; Lang, EJM; Mulholland, AJ; Brady, RL;
+            Thomson, AR; Woolfson, DN*"""
+      , title =
+            """Maintaining and breaking symmetry in homomeric coiled-coil
+          assemblies"""
       , journal = "Nature Communications"
       , link = "https://www.nature.com/articles/s41467-018-06391-y"
       , preprintLink = Nothing
@@ -843,9 +838,8 @@ allPublications =
       , year = "2018"
       }
     , { authors =
-            "Rhys, Guto G; Wood, Christopher W; Beesley, Joseph L; "
-                ++ "Zaccai, Nathan R; Burton, Antony J; Brady, R Leo; "
-                ++ "Thomson, Andrew R; Woolfson, Derek N*"
+            """Rhys, GG; Wood, CW; Beesley, JL; Zaccai, NR; Burton, AJ;
+            Brady, RL; Thomson, AR; Woolfson, DN*"""
       , title = "Navigating the structural landscape of de novo α-helical bundles"
       , journal = "Journal of the American Chemical Society"
       , link = "https://pubs.acs.org/doi/10.1021/jacs.8b13354"
@@ -855,9 +849,11 @@ allPublications =
       , year = "2019"
       }
     , { authors =
-            """Juan, Jin; Baker, Emily G; Wood, Christopher W; Bath, Jonathan;
-            Woolfson, Derek N*; Turberfield, Andrew J*"""
-      , title = "Peptide Assembly Directed and Quantified Using Megadalton DNA Nanostructures"
+            """Juan, J; Baker, EG; Wood, CW; Bath, J; Woolfson, DN*;
+            Turberfield, AJ*"""
+      , title =
+            """Peptide Assembly Directed and Quantified Using Megadalton DNA
+          Nanostructures"""
       , journal = "ACS Nano"
       , link = "https://pubs.acs.org/doi/10.1021/acsnano.9b04251"
       , preprintLink = Nothing
@@ -922,7 +918,7 @@ locally when they need to scale up analysis."""
                     web application and associate web API that provides
                     automated assessment of the quality of protein designs with
                     respect to their intended application. DE-STRESS is
-                    currently under development, but an closed beta is planned
+                    currently under development, but a closed beta is planned
                     for the end of summer 2019, so please contact """
                 , simpleLink
                     { url =
