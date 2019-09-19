@@ -356,7 +356,7 @@ to their fullest."""
         , subHeading "Committed to open-access research"
         , paragraph []
             [ text """Our research is publicly funded, so we are committed
-                to making our outputs publicly available, including data
+                to making our outputs publicly available, including data,
                 software and publications."""
             ]
         , heading "Join Us"
