@@ -602,7 +602,7 @@ allPeople =
                     }
                 , text
                     """, where he worked on developing and applying tools for
-                    computational-protein design. In 2018 he was awarded an
+                    computational protein design. In 2018 he was awarded an
                     EPSRC postdoctoral fellowship and moved to the University of
                     Edinburgh to establish his research group."""
                 ]
