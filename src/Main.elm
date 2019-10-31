@@ -263,12 +263,21 @@ header =
             [ centerX ]
             { url = "/"
             , label =
-                paragraph
-                    [ titleFont
-                    , Font.size <| floor <| scaled 5
-                    , Font.center
+                column [ spacing 10 ]
+                    [ paragraph
+                        [ titleFont
+                        , Font.size <| floor <| scaled 5
+                        , Font.bold
+                        , Font.center
+                        ]
+                        [ text "Wells Wood Research Group" ]
+                    , paragraph
+                        [ titleFont
+                        , Font.size <| floor <| scaled 4
+                        , Font.center
+                        ]
+                        [ text "Pragmatic Protein Design" ]
                     ]
-                    [ text "Wells Wood Research Group" ]
             }
         , newTabLink
             [ centerX ]
