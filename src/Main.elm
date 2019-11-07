@@ -263,30 +263,24 @@ header =
             [ centerX ]
             { url = "/"
             , label =
-                column [ spacing 10 ]
+                column [ spacing 20 ]
                     [ paragraph
                         [ titleFont
                         , Font.size <| floor <| scaled 5
-                        , Font.bold
                         , Font.center
                         ]
                         [ text "Wells Wood Research Group" ]
                     , paragraph
                         [ titleFont
-                        , Font.size <| floor <| scaled 4
+                        , Font.size <| floor <| scaled 2
                         , Font.center
                         ]
                         [ text "Pragmatic Protein Design" ]
+                    , image [ centerX, width (px 100) ]
+                        { src = "/static/images/logo.svg"
+                        , description = "Lab Logo"
+                        }
                     ]
-            }
-        , newTabLink
-            [ centerX ]
-            { url = "https://www.ed.ac.uk/"
-            , label =
-                image [ width (px 200) ]
-                    { src = "/static/images/uoe.svg"
-                    , description = "University of Edinburgh Logo"
-                    }
             }
         ]
 
@@ -301,7 +295,16 @@ footer =
         , Background.color colours.lightGrey
         , Font.center
         ]
-        [ heading """Funded By"""
+        [ newTabLink
+            [ centerX ]
+            { url = "https://www.ed.ac.uk/"
+            , label =
+                image [ width (px 200) ]
+                    { src = "/static/images/uoe.svg"
+                    , description = "University of Edinburgh Logo"
+                    }
+            }
+        , subHeading """Funded By"""
         , wrappedRow [ centerX ]
             [ image [ width (px 200) ]
                 { src = "/static/images/epsrc.svg"
@@ -574,8 +577,17 @@ people =
     textColumn
         sectionStyling
         ([ heading "People"
+         , personView chrisWellsWood
+         , subHeading "PhD Students"
          ]
-            ++ List.map personView allPeople
+            ++ (phdStudents
+                    |> List.map personView
+               )
+            ++ [ subHeading "Undergraduate Project Students"
+               ]
+            ++ (undergraduateStudents
+                    |> List.map personView
+               )
             ++ [ heading "Join Us"
                , advert
                ]
@@ -585,6 +597,7 @@ people =
 type alias Person msg =
     { pictureUrl : String
     , name : String
+    , associatedLab : Maybe (Element msg)
     , email : Maybe String
     , twitter : Maybe String
     , github : Maybe String
@@ -592,28 +605,132 @@ type alias Person msg =
     }
 
 
-allPeople : List (Person msg)
-allPeople =
-    [ { pictureUrl = "/static/images/people/chriswellswood.jpg"
-      , name = "Chris Wells Wood"
-      , email = Just "chris.wood@ed.ac.uk"
-      , twitter = Just "https://twitter.com/ChrisWellsWood"
-      , github = Just "https://github.com/ChrisWellsWood"
+chrisWellsWood : Person msg
+chrisWellsWood =
+    { pictureUrl = "/static/images/people/chriswellswood.jpg"
+    , name = "Chris Wells Wood"
+    , associatedLab = Nothing
+    , email = Just "chris.wood@ed.ac.uk"
+    , twitter = Just "https://twitter.com/ChrisWellsWood"
+    , github = Just "https://github.com/ChrisWellsWood"
+    , bio =
+        paragraph []
+            [ text
+                """Chris took his undergraduate degree in Molecular and
+                Cellular Biology at the University of Glasgow. He then went
+                on to undertake a PhD and postdoc in the lab of """
+            , simpleLink
+                { url = "https://woolfsonlab.wordpress.com/"
+                , label = "Prof. Dek Woolfson"
+                }
+            , text
+                """, where he worked on developing and applying tools for
+                computational protein design. In 2018 he was awarded an
+                EPSRC postdoctoral fellowship and moved to the University of
+                Edinburgh to establish his research group."""
+            ]
+    }
+
+
+phdStudents : List (Person msg)
+phdStudents =
+    [ { pictureUrl = "/static/images/people/jonathanmorales.jpg"
+      , name = "Jonathan Morales-Espinoza"
+      , associatedLab =
+            simpleLink
+                { url = "http://virtualplant.bio.puc.cl/"
+                , label = "Gutiérrez Lab, PUC"
+                }
+                |> Just
+      , email = Just "j.morales-espinoza@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
       , bio =
             paragraph []
                 [ text
-                    """Chris took his undergraduate degree in Molecular and
-                    Cellular Biology at the University of Glasgow. He then went
-                    on to undertake a PhD and postdoc in the lab of """
+                    """Jonathan Morales studied a biochemistry at the Universidad
+                    De Santiago De Chile. During this time he worked in fungal
+                    cell biology testing the antifungal mechanism of different
+                    natural phenolic compounds against Botrytis cinerea, one of
+                    the most worldwide relevant phytopathogenic fungus. After
+                    his undergraduate studies, he moved to the Pontificia
+                    Universidad Catolica de Chile to undertake a PhD in the lab
+                    of Rodrigo Gutiérrez. Currently, Jonathan works in plant
+                    molecular signal transduction triggered by nutrients and is
+                    visiting the Wells Wood Lab to design and develop a new
+                    protein-based sensors to understand nutrient movement in
+                    plants."""
+                ]
+      }
+    , { pictureUrl = "/static/images/people/jackoshea.jpg"
+      , name = "Jack O'Shea"
+      , associatedLab =
+            simpleLink
+                { url = "https://www.ed.ac.uk/discovery-brain-sciences/our-staff/research-groups/sebastian-greiss"
+                , label = "Greiss Lab, UoE"
+                }
+                |> Just
+      , email = Just "j.m.o'shea@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Jack studied Natural Sciences (Synthetic Organic
+                    Chemistry and Molecular and Cell Biology) at University
+                    Collage London for his undergraduate degree. He is taking
+                    his PhD in Dr. Sebastian Greiss' lab at the University of
+                    Edinburgh, and is collaborating with the Wells Wood lab
+                    to tune the affinity of protein-protein interactions."""
+                ]
+      }
+    , { pictureUrl = "/static/images/people/mattscheier.jpg"
+      , name = "Matthew Scheier"
+      , associatedLab =
+            simpleLink
+                { url = "http://horsfall.bio.ed.ac.uk"
+                , label = "Horsfall Lab, UoE"
+                }
+                |> Just
+      , email = Just "matthew.scheier@ed.ac.uk"
+      , twitter = Nothing
+      , github = Just "https://github.com/mscheier"
+      , bio =
+            paragraph []
+                [ text
+                    """Matthew did his undergraduate degree in Biochemistry at
+                    the University of Edinburgh and a research Masters in
+                    Systems and Synthetic Biology at Imperial College London. He
+                    started his PhD in October 2018 in the """
                 , simpleLink
-                    { url = "https://woolfsonlab.wordpress.com/"
-                    , label = "Prof. Dek Woolfson"
+                    { url = "http://horsfall.bio.ed.ac.uk"
+                    , label = "Horsfall Lab"
                     }
                 , text
-                    """, where he worked on developing and applying tools for
-                    computational protein design. In 2018 he was awarded an
-                    EPSRC postdoctoral fellowship and moved to the University of
-                    Edinburgh to establish his research group."""
+                    """, and is working in the Wells Wood lab to engineer
+                    encapsulins to enable novel metal nanoparticle synthesis
+                    using synthetic biology."""
+                ]
+      }
+    ]
+
+
+undergraduateStudents : List (Person msg)
+undergraduateStudents =
+    [ { pictureUrl = "/static/images/people/leocastorina.jpg"
+      , name = "Leonardo Castorina"
+      , associatedLab = Nothing
+      , email = Just "s1622572@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Just "https://github.com/universvm"
+      , bio =
+            paragraph []
+                [ text
+                    """Leonardo is currently in the final year of his
+                    undergraduate degree in Biotechnology at
+                    the University of Edinburgh. He is interested in Biology,
+                    Chemistry and Computer Science, especially the intersection
+                    of these three with Machine Learning."""
                 ]
       }
     ]
@@ -624,13 +741,10 @@ personView person =
     column
         [ paddingXY 0 30
         , spacing 30
-        , Border.widthEach
-            { defaultEach | top = 1 }
         ]
         [ wrappedRow [ spacing 30 ]
             [ column [ spacing 10 ]
-                [ el [ centerX ] (subHeading person.name)
-                , image [ centerX, width (px 250) ]
+                [ image [ centerX, width (px 250) ]
                     { src = person.pictureUrl, description = person.name }
                 , row [ centerX, spacing 10 ]
                     [ case person.email of
@@ -674,9 +788,25 @@ personView person =
                             none
                     ]
                 ]
-            , person.bio
+            , column [ spacing 10, width fill ]
+                [ subHeading person.name
+                , case person.associatedLab of
+                    Just associatedLab ->
+                        paragraph [ Font.italic ]
+                            [ text "In association with the "
+                            , associatedLab
+                            ]
+
+                    Nothing ->
+                        none
+                , person.bio
+                ]
             ]
         ]
+
+
+
+---- PUBLICATIONS ----
 
 
 publications : Element msg
@@ -711,17 +841,6 @@ publicationView publication =
         [ newTabLink
             linkStyling
             { url = publication.link, label = subHeading publication.title }
-        , case publication.preprintLink of
-            Just preprintLink ->
-                newTabLink
-                    linkStyling
-                    { url = preprintLink
-                    , label =
-                        el [ Font.bold ] (text "Preprint")
-                    }
-
-            Nothing ->
-                none
         , simpleText publication.authors
         , simpleText <|
             publication.journal
@@ -732,6 +851,17 @@ publicationView publication =
                 ++ ", "
                 ++ publication.year
                 ++ "."
+        , case publication.preprintLink of
+            Just preprintLink ->
+                newTabLink
+                    linkStyling
+                    { url = preprintLink
+                    , label =
+                        el [] (text "Preprint")
+                    }
+
+            Nothing ->
+                none
         ]
 
 
@@ -892,8 +1022,8 @@ type alias Tool msg =
 allTools : List (Tool msg)
 allTools =
     [ { name = "BAlaS"
-      , application = Just "http://coiledcoils.chm.bris.ac.uk/balas"
-      , source = Just "https://github.com/woolfson-group/balas"
+      , application = Just "https://balas.app"
+      , source = Just "https://github.com/wells-wood-researcg/BAlaS"
       , description =
             paragraph []
                 [ text
@@ -1033,7 +1163,7 @@ heading label =
 subHeading : String -> Element msg
 subHeading label =
     paragraph
-        [ contentFont
+        [ titleFont
         , Font.size <| floor <| scaled 2
         ]
         [ text label ]
