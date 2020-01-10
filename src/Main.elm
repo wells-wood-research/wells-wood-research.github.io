@@ -1023,7 +1023,7 @@ allTools : List (Tool msg)
 allTools =
     [ { name = "BAlaS"
       , application = Just "https://balas.app"
-      , source = Just "https://github.com/wells-wood-researcg/BAlaS"
+      , source = Just "https://github.com/wells-wood-research/BAlaS"
       , description =
             paragraph []
                 [ text
@@ -1090,7 +1090,7 @@ locally when they need to scale up analysis."""
       }
     , { name = "ISAMBARD"
       , application = Nothing
-      , source = Just "https://github.com/woolfson-group/balas"
+      , source = Just "https://github.com/isambard-uob/isambard"
       , description =
             paragraph []
                 [ text
