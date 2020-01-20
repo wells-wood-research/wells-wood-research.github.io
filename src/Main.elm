@@ -27,7 +27,7 @@ main =
 
 
 
--- Model
+-- {{{ Model
 
 
 type alias Model =
@@ -48,6 +48,11 @@ type Route
     | People
     | Publications
     | Tools
+
+
+
+-- }}}
+-- {{{ Init
 
 
 init : () -> Url.Url -> Nav.Key -> ( Model, Cmd Msg )
@@ -72,7 +77,8 @@ init flags url key =
 
 
 
--- Update
+-- }}}
+-- {{{ Update
 
 
 type Msg
@@ -160,7 +166,8 @@ update msg model =
 
 
 
--- Subscriptions
+-- }}}
+-- {{{ Subscriptions
 
 
 subscriptions : Model -> Sub Msg
@@ -169,7 +176,8 @@ subscriptions model =
 
 
 
--- View
+-- }}}
+-- {{{ View
 
 
 view : Model -> Browser.Document Msg
@@ -398,7 +406,7 @@ news : Element msg
 news =
     textColumn
         sectionStyling
-        ([ heading "News" ] ++ List.map newsItemView newsItems)
+        (heading "News" :: List.map newsItemView newsItems)
 
 
 type alias NewsItem msg =
@@ -425,7 +433,15 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2019-07-15"
+    [ { date = "2020-01-20"
+      , title = """BAlaS: fast, interactive and accessible computational alanine-
+                scanning using BudeAlaScan"""
+      , category = "New Article"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                balasNews
+      }
+    , { date = "2019-07-15"
       , title = "Conference: Protein Engineering II"
       , category = "Conference"
       , newsContent =
@@ -497,6 +513,58 @@ newsItems =
                     ]
                 ]
       }
+    ]
+
+
+balasNews : List (Element msg)
+balasNews =
+    [ paragraph []
+        [ text
+            """2020 was off too a good start when I found out that the BAlaS paper
+            was accepted for publication. The paper is open access and available """
+        , simpleLink
+            { label = "here"
+            , url = "https://doi.org/10.1093/bioinformatics/btaa026"
+            }
+        , text """. BAlaS is a web tool for performing
+            computational alanine scanning mutagenesis. There are a good few tools
+            available for performing this type of analysis, but the advantage of BAlaS
+            is that it has an intuitive web-based interface that allows you to submit
+            jobs and analyse results with no set up at all. This is made possible as it
+            is built on top of the blazingly fast BUDEAlaScan commandline application,
+            which is described and benchmarked in detail in """
+        , simpleLink
+            { label = "this paper"
+            , url = "https://doi.org/10.1021/acschembio.9b00560"
+            }
+        , text
+            """, created by the Sessions Group in University of Bristol. Give it a go
+            and let me know what you think. A link to the application and the source
+            code can be found on the tools page."""
+        ]
+    , el [ Font.italic ] <| text "Abstract"
+    , paragraph []
+        [ text """In experimental protein engineering, alanine-scanning mutagenesis
+        involves the replacement of selected residues with alanine to determine the
+        energetic contribution of each side chain to forming an interaction. For
+        example, it is often used to study protein-protein interactions. However, such
+        experiments can be time-consuming and costly, which has led to the development
+        of programs for performing computational alanine-scanning mutagenesis (CASM) to
+        guide experiments. While programs are available for this, there is a need for a
+        real-time web application that is accessible to non-expert users."""
+        ]
+    , paragraph []
+        [ text """Here we present BAlaS, an interactive web application for performing CASM via
+        BudeAlaScan and visualizing its results. BAlaS is interactive and intuitive to
+        use.  Results are displayed directly in the browser for the structure being
+        interrogated enabling their rapid inspection. BAlaS has broad applications in
+        areas such as drug discovery and protein-interface design."""
+        ]
+    , paragraph []
+        [ text
+            """Chris.
+            """
+        ]
     ]
 
 
@@ -996,9 +1064,22 @@ allPublications =
       , journal = "ACS Nano"
       , link = "https://pubs.acs.org/doi/10.1021/acsnano.9b04251"
       , preprintLink = Nothing
+      , volume = "13"
+      , pages = "9927-9935"
+      , year = "2019"
+      }
+    , { authors =
+            """Wood, CW*; Ibarra, AA; Bartlett, GJ; Wilson, AJ; Woolfson, DN;
+            Sessions RB*"""
+      , title =
+            """BAlaS: fast, interactive and accessible computational alanine-scanning
+            using BudeAlaScan"""
+      , journal = "Bioinformatics"
+      , link = "https://doi.org/10.1093/bioinformatics/btaa026"
+      , preprintLink = Nothing
       , volume = "XXX"
       , pages = "XXX-XXX"
-      , year = "2019"
+      , year = "2020"
       }
     ]
 
@@ -1121,8 +1202,8 @@ toolView tool =
             Nothing ->
                 Background.color colours.lightGrey
         ]
-        ([ subHeading tool.name ]
-            ++ (case toolLinks of
+        (subHeading tool.name
+            :: (case toolLinks of
                     ( Nothing, Nothing ) ->
                         []
 
@@ -1275,10 +1356,9 @@ simpleLink { label, url } =
         }
 
 
-bullet : String -> Element msg
-bullet string =
-    text <| "→ " ++ string
-
-
 defaultEach =
     { left = 0, right = 0, top = 0, bottom = 0 }
+
+
+
+-- }}}
