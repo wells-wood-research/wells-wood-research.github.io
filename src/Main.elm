@@ -644,22 +644,36 @@ people : Element msg
 people =
     textColumn
         sectionStyling
-        ([ heading "People"
-         , personView chrisWellsWood
-         , subHeading "PhD Students"
-         ]
-            ++ (phdStudents
-                    |> List.map personView
-               )
-            ++ [ subHeading "Undergraduate Project Students"
-               ]
-            ++ (undergraduateStudents
-                    |> List.map personView
-               )
-            ++ [ heading "Join Us"
-               , advert
-               ]
-        )
+        [ heading "People"
+        , personView chrisWellsWood
+        , peopleSection "PhD Students"
+            (phdStudents
+                |> List.filter .active
+            )
+        , peopleSection "Undergraduate Students"
+            (undergraduateStudents
+                |> List.filter .active
+            )
+        , peopleSection "Previous Members"
+            ((phdStudents ++ undergraduateStudents)
+                |> List.filter (not << .active)
+            )
+        , heading "Join Us"
+        , advert
+        ]
+
+
+peopleSection : String -> List (Person msg) -> Element msg
+peopleSection headingText peopleInSection =
+    if List.isEmpty peopleInSection then
+        none
+
+    else
+        column [] <|
+            subHeading headingText
+                :: (peopleInSection
+                        |> List.map personView
+                   )
 
 
 type alias Person msg =
@@ -670,6 +684,7 @@ type alias Person msg =
     , twitter : Maybe String
     , github : Maybe String
     , bio : Element msg
+    , active : Bool
     }
 
 
@@ -697,6 +712,7 @@ chrisWellsWood =
                 EPSRC postdoctoral fellowship and moved to the University of
                 Edinburgh to establish his research group."""
             ]
+    , active = True
     }
 
 
@@ -729,6 +745,7 @@ phdStudents =
                     protein-based sensors to understand nutrient movement in
                     plants."""
                 ]
+      , active = False
       }
     , { pictureUrl = "/static/images/people/jackoshea.jpg"
       , name = "Jack O'Shea"
@@ -751,6 +768,7 @@ phdStudents =
                     Edinburgh, and is collaborating with the Wells Wood lab
                     to tune the affinity of protein-protein interactions."""
                 ]
+      , active = True
       }
     , { pictureUrl = "/static/images/people/mattscheier.jpg"
       , name = "Matthew Scheier"
@@ -779,6 +797,28 @@ phdStudents =
                     encapsulins to enable novel metal nanoparticle synthesis
                     using synthetic biology."""
                 ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/nataliaszlachetka.jpg"
+      , name = "Natalia Szlachetka"
+      , associatedLab =
+            simpleLink
+                { url = "https://www.ed.ac.uk/profile/jelena-baranovic"
+                , label = "Baranovic Lab, UoE"
+                }
+                |> Just
+      , email = Just "s1510509@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Natalia is currently in the Masters by Research stage of the UKRI
+                    CDT in Biomedical Artificial Intelligence programme. She completed
+                    her undergraduate degree in Biotechnology at the University of
+                    Edinburgh."""
+                ]
+      , active = True
       }
     ]
 
@@ -800,6 +840,7 @@ undergraduateStudents =
                     Chemistry and Computer Science, especially the intersection
                     of these three with Machine Learning."""
                 ]
+      , active = False
       }
     ]
 
