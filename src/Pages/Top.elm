@@ -1,6 +1,8 @@
 module Pages.Top exposing (Model, Msg, Params, page)
 
 import Element exposing (..)
+import Shared.Advert exposing (advert)
+import Shared.Style as Style
 import Spa.Document exposing (Document)
 import Spa.Page as Page exposing (Page)
 import Spa.Url exposing (Url)
@@ -30,7 +32,48 @@ page =
 
 
 view : Url Params -> Document Msg
-view { params } =
-    { title = "Homepage"
-    , body = [ text "Homepage" ]
+view _ =
+    { title = "Wells Wood Research Group"
+    , body = [ body ]
     }
+
+
+body : Element msg
+body =
+    textColumn
+        Style.sectionStyling
+        [ Style.heading "About Us"
+        , Style.subHeading "Making protein design more accessible"
+        , paragraph []
+            [ Style.simpleText """Our research focuses on improving the accessibility
+                and reliability of protein design so that it can be adopted more widely
+                as a method for tackling challenges in biotechnology and synthetic
+                biology. To do this, we're developing tools that apply
+                machine-learning, computational modelling and structural
+                bioinformatics to help guide users through the protein-design
+                process."""
+            ]
+        , Style.subHeading "Rigorously tested methods"
+        , paragraph
+            Style.contentStyling
+            [ """We apply all the methods that we create at scale in the
+                laboratory, using the robotics available at Edinburgh through
+                the incredible """
+                |> text
+            , Style.simpleLink
+                { url = "https://www.genomefoundry.org/"
+                , label = "Genome Foundary"
+                }
+            , text """. All data and scripts are made publicly available so
+                that users are confident in the effectiveness of the methods and can
+                apply them to their fullest."""
+            ]
+        , Style.subHeading "Committed to open-access research"
+        , paragraph []
+            [ text """Our research is publicly funded, so we are committed
+                to making our outputs publicly available, including data,
+                software and publications."""
+            ]
+        , Style.heading "Join Us"
+        , advert
+        ]

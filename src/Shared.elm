@@ -17,7 +17,7 @@ import Element.Border as Border
 import Element.Font as Font
 import Shared.Style as Style exposing (defaultEach)
 import Spa.Document exposing (Document)
-import Spa.Generated.Route as Route
+import Spa.Generated.Route as Route exposing (Route)
 import Task
 import Url exposing (Url)
 
@@ -214,27 +214,26 @@ footer =
 links : Element msg
 links =
     column [ width fill ]
-        []
+        [ navLink "About" Route.Top
+
+        -- , navLink "News" "/#news"
+        -- , navLink "People" "/#people"
+        -- , navLink "Publications" "/#publications"
+        -- , navLink "Tools" "/#tools"
+        ]
 
 
-
--- [ navLink "About" "/#about"
--- , navLink "News" "/#news"
--- , navLink "People" "/#people"
--- , navLink "Publications" "/#publications"
--- , navLink "Tools" "/#tools"
--- ]
--- navLink : String -> String -> Element msg
--- navLink label url =
---     link
---         [ width fill
---         , padding 10
---         , mouseOver [ Background.color colours.grey ]
---         , Background.color colours.darkGrey
---         , Font.color colours.white
---         , Font.center
---         , contentFont
---         ]
---         { url = url
---         , label = text label
---         }
+navLink : String -> Route -> Element msg
+navLink label route =
+    link
+        [ width fill
+        , padding 10
+        , mouseOver [ Background.color Style.colours.grey ]
+        , Background.color Style.colours.darkGrey
+        , Font.color Style.colours.white
+        , Font.center
+        , Style.contentFont
+        ]
+        { url = Route.toString route
+        , label = text label
+        }
