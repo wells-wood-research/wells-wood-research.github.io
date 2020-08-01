@@ -215,8 +215,8 @@ links : Element msg
 links =
     column [ width fill ]
         [ navLink "About" Route.Top
+        , navLink "News" Route.News
 
-        -- , navLink "News" "/#news"
         -- , navLink "People" "/#people"
         -- , navLink "Publications" "/#publications"
         -- , navLink "Tools" "/#tools"
