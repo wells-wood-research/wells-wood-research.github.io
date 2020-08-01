@@ -216,8 +216,8 @@ links =
     column [ width fill ]
         [ navLink "About" Route.Top
         , navLink "News" Route.News
+        , navLink "People" Route.People
 
-        -- , navLink "People" "/#people"
         -- , navLink "Publications" "/#publications"
         -- , navLink "Tools" "/#tools"
         ]
