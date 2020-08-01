@@ -217,8 +217,8 @@ links =
         [ navLink "About" Route.Top
         , navLink "News" Route.News
         , navLink "People" Route.People
+        , navLink "Publications" Route.Publications
 
-        -- , navLink "Publications" "/#publications"
         -- , navLink "Tools" "/#tools"
         ]
 
