@@ -218,8 +218,7 @@ links =
         , navLink "News" Route.News
         , navLink "People" Route.People
         , navLink "Publications" Route.Publications
-
-        -- , navLink "Tools" "/#tools"
+        , navLink "Tools" Route.Tools
         ]
 
 
