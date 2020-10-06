@@ -118,7 +118,27 @@ chrisWellsWood =
 
 phdStudents : List (Person msg)
 phdStudents =
-    [ { pictureUrl = "/static/images/people/jonathanmorales.jpg"
+    [ { pictureUrl = "/static/images/people/michaeljamesstam.jpg"
+      , name = "Michael James Stam"
+      , associatedLab = Nothing
+      , email = Just "michael.stam@ed.ac.uk"
+      , twitter = Nothing
+      , github = Just "https://github.com/MichaelJamesStam"
+      , bio =
+            paragraph []
+                [ text
+                    """Michael Stam received his undergraduate degree in Mathematics
+                    from the University of Edinburgh. After graduating, he went to work
+                    in financial services for four years, where he applied statistical
+                    analysis and machine learning techniques to financial data.
+                    Currently, he is in the PhD stage of the UKRI CDT in Biomedical
+                    Artificial Intelligence programme, where he is looking at optimising
+                    the reliability of de novo protein design, by understanding the
+                    different reasons why most protein designs fail."""
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/jonathanmorales.jpg"
       , name = "Jonathan Morales-Espinoza"
       , associatedLab =
             Style.simpleLink
@@ -302,7 +322,7 @@ personView person =
                 , case person.associatedLab of
                     Just associatedLab ->
                         paragraph [ Font.italic ]
-                            [ text "In association with the "
+                            [ text "Primary supervisor: "
                             , associatedLab
                             ]
 
@@ -312,4 +332,3 @@ personView person =
                 ]
             ]
         ]
-
