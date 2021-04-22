@@ -70,7 +70,17 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2020-01-20"
+    [ { date = "2021-04-19"
+      , title =
+            """Generation of photocaged nanobodies for in vivo applications using genetic
+            code expansion and computationally guided protein engineering
+            """
+      , category = "Preprint"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                photocagedNanobodiesNews
+      }
+    , { date = "2020-01-20"
       , title = """BAlaS: fast, interactive and accessible computational alanine-
                 scanning using BudeAlaScan"""
       , category = "New Article"
@@ -153,6 +163,35 @@ newsItems =
     ]
 
 
+photocagedNanobodiesNews : List (Element msg)
+photocagedNanobodiesNews =
+    [ paragraph []
+        [ text "We have a "
+        , Style.simpleLink
+            { label = "new preprint"
+            , url = "https://doi.org/10.1101/2021.04.16.440193"
+            }
+        , text
+            """ out on Biorxiv. The major objective of the research was to engineer
+            nanobodies in order to make their binding photo-activatable. Non-canonical
+            amino acids were introduced to the binding interface that have bulky
+            chemical groups that are cleaved off when exposed to UV light. It
+            turns out that these "photocaged" amino acids are not sufficient to disrupt
+            the interaction, so we used a technique called computational alanine
+            scanning mutagenesis, combined with molecular-dynamics simulations, to guide
+            engineering of the binding interface. The end result is that we managed to
+            make 2 photo-activatable nanobodies, and the coolest thing is that
+            they work in the nematode worm C. elegans! This came out of a really fun
+            collaboration with the """
+        , Style.simpleLink
+            { label = "Greiss Lab"
+            , url = "https://www.ed.ac.uk/discovery-brain-sciences/our-staff/research-groups/sebastian-greiss"
+            }
+        , text ", hopefully the first of many!"
+        ]
+    ]
+
+
 balasNews : List (Element msg)
 balasNews =
     [ paragraph []
@@ -196,11 +235,6 @@ balasNews =
         use.  Results are displayed directly in the browser for the structure being
         interrogated enabling their rapid inspection. BAlaS has broad applications in
         areas such as drug discovery and protein-interface design."""
-        ]
-    , paragraph []
-        [ text
-            """Chris.
-            """
         ]
     ]
 
@@ -265,10 +299,4 @@ protEngConfNews =
             soon.
             """
         ]
-    , paragraph []
-        [ text
-            """Chris.
-            """
-        ]
     ]
-

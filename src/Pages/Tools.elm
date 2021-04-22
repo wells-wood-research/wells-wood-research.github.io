@@ -101,27 +101,19 @@ locally when they need to scale up analysis."""
                 ]
       , backgroundImageLink = Just "/static/images/tools/ccbuilder.jpg"
       }
-    , { name = "DE-STRESS -- COMING SOON!"
-      , application = Nothing
-      , source = Nothing
+    , { name = "DE-STRESS"
+      , application = Just "https://pragmaticproteindesign.bio.ed.ac.uk/de-stress/"
+      , source = Just "https://github.com/wells-wood-research/de-stress"
       , description =
             paragraph []
                 [ text
-                    """DE-STRESS (DEsigned STRucture Evaluation ServiceS) is a
-                    web application and associate web API that provides
-                    automated assessment of the quality of protein designs with
-                    respect to their intended application. DE-STRESS is
-                    currently under development, but a closed beta is planned
-                    for the end of summer 2019, so please contact """
-                , Style.simpleLink
-                    { url =
-                        "mailto:chris.wood@ed.ac.uk"
-                    , label = "Chris Wood"
-                    }
-                , text
-                    """ if you're interested in getting involved."""
+                    """DE-STRESS (DEsigned STRucture Evaluation ServiceS) provides a
+                    suite of tools for evaluating protein designs. Our aim is to help
+                    make protein design more reliable, by providing tools to help you
+                    select the most promising designs to take into the lab.
+                    """
                 ]
-      , backgroundImageLink = Nothing
+      , backgroundImageLink = Just "/static/images/tools/destress.jpg"
       }
     , { name = "ISAMBARD"
       , application = Nothing
@@ -180,4 +172,3 @@ toolView tool =
                )
             ++ [ tool.description ]
         )
-
