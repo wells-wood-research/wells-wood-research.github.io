@@ -122,7 +122,7 @@ phdStudents =
       , name = "Michael James Stam"
       , associatedLab = Nothing
       , email = Just "michael.stam@ed.ac.uk"
-      , twitter = Nothing
+      , twitter = Just "https://twitter.com/mjstam"
       , github = Just "https://github.com/MichaelJamesStam"
       , bio =
             paragraph []
@@ -176,8 +176,8 @@ phdStudents =
                 }
                 |> Just
       , email = Just "j.m.o'shea@sms.ed.ac.uk"
-      , twitter = Nothing
-      , github = Nothing
+      , twitter = Just "https://twitter.com/jack_oshea97"
+      , github = Just "https://github.com/97joshea"
       , bio =
             paragraph []
                 [ text
@@ -233,10 +233,11 @@ phdStudents =
       , bio =
             paragraph []
                 [ text
-                    """Natalia is currently in the Masters by Research stage of the UKRI
-                    CDT in Biomedical Artificial Intelligence programme. She completed
-                    her undergraduate degree in Biotechnology at the University of
-                    Edinburgh."""
+                    """Natalia is currently in the PhD stage of the UKRI CDT in
+                    Biomedical Artificial Intelligence programme. She completed her
+                    undergraduate degree in Biotechnology at the University of
+                    Edinburgh.
+                    """
                 ]
       , active = True
       }
@@ -254,13 +255,30 @@ undergraduateStudents =
       , bio =
             paragraph []
                 [ text
-                    """Leonardo is currently in the final year of his
-                    undergraduate degree in Biotechnology at
-                    the University of Edinburgh. He is interested in Biology,
-                    Chemistry and Computer Science, especially the intersection
-                    of these three with Machine Learning."""
+                    """Leonardo is currently in the final year of his undergraduate
+                    degree in Biotechnology at the University of Edinburgh. He is
+                    interested in Biology, Chemistry and Computer Science, especially
+                    the intersection of these three with Machine Learning.
+                    """
                 ]
       , active = False
+      }
+    , { pictureUrl = "/static/images/people/rokaspetrenas.jpg"
+      , name = "Rokas Petrenas"
+      , associatedLab = Nothing
+      , email = Just "s1706179@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Just "https://github.com/rokaske199"
+      , bio =
+            paragraph []
+                [ text
+                    """Rokas is currently in the final year of his undergraduate degree
+                    in Biochemistry at the University of Edinburgh. He is interested in
+                    Structural and Computational Biology, especially the development and
+                    application of novel proteins.
+                    """
+                ]
+      , active = True
       }
     ]
 

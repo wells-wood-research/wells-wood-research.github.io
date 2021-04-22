@@ -97,8 +97,8 @@ publicationView publication =
 allPublications : List Publication
 allPublications =
     [ { authors =
-            """Wood, CW*; Bruning, M; Ibarra, AA; Bartlett, Gail J; Thomson, AR;
-            Sessions, RB; Brady, RL; Woolfson, DN*"""
+            """Wood CW*, Bruning M, Ibarra AA, Bartlett Gail J, Thomson AR,
+            Sessions RB, Brady RL, Woolfson DN*"""
       , title =
             """CCBuilder: an interactive web-based tool for building, designing
             and assessing coiled-coil protein assemblies"""
@@ -110,8 +110,8 @@ allPublications =
       , year = "2014"
       }
     , { authors =
-            """Thomson, AR; Wood, CW; Burton, AJ; Bartlett, GJ; Sessions, RB;
-            Brady, RL; Woolfson, DN*"""
+            """Thomson AR, Wood CW, Burton AJ, Bartlett GJ, Sessions RB,
+            Brady RL, Woolfson DN*"""
       , title = "Computational design of water-soluble α-helical barrels"
       , link = "http://science.sciencemag.org/content/346/6208/485"
       , preprintLink = Nothing
@@ -121,8 +121,8 @@ allPublications =
       , year = "2014"
       }
     , { authors =
-            """Woolfson, DN*; Bartlett, GJ; Burton, AJ; Heal, JW; Niitsu, A;
-            Thomson, AR; Wood, CW"""
+            """Woolfson DN*, Bartlett GJ, Burton AJ, Heal JW, Niitsu A,
+            Thomson AR, Wood CW"""
       , title =
             """De novo protein design: how do we expand into the universe of
             possible protein structures?"""
@@ -134,8 +134,8 @@ allPublications =
       , year = "2015"
       }
     , { authors =
-            """Burgess, NC; Sharp, TH; Thomas, F; Wood, CW; Thomson, AR;
-            Zaccai, NR; Brady, RL; Serpell, LC; Woolfson, DN*"""
+            """Burgess NC, Sharp TH, Thomas F, Wood CW, Thomson AR,
+            Zaccai NR, Brady RL, Serpell LC, Woolfson DN*"""
       , title = "Modular design of self-assembling peptide-based nanotubes"
       , link = "https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973"
       , preprintLink = Nothing
@@ -145,9 +145,9 @@ allPublications =
       , year = "2015"
       }
     , { authors =
-            "Wood, Christopher W*; Heal, Jack W; Thomson, Andrew R; "
-                ++ "Bartlett, Gail J; Ibarra, Amaurys Á; Brady, R Leo; Sessions, "
-                ++ "Richard B; Woolfson, Derek N*"
+            """Wood CW*, Heal JW, Thomson AR, Bartlett GJ, Ibarra AÁ, Brady RL,
+            Sessions RB, Woolfson DN*"
+            """
       , title =
             """ISAMBARD: an open-source computational environment for
             biomolecular analysis, modelling and design"""
@@ -158,7 +158,7 @@ allPublications =
       , pages = "3043-3050"
       , year = "2017"
       }
-    , { authors = "Wood, Christopher W; Woolfson, Derek N*"
+    , { authors = "Wood CW and Woolfson DN"
       , title = "CCBuilder 2.0: Powerful and accessible coiled‐coil modeling"
       , link = "https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279"
       , preprintLink = Nothing
@@ -168,8 +168,8 @@ allPublications =
       , year = "2018"
       }
     , { authors =
-            """Pellizzoni, MM; Schwizer, F; Wood, CW; Sabatino, V; Cotelle, Y;
-            Matile, S; Woolfson, DN; Ward, TR*"""
+            """Pellizzoni MM, Schwizer F, Wood CW, Sabatino V, Cotelle Y,
+            Matile S, Woolfson DN, Ward TR*"""
       , title =
             "Chimeric Streptavidins as Host Proteins for Artificial "
                 ++ "Metalloenzymes"
@@ -181,7 +181,7 @@ allPublications =
       , year = "2018"
       }
     , { authors =
-            "Heal, JW; Bartlett, GJ; Wood, CW; Thomson, AR; Woolfson, DN*"
+            "Heal JW, Bartlett GJ, Wood CW, Thomson AR, Woolfson DN*"
       , title =
             """Applying graph theory to protein structures: an atlas of coiled
             coils"""
@@ -193,8 +193,8 @@ allPublications =
       , year = "2018"
       }
     , { authors =
-            """Rhys, GG; Wood, CW; Lang, EJM; Mulholland, AJ; Brady, RL;
-            Thomson, AR; Woolfson, DN*"""
+            """Rhys GG, Wood CW, Lang EJM, Mulholland AJ, Brady RL,
+            Thomson AR, Woolfson DN*"""
       , title =
             """Maintaining and breaking symmetry in homomeric coiled-coil
           assemblies"""
@@ -206,8 +206,8 @@ allPublications =
       , year = "2018"
       }
     , { authors =
-            """Rhys, GG; Wood, CW; Beesley, JL; Zaccai, NR; Burton, AJ;
-            Brady, RL; Thomson, AR; Woolfson, DN*"""
+            """Rhys GG, Wood CW, Beesley JL, Zaccai NR, Burton AJ,
+            Brady RL, Thomson AR, Woolfson DN*"""
       , title = "Navigating the structural landscape of de novo α-helical bundles"
       , journal = "Journal of the American Chemical Society"
       , link = "https://pubs.acs.org/doi/10.1021/jacs.8b13354"
@@ -217,8 +217,8 @@ allPublications =
       , year = "2019"
       }
     , { authors =
-            """Juan, J; Baker, EG; Wood, CW; Bath, J; Woolfson, DN*;
-            Turberfield, AJ*"""
+            """Juan J, Baker EG, Wood CW, Bath J, Woolfson DN*,
+            Turberfield AJ*"""
       , title =
             """Peptide Assembly Directed and Quantified Using Megadalton DNA
           Nanostructures"""
@@ -230,7 +230,7 @@ allPublications =
       , year = "2019"
       }
     , { authors =
-            """Wood, CW*; Ibarra, AA; Bartlett, GJ; Wilson, AJ; Woolfson, DN;
+            """Wood CW*, Ibarra AA, Bartlett GJ, Wilson AJ, Woolfson DN,
             Sessions RB*"""
       , title =
             """BAlaS: fast, interactive and accessible computational alanine-scanning
@@ -242,5 +242,34 @@ allPublications =
       , pages = "2917-2919"
       , year = "2020"
       }
+    , { authors =
+            """Galloway JM, Bray HEV, Shoemark DK, Hodgson LR, Coombs J, Mantell JM,
+            Rose RS, Ross JF, Morris C, Harniman RL, Wood CW, Arthur C, Verkade P,
+            Woolfson DN
+            """
+      , title =
+            """De Novo Designed Peptide and Protein Hairpins Self‐Assemble into Sheets
+            and Nanoparticles
+            """
+      , journal = "Small"
+      , link = "https://doi.org/10.1002/smll.202100472"
+      , preprintLink = Just "https://www.biorxiv.org/content/10.1101/2020.08.14.251462v2"
+      , volume = "17"
+      , pages = "2100472"
+      , year = "2021"
+      }
+    , { authors =
+            """O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S
+            """
+      , title =
+            """Preprint: Generation of photocaged nanobodies for in vivo applications
+            using genetic code expansion and computationally guided protein engineering
+            """
+      , journal = "Biorxiv"
+      , link = "https://doi.org/10.1101/2021.04.16.440193"
+      , preprintLink = Nothing
+      , volume = "_"
+      , pages = "_"
+      , year = "2021"
+      }
     ]
-
