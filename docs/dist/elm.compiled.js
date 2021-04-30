@@ -17762,7 +17762,8 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		volume: '17',
 		year: '2021'
 	},
-		{authors: 'O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S\n            ', journal: 'Biorxiv', link: 'https://doi.org/10.1101/2021.04.16.440193', pages: '_', preprintLink: $elm$core$Maybe$Nothing, title: 'Preprint: Generation of photocaged nanobodies for in vivo applications\n            using genetic code expansion and computationally guided protein engineering\n            ', volume: '_', year: '2021'}
+		{authors: 'O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S\n            ', journal: 'Biorxiv', link: 'https://doi.org/10.1101/2021.04.16.440193', pages: '_', preprintLink: $elm$core$Maybe$Nothing, title: 'Preprint: Generation of photocaged nanobodies for in vivo applications\n            using genetic code expansion and computationally guided protein engineering\n            ', volume: '_', year: '2021'},
+		{authors: 'Stam MJ and Wood CW', journal: 'Biorxiv', link: 'https://doi.org/10.1101/2021.04.28.441790', pages: '_', preprintLink: $elm$core$Maybe$Nothing, title: 'Preprint: DE-STRESS: A user-friendly web application for the evaluation\n            of protein designs\n            ', volume: '_', year: '2021'}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
