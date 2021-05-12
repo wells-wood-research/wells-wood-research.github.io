@@ -280,8 +280,8 @@ mastersStudents =
             paragraph []
                 [ text
                     """Gang is a graduate student in biotechnology at the University of
-                    Edinburgh. He is very interested in protein structure analysis
-                    and drug discovery. His research project centres aroung modelling
+                    Edinburgh. He is very interested in protein-structure analysis
+                    and drug discovery. His research project centres on modelling
                     and simulation of the protein SUN1.
                     """
                 ]
