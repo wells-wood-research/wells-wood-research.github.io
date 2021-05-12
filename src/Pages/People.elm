@@ -50,12 +50,16 @@ people =
             (phdStudents
                 |> List.filter .active
             )
+        , peopleSection "Masters Students"
+            (mastersStudents
+                |> List.filter .active
+            )
         , peopleSection "Undergraduate Students"
             (undergraduateStudents
                 |> List.filter .active
             )
         , peopleSection "Previous Members"
-            ((phdStudents ++ undergraduateStudents)
+            ((phdStudents ++ mastersStudents ++ undergraduateStudents)
                 |> List.filter (not << .active)
             )
         , Style.heading "Join Us"
@@ -118,7 +122,27 @@ chrisWellsWood =
 
 phdStudents : List (Person msg)
 phdStudents =
-    [ { pictureUrl = "/static/images/people/michaeljamesstam.jpg"
+    [ { pictureUrl = "/static/images/people/leocastorina.jpg"
+      , name = "Leonardo Castorina"
+      , associatedLab = Nothing
+      , email = Just "leonardo.castorina@ed.ac.uk"
+      , twitter = Nothing
+      , github = Just "https://github.com/universvm"
+      , bio =
+            paragraph []
+                [ text
+                    """Leo is currently a CDT candidate at the UKRI CDT in Biomedical
+                    Artificial Intelligence programme. He studied Biochemistry at the
+                    University of Edinburgh and interned at IBM, P&G and the Swiss
+                    Institute of Bioinformatics.
+
+                    Leo is interested in developing accessible and explainable methods
+                    for de novo protein design using deep learning.
+                    """
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/michaeljamesstam.jpg"
       , name = "Michael James Stam"
       , associatedLab = Nothing
       , email = Just "michael.stam@ed.ac.uk"
@@ -244,26 +268,31 @@ phdStudents =
     ]
 
 
-undergraduateStudents : List (Person msg)
-undergraduateStudents =
-    [ { pictureUrl = "/static/images/people/leocastorina.jpg"
-      , name = "Leonardo Castorina"
+mastersStudents : List (Person msg)
+mastersStudents =
+    [ { pictureUrl = "/static/images/people/gangliu.jpg"
+      , name = "Gang Liu"
       , associatedLab = Nothing
-      , email = Just "s1622572@sms.ed.ac.uk"
+      , email = Just "g.liu-15@sms.ed.ac.uk"
       , twitter = Nothing
-      , github = Just "https://github.com/universvm"
+      , github = Nothing
       , bio =
             paragraph []
                 [ text
-                    """Leonardo is currently in the final year of his undergraduate
-                    degree in Biotechnology at the University of Edinburgh. He is
-                    interested in Biology, Chemistry and Computer Science, especially
-                    the intersection of these three with Machine Learning.
+                    """Gang is a graduate student in biotechnology at the University of
+                    Edinburgh. He is very interested in protein-structure analysis
+                    and drug discovery. His research project centres on modelling
+                    and simulation of the protein SUN1.
                     """
                 ]
-      , active = False
+      , active = True
       }
-    , { pictureUrl = "/static/images/people/rokaspetrenas.jpg"
+    ]
+
+
+undergraduateStudents : List (Person msg)
+undergraduateStudents =
+    [ { pictureUrl = "/static/images/people/rokaspetrenas.jpg"
       , name = "Rokas Petrenas"
       , associatedLab = Nothing
       , email = Just "s1706179@sms.ed.ac.uk"
@@ -278,7 +307,7 @@ undergraduateStudents =
                     application of novel proteins.
                     """
                 ]
-      , active = True
+      , active = False
       }
     ]
 
