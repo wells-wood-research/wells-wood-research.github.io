@@ -34,7 +34,7 @@ subHeading label =
 
 scaled : Int -> Float
 scaled =
-    modular 22.0 1.25
+    modular 20.0 1.25
 
 
 titleFont : Element.Attribute msg
