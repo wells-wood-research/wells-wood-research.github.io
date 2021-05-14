@@ -45,13 +45,14 @@ body =
         [ Style.heading "About Us"
         , Style.subHeading "Making protein design more accessible"
         , paragraph []
-            [ Style.simpleText """Our research focuses on improving the accessibility
-                and reliability of protein design so that it can be adopted more widely
-                as a method for tackling challenges in biotechnology and synthetic
-                biology. To do this, we're developing tools that apply
-                machine-learning, computational modelling and structural
-                bioinformatics to help guide users through the protein-design
-                process."""
+            [ Style.simpleText
+                """Based in the University of Edinburgh, our research focuses on
+                improving the accessibility and reliability of protein design so that it
+                can be adopted more widely as a method for tackling challenges in
+                biotechnology and synthetic biology. To do this, we're developing tools
+                that apply machine-learning, computational modelling and structural
+                bioinformatics to help guide users through the protein-design process.
+                """
             ]
         , Style.subHeading "Rigorously tested methods"
         , paragraph

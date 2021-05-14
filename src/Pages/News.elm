@@ -70,7 +70,17 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2021-04-19"
+    [ { date = "2021-05-07"
+      , title =
+            """DE-STRESS: A user-friendly web application for the evaluation of protein
+            designs
+            """
+      , category = "Preprint"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                destressNews
+      }
+    , { date = "2021-04-19"
       , title =
             """Generation of photocaged nanobodies for in vivo applications using genetic
             code expansion and computationally guided protein engineering
@@ -160,6 +170,43 @@ newsItems =
                     ]
                 ]
       }
+    ]
+
+
+destressNews : List (Element msg)
+destressNews =
+    [ paragraph []
+        [ text
+            """DE-STRESS, our web application for evaluating models of designed and
+            engineered proteins, is out now! You can find the web application """
+        , Style.simpleLink
+            { label = "here"
+            , url = "http://destressprotein.design"
+            }
+        , text " and the source code "
+        , Style.simpleLink
+            { label = "here"
+            , url = "https://github.com/wells-wood-research/de-stress"
+            }
+        , text
+            """. The manuscript is under review at the moment, and you can find the
+            preprint on """
+        , Style.simpleLink
+            { label = "Biorxiv"
+            , url = "https://www.biorxiv.org/content/10.1101/2021.04.28.441790v1"
+            }
+        , text "."
+        ]
+    , paragraph []
+        [ text
+            """ It's been almost 2 years since I first demoed an early prototype of
+            DE-STRESS, and it's been much more difficult to get to this
+            point than I first thought it would be, but we're really happy with how
+            the app has turned out. Let us know what you think of it, does it have all
+            the features that you need? Get in contact if you have any questions or
+            comments!
+            """
+        ]
     ]
 
 
