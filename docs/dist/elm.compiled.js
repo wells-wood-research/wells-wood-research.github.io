@@ -13361,7 +13361,7 @@ var $author$project$Pages$Top$body = A2(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$author$project$Shared$Style$simpleText('Based in the University of Edinburgh, our research focuses on\n                improving the accessibility and reliability of protein design, with the\n                aim of increasing its use as a tool for tackling challenges in\n                biotechnology and synthetic biology. To do this, we\'re developing\n                software that apply machine-learning, computational modelling and\n                structural bioinformatics to help guide users through the protein-design\n                process.\n                ')
+					$author$project$Shared$Style$simpleText('Based in the University of Edinburgh, our research focuses on\n                improving the accessibility and reliability of protein design, with the\n                aim of increasing its use as a tool for tackling challenges in\n                biotechnology and synthetic biology. To do this, we\'re developing\n                software that applies machine-learning, computational modelling and\n                structural bioinformatics to help guide users through the protein-design\n                process.\n                ')
 				])),
 			$author$project$Shared$Style$subHeading('Rigorously tested methods'),
 			A2(
