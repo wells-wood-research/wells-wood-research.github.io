@@ -47,11 +47,12 @@ body =
         , paragraph []
             [ Style.simpleText
                 """Based in the University of Edinburgh, our research focuses on
-                improving the accessibility and reliability of protein design so that it
-                can be adopted more widely as a method for tackling challenges in
-                biotechnology and synthetic biology. To do this, we're developing tools
-                that apply machine-learning, computational modelling and structural
-                bioinformatics to help guide users through the protein-design process.
+                improving the accessibility and reliability of protein design, with the
+                aim of increasing its use as a tool for tackling challenges in
+                biotechnology and synthetic biology. To do this, we're developing
+                software that apply machine-learning, computational modelling and
+                structural bioinformatics to help guide users through the protein-design
+                process.
                 """
             ]
         , Style.subHeading "Rigorously tested methods"
@@ -63,7 +64,7 @@ body =
                 |> text
             , Style.simpleLink
                 { url = "https://www.genomefoundry.org/"
-                , label = "Genome Foundary"
+                , label = "Genome Foundry"
                 }
             , text """. All data and scripts are made publicly available so
                 that users are confident in the effectiveness of the methods and can
