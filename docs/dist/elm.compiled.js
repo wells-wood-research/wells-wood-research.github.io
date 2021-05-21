@@ -13361,7 +13361,7 @@ var $author$project$Pages$Top$body = A2(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$author$project$Shared$Style$simpleText('Based in the University of Edinburgh, our research focuses on\n                improving the accessibility and reliability of protein design so that it\n                can be adopted more widely as a method for tackling challenges in\n                biotechnology and synthetic biology. To do this, we\'re developing tools\n                that apply machine-learning, computational modelling and structural\n                bioinformatics to help guide users through the protein-design process.\n                ')
+					$author$project$Shared$Style$simpleText('Based in the University of Edinburgh, our research focuses on\n                improving the accessibility and reliability of protein design, with the\n                aim of increasing its use as a tool for tackling challenges in\n                biotechnology and synthetic biology. To do this, we\'re developing\n                software that apply machine-learning, computational modelling and\n                structural bioinformatics to help guide users through the protein-design\n                process.\n                ')
 				])),
 			$author$project$Shared$Style$subHeading('Rigorously tested methods'),
 			A2(
@@ -13371,7 +13371,7 @@ var $author$project$Pages$Top$body = A2(
 				[
 					$mdgriffith$elm_ui$Element$text('We apply all the methods that we create at scale in the\n                laboratory, using the robotics available at Edinburgh through\n                the incredible '),
 					$author$project$Shared$Style$simpleLink(
-					{x: 'Genome Foundary', e8: 'https://www.genomefoundry.org/'}),
+					{x: 'Genome Foundry', e8: 'https://www.genomefoundry.org/'}),
 					$mdgriffith$elm_ui$Element$text('. All data and scripts are made publicly available so\n                that users are confident in the effectiveness of the methods and can\n                apply them to their fullest.')
 				])),
 			$author$project$Shared$Style$subHeading('Committed to open-access research'),
