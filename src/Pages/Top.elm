@@ -50,7 +50,7 @@ body =
                 improving the accessibility and reliability of protein design, with the
                 aim of increasing its use as a tool for tackling challenges in
                 biotechnology and synthetic biology. To do this, we're developing
-                software that apply machine-learning, computational modelling and
+                software that applies machine-learning, computational modelling and
                 structural bioinformatics to help guide users through the protein-design
                 process.
                 """
