@@ -309,6 +309,24 @@ undergraduateStudents =
                 ]
       , active = False
       }
+    , { pictureUrl = "/static/images/people/ceciliahong.jpg"
+      , name = "Cecilia Hong"
+      , associatedLab = Nothing
+      , email = Nothing
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Cecilia is an undergraduate Chemistry preparing for her year
+                    abroad in South Korea for her masters. Having had previous
+                    computation experience in Materials Chemistry, she has joined the
+                    Wells Wood Research Group for the summer to undertake a project on
+                    simulating P450-BM3 and related proteins.
+                    """
+                ]
+      , active = True
+      }
     ]
 
 
