@@ -6077,7 +6077,7 @@ var $mdgriffith$elm_ui$Internal$Model$asParagraph = 4;
 var $mdgriffith$elm_ui$Internal$Model$Generic = {$: 0};
 var $mdgriffith$elm_ui$Internal$Model$div = $mdgriffith$elm_ui$Internal$Model$Generic;
 var $mdgriffith$elm_ui$Internal$Model$NoNearbyChildren = {$: 0};
-var $mdgriffith$elm_ui$Internal$Style$classes = {cY: 'a', u: 'atv', c$: 'ab', c0: 'cx', c1: 'cy', c2: 'acb', c3: 'accx', c4: 'accy', c5: 'acr', bY: 'al', bZ: 'ar', c6: 'at', bu: 'ah', bv: 'av', c9: 's', dd: 'bh', de: 'b', dh: 'w7', dj: 'bd', dk: 'bdt', a_: 'bn', dl: 'bs', a0: 'cpe', dt: 'cp', du: 'cpx', dv: 'cpy', ag: 'c', a3: 'ctr', a5: 'cb', a6: 'ccx', ah: 'ccy', aM: 'cl', a7: 'cr', dx: 'ct', dy: 'cptr', dz: 'ctxt', dL: 'fcs', b7: 'focus-within', dM: 'fs', dO: 'g', bC: 'hbh', bD: 'hc', cd: 'he', bE: 'hf', ce: 'hfp', dR: 'hv', dT: 'ic', dV: 'fr', ba: 'lbl', dX: 'iml', dY: 'imlf', dZ: 'imlp', d_: 'implw', d$: 'it', d0: 'i', j: 'lnk', aE: 'nb', cm: 'notxt', ee: 'ol', eh: 'or', as: 'oq', en: 'oh', _: 'pg', cr: 'p', ep: 'ppe', ev: 'ui', R: 'r', ex: 'sb', ey: 'sbx', ez: 'sby', eA: 'sbt', eD: 'e', eE: 'cap', eF: 'sev', eM: 'sk', bT: 't', eQ: 'tc', eR: 'w8', eS: 'w2', eT: 'w9', eU: 'tj', br: 'tja', eV: 'tl', eW: 'w3', eX: 'w5', eY: 'w4', eZ: 'tr', e_: 'w6', e$: 'w1', e0: 'tun', cP: 'ts', av: 'clr', e6: 'u', bU: 'wc', cU: 'we', bV: 'wf', cV: 'wfp', bW: 'wrp'};
+var $mdgriffith$elm_ui$Internal$Style$classes = {cY: 'a', s: 'atv', c$: 'ab', c0: 'cx', c1: 'cy', c2: 'acb', c3: 'accx', c4: 'accy', c5: 'acr', bY: 'al', bZ: 'ar', c6: 'at', bu: 'ah', bv: 'av', c9: 's', dd: 'bh', de: 'b', dh: 'w7', dj: 'bd', dk: 'bdt', a_: 'bn', dl: 'bs', a0: 'cpe', dt: 'cp', du: 'cpx', dv: 'cpy', ag: 'c', a3: 'ctr', a5: 'cb', a6: 'ccx', ah: 'ccy', aM: 'cl', a7: 'cr', dx: 'ct', dy: 'cptr', dz: 'ctxt', dL: 'fcs', b7: 'focus-within', dM: 'fs', dO: 'g', bC: 'hbh', bD: 'hc', cd: 'he', bE: 'hf', ce: 'hfp', dR: 'hv', dT: 'ic', dV: 'fr', ba: 'lbl', dX: 'iml', dY: 'imlf', dZ: 'imlp', d_: 'implw', d$: 'it', d0: 'i', j: 'lnk', aE: 'nb', cm: 'notxt', ee: 'ol', eh: 'or', as: 'oq', en: 'oh', _: 'pg', cr: 'p', ep: 'ppe', ev: 'ui', R: 'r', ex: 'sb', ey: 'sbx', ez: 'sby', eA: 'sbt', eD: 'e', eE: 'cap', eF: 'sev', eM: 'sk', bT: 't', eQ: 'tc', eR: 'w8', eS: 'w2', eT: 'w9', eU: 'tj', br: 'tja', eV: 'tl', eW: 'w3', eX: 'w5', eY: 'w4', eZ: 'tr', e_: 'w6', e$: 'w1', e0: 'tun', cP: 'ts', av: 'clr', e6: 'u', bU: 'wc', cU: 'we', bV: 'wf', cV: 'wfp', bW: 'wrp'};
 var $mdgriffith$elm_ui$Internal$Model$columnClass = $mdgriffith$elm_ui$Internal$Style$classes.c9 + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.ag);
 var $mdgriffith$elm_ui$Internal$Model$gridClass = $mdgriffith$elm_ui$Internal$Style$classes.c9 + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.dO);
 var $mdgriffith$elm_ui$Internal$Model$pageClass = $mdgriffith$elm_ui$Internal$Style$classes.c9 + (' ' + $mdgriffith$elm_ui$Internal$Style$classes._);
@@ -7276,7 +7276,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
 				$mdgriffith$elm_ui$Internal$Style$dot(
-					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.u, $mdgriffith$elm_ui$Internal$Style$classes.av)) + ':active',
+					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.s, $mdgriffith$elm_ui$Internal$Style$classes.av)) + ':active',
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '0')
@@ -7284,7 +7284,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 				A2(
 				$mdgriffith$elm_ui$Internal$Style$Descriptor,
 				$mdgriffith$elm_ui$Internal$Style$dot(
-					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.u, $mdgriffith$elm_ui$Internal$Style$classes.as)) + ':active',
+					_Utils_ap($mdgriffith$elm_ui$Internal$Style$classes.s, $mdgriffith$elm_ui$Internal$Style$classes.as)) + ':active',
 				_List_fromArray(
 					[
 						A2($mdgriffith$elm_ui$Internal$Style$Prop, 'opacity', '1')
@@ -8670,7 +8670,7 @@ var $mdgriffith$elm_ui$Internal$Model$fontName = function (font) {
 			var url = font.b;
 			return '\"' + (name + '\"');
 		default:
-			var name = font.a.E;
+			var name = font.a.z;
 			return '\"' + (name + '\"');
 	}
 };
@@ -11559,7 +11559,7 @@ var $mdgriffith$elm_ui$Internal$Model$ImportFont = F2(
 	});
 var $mdgriffith$elm_ui$Element$Font$external = function (_v0) {
 	var url = _v0.e8;
-	var name = _v0.E;
+	var name = _v0.z;
 	return A2($mdgriffith$elm_ui$Internal$Model$ImportFont, name, url);
 };
 var $mdgriffith$elm_ui$Internal$Model$FontFamily = F2(
@@ -11597,7 +11597,7 @@ var $mdgriffith$elm_ui$Internal$Model$renderFontClassName = F2(
 							$elm$core$String$words(
 								$elm$core$String$toLower(name)));
 					default:
-						var name = font.a.E;
+						var name = font.a.z;
 						return A2(
 							$elm$core$String$join,
 							'-',
@@ -11621,7 +11621,7 @@ var $author$project$Shared$Style$titleFont = $mdgriffith$elm_ui$Element$Font$fam
 	_List_fromArray(
 		[
 			$mdgriffith$elm_ui$Element$Font$external(
-			{E: 'Poiret One', e8: 'https://fonts.googleapis.com/css?family=Poiret+One'}),
+			{z: 'Poiret One', e8: 'https://fonts.googleapis.com/css?family=Poiret+One'}),
 			$mdgriffith$elm_ui$Element$Font$serif
 		]));
 var $author$project$Shared$Style$heading = function (label) {
@@ -11921,13 +11921,13 @@ var $author$project$Pages$News$balasNews = _List_fromArray(
 		_List_Nil,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$text('2020 was off too a good start when I found out that the BAlaS paper\n            was accepted for publication. The paper is open access and available '),
+				$mdgriffith$elm_ui$Element$text('2020 was off too a good start when I found out that the BAlaS paper\r\n            was accepted for publication. The paper is open access and available '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'here', e8: 'https://doi.org/10.1093/bioinformatics/btaa026'}),
-				$mdgriffith$elm_ui$Element$text('. BAlaS is a web tool for performing\n            computational alanine scanning mutagenesis. There are a good few tools\n            available for performing this type of analysis, but the advantage of BAlaS\n            is that it has an intuitive web-based interface that allows you to submit\n            jobs and analyse results with no set up at all. This is made possible as it\n            is built on top of the blazingly fast BUDEAlaScan commandline application,\n            which is described and benchmarked in detail in '),
+				$mdgriffith$elm_ui$Element$text('. BAlaS is a web tool for performing\r\n            computational alanine scanning mutagenesis. There are a good few tools\r\n            available for performing this type of analysis, but the advantage of BAlaS\r\n            is that it has an intuitive web-based interface that allows you to submit\r\n            jobs and analyse results with no set up at all. This is made possible as it\r\n            is built on top of the blazingly fast BUDEAlaScan commandline application,\r\n            which is described and benchmarked in detail in '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'this paper', e8: 'https://doi.org/10.1021/acschembio.9b00560'}),
-				$mdgriffith$elm_ui$Element$text(', created by the Sessions Group in University of Bristol. Give it a go\n            and let me know what you think. A link to the application and the source\n            code can be found on the tools page.')
+				$mdgriffith$elm_ui$Element$text(', created by the Sessions Group in University of Bristol. Give it a go\r\n            and let me know what you think. A link to the application and the source\r\n            code can be found on the tools page.')
 			])),
 		A2(
 		$mdgriffith$elm_ui$Element$el,
@@ -11939,14 +11939,14 @@ var $author$project$Pages$News$balasNews = _List_fromArray(
 		_List_Nil,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$text('In experimental protein engineering, alanine-scanning mutagenesis\n        involves the replacement of selected residues with alanine to determine the\n        energetic contribution of each side chain to forming an interaction. For\n        example, it is often used to study protein-protein interactions. However, such\n        experiments can be time-consuming and costly, which has led to the development\n        of programs for performing computational alanine-scanning mutagenesis (CASM) to\n        guide experiments. While programs are available for this, there is a need for a\n        real-time web application that is accessible to non-expert users.')
+				$mdgriffith$elm_ui$Element$text('In experimental protein engineering, alanine-scanning mutagenesis\r\n        involves the replacement of selected residues with alanine to determine the\r\n        energetic contribution of each side chain to forming an interaction. For\r\n        example, it is often used to study protein-protein interactions. However, such\r\n        experiments can be time-consuming and costly, which has led to the development\r\n        of programs for performing computational alanine-scanning mutagenesis (CASM) to\r\n        guide experiments. While programs are available for this, there is a need for a\r\n        real-time web application that is accessible to non-expert users.')
 			])),
 		A2(
 		$mdgriffith$elm_ui$Element$paragraph,
 		_List_Nil,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$text('Here we present BAlaS, an interactive web application for performing CASM via\n        BudeAlaScan and visualizing its results. BAlaS is interactive and intuitive to\n        use.  Results are displayed directly in the browser for the structure being\n        interrogated enabling their rapid inspection. BAlaS has broad applications in\n        areas such as drug discovery and protein-interface design.')
+				$mdgriffith$elm_ui$Element$text('Here we present BAlaS, an interactive web application for performing CASM via\r\n        BudeAlaScan and visualizing its results. BAlaS is interactive and intuitive to\r\n        use.  Results are displayed directly in the browser for the structure being\r\n        interrogated enabling their rapid inspection. BAlaS has broad applications in\r\n        areas such as drug discovery and protein-interface design.')
 			]))
 	]);
 var $mdgriffith$elm_ui$Internal$Model$AlignX = function (a) {
@@ -11961,13 +11961,13 @@ var $author$project$Pages$News$destressNews = _List_fromArray(
 		_List_Nil,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$text('DE-STRESS, our web application for evaluating models of designed and\n            engineered proteins, is out now! You can find the web application '),
+				$mdgriffith$elm_ui$Element$text('DE-STRESS, our web application for evaluating models of designed and\r\n            engineered proteins, is out now! You can find the web application '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'here', e8: 'http://destressprotein.design'}),
 				$mdgriffith$elm_ui$Element$text(' and the source code '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'here', e8: 'https://github.com/wells-wood-research/de-stress'}),
-				$mdgriffith$elm_ui$Element$text('. The manuscript is under review at the moment, and you can find the\n            preprint on '),
+				$mdgriffith$elm_ui$Element$text('. The manuscript is under review at the moment, and you can find the\r\n            preprint on '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'Biorxiv', e8: 'https://www.biorxiv.org/content/10.1101/2021.04.28.441790v1'}),
 				$mdgriffith$elm_ui$Element$text('.')
@@ -11977,7 +11977,7 @@ var $author$project$Pages$News$destressNews = _List_fromArray(
 		_List_Nil,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$text(' It\'s been almost 2 years since I first demoed an early prototype of\n            DE-STRESS, and it\'s been much more difficult to get to this\n            point than I first thought it would be, but we\'re really happy with how\n            the app has turned out. Let us know what you think of it, does it have all\n            the features that you need? Get in contact if you have any questions or\n            comments!\n            ')
+				$mdgriffith$elm_ui$Element$text(' It\'s been almost 2 years since I first demoed an early prototype of\r\n            DE-STRESS, and it\'s been much more difficult to get to this\r\n            point than I first thought it would be, but we\'re really happy with how\r\n            the app has turned out. Let us know what you think of it, does it have all\r\n            the features that you need? Get in contact if you have any questions or\r\n            comments!\r\n            ')
 			]))
 	]);
 var $elm$html$Html$Attributes$alt = $elm$html$Html$Attributes$stringProperty('alt');
@@ -12041,7 +12041,7 @@ var $author$project$Pages$News$photocagedNanobodiesNews = _List_fromArray(
 				$mdgriffith$elm_ui$Element$text('We have a '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'new preprint', e8: 'https://doi.org/10.1101/2021.04.16.440193'}),
-				$mdgriffith$elm_ui$Element$text(' out on Biorxiv. The major objective of the research was to engineer\n            nanobodies in order to make their binding photo-activatable. Non-canonical\n            amino acids were introduced to the binding interface that have bulky\n            chemical groups that are cleaved off when exposed to UV light. It\n            turns out that these "photocaged" amino acids are not sufficient to disrupt\n            the interaction, so we used a technique called computational alanine\n            scanning mutagenesis, combined with molecular-dynamics simulations, to guide\n            engineering of the binding interface. The end result is that we managed to\n            make 2 photo-activatable nanobodies, and the coolest thing is that\n            they work in the nematode worm C. elegans! This came out of a really fun\n            collaboration with the '),
+				$mdgriffith$elm_ui$Element$text(' out on Biorxiv. The major objective of the research was to engineer\r\n            nanobodies in order to make their binding photo-activatable. Non-canonical\r\n            amino acids were introduced to the binding interface that have bulky\r\n            chemical groups that are cleaved off when exposed to UV light. It\r\n            turns out that these "photocaged" amino acids are not sufficient to disrupt\r\n            the interaction, so we used a technique called computational alanine\r\n            scanning mutagenesis, combined with molecular-dynamics simulations, to guide\r\n            engineering of the binding interface. The end result is that we managed to\r\n            make 2 photo-activatable nanobodies, and the coolest thing is that\r\n            they work in the nematode worm C. elegans! This came out of a really fun\r\n            collaboration with the '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'Greiss Lab', e8: 'https://www.ed.ac.uk/discovery-brain-sciences/our-staff/research-groups/sebastian-greiss'}),
 				$mdgriffith$elm_ui$Element$text(', hopefully the first of many!')
@@ -12065,30 +12065,30 @@ var $author$project$Pages$News$protEngConfNews = _List_fromArray(
 				$mdgriffith$elm_ui$Element$text('This week I went to an excellent conference organised by the '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'Biochemical Society', e8: 'https://biochemistry.org/'}),
-				$mdgriffith$elm_ui$Element$text(' called "Protein engineering II: from new molecules to new \n            processes". There was an amazing array of speakers from a range of\n            areas, both from academia and industry. I think the highlights for\n            me were: Mihriban Tuna from '),
+				$mdgriffith$elm_ui$Element$text(' called "Protein engineering II: from new molecules to new \r\n            processes". There was an amazing array of speakers from a range of\r\n            areas, both from academia and industry. I think the highlights for\r\n            me were: Mihriban Tuna from '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'F-Star', e8: 'http://www.f-star.com/'}),
-				$mdgriffith$elm_ui$Element$text(' talking about bifunctionalised antibodies as cancer theraputics; \n            Jana Aupič, from '),
+				$mdgriffith$elm_ui$Element$text(' talking about bifunctionalised antibodies as cancer theraputics; \r\n            Jana Aupič, from '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'Roman Jerala\'s group', e8: 'https://www.ki.si/en/departments/d12-department-of-synthetic-biology-and-immunology/'}),
-				$mdgriffith$elm_ui$Element$text(' in Slovenia, talking about reusing coiled coil building blocks\n            while making complex protein origami; and '),
+				$mdgriffith$elm_ui$Element$text(' in Slovenia, talking about reusing coiled coil building blocks\r\n            while making complex protein origami; and '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'Edward Lemke\'s', e8: 'http://lemkelab.com/'}),
-				$mdgriffith$elm_ui$Element$text(' talk on making membraneless organelles.\n            ')
+				$mdgriffith$elm_ui$Element$text(' talk on making membraneless organelles.\r\n            ')
 			])),
 		A2(
 		$mdgriffith$elm_ui$Element$paragraph,
 		_List_Nil,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$text('Many more of the posters and talks were excellent, including my\n            old boss Dek Woolfson and my colleague here at Edinburgh, Louise\n            Horsfall. The venue was excellent (picture attached!) and\n            organisation from the academic organisers and the Biochemical\n            Society was great. It sounds like there\'s going to be a Protein\n            Engineering III, so definitely come along to that if you\'re even\n            vaguely in this area!\n            ')
+				$mdgriffith$elm_ui$Element$text('Many more of the posters and talks were excellent, including my\r\n            old boss Dek Woolfson and my colleague here at Edinburgh, Louise\r\n            Horsfall. The venue was excellent (picture attached!) and\r\n            organisation from the academic organisers and the Biochemical\r\n            Society was great. It sounds like there\'s going to be a Protein\r\n            Engineering III, so definitely come along to that if you\'re even\r\n            vaguely in this area!\r\n            ')
 			])),
 		A2(
 		$mdgriffith$elm_ui$Element$paragraph,
 		_List_Nil,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$text('Finally, I got the oportunity to talk about DE-STRESS, my protein\n            design evaluation web application, which I\'m planning to have a\n            closed beta of by the end of the summer, so do get in touch if\n            you\'re interested in getting involved in that! More information\n            soon.\n            ')
+				$mdgriffith$elm_ui$Element$text('Finally, I got the oportunity to talk about DE-STRESS, my protein\r\n            design evaluation web application, which I\'m planning to have a\r\n            closed beta of by the end of the summer, so do get in touch if\r\n            you\'re interested in getting involved in that! More information\r\n            soon.\r\n            ')
 			]))
 	]);
 var $mdgriffith$elm_ui$Internal$Model$AsTextColumn = 5;
@@ -12138,7 +12138,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 					$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
 				]),
 			$author$project$Pages$News$destressNews),
-		ab: 'DE-STRESS: A user-friendly web application for the evaluation of protein\n            designs\n            '
+		ab: 'DE-STRESS: A user-friendly web application for the evaluation of protein\r\n            designs\r\n            '
 	},
 		{
 		af: 'Preprint',
@@ -12151,7 +12151,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 					$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
 				]),
 			$author$project$Pages$News$photocagedNanobodiesNews),
-		ab: 'Generation of photocaged nanobodies for in vivo applications using genetic\n            code expansion and computationally guided protein engineering\n            '
+		ab: 'Generation of photocaged nanobodies for in vivo applications using genetic\r\n            code expansion and computationally guided protein engineering\r\n            '
 	},
 		{
 		af: 'New Article',
@@ -12164,7 +12164,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 					$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
 				]),
 			$author$project$Pages$News$balasNews),
-		ab: 'BAlaS: fast, interactive and accessible computational alanine-\n                scanning using BudeAlaScan'
+		ab: 'BAlaS: fast, interactive and accessible computational alanine-\r\n                scanning using BudeAlaScan'
 	},
 		{
 		af: 'Conference',
@@ -12196,7 +12196,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 					_List_Nil,
 					_List_fromArray(
 						[
-							$mdgriffith$elm_ui$Element$text('Our research on de novo designed pH sensitive and\n                    highly thermostable helical bundles has now been '),
+							$mdgriffith$elm_ui$Element$text('Our research on de novo designed pH sensitive and\r\n                    highly thermostable helical bundles has now been '),
 							A2(
 							$mdgriffith$elm_ui$Element$newTabLink,
 							$author$project$Shared$Style$linkStyling,
@@ -12204,7 +12204,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 								x: $mdgriffith$elm_ui$Element$text('published in JACS'),
 								e8: 'https://pubs.acs.org/doi/10.1021/jacs.8b13354'
 							}),
-							$mdgriffith$elm_ui$Element$text('. See the news article from 2019-01-01 for more\n                    information.')
+							$mdgriffith$elm_ui$Element$text('. See the news article from 2019-01-01 for more\r\n                    information.')
 						])),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
@@ -12249,14 +12249,14 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 								x: $mdgriffith$elm_ui$Element$text('preprint of our latest paper'),
 								e8: 'https://www.biorxiv.org/content/early/2018/12/21/503698'
 							}),
-							$mdgriffith$elm_ui$Element$text(', where we created mutants of a stable hexameric\n                        coiled coil and found that they adopted the\n                        anti-parallel conformation. We then discovered that\n                        certain mutants would revert back to the parallel\n                        hexamer structure when the pH was altered. Finally we\n                        used negative design to stablise the anti-parallel\n                        conformation, which resulted in apCC-Tet, a\n                        hyper-thermostable, anti-parallel tetramer. apCC-Tet is\n                        a robust scaffold that can now be used for applications\n                        in protein engineering and synthetic biology.')
+							$mdgriffith$elm_ui$Element$text(', where we created mutants of a stable hexameric\r\n                        coiled coil and found that they adopted the\r\n                        anti-parallel conformation. We then discovered that\r\n                        certain mutants would revert back to the parallel\r\n                        hexamer structure when the pH was altered. Finally we\r\n                        used negative design to stablise the anti-parallel\r\n                        conformation, which resulted in apCC-Tet, a\r\n                        hyper-thermostable, anti-parallel tetramer. apCC-Tet is\r\n                        a robust scaffold that can now be used for applications\r\n                        in protein engineering and synthetic biology.')
 						])),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
 					_List_fromArray(
 						[
-							$mdgriffith$elm_ui$Element$text('This was the last paper I worked on before leaving\n                        Dek Woolfson\'s group in Bristol and it was pretty\n                        satisfying to see it come together as it contains the\n                        first peptide that I ever made in the lab. Huge thank\n                        you to my co-first author, Guto Rhys, it was great fun\n                        working with him on the paper.')
+							$mdgriffith$elm_ui$Element$text('This was the last paper I worked on before leaving\r\n                        Dek Woolfson\'s group in Bristol and it was pretty\r\n                        satisfying to see it come together as it contains the\r\n                        first peptide that I ever made in the lab. Huge thank\r\n                        you to my co-first author, Guto Rhys, it was great fun\r\n                        working with him on the paper.')
 						])),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
@@ -12286,7 +12286,7 @@ var $author$project$Shared$Style$contentFont = $mdgriffith$elm_ui$Element$Font$f
 	_List_fromArray(
 		[
 			$mdgriffith$elm_ui$Element$Font$external(
-			{E: 'Raleway', e8: 'https://fonts.googleapis.com/css?family=Raleway'}),
+			{z: 'Raleway', e8: 'https://fonts.googleapis.com/css?family=Raleway'}),
 			$mdgriffith$elm_ui$Element$Font$sansSerif
 		]));
 var $author$project$Shared$Style$contentStyling = _List_fromArray(
@@ -12352,29 +12352,29 @@ var $author$project$Shared$Advert$advert = A2(
 	_List_Nil,
 	_List_fromArray(
 		[
-			$mdgriffith$elm_ui$Element$text('Fancy automating experiments using state-of-the-art robotics?\n            How about applying the newest methods in machine-learning to design\n            completely novel proteins? If you\'re interested in joining us, '),
+			$mdgriffith$elm_ui$Element$text('Fancy automating experiments using state-of-the-art robotics?\r\n            How about applying the newest methods in machine-learning to design\r\n            completely novel proteins? If you\'re interested in joining us, '),
 			$author$project$Shared$Style$simpleLink(
 			{x: 'get in touch', e8: 'mailto:chris.wood@ed.ac.uk'}),
 			$mdgriffith$elm_ui$Element$text(' to find out more about current opportunities.')
 		]));
 var $author$project$Pages$People$chrisWellsWood = {
-	u: true,
-	H: $elm$core$Maybe$Nothing,
-	I: A2(
+	s: true,
+	C: $elm$core$Maybe$Nothing,
+	D: A2(
 		$mdgriffith$elm_ui$Element$paragraph,
 		_List_Nil,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$text('Chris took his undergraduate degree in Molecular and\n                Cellular Biology at the University of Glasgow. He then went\n                on to undertake a PhD and postdoc in the lab of '),
+				$mdgriffith$elm_ui$Element$text('Chris took his undergraduate degree in Molecular and\r\n                Cellular Biology at the University of Glasgow. He then went\r\n                on to undertake a PhD and postdoc in the lab of '),
 				$author$project$Shared$Style$simpleLink(
 				{x: 'Prof. Dek Woolfson', e8: 'https://woolfsonlab.wordpress.com/'}),
-				$mdgriffith$elm_ui$Element$text(', where he worked on developing and applying tools for\n                computational protein design. In 2018 he was awarded an\n                EPSRC postdoctoral fellowship and moved to the University of\n                Edinburgh to establish his research group.')
+				$mdgriffith$elm_ui$Element$text(', where he worked on developing and applying tools for\r\n                computational protein design. In 2018 he was awarded an\r\n                EPSRC postdoctoral fellowship and moved to the University of\r\n                Edinburgh to establish his research group.')
 			])),
-	J: $elm$core$Maybe$Just('chris.wood@ed.ac.uk'),
-	K: $elm$core$Maybe$Just('https://github.com/ChrisWellsWood'),
-	E: 'Chris Wells Wood',
-	M: '/static/images/people/chriswellswood.jpg',
-	N: $elm$core$Maybe$Just('https://twitter.com/ChrisWellsWood')
+	F: $elm$core$Maybe$Just('chris.wood@ed.ac.uk'),
+	I: $elm$core$Maybe$Just('https://github.com/ChrisWellsWood'),
+	z: 'Chris Wells Wood',
+	J: '/static/images/people/chriswellswood.jpg',
+	M: $elm$core$Maybe$Just('https://twitter.com/ChrisWellsWood')
 };
 var $elm$core$Basics$composeL = F3(
 	function (g, f, x) {
@@ -12384,20 +12384,20 @@ var $elm$core$Basics$composeL = F3(
 var $author$project$Pages$People$mastersStudents = _List_fromArray(
 	[
 		{
-		u: true,
-		H: $elm$core$Maybe$Nothing,
-		I: A2(
+		s: true,
+		C: $elm$core$Maybe$Nothing,
+		D: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Gang is a graduate student in biotechnology at the University of\n                    Edinburgh. He is very interested in protein-structure analysis\n                    and drug discovery. His research project centres on modelling\n                    and simulation of the protein SUN1.\n                    ')
+					$mdgriffith$elm_ui$Element$text('Gang is a graduate student in biotechnology at the University of\r\n                    Edinburgh. He is very interested in protein-structure analysis\r\n                    and drug discovery. His research project centres on modelling\r\n                    and simulation of the protein SUN1.\r\n                    ')
 				])),
-		J: $elm$core$Maybe$Just('g.liu-15@sms.ed.ac.uk'),
-		K: $elm$core$Maybe$Nothing,
-		E: 'Gang Liu',
-		M: '/static/images/people/gangliu.jpg',
-		N: $elm$core$Maybe$Nothing
+		F: $elm$core$Maybe$Just('g.liu-15@sms.ed.ac.uk'),
+		I: $elm$core$Maybe$Nothing,
+		z: 'Gang Liu',
+		J: '/static/images/people/gangliu.jpg',
+		M: $elm$core$Maybe$Nothing
 	}
 	]);
 var $mdgriffith$elm_ui$Internal$Model$Empty = {$: 3};
@@ -12773,7 +12773,7 @@ var $author$project$Pages$People$personView = function (person) {
 										$mdgriffith$elm_ui$Element$width(
 										$mdgriffith$elm_ui$Element$px(250))
 									]),
-								{b4: person.E, cI: person.M}),
+								{b4: person.z, cI: person.J}),
 								A2(
 								$mdgriffith$elm_ui$Element$row,
 								_List_fromArray(
@@ -12784,7 +12784,7 @@ var $author$project$Pages$People$personView = function (person) {
 								_List_fromArray(
 									[
 										function () {
-										var _v0 = person.J;
+										var _v0 = person.F;
 										if (!_v0.$) {
 											var emailAccount = _v0.a;
 											return A2(
@@ -12800,7 +12800,7 @@ var $author$project$Pages$People$personView = function (person) {
 										}
 									}(),
 										function () {
-										var _v1 = person.N;
+										var _v1 = person.M;
 										if (!_v1.$) {
 											var twitterAccount = _v1.a;
 											return A2(
@@ -12816,7 +12816,7 @@ var $author$project$Pages$People$personView = function (person) {
 										}
 									}(),
 										function () {
-										var _v2 = person.K;
+										var _v2 = person.I;
 										if (!_v2.$) {
 											var githubAccount = _v2.a;
 											return A2(
@@ -12842,9 +12842,9 @@ var $author$project$Pages$People$personView = function (person) {
 							]),
 						_List_fromArray(
 							[
-								$author$project$Shared$Style$subHeading(person.E),
+								$author$project$Shared$Style$subHeading(person.z),
 								function () {
-								var _v3 = person.H;
+								var _v3 = person.C;
 								if (!_v3.$) {
 									var associatedLab = _v3.a;
 									return A2(
@@ -12860,7 +12860,7 @@ var $author$project$Pages$People$personView = function (person) {
 									return $mdgriffith$elm_ui$Element$none;
 								}
 							}(),
-								person.I
+								person.D
 							]))
 					]))
 			]));
@@ -12878,130 +12878,146 @@ var $author$project$Pages$People$peopleSection = F2(
 var $author$project$Pages$People$phdStudents = _List_fromArray(
 	[
 		{
-		u: true,
-		H: $elm$core$Maybe$Nothing,
-		I: A2(
+		s: true,
+		C: $elm$core$Maybe$Nothing,
+		D: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Leo is currently a CDT candidate at the UKRI CDT in Biomedical\n                    Artificial Intelligence programme. He studied Biochemistry at the\n                    University of Edinburgh and interned at IBM, P&G and the Swiss\n                    Institute of Bioinformatics.\n\n                    Leo is interested in developing accessible and explainable methods\n                    for de novo protein design using deep learning.\n                    ')
+					$mdgriffith$elm_ui$Element$text('Leo is currently a CDT candidate at the UKRI CDT in Biomedical\r\n                    Artificial Intelligence programme. He studied Biochemistry at the\r\n                    University of Edinburgh and interned at IBM, P&G and the Swiss\r\n                    Institute of Bioinformatics.\r\n\r\n                    Leo is interested in developing accessible and explainable methods\r\n                    for de novo protein design using deep learning.\r\n                    ')
 				])),
-		J: $elm$core$Maybe$Just('leonardo.castorina@ed.ac.uk'),
-		K: $elm$core$Maybe$Just('https://github.com/universvm'),
-		E: 'Leonardo Castorina',
-		M: '/static/images/people/leocastorina.jpg',
-		N: $elm$core$Maybe$Nothing
+		F: $elm$core$Maybe$Just('leonardo.castorina@ed.ac.uk'),
+		I: $elm$core$Maybe$Just('https://github.com/universvm'),
+		z: 'Leonardo Castorina',
+		J: '/static/images/people/leocastorina.jpg',
+		M: $elm$core$Maybe$Nothing
 	},
 		{
-		u: true,
-		H: $elm$core$Maybe$Nothing,
-		I: A2(
+		s: true,
+		C: $elm$core$Maybe$Nothing,
+		D: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Michael Stam received his undergraduate degree in Mathematics\n                    from the University of Edinburgh. After graduating, he went to work\n                    in financial services for four years, where he applied statistical\n                    analysis and machine learning techniques to financial data.\n                    Currently, he is in the PhD stage of the UKRI CDT in Biomedical\n                    Artificial Intelligence programme, where he is looking at optimising\n                    the reliability of de novo protein design, by understanding the\n                    different reasons why most protein designs fail.')
+					$mdgriffith$elm_ui$Element$text('Michael Stam received his undergraduate degree in Mathematics\r\n                    from the University of Edinburgh. After graduating, he went to work\r\n                    in financial services for four years, where he applied statistical\r\n                    analysis and machine learning techniques to financial data.\r\n                    Currently, he is in the PhD stage of the UKRI CDT in Biomedical\r\n                    Artificial Intelligence programme, where he is looking at optimising\r\n                    the reliability of de novo protein design, by understanding the\r\n                    different reasons why most protein designs fail.')
 				])),
-		J: $elm$core$Maybe$Just('michael.stam@ed.ac.uk'),
-		K: $elm$core$Maybe$Just('https://github.com/MichaelJamesStam'),
-		E: 'Michael James Stam',
-		M: '/static/images/people/michaeljamesstam.jpg',
-		N: $elm$core$Maybe$Just('https://twitter.com/mjstam')
+		F: $elm$core$Maybe$Just('michael.stam@ed.ac.uk'),
+		I: $elm$core$Maybe$Just('https://github.com/MichaelJamesStam'),
+		z: 'Michael James Stam',
+		J: '/static/images/people/michaeljamesstam.jpg',
+		M: $elm$core$Maybe$Just('https://twitter.com/mjstam')
 	},
 		{
-		u: false,
-		H: $elm$core$Maybe$Just(
+		s: false,
+		C: $elm$core$Maybe$Just(
 			$author$project$Shared$Style$simpleLink(
 				{x: 'Gutiérrez Lab, PUC', e8: 'http://virtualplant.bio.puc.cl/'})),
-		I: A2(
+		D: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Jonathan Morales studied a biochemistry at the Universidad\n                    De Santiago De Chile. During this time he worked in fungal\n                    cell biology testing the antifungal mechanism of different\n                    natural phenolic compounds against Botrytis cinerea, one of\n                    the most worldwide relevant phytopathogenic fungus. After\n                    his undergraduate studies, he moved to the Pontificia\n                    Universidad Catolica de Chile to undertake a PhD in the lab\n                    of Rodrigo Gutiérrez. Currently, Jonathan works in plant\n                    molecular signal transduction triggered by nutrients and is\n                    visiting the Wells Wood Lab to design and develop a new\n                    protein-based sensors to understand nutrient movement in\n                    plants.')
+					$mdgriffith$elm_ui$Element$text('Jonathan Morales studied a biochemistry at the Universidad\r\n                    De Santiago De Chile. During this time he worked in fungal\r\n                    cell biology testing the antifungal mechanism of different\r\n                    natural phenolic compounds against Botrytis cinerea, one of\r\n                    the most worldwide relevant phytopathogenic fungus. After\r\n                    his undergraduate studies, he moved to the Pontificia\r\n                    Universidad Catolica de Chile to undertake a PhD in the lab\r\n                    of Rodrigo Gutiérrez. Currently, Jonathan works in plant\r\n                    molecular signal transduction triggered by nutrients and is\r\n                    visiting the Wells Wood Lab to design and develop a new\r\n                    protein-based sensors to understand nutrient movement in\r\n                    plants.')
 				])),
-		J: $elm$core$Maybe$Just('j.morales-espinoza@sms.ed.ac.uk'),
-		K: $elm$core$Maybe$Nothing,
-		E: 'Jonathan Morales-Espinoza',
-		M: '/static/images/people/jonathanmorales.jpg',
-		N: $elm$core$Maybe$Nothing
+		F: $elm$core$Maybe$Just('j.morales-espinoza@sms.ed.ac.uk'),
+		I: $elm$core$Maybe$Nothing,
+		z: 'Jonathan Morales-Espinoza',
+		J: '/static/images/people/jonathanmorales.jpg',
+		M: $elm$core$Maybe$Nothing
 	},
 		{
-		u: true,
-		H: $elm$core$Maybe$Just(
+		s: true,
+		C: $elm$core$Maybe$Just(
 			$author$project$Shared$Style$simpleLink(
 				{x: 'Greiss Lab, UoE', e8: 'https://www.ed.ac.uk/discovery-brain-sciences/our-staff/research-groups/sebastian-greiss'})),
-		I: A2(
+		D: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Jack studied Natural Sciences (Synthetic Organic\n                    Chemistry and Molecular and Cell Biology) at University\n                    Collage London for his undergraduate degree. He is taking\n                    his PhD in Dr. Sebastian Greiss\' lab at the University of\n                    Edinburgh, and is collaborating with the Wells Wood lab\n                    to tune the affinity of protein-protein interactions.')
+					$mdgriffith$elm_ui$Element$text('Jack studied Natural Sciences (Synthetic Organic\r\n                    Chemistry and Molecular and Cell Biology) at University\r\n                    Collage London for his undergraduate degree. He is taking\r\n                    his PhD in Dr. Sebastian Greiss\' lab at the University of\r\n                    Edinburgh, and is collaborating with the Wells Wood lab\r\n                    to tune the affinity of protein-protein interactions.')
 				])),
-		J: $elm$core$Maybe$Just('j.m.o\'shea@sms.ed.ac.uk'),
-		K: $elm$core$Maybe$Just('https://github.com/97joshea'),
-		E: 'Jack O\'Shea',
-		M: '/static/images/people/jackoshea.jpg',
-		N: $elm$core$Maybe$Just('https://twitter.com/jack_oshea97')
+		F: $elm$core$Maybe$Just('j.m.o\'shea@sms.ed.ac.uk'),
+		I: $elm$core$Maybe$Just('https://github.com/97joshea'),
+		z: 'Jack O\'Shea',
+		J: '/static/images/people/jackoshea.jpg',
+		M: $elm$core$Maybe$Just('https://twitter.com/jack_oshea97')
 	},
 		{
-		u: true,
-		H: $elm$core$Maybe$Just(
+		s: true,
+		C: $elm$core$Maybe$Just(
 			$author$project$Shared$Style$simpleLink(
 				{x: 'Horsfall Lab, UoE', e8: 'http://horsfall.bio.ed.ac.uk'})),
-		I: A2(
+		D: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Matthew did his undergraduate degree in Biochemistry at\n                    the University of Edinburgh and a research Masters in\n                    Systems and Synthetic Biology at Imperial College London. He\n                    started his PhD in October 2018 in the '),
+					$mdgriffith$elm_ui$Element$text('Matthew did his undergraduate degree in Biochemistry at\r\n                    the University of Edinburgh and a research Masters in\r\n                    Systems and Synthetic Biology at Imperial College London. He\r\n                    started his PhD in October 2018 in the '),
 					$author$project$Shared$Style$simpleLink(
 					{x: 'Horsfall Lab', e8: 'http://horsfall.bio.ed.ac.uk'}),
-					$mdgriffith$elm_ui$Element$text(', and is working in the Wells Wood lab to engineer\n                    encapsulins to enable novel metal nanoparticle synthesis\n                    using synthetic biology.')
+					$mdgriffith$elm_ui$Element$text(', and is working in the Wells Wood lab to engineer\r\n                    encapsulins to enable novel metal nanoparticle synthesis\r\n                    using synthetic biology.')
 				])),
-		J: $elm$core$Maybe$Just('matthew.scheier@ed.ac.uk'),
-		K: $elm$core$Maybe$Just('https://github.com/mscheier'),
-		E: 'Matthew Scheier',
-		M: '/static/images/people/mattscheier.jpg',
-		N: $elm$core$Maybe$Nothing
+		F: $elm$core$Maybe$Just('matthew.scheier@ed.ac.uk'),
+		I: $elm$core$Maybe$Just('https://github.com/mscheier'),
+		z: 'Matthew Scheier',
+		J: '/static/images/people/mattscheier.jpg',
+		M: $elm$core$Maybe$Nothing
 	},
 		{
-		u: true,
-		H: $elm$core$Maybe$Just(
+		s: true,
+		C: $elm$core$Maybe$Just(
 			$author$project$Shared$Style$simpleLink(
 				{x: 'Baranovic Lab, UoE', e8: 'https://www.ed.ac.uk/profile/jelena-baranovic'})),
-		I: A2(
+		D: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Natalia is currently in the PhD stage of the UKRI CDT in\n                    Biomedical Artificial Intelligence programme. She completed her\n                    undergraduate degree in Biotechnology at the University of\n                    Edinburgh.\n                    ')
+					$mdgriffith$elm_ui$Element$text('Natalia is currently in the PhD stage of the UKRI CDT in\r\n                    Biomedical Artificial Intelligence programme. She completed her\r\n                    undergraduate degree in Biotechnology at the University of\r\n                    Edinburgh.\r\n                    ')
 				])),
-		J: $elm$core$Maybe$Just('s1510509@sms.ed.ac.uk'),
-		K: $elm$core$Maybe$Nothing,
-		E: 'Natalia Szlachetka',
-		M: '/static/images/people/nataliaszlachetka.jpg',
-		N: $elm$core$Maybe$Nothing
+		F: $elm$core$Maybe$Just('s1510509@sms.ed.ac.uk'),
+		I: $elm$core$Maybe$Nothing,
+		z: 'Natalia Szlachetka',
+		J: '/static/images/people/nataliaszlachetka.jpg',
+		M: $elm$core$Maybe$Nothing
 	}
 	]);
 var $author$project$Pages$People$undergraduateStudents = _List_fromArray(
 	[
 		{
-		u: false,
-		H: $elm$core$Maybe$Nothing,
-		I: A2(
+		s: false,
+		C: $elm$core$Maybe$Nothing,
+		D: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Rokas is currently in the final year of his undergraduate degree\n                    in Biochemistry at the University of Edinburgh. He is interested in\n                    Structural and Computational Biology, especially the development and\n                    application of novel proteins.\n                    ')
+					$mdgriffith$elm_ui$Element$text('Rokas is currently in the final year of his undergraduate degree\r\n                    in Biochemistry at the University of Edinburgh. He is interested in\r\n                    Structural and Computational Biology, especially the development and\r\n                    application of novel proteins.\r\n                    ')
 				])),
-		J: $elm$core$Maybe$Just('s1706179@sms.ed.ac.uk'),
-		K: $elm$core$Maybe$Just('https://github.com/rokaske199'),
-		E: 'Rokas Petrenas',
-		M: '/static/images/people/rokaspetrenas.jpg',
-		N: $elm$core$Maybe$Nothing
+		F: $elm$core$Maybe$Just('s1706179@sms.ed.ac.uk'),
+		I: $elm$core$Maybe$Just('https://github.com/rokaske199'),
+		z: 'Rokas Petrenas',
+		J: '/static/images/people/rokaspetrenas.jpg',
+		M: $elm$core$Maybe$Nothing
+	},
+		{
+		s: true,
+		C: $elm$core$Maybe$Nothing,
+		D: A2(
+			$mdgriffith$elm_ui$Element$paragraph,
+			_List_Nil,
+			_List_fromArray(
+				[
+					$mdgriffith$elm_ui$Element$text('Cecilia is an undergraduate Chemistry preparing for her year\r\n                    abroad in South Korea for her masters. Having had previous\r\n                    computation experience in Materials Chemistry, she has joined the\r\n                    Wells Wood Research Group for the summer to undertake a project on\r\n                    simulating P450-BM3 and related proteins.\r\n                    ')
+				])),
+		F: $elm$core$Maybe$Nothing,
+		I: $elm$core$Maybe$Nothing,
+		z: 'Cecilia Hong',
+		J: '/static/images/people/ceciliahong.jpg',
+		M: $elm$core$Maybe$Nothing
 	}
 	]);
 var $author$project$Pages$People$people = A2(
@@ -13017,7 +13033,7 @@ var $author$project$Pages$People$people = A2(
 			A2(
 				$elm$core$List$filter,
 				function ($) {
-					return $.u;
+					return $.s;
 				},
 				$author$project$Pages$People$phdStudents)),
 			A2(
@@ -13026,7 +13042,7 @@ var $author$project$Pages$People$people = A2(
 			A2(
 				$elm$core$List$filter,
 				function ($) {
-					return $.u;
+					return $.s;
 				},
 				$author$project$Pages$People$mastersStudents)),
 			A2(
@@ -13035,7 +13051,7 @@ var $author$project$Pages$People$people = A2(
 			A2(
 				$elm$core$List$filter,
 				function ($) {
-					return $.u;
+					return $.s;
 				},
 				$author$project$Pages$People$undergraduateStudents)),
 			A2(
@@ -13047,7 +13063,7 @@ var $author$project$Pages$People$people = A2(
 					$elm$core$Basics$composeL,
 					$elm$core$Basics$not,
 					function ($) {
-						return $.u;
+						return $.s;
 					}),
 				_Utils_ap(
 					$author$project$Pages$People$phdStudents,
@@ -13066,17 +13082,17 @@ var $author$project$Pages$People$page = $author$project$Spa$Page$static(
 	{e9: $author$project$Pages$People$view});
 var $author$project$Pages$Publications$allPublications = _List_fromArray(
 	[
-		{h: 'Wood CW*, Bruning M, Ibarra AA, Bartlett Gail J, Thomson AR,\n            Sessions RB, Brady RL, Woolfson DN*', i: 'Bioinformatics', j: 'https://academic.oup.com/bioinformatics/article/30/21/3029/2422267', l: '3029-3035', m: $elm$core$Maybe$Nothing, ab: 'CCBuilder: an interactive web-based tool for building, designing\n            and assessing coiled-coil protein assemblies', n: '30', o: '2014'},
-		{h: 'Thomson AR, Wood CW, Burton AJ, Bartlett GJ, Sessions RB,\n            Brady RL, Woolfson DN*', i: 'Science', j: 'http://science.sciencemag.org/content/346/6208/485', l: '485-488', m: $elm$core$Maybe$Nothing, ab: 'Computational design of water-soluble α-helical barrels', n: '346', o: '2014'},
-		{h: 'Woolfson DN*, Bartlett GJ, Burton AJ, Heal JW, Niitsu A,\n            Thomson AR, Wood CW', i: 'Current opinion in structural biology', j: 'https://www.sciencedirect.com/science/article/pii/S0959440X1500069X', l: '16-26', m: $elm$core$Maybe$Nothing, ab: 'De novo protein design: how do we expand into the universe of\n            possible protein structures?', n: '33', o: '2015'},
-		{h: 'Burgess NC, Sharp TH, Thomas F, Wood CW, Thomson AR,\n            Zaccai NR, Brady RL, Serpell LC, Woolfson DN*', i: 'Journal of the American Chemical Society', j: 'https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973', l: '10554-10562', m: $elm$core$Maybe$Nothing, ab: 'Modular design of self-assembling peptide-based nanotubes', n: '137', o: '2015'},
-		{h: 'Wood CW*, Heal JW, Thomson AR, Bartlett GJ, Ibarra AÁ, Brady RL,\n            Sessions RB, Woolfson DN*"\n            ', i: 'Bioinformatics', j: 'https://academic.oup.com/bioinformatics/article/33/19/3043/3861331', l: '3043-3050', m: $elm$core$Maybe$Nothing, ab: 'ISAMBARD: an open-source computational environment for\n            biomolecular analysis, modelling and design', n: '33', o: '2017'},
+		{h: 'Wood CW*, Bruning M, Ibarra AA, Bartlett Gail J, Thomson AR,\r\n            Sessions RB, Brady RL, Woolfson DN*', i: 'Bioinformatics', j: 'https://academic.oup.com/bioinformatics/article/30/21/3029/2422267', l: '3029-3035', m: $elm$core$Maybe$Nothing, ab: 'CCBuilder: an interactive web-based tool for building, designing\r\n            and assessing coiled-coil protein assemblies', n: '30', o: '2014'},
+		{h: 'Thomson AR, Wood CW, Burton AJ, Bartlett GJ, Sessions RB,\r\n            Brady RL, Woolfson DN*', i: 'Science', j: 'http://science.sciencemag.org/content/346/6208/485', l: '485-488', m: $elm$core$Maybe$Nothing, ab: 'Computational design of water-soluble α-helical barrels', n: '346', o: '2014'},
+		{h: 'Woolfson DN*, Bartlett GJ, Burton AJ, Heal JW, Niitsu A,\r\n            Thomson AR, Wood CW', i: 'Current opinion in structural biology', j: 'https://www.sciencedirect.com/science/article/pii/S0959440X1500069X', l: '16-26', m: $elm$core$Maybe$Nothing, ab: 'De novo protein design: how do we expand into the universe of\r\n            possible protein structures?', n: '33', o: '2015'},
+		{h: 'Burgess NC, Sharp TH, Thomas F, Wood CW, Thomson AR,\r\n            Zaccai NR, Brady RL, Serpell LC, Woolfson DN*', i: 'Journal of the American Chemical Society', j: 'https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973', l: '10554-10562', m: $elm$core$Maybe$Nothing, ab: 'Modular design of self-assembling peptide-based nanotubes', n: '137', o: '2015'},
+		{h: 'Wood CW*, Heal JW, Thomson AR, Bartlett GJ, Ibarra AÁ, Brady RL,\r\n            Sessions RB, Woolfson DN*"\r\n            ', i: 'Bioinformatics', j: 'https://academic.oup.com/bioinformatics/article/33/19/3043/3861331', l: '3043-3050', m: $elm$core$Maybe$Nothing, ab: 'ISAMBARD: an open-source computational environment for\r\n            biomolecular analysis, modelling and design', n: '33', o: '2017'},
 		{h: 'Wood CW and Woolfson DN', i: 'Protein Science', j: 'https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279', l: '103-111', m: $elm$core$Maybe$Nothing, ab: 'CCBuilder 2.0: Powerful and accessible coiled‐coil modeling', n: '27', o: '2018'},
-		{h: 'Pellizzoni MM, Schwizer F, Wood CW, Sabatino V, Cotelle Y,\n            Matile S, Woolfson DN, Ward TR*', i: 'ACS Catalysis', j: 'https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773', l: '1476-1484', m: $elm$core$Maybe$Nothing, ab: 'Chimeric Streptavidins as Host Proteins for Artificial ' + 'Metalloenzymes', n: '8', o: '2018'},
-		{h: 'Heal JW, Bartlett GJ, Wood CW, Thomson AR, Woolfson DN*', i: 'Bioinformatics', j: 'https://academic.oup.com/bioinformatics/article/34/19/3316/4990824', l: '3316-3323', m: $elm$core$Maybe$Nothing, ab: 'Applying graph theory to protein structures: an atlas of coiled\n            coils', n: '34', o: '2018'},
-		{h: 'Rhys GG, Wood CW, Lang EJM, Mulholland AJ, Brady RL,\n            Thomson AR, Woolfson DN*', i: 'Nature Communications', j: 'https://www.nature.com/articles/s41467-018-06391-y', l: '4132', m: $elm$core$Maybe$Nothing, ab: 'Maintaining and breaking symmetry in homomeric coiled-coil\n          assemblies', n: '9', o: '2018'},
+		{h: 'Pellizzoni MM, Schwizer F, Wood CW, Sabatino V, Cotelle Y,\r\n            Matile S, Woolfson DN, Ward TR*', i: 'ACS Catalysis', j: 'https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773', l: '1476-1484', m: $elm$core$Maybe$Nothing, ab: 'Chimeric Streptavidins as Host Proteins for Artificial ' + 'Metalloenzymes', n: '8', o: '2018'},
+		{h: 'Heal JW, Bartlett GJ, Wood CW, Thomson AR, Woolfson DN*', i: 'Bioinformatics', j: 'https://academic.oup.com/bioinformatics/article/34/19/3316/4990824', l: '3316-3323', m: $elm$core$Maybe$Nothing, ab: 'Applying graph theory to protein structures: an atlas of coiled\r\n            coils', n: '34', o: '2018'},
+		{h: 'Rhys GG, Wood CW, Lang EJM, Mulholland AJ, Brady RL,\r\n            Thomson AR, Woolfson DN*', i: 'Nature Communications', j: 'https://www.nature.com/articles/s41467-018-06391-y', l: '4132', m: $elm$core$Maybe$Nothing, ab: 'Maintaining and breaking symmetry in homomeric coiled-coil\r\n          assemblies', n: '9', o: '2018'},
 		{
-		h: 'Rhys GG, Wood CW, Beesley JL, Zaccai NR, Burton AJ,\n            Brady RL, Thomson AR, Woolfson DN*',
+		h: 'Rhys GG, Wood CW, Beesley JL, Zaccai NR, Burton AJ,\r\n            Brady RL, Thomson AR, Woolfson DN*',
 		i: 'Journal of the American Chemical Society',
 		j: 'https://pubs.acs.org/doi/10.1021/jacs.8b13354',
 		l: '8787-8797',
@@ -13085,20 +13101,20 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		n: '141',
 		o: '2019'
 	},
-		{h: 'Juan J, Baker EG, Wood CW, Bath J, Woolfson DN*,\n            Turberfield AJ*', i: 'ACS Nano', j: 'https://pubs.acs.org/doi/10.1021/acsnano.9b04251', l: '9927-9935', m: $elm$core$Maybe$Nothing, ab: 'Peptide Assembly Directed and Quantified Using Megadalton DNA\n          Nanostructures', n: '13', o: '2019'},
-		{h: 'Wood CW*, Ibarra AA, Bartlett GJ, Wilson AJ, Woolfson DN,\n            Sessions RB*', i: 'Bioinformatics', j: 'https://doi.org/10.1093/bioinformatics/btaa026', l: '2917-2919', m: $elm$core$Maybe$Nothing, ab: 'BAlaS: fast, interactive and accessible computational alanine-scanning\n            using BudeAlaScan', n: '36', o: '2020'},
+		{h: 'Juan J, Baker EG, Wood CW, Bath J, Woolfson DN*,\r\n            Turberfield AJ*', i: 'ACS Nano', j: 'https://pubs.acs.org/doi/10.1021/acsnano.9b04251', l: '9927-9935', m: $elm$core$Maybe$Nothing, ab: 'Peptide Assembly Directed and Quantified Using Megadalton DNA\r\n          Nanostructures', n: '13', o: '2019'},
+		{h: 'Wood CW*, Ibarra AA, Bartlett GJ, Wilson AJ, Woolfson DN,\r\n            Sessions RB*', i: 'Bioinformatics', j: 'https://doi.org/10.1093/bioinformatics/btaa026', l: '2917-2919', m: $elm$core$Maybe$Nothing, ab: 'BAlaS: fast, interactive and accessible computational alanine-scanning\r\n            using BudeAlaScan', n: '36', o: '2020'},
 		{
-		h: 'Galloway JM, Bray HEV, Shoemark DK, Hodgson LR, Coombs J, Mantell JM,\n            Rose RS, Ross JF, Morris C, Harniman RL, Wood CW, Arthur C, Verkade P,\n            Woolfson DN\n            ',
+		h: 'Galloway JM, Bray HEV, Shoemark DK, Hodgson LR, Coombs J, Mantell JM,\r\n            Rose RS, Ross JF, Morris C, Harniman RL, Wood CW, Arthur C, Verkade P,\r\n            Woolfson DN\r\n            ',
 		i: 'Small',
 		j: 'https://doi.org/10.1002/smll.202100472',
 		l: '2100472',
 		m: $elm$core$Maybe$Just('https://www.biorxiv.org/content/10.1101/2020.08.14.251462v2'),
-		ab: 'De Novo Designed Peptide and Protein Hairpins Self‐Assemble into Sheets\n            and Nanoparticles\n            ',
+		ab: 'De Novo Designed Peptide and Protein Hairpins Self‐Assemble into Sheets\r\n            and Nanoparticles\r\n            ',
 		n: '17',
 		o: '2021'
 	},
-		{h: 'O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S\n            ', i: 'Biorxiv', j: 'https://doi.org/10.1101/2021.04.16.440193', l: '_', m: $elm$core$Maybe$Nothing, ab: 'Preprint: Generation of photocaged nanobodies for in vivo applications\n            using genetic code expansion and computationally guided protein engineering\n            ', n: '_', o: '2021'},
-		{h: 'Stam MJ and Wood CW', i: 'Biorxiv', j: 'https://doi.org/10.1101/2021.04.28.441790', l: '_', m: $elm$core$Maybe$Nothing, ab: 'Preprint: DE-STRESS: A user-friendly web application for the evaluation\n            of protein designs\n            ', n: '_', o: '2021'}
+		{h: 'O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S\r\n            ', i: 'Biorxiv', j: 'https://doi.org/10.1101/2021.04.16.440193', l: '_', m: $elm$core$Maybe$Nothing, ab: 'Preprint: Generation of photocaged nanobodies for in vivo applications\r\n            using genetic code expansion and computationally guided protein engineering\r\n            ', n: '_', o: '2021'},
+		{h: 'Stam MJ and Wood CW', i: 'Biorxiv', j: 'https://doi.org/10.1101/2021.04.28.441790', l: '_', m: $elm$core$Maybe$Nothing, ab: 'Preprint: DE-STRESS: A user-friendly web application for the evaluation\r\n            of protein designs\r\n            ', n: '_', o: '2021'}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
@@ -13181,15 +13197,15 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('BAlaS is a fast, interactive web tool for performing\n                    computational alanine-scanning mutagenesis. It has a simple\n                    user interface that allows users to easily submit jobs and\n                    visualise results. Powered by '),
+					$mdgriffith$elm_ui$Element$text('BAlaS is a fast, interactive web tool for performing\r\n                    computational alanine-scanning mutagenesis. It has a simple\r\n                    user interface that allows users to easily submit jobs and\r\n                    visualise results. Powered by '),
 					$author$project$Shared$Style$simpleLink(
 					{x: 'BUDE', e8: 'http://www.bris.ac.uk/biochemistry/research/bude'}),
 					$mdgriffith$elm_ui$Element$text(' and '),
 					$author$project$Shared$Style$simpleLink(
 					{x: 'ISAMBARD', e8: 'https://github.com/isambard-uob/isambard'}),
-					$mdgriffith$elm_ui$Element$text(', users can download and run the scanning engine\nlocally when they need to scale up analysis.')
+					$mdgriffith$elm_ui$Element$text(', users can download and run the scanning engine\r\nlocally when they need to scale up analysis.')
 				])),
-		E: 'BAlaS',
+		z: 'BAlaS',
 		aG: $elm$core$Maybe$Just('https://github.com/wells-wood-research/BAlaS')
 	},
 		{
@@ -13200,12 +13216,12 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('CCBuilder is a user-friendly web application for creating\n                    atomistic models of coiled coils and collagen. It can\n                    accurately model almost all architectures of coiled coils\n                    observed in nature, as well more unusual structures like '),
+					$mdgriffith$elm_ui$Element$text('CCBuilder is a user-friendly web application for creating\r\n                    atomistic models of coiled coils and collagen. It can\r\n                    accurately model almost all architectures of coiled coils\r\n                    observed in nature, as well more unusual structures like '),
 					$author$project$Shared$Style$simpleLink(
 					{x: 'α-helical barrels', e8: 'http://science.sciencemag.org/content/346/6208/485'}),
 					$mdgriffith$elm_ui$Element$text('.')
 				])),
-		E: 'CCBuilder/CCBuilder 2',
+		z: 'CCBuilder/CCBuilder 2',
 		aG: $elm$core$Maybe$Just('https://github.com/woolfson-group/ccbuilder2')
 	},
 		{
@@ -13216,9 +13232,9 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('DE-STRESS (DEsigned STRucture Evaluation ServiceS) provides a\n                    suite of tools for evaluating protein designs. Our aim is to help\n                    make protein design more reliable, by providing tools to help you\n                    select the most promising designs to take into the lab.\n                    ')
+					$mdgriffith$elm_ui$Element$text('DE-STRESS (DEsigned STRucture Evaluation ServiceS) provides a\r\n                    suite of tools for evaluating protein designs. Our aim is to help\r\n                    make protein design more reliable, by providing tools to help you\r\n                    select the most promising designs to take into the lab.\r\n                    ')
 				])),
-		E: 'DE-STRESS',
+		z: 'DE-STRESS',
 		aG: $elm$core$Maybe$Just('https://github.com/wells-wood-research/de-stress')
 	},
 		{
@@ -13229,9 +13245,9 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('ISAMBARD (Intelligent System for Analysis, Model Building\n                    And Rational Design) is a Python library for structural\n                    analysis and rational design of biomolecules, with a\n                    particular focus on parametric modelling of proteins.')
+					$mdgriffith$elm_ui$Element$text('ISAMBARD (Intelligent System for Analysis, Model Building\r\n                    And Rational Design) is a Python library for structural\r\n                    analysis and rational design of biomolecules, with a\r\n                    particular focus on parametric modelling of proteins.')
 				])),
-		E: 'ISAMBARD',
+		z: 'ISAMBARD',
 		aG: $elm$core$Maybe$Just('https://github.com/isambard-uob/isambard')
 	}
 	]);
@@ -13260,7 +13276,7 @@ var $author$project$Pages$Tools$toolView = function (tool) {
 			]),
 		A2(
 			$elm$core$List$cons,
-			$author$project$Shared$Style$subHeading(tool.E),
+			$author$project$Shared$Style$subHeading(tool.z),
 			_Utils_ap(
 				function () {
 					if (toolLinks.a.$ === 1) {
@@ -13361,7 +13377,7 @@ var $author$project$Pages$Top$body = A2(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$author$project$Shared$Style$simpleText('Based in the University of Edinburgh, our research focuses on\n                improving the accessibility and reliability of protein design, with the\n                aim of increasing its use as a tool for tackling challenges in\n                biotechnology and synthetic biology. To do this, we\'re developing\n                software that applies machine-learning, computational modelling and\n                structural bioinformatics to help guide users through the protein-design\n                process.\n                ')
+					$author$project$Shared$Style$simpleText('Based in the University of Edinburgh, our research focuses on\r\n                improving the accessibility and reliability of protein design, with the\r\n                aim of increasing its use as a tool for tackling challenges in\r\n                biotechnology and synthetic biology. To do this, we\'re developing\r\n                software that applies machine-learning, computational modelling and\r\n                structural bioinformatics to help guide users through the protein-design\r\n                process.\r\n                ')
 				])),
 			$author$project$Shared$Style$subHeading('Rigorously tested methods'),
 			A2(
@@ -13369,10 +13385,10 @@ var $author$project$Pages$Top$body = A2(
 			$author$project$Shared$Style$contentStyling,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('We apply all the methods that we create at scale in the\n                laboratory, using the robotics available at Edinburgh through\n                the incredible '),
+					$mdgriffith$elm_ui$Element$text('We apply all the methods that we create at scale in the\r\n                laboratory, using the robotics available at Edinburgh through\r\n                the incredible '),
 					$author$project$Shared$Style$simpleLink(
 					{x: 'Genome Foundry', e8: 'https://www.genomefoundry.org/'}),
-					$mdgriffith$elm_ui$Element$text('. All data and scripts are made publicly available so\n                that users are confident in the effectiveness of the methods and can\n                apply them to their fullest.')
+					$mdgriffith$elm_ui$Element$text('. All data and scripts are made publicly available so\r\n                that users are confident in the effectiveness of the methods and can\r\n                apply them to their fullest.')
 				])),
 			$author$project$Shared$Style$subHeading('Committed to open-access research'),
 			A2(
@@ -13380,7 +13396,7 @@ var $author$project$Pages$Top$body = A2(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Our research is publicly funded, so we are committed\n                to making our outputs publicly available, including data,\n                software and publications.')
+					$mdgriffith$elm_ui$Element$text('Our research is publicly funded, so we are committed\r\n                to making our outputs publicly available, including data,\r\n                software and publications.')
 				])),
 			$author$project$Shared$Style$heading('Join Us'),
 			$author$project$Shared$Advert$advert
