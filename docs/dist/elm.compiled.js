@@ -4824,22 +4824,22 @@ var $elm$core$Array$builderToArray = F2(
 		if (!builder.e) {
 			return A4(
 				$elm$core$Array$Array_elm_builtin,
-				$elm$core$Elm$JsArray$length(builder.g),
+				$elm$core$Elm$JsArray$length(builder.l),
 				$elm$core$Array$shiftStep,
 				$elm$core$Elm$JsArray$empty,
-				builder.g);
+				builder.l);
 		} else {
 			var treeLen = builder.e * $elm$core$Array$branchFactor;
 			var depth = $elm$core$Basics$floor(
 				A2($elm$core$Basics$logBase, $elm$core$Array$branchFactor, treeLen - 1));
-			var correctNodeList = reverseNodeList ? $elm$core$List$reverse(builder.k) : builder.k;
+			var correctNodeList = reverseNodeList ? $elm$core$List$reverse(builder.o) : builder.o;
 			var tree = A2($elm$core$Array$treeFromBuilder, correctNodeList, builder.e);
 			return A4(
 				$elm$core$Array$Array_elm_builtin,
-				$elm$core$Elm$JsArray$length(builder.g) + treeLen,
+				$elm$core$Elm$JsArray$length(builder.l) + treeLen,
 				A2($elm$core$Basics$max, 5, depth * $elm$core$Array$shiftStep),
 				tree,
-				builder.g);
+				builder.l);
 		}
 	});
 var $elm$core$Basics$idiv = _Basics_idiv;
@@ -4852,7 +4852,7 @@ var $elm$core$Array$initializeHelp = F5(
 				return A2(
 					$elm$core$Array$builderToArray,
 					false,
-					{k: nodeList, e: (len / $elm$core$Array$branchFactor) | 0, g: tail});
+					{o: nodeList, e: (len / $elm$core$Array$branchFactor) | 0, l: tail});
 			} else {
 				var leaf = $elm$core$Array$Leaf(
 					A3($elm$core$Elm$JsArray$initialize, $elm$core$Array$branchFactor, fromIndex, fn));
@@ -6077,7 +6077,7 @@ var $mdgriffith$elm_ui$Internal$Model$asParagraph = 4;
 var $mdgriffith$elm_ui$Internal$Model$Generic = {$: 0};
 var $mdgriffith$elm_ui$Internal$Model$div = $mdgriffith$elm_ui$Internal$Model$Generic;
 var $mdgriffith$elm_ui$Internal$Model$NoNearbyChildren = {$: 0};
-var $mdgriffith$elm_ui$Internal$Style$classes = {cY: 'a', s: 'atv', c$: 'ab', c0: 'cx', c1: 'cy', c2: 'acb', c3: 'accx', c4: 'accy', c5: 'acr', bY: 'al', bZ: 'ar', c6: 'at', bu: 'ah', bv: 'av', c9: 's', dd: 'bh', de: 'b', dh: 'w7', dj: 'bd', dk: 'bdt', a_: 'bn', dl: 'bs', a0: 'cpe', dt: 'cp', du: 'cpx', dv: 'cpy', ag: 'c', a3: 'ctr', a5: 'cb', a6: 'ccx', ah: 'ccy', aM: 'cl', a7: 'cr', dx: 'ct', dy: 'cptr', dz: 'ctxt', dL: 'fcs', b7: 'focus-within', dM: 'fs', dO: 'g', bC: 'hbh', bD: 'hc', cd: 'he', bE: 'hf', ce: 'hfp', dR: 'hv', dT: 'ic', dV: 'fr', ba: 'lbl', dX: 'iml', dY: 'imlf', dZ: 'imlp', d_: 'implw', d$: 'it', d0: 'i', j: 'lnk', aE: 'nb', cm: 'notxt', ee: 'ol', eh: 'or', as: 'oq', en: 'oh', _: 'pg', cr: 'p', ep: 'ppe', ev: 'ui', R: 'r', ex: 'sb', ey: 'sbx', ez: 'sby', eA: 'sbt', eD: 'e', eE: 'cap', eF: 'sev', eM: 'sk', bT: 't', eQ: 'tc', eR: 'w8', eS: 'w2', eT: 'w9', eU: 'tj', br: 'tja', eV: 'tl', eW: 'w3', eX: 'w5', eY: 'w4', eZ: 'tr', e_: 'w6', e$: 'w1', e0: 'tun', cP: 'ts', av: 'clr', e6: 'u', bU: 'wc', cU: 'we', bV: 'wf', cV: 'wfp', bW: 'wrp'};
+var $mdgriffith$elm_ui$Internal$Style$classes = {cY: 'a', s: 'atv', c$: 'ab', c0: 'cx', c1: 'cy', c2: 'acb', c3: 'accx', c4: 'accy', c5: 'acr', bY: 'al', bZ: 'ar', c6: 'at', bu: 'ah', bv: 'av', c9: 's', dd: 'bh', de: 'b', dh: 'w7', dj: 'bd', dk: 'bdt', a_: 'bn', dl: 'bs', a0: 'cpe', dt: 'cp', du: 'cpx', dv: 'cpy', ag: 'c', a3: 'ctr', a5: 'cb', a6: 'ccx', ah: 'ccy', aM: 'cl', a7: 'cr', dx: 'ct', dy: 'cptr', dz: 'ctxt', dL: 'fcs', b7: 'focus-within', dM: 'fs', dO: 'g', bC: 'hbh', bD: 'hc', cd: 'he', bE: 'hf', ce: 'hfp', dR: 'hv', dT: 'ic', dV: 'fr', ba: 'lbl', dX: 'iml', dY: 'imlf', dZ: 'imlp', d_: 'implw', d$: 'it', d0: 'i', h: 'lnk', aE: 'nb', cm: 'notxt', ee: 'ol', eh: 'or', as: 'oq', en: 'oh', _: 'pg', cr: 'p', ep: 'ppe', ev: 'ui', R: 'r', ex: 'sb', ey: 'sbx', ez: 'sby', eA: 'sbt', eD: 'e', eE: 'cap', eF: 'sev', eM: 'sk', bT: 't', eQ: 'tc', eR: 'w8', eS: 'w2', eT: 'w9', eU: 'tj', br: 'tja', eV: 'tl', eW: 'w3', eX: 'w5', eY: 'w4', eZ: 'tr', e_: 'w6', e$: 'w1', e0: 'tun', cP: 'ts', av: 'clr', e6: 'u', bU: 'wc', cU: 'we', bV: 'wf', cV: 'wfp', bW: 'wrp'};
 var $mdgriffith$elm_ui$Internal$Model$columnClass = $mdgriffith$elm_ui$Internal$Style$classes.c9 + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.ag);
 var $mdgriffith$elm_ui$Internal$Model$gridClass = $mdgriffith$elm_ui$Internal$Style$classes.c9 + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.dO);
 var $mdgriffith$elm_ui$Internal$Model$pageClass = $mdgriffith$elm_ui$Internal$Style$classes.c9 + (' ' + $mdgriffith$elm_ui$Internal$Style$classes._);
@@ -7450,7 +7450,7 @@ var $mdgriffith$elm_ui$Internal$Style$baseSheet = _List_fromArray(
 									])),
 								A2(
 								$mdgriffith$elm_ui$Internal$Style$Descriptor,
-								$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.j),
+								$mdgriffith$elm_ui$Internal$Style$dot($mdgriffith$elm_ui$Internal$Style$classes.h),
 								_List_fromArray(
 									[
 										A2($mdgriffith$elm_ui$Internal$Style$Prop, 'flex-basis', 'auto')
@@ -11897,7 +11897,7 @@ var $mdgriffith$elm_ui$Element$newTabLink = F2(
 								$mdgriffith$elm_ui$Element$height($mdgriffith$elm_ui$Element$shrink),
 								A2(
 									$elm$core$List$cons,
-									$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.a6 + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.ah + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.j)))),
+									$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.a6 + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.ah + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.h)))),
 									attrs)))))),
 			$mdgriffith$elm_ui$Internal$Model$Unkeyed(
 				_List_fromArray(
@@ -13082,39 +13082,40 @@ var $author$project$Pages$People$page = $author$project$Spa$Page$static(
 	{e9: $author$project$Pages$People$view});
 var $author$project$Pages$Publications$allPublications = _List_fromArray(
 	[
-		{h: 'Wood CW*, Bruning M, Ibarra AA, Bartlett Gail J, Thomson AR,\r\n            Sessions RB, Brady RL, Woolfson DN*', i: 'Bioinformatics', j: 'https://academic.oup.com/bioinformatics/article/30/21/3029/2422267', l: '3029-3035', m: $elm$core$Maybe$Nothing, ab: 'CCBuilder: an interactive web-based tool for building, designing\r\n            and assessing coiled-coil protein assemblies', n: '30', o: '2014'},
-		{h: 'Thomson AR, Wood CW, Burton AJ, Bartlett GJ, Sessions RB,\r\n            Brady RL, Woolfson DN*', i: 'Science', j: 'http://science.sciencemag.org/content/346/6208/485', l: '485-488', m: $elm$core$Maybe$Nothing, ab: 'Computational design of water-soluble α-helical barrels', n: '346', o: '2014'},
-		{h: 'Woolfson DN*, Bartlett GJ, Burton AJ, Heal JW, Niitsu A,\r\n            Thomson AR, Wood CW', i: 'Current opinion in structural biology', j: 'https://www.sciencedirect.com/science/article/pii/S0959440X1500069X', l: '16-26', m: $elm$core$Maybe$Nothing, ab: 'De novo protein design: how do we expand into the universe of\r\n            possible protein structures?', n: '33', o: '2015'},
-		{h: 'Burgess NC, Sharp TH, Thomas F, Wood CW, Thomson AR,\r\n            Zaccai NR, Brady RL, Serpell LC, Woolfson DN*', i: 'Journal of the American Chemical Society', j: 'https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973', l: '10554-10562', m: $elm$core$Maybe$Nothing, ab: 'Modular design of self-assembling peptide-based nanotubes', n: '137', o: '2015'},
-		{h: 'Wood CW*, Heal JW, Thomson AR, Bartlett GJ, Ibarra AÁ, Brady RL,\r\n            Sessions RB, Woolfson DN*"\r\n            ', i: 'Bioinformatics', j: 'https://academic.oup.com/bioinformatics/article/33/19/3043/3861331', l: '3043-3050', m: $elm$core$Maybe$Nothing, ab: 'ISAMBARD: an open-source computational environment for\r\n            biomolecular analysis, modelling and design', n: '33', o: '2017'},
-		{h: 'Wood CW and Woolfson DN', i: 'Protein Science', j: 'https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279', l: '103-111', m: $elm$core$Maybe$Nothing, ab: 'CCBuilder 2.0: Powerful and accessible coiled‐coil modeling', n: '27', o: '2018'},
-		{h: 'Pellizzoni MM, Schwizer F, Wood CW, Sabatino V, Cotelle Y,\r\n            Matile S, Woolfson DN, Ward TR*', i: 'ACS Catalysis', j: 'https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773', l: '1476-1484', m: $elm$core$Maybe$Nothing, ab: 'Chimeric Streptavidins as Host Proteins for Artificial ' + 'Metalloenzymes', n: '8', o: '2018'},
-		{h: 'Heal JW, Bartlett GJ, Wood CW, Thomson AR, Woolfson DN*', i: 'Bioinformatics', j: 'https://academic.oup.com/bioinformatics/article/34/19/3316/4990824', l: '3316-3323', m: $elm$core$Maybe$Nothing, ab: 'Applying graph theory to protein structures: an atlas of coiled\r\n            coils', n: '34', o: '2018'},
-		{h: 'Rhys GG, Wood CW, Lang EJM, Mulholland AJ, Brady RL,\r\n            Thomson AR, Woolfson DN*', i: 'Nature Communications', j: 'https://www.nature.com/articles/s41467-018-06391-y', l: '4132', m: $elm$core$Maybe$Nothing, ab: 'Maintaining and breaking symmetry in homomeric coiled-coil\r\n          assemblies', n: '9', o: '2018'},
+		{f: 'Wood CW*, Bruning M, Ibarra AA, Bartlett Gail J, Thomson AR,\r\n            Sessions RB, Brady RL, Woolfson DN*', g: 'Bioinformatics', h: 'https://academic.oup.com/bioinformatics/article/30/21/3029/2422267', j: '3029-3035', k: $elm$core$Maybe$Nothing, ab: 'CCBuilder: an interactive web-based tool for building, designing\r\n            and assessing coiled-coil protein assemblies', m: '30', n: '2014'},
+		{f: 'Thomson AR, Wood CW, Burton AJ, Bartlett GJ, Sessions RB,\r\n            Brady RL, Woolfson DN*', g: 'Science', h: 'http://science.sciencemag.org/content/346/6208/485', j: '485-488', k: $elm$core$Maybe$Nothing, ab: 'Computational design of water-soluble α-helical barrels', m: '346', n: '2014'},
+		{f: 'Woolfson DN*, Bartlett GJ, Burton AJ, Heal JW, Niitsu A,\r\n            Thomson AR, Wood CW', g: 'Current opinion in structural biology', h: 'https://www.sciencedirect.com/science/article/pii/S0959440X1500069X', j: '16-26', k: $elm$core$Maybe$Nothing, ab: 'De novo protein design: how do we expand into the universe of\r\n            possible protein structures?', m: '33', n: '2015'},
+		{f: 'Burgess NC, Sharp TH, Thomas F, Wood CW, Thomson AR,\r\n            Zaccai NR, Brady RL, Serpell LC, Woolfson DN*', g: 'Journal of the American Chemical Society', h: 'https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973', j: '10554-10562', k: $elm$core$Maybe$Nothing, ab: 'Modular design of self-assembling peptide-based nanotubes', m: '137', n: '2015'},
+		{f: 'Wood CW*, Heal JW, Thomson AR, Bartlett GJ, Ibarra AÁ, Brady RL,\r\n            Sessions RB, Woolfson DN*"\r\n            ', g: 'Bioinformatics', h: 'https://academic.oup.com/bioinformatics/article/33/19/3043/3861331', j: '3043-3050', k: $elm$core$Maybe$Nothing, ab: 'ISAMBARD: an open-source computational environment for\r\n            biomolecular analysis, modelling and design', m: '33', n: '2017'},
+		{f: 'Wood CW and Woolfson DN', g: 'Protein Science', h: 'https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279', j: '103-111', k: $elm$core$Maybe$Nothing, ab: 'CCBuilder 2.0: Powerful and accessible coiled‐coil modeling', m: '27', n: '2018'},
+		{f: 'Pellizzoni MM, Schwizer F, Wood CW, Sabatino V, Cotelle Y,\r\n            Matile S, Woolfson DN, Ward TR*', g: 'ACS Catalysis', h: 'https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773', j: '1476-1484', k: $elm$core$Maybe$Nothing, ab: 'Chimeric Streptavidins as Host Proteins for Artificial ' + 'Metalloenzymes', m: '8', n: '2018'},
+		{f: 'Heal JW, Bartlett GJ, Wood CW, Thomson AR, Woolfson DN*', g: 'Bioinformatics', h: 'https://academic.oup.com/bioinformatics/article/34/19/3316/4990824', j: '3316-3323', k: $elm$core$Maybe$Nothing, ab: 'Applying graph theory to protein structures: an atlas of coiled\r\n            coils', m: '34', n: '2018'},
+		{f: 'Rhys GG, Wood CW, Lang EJM, Mulholland AJ, Brady RL,\r\n            Thomson AR, Woolfson DN*', g: 'Nature Communications', h: 'https://www.nature.com/articles/s41467-018-06391-y', j: '4132', k: $elm$core$Maybe$Nothing, ab: 'Maintaining and breaking symmetry in homomeric coiled-coil\r\n          assemblies', m: '9', n: '2018'},
 		{
-		h: 'Rhys GG, Wood CW, Beesley JL, Zaccai NR, Burton AJ,\r\n            Brady RL, Thomson AR, Woolfson DN*',
-		i: 'Journal of the American Chemical Society',
-		j: 'https://pubs.acs.org/doi/10.1021/jacs.8b13354',
-		l: '8787-8797',
-		m: $elm$core$Maybe$Just('https://www.biorxiv.org/content/early/2018/12/21/503698'),
+		f: 'Rhys GG, Wood CW, Beesley JL, Zaccai NR, Burton AJ,\r\n            Brady RL, Thomson AR, Woolfson DN*',
+		g: 'Journal of the American Chemical Society',
+		h: 'https://pubs.acs.org/doi/10.1021/jacs.8b13354',
+		j: '8787-8797',
+		k: $elm$core$Maybe$Just('https://www.biorxiv.org/content/early/2018/12/21/503698'),
 		ab: 'Navigating the structural landscape of de novo α-helical bundles',
-		n: '141',
-		o: '2019'
+		m: '141',
+		n: '2019'
 	},
-		{h: 'Juan J, Baker EG, Wood CW, Bath J, Woolfson DN*,\r\n            Turberfield AJ*', i: 'ACS Nano', j: 'https://pubs.acs.org/doi/10.1021/acsnano.9b04251', l: '9927-9935', m: $elm$core$Maybe$Nothing, ab: 'Peptide Assembly Directed and Quantified Using Megadalton DNA\r\n          Nanostructures', n: '13', o: '2019'},
-		{h: 'Wood CW*, Ibarra AA, Bartlett GJ, Wilson AJ, Woolfson DN,\r\n            Sessions RB*', i: 'Bioinformatics', j: 'https://doi.org/10.1093/bioinformatics/btaa026', l: '2917-2919', m: $elm$core$Maybe$Nothing, ab: 'BAlaS: fast, interactive and accessible computational alanine-scanning\r\n            using BudeAlaScan', n: '36', o: '2020'},
+		{f: 'Juan J, Baker EG, Wood CW, Bath J, Woolfson DN*,\r\n            Turberfield AJ*', g: 'ACS Nano', h: 'https://pubs.acs.org/doi/10.1021/acsnano.9b04251', j: '9927-9935', k: $elm$core$Maybe$Nothing, ab: 'Peptide Assembly Directed and Quantified Using Megadalton DNA\r\n          Nanostructures', m: '13', n: '2019'},
+		{f: 'Wood CW*, Ibarra AA, Bartlett GJ, Wilson AJ, Woolfson DN,\r\n            Sessions RB*', g: 'Bioinformatics', h: 'https://doi.org/10.1093/bioinformatics/btaa026', j: '2917-2919', k: $elm$core$Maybe$Nothing, ab: 'BAlaS: fast, interactive and accessible computational alanine-scanning\r\n            using BudeAlaScan', m: '36', n: '2020'},
 		{
-		h: 'Galloway JM, Bray HEV, Shoemark DK, Hodgson LR, Coombs J, Mantell JM,\r\n            Rose RS, Ross JF, Morris C, Harniman RL, Wood CW, Arthur C, Verkade P,\r\n            Woolfson DN\r\n            ',
-		i: 'Small',
-		j: 'https://doi.org/10.1002/smll.202100472',
-		l: '2100472',
-		m: $elm$core$Maybe$Just('https://www.biorxiv.org/content/10.1101/2020.08.14.251462v2'),
+		f: 'Galloway JM, Bray HEV, Shoemark DK, Hodgson LR, Coombs J, Mantell JM,\r\n            Rose RS, Ross JF, Morris C, Harniman RL, Wood CW, Arthur C, Verkade P,\r\n            Woolfson DN\r\n            ',
+		g: 'Small',
+		h: 'https://doi.org/10.1002/smll.202100472',
+		j: '2100472',
+		k: $elm$core$Maybe$Just('https://www.biorxiv.org/content/10.1101/2020.08.14.251462v2'),
 		ab: 'De Novo Designed Peptide and Protein Hairpins Self‐Assemble into Sheets\r\n            and Nanoparticles\r\n            ',
-		n: '17',
-		o: '2021'
+		m: '17',
+		n: '2021'
 	},
-		{h: 'O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S\r\n            ', i: 'Biorxiv', j: 'https://doi.org/10.1101/2021.04.16.440193', l: '_', m: $elm$core$Maybe$Nothing, ab: 'Preprint: Generation of photocaged nanobodies for in vivo applications\r\n            using genetic code expansion and computationally guided protein engineering\r\n            ', n: '_', o: '2021'},
-		{h: 'Stam MJ and Wood CW', i: 'Biorxiv', j: 'https://doi.org/10.1101/2021.04.28.441790', l: '_', m: $elm$core$Maybe$Nothing, ab: 'Preprint: DE-STRESS: A user-friendly web application for the evaluation\r\n            of protein designs\r\n            ', n: '_', o: '2021'}
+		{f: 'O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S\r\n            ', g: 'Biorxiv', h: 'https://doi.org/10.1101/2021.04.16.440193', j: '_', k: $elm$core$Maybe$Nothing, ab: 'Preprint - Generation of photocaged nanobodies for in vivo applications\r\n            using genetic code expansion and computationally guided protein engineering\r\n            ', m: '_', n: '2021'},
+		{f: 'Stam MJ and Wood CW', g: 'Biorxiv', h: 'https://doi.org/10.1101/2021.04.28.441790', j: '_', k: $elm$core$Maybe$Nothing, ab: 'Preprint - DE-STRESS: A user-friendly web application for the evaluation\r\n            of protein designs\r\n            ', m: '_', n: '2021'},
+		{f: 'Castorina LV, Petrenas R, Subr K and Wood CW', g: 'arXiv', h: 'https://arxiv.org/abs/2109.07925', j: '_', k: $elm$core$Maybe$Nothing, ab: 'Preprint - PDBench: Evaluating Computational Methods for Protein Sequence\r\n            Design\r\n            ', m: '_', n: '2021'}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
@@ -13144,12 +13145,12 @@ var $author$project$Pages$Publications$publicationView = function (publication) 
 				$author$project$Shared$Style$linkStyling,
 				{
 					x: $author$project$Shared$Style$subHeading(publication.ab),
-					e8: publication.j
+					e8: publication.h
 				}),
-				$author$project$Shared$Style$simpleText(publication.h),
-				$author$project$Shared$Style$simpleText(publication.i + (', ' + (publication.n + (', ' + (publication.l + (', ' + (publication.o + '.'))))))),
+				$author$project$Shared$Style$simpleText(publication.f),
+				$author$project$Shared$Style$simpleText(publication.g + (', ' + (publication.m + (', ' + (publication.j + (', ' + (publication.n + '.'))))))),
 				function () {
-				var _v0 = publication.m;
+				var _v0 = publication.k;
 				if (!_v0.$) {
 					var preprintLink = _v0.a;
 					return A2(
@@ -14490,7 +14491,7 @@ var $mdgriffith$elm_ui$Element$link = F2(
 							$mdgriffith$elm_ui$Element$height($mdgriffith$elm_ui$Element$shrink),
 							A2(
 								$elm$core$List$cons,
-								$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.a6 + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.ah + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.j)))),
+								$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.a6 + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.ah + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.h)))),
 								attrs))))),
 			$mdgriffith$elm_ui$Internal$Model$Unkeyed(
 				_List_fromArray(
