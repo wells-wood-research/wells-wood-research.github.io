@@ -262,7 +262,7 @@ allPublications =
             """O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S
             """
       , title =
-            """Preprint: Generation of photocaged nanobodies for in vivo applications
+            """Preprint - Generation of photocaged nanobodies for in vivo applications
             using genetic code expansion and computationally guided protein engineering
             """
       , journal = "Biorxiv"
@@ -274,11 +274,23 @@ allPublications =
       }
     , { authors = "Stam MJ and Wood CW"
       , title =
-            """Preprint: DE-STRESS: A user-friendly web application for the evaluation
+            """Preprint - DE-STRESS: A user-friendly web application for the evaluation
             of protein designs
             """
       , journal = "Biorxiv"
       , link = "https://doi.org/10.1101/2021.04.28.441790"
+      , preprintLink = Nothing
+      , volume = "_"
+      , pages = "_"
+      , year = "2021"
+      }
+    , { authors = "Castorina LV, Petrenas R, Subr K and Wood CW"
+      , title =
+            """Preprint - PDBench: Evaluating Computational Methods for Protein Sequence
+            Design
+            """
+      , journal = "arXiv"
+      , link = "https://arxiv.org/abs/2109.07925"
       , preprintLink = Nothing
       , volume = "_"
       , pages = "_"
