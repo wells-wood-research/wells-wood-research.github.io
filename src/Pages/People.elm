@@ -191,6 +191,30 @@ phdStudents =
                 ]
       , active = False
       }
+    , { pictureUrl = "/static/images/people/evanotari.jpg"
+      , name = "Evangelia Notari"
+      , associatedLab =
+            Style.simpleLink
+                { url = "https://www.julienmichel.net/lab/"
+                , label = "Michel Lab, UoE"
+                }
+                |> Just
+      , email = Just "e.notari@sms.ed.ac.uk"
+      , twitter = Just "https://twitter.com/EvaNotari"
+      , github = Just "https://github.com/eva-not"
+      , bio =
+            paragraph []
+                [ text
+                    """Eva received her integrated Masters in Chemical Engineering from
+                    the National Technical University of Athens and then did a Masters
+                    in Biotechnology at the University of Edinburgh. She is now
+                    undertaking her PhD in the Michel lab as part of the EASTBIO DTP,
+                    and is collaborating with the Wells Wood lab to design multi-state
+                    proteins with the aid of molecular-dynamics simulations and machine
+                    learning."""
+                ]
+      , active = True
+      }
     , { pictureUrl = "/static/images/people/jackoshea.jpg"
       , name = "Jack O'Shea"
       , associatedLab =
@@ -285,7 +309,7 @@ mastersStudents =
                     and simulation of the protein SUN1.
                     """
                 ]
-      , active = True
+      , active = False
       }
     ]
 
@@ -325,7 +349,7 @@ undergraduateStudents =
                     simulating P450-BM3 and related proteins.
                     """
                 ]
-      , active = True
+      , active = False
       }
     ]
 
