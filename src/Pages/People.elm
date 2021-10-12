@@ -162,6 +162,26 @@ phdStudents =
                 ]
       , active = True
       }
+    , { pictureUrl = "/static/images/people/mertunal.jpg"
+      , name = "Mert Ünal"
+      , associatedLab = Nothing
+      , email = Just "s.m.unal@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Mert did his undergraduate degree in Molecular Biology, Genetics
+                    & Bioengineering at Sabanci University in Turkey and Master`s degree
+                    in Synthetic Biology & Biotechnology at the University of Edinburgh.
+                    He has research experience in protein biochemistry, evolutionary
+                    biology and bioinformatics, and he is aiming to combine all of these
+                    in his PhD project for the incorporation of unnatural cofactors into
+                    the computationally designed proteins, in collaboration with the
+                    Wallace Lab, UoE."""
+                ]
+      , active = True
+      }
     , { pictureUrl = "/static/images/people/jonathanmorales.jpg"
       , name = "Jonathan Morales-Espinoza"
       , associatedLab =
