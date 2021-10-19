@@ -114,7 +114,10 @@ chrisWellsWood =
                 """, where he worked on developing and applying tools for
                 computational protein design. In 2018 he was awarded an
                 EPSRC postdoctoral fellowship and moved to the University of
-                Edinburgh to establish his research group."""
+                Edinburgh to establish his research group. In 2020, he attained a
+                permanent position in the School of Biological Science as a
+                Lecturer in Biotechnology.
+                """
             ]
     , active = True
     }
@@ -163,7 +166,7 @@ phdStudents =
       , active = True
       }
     , { pictureUrl = "/static/images/people/mertunal.jpg"
-      , name = "Mert Ãœnal"
+      , name = "Mert Ã\u{009C}nal"
       , associatedLab = Nothing
       , email = Just "s.m.unal@sms.ed.ac.uk"
       , twitter = Nothing
