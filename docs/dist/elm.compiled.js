@@ -12368,7 +12368,7 @@ var $author$project$Pages$People$chrisWellsWood = {
 				$mdgriffith$elm_ui$Element$text('Chris took his undergraduate degree in Molecular and\r\n                Cellular Biology at the University of Glasgow. He then went\r\n                on to undertake a PhD and postdoc in the lab of '),
 				$author$project$Shared$Style$simpleLink(
 				{E: 'Prof. Dek Woolfson', e8: 'https://woolfsonlab.wordpress.com/'}),
-				$mdgriffith$elm_ui$Element$text(', where he worked on developing and applying tools for\r\n                computational protein design. In 2018 he was awarded an\r\n                EPSRC postdoctoral fellowship and moved to the University of\r\n                Edinburgh to establish his research group.')
+				$mdgriffith$elm_ui$Element$text(', where he worked on developing and applying tools for\r\n                computational protein design. In 2018 he was awarded an\r\n                EPSRC postdoctoral fellowship and moved to the University of\r\n                Edinburgh to establish his research group. In 2020, he attained a\r\n                permanent position in the School of Biological Science as a\r\n                Lecturer in Biotechnology.\r\n                ')
 			])),
 	y: $elm$core$Maybe$Just('chris.wood@ed.ac.uk'),
 	z: $elm$core$Maybe$Just('https://github.com/ChrisWellsWood'),
@@ -12921,7 +12921,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		y: $elm$core$Maybe$Just('s.m.unal@sms.ed.ac.uk'),
 		z: $elm$core$Maybe$Nothing,
-		u: 'Mert Ãœnal',
+		u: 'Mert Ã\u{009C}nal',
 		A: '/static/images/people/mertunal.jpg',
 		B: $elm$core$Maybe$Nothing
 	},
