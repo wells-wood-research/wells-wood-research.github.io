@@ -12917,7 +12917,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('Mert did his undergraduate degree in Molecular Biology, Genetics\n                    & Bioengineering at Sabanci University in Turkey and Master`s degree\n                    in Synthetic Biology & Biotechnology at the University of Edinburgh.\n                    He has research experience in protein biochemistry, evolutionary\n                    biology and bioinformatics, and he is aiming to combine all of these\n                    in his PhD project for the incorporation of unnatural cofactors into\n                    the computationally designed proteins, in collaboration with the\n                    Wallace Lab, UoE.')
+					$mdgriffith$elm_ui$Element$text('Mert did his undergraduate degree in Molecular Biology, Genetics\n                    & Bioengineering at Sabanci University in Turkey and Master`s degree\n                    in Synthetic Biology & Biotechnology at the University of Edinburgh.\n                    Mert is doing his PhD as part of EASTBIO DTP, where he is aiming to\n                    combine his previous research experience in protein biochemistry,\n                    evolutionary biology and bioinformatics, to the incorporation of\n                    unnatural cofactors into the computationally designed proteins,\n                    in collaboration with the Wallace Lab, UoE.')
 				])),
 		y: $elm$core$Maybe$Just('s.m.unal@sms.ed.ac.uk'),
 		z: $elm$core$Maybe$Nothing,
