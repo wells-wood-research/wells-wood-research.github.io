@@ -166,7 +166,7 @@ phdStudents =
       , active = True
       }
     , { pictureUrl = "/static/images/people/mertunal.jpg"
-      , name = "Mert �\u{009C}nal"
+      , name = "Mert Ünal"
       , associatedLab = Nothing
       , email = Just "s.m.unal@sms.ed.ac.uk"
       , twitter = Nothing
@@ -190,7 +190,7 @@ phdStudents =
       , associatedLab =
             Style.simpleLink
                 { url = "http://virtualplant.bio.puc.cl/"
-                , label = "Gutiérrez Lab, PUC"
+                , label = "GutiÃ©rrez Lab, PUC"
                 }
                 |> Just
       , email = Just "j.morales-espinoza@sms.ed.ac.uk"
@@ -206,7 +206,7 @@ phdStudents =
                     the most worldwide relevant phytopathogenic fungus. After
                     his undergraduate studies, he moved to the Pontificia
                     Universidad Catolica de Chile to undertake a PhD in the lab
-                    of Rodrigo Gutiérrez. Currently, Jonathan works in plant
+                    of Rodrigo GutiÃ©rrez. Currently, Jonathan works in plant
                     molecular signal transduction triggered by nutrients and is
                     visiting the Wells Wood Lab to design and develop a new
                     protein-based sensors to understand nutrient movement in
