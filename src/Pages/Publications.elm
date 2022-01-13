@@ -274,14 +274,14 @@ allPublications =
       }
     , { authors = "Stam MJ and Wood CW"
       , title =
-            """Preprint - DE-STRESS: A user-friendly web application for the evaluation
+            """DE-STRESS: A user-friendly web application for the evaluation
             of protein designs
             """
-      , journal = "Biorxiv"
-      , link = "https://doi.org/10.1101/2021.04.28.441790"
-      , preprintLink = Nothing
-      , volume = "_"
-      , pages = "_"
+      , journal = "Protein Engineering, Design and Selection"
+      , link = "https://doi.org/10.1093/protein/gzab029"
+      , preprintLink = Just "https://doi.org/10.1101/2021.04.28.441790"
+      , volume = "34"
+      , pages = "gzab029"
       , year = "2021"
       }
     , { authors = "Castorina LV, Petrenas R, Subr K and Wood CW"
