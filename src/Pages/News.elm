@@ -70,7 +70,24 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2021-05-07"
+    [ { date = "2022-01-13"
+      , title =
+            """DE-STRESS paper now open access in PEDS"""
+      , category = "New Article"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ paragraph []
+                    [ text <|
+                        """The DE-STRESS paper has now been published in Protein
+                        Engineering, Design and Selection. The peer review process was
+                        very constructive and I think it really improved the paper.
+                        You can find a link to the application in the "Tools" page, give
+                        it a go and let us know what you think!
+                        """
+                    ]
+                ]
+      }
+    , { date = "2021-05-07"
       , title =
             """DE-STRESS: A user-friendly web application for the evaluation of protein
             designs
