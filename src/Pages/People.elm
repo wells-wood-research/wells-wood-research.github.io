@@ -46,6 +46,10 @@ people =
         Style.sectionStyling
         [ Style.heading "People"
         , personView chrisWellsWood
+        , peopleSection "Post Doctoral Research Associates"
+            (postDocs
+                |> List.filter .active
+            )
         , peopleSection "PhD Students"
             (phdStudents
                 |> List.filter .active
@@ -59,7 +63,7 @@ people =
                 |> List.filter .active
             )
         , peopleSection "Previous Members"
-            ((phdStudents ++ mastersStudents ++ undergraduateStudents)
+            ((postDocs ++ phdStudents ++ mastersStudents ++ undergraduateStudents)
                 |> List.filter (not << .active)
             )
         , Style.heading "Join Us"
@@ -122,6 +126,31 @@ chrisWellsWood =
     , active = True
     }
 
+postDocs : List (Person msg)
+postDocs =
+    [ { pictureUrl = "/static/images/people/jackoshea.jpg"
+      , name = "Jack O'Shea"
+      , associatedLab = Nothing
+      , email = Just "j.m.o'shea@sms.ed.ac.uk"
+      , twitter = Just "https://twitter.com/jack_oshea97"
+      , github = Just "https://github.com/97joshea"
+      , bio =
+            paragraph []
+                [ text
+                    """Jack studied Natural Sciences (Synthetic Organic
+                    Chemistry and Molecular and Cell Biology) at University
+                    Collage London for his undergraduate degree. He completed
+                    his PhD in Dr. Sebastian Greiss' lab at the University of
+                    Edinburgh, during which he worked with the Wells Wood lab
+                    to tune the affinity of protein-protein interactions.
+                    
+                    He is now undertaking a project in the Wells Wood lab to develop a
+                    novel pipeline for high-throughput design of protein based sensors.
+                    """
+                ]
+      , active = True
+      }
+      ]
 
 phdStudents : List (Person msg)
 phdStudents =
@@ -235,29 +264,6 @@ phdStudents =
                     and is collaborating with the Wells Wood lab to design multi-state
                     proteins with the aid of molecular-dynamics simulations and machine
                     learning."""
-                ]
-      , active = True
-      }
-    , { pictureUrl = "/static/images/people/jackoshea.jpg"
-      , name = "Jack O'Shea"
-      , associatedLab =
-            Style.simpleLink
-                { url = "https://www.ed.ac.uk/discovery-brain-sciences/our-staff/research-groups/sebastian-greiss"
-                , label = "Greiss Lab, UoE"
-                }
-                |> Just
-      , email = Just "j.m.o'shea@sms.ed.ac.uk"
-      , twitter = Just "https://twitter.com/jack_oshea97"
-      , github = Just "https://github.com/97joshea"
-      , bio =
-            paragraph []
-                [ text
-                    """Jack studied Natural Sciences (Synthetic Organic
-                    Chemistry and Molecular and Cell Biology) at University
-                    Collage London for his undergraduate degree. He is taking
-                    his PhD in Dr. Sebastian Greiss' lab at the University of
-                    Edinburgh, and is collaborating with the Wells Wood lab
-                    to tune the affinity of protein-protein interactions."""
                 ]
       , active = True
       }
