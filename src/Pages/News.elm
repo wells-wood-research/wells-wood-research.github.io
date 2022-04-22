@@ -70,7 +70,46 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2022-01-13"
+    [ { date = "2022-04-22"
+      , title =
+            """APFED 2022"""
+      , category = "Conference"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width fill ]
+                    { src = "/static/images/news/2022-04-22-apfed.jpeg"
+                    , description = "Conference attendees for APFED 2022."
+                    }
+                , paragraph []
+                    [ text <| """At the beginning of the month, most of the lab attended
+                        Advances in Protein Folding, Evolution, and Design (APFED) 2022.
+                        The conference was organised by members of Birte Höcker's group
+                        in the University of Beyreuth, and the whole event was
+                        excellent, from the science to the organisation. This was the
+                        first in person conference that I've attended since the start of
+                        the pandemic, and for many members of the lab, it was the first
+                        in person conference that they'd ever attended! There were some
+                        really exciting presentations, and some even more interesting
+                        discussions at the poster sessions and meals, some of which have
+                        already led to new collaborations.""" ]
+
+                , paragraph []
+                    [ text <|
+                        """I presented an overview of our lab's work, while Leo and Michael
+                        brought along posters presenting their work on TIMED (our DNN based
+                        sequence design algorithm) and DE-STRESS (our design evaluation
+                        pipeline) respectively."""
+                        ]
+
+                , paragraph []
+                    [ text <|
+                        """I really hope there's an APFED 2023 or 2024, and if there is,
+                        I'd recommend that you attend!
+                        """
+                    ]
+                ]
+      }
+    , { date = "2022-01-13"
       , title =
             """DE-STRESS paper now open access in PEDS"""
       , category = "New Article"
