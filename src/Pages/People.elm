@@ -126,6 +126,7 @@ chrisWellsWood =
     , active = True
     }
 
+
 postDocs : List (Person msg)
 postDocs =
     [ { pictureUrl = "/static/images/people/jackoshea.jpg"
@@ -150,7 +151,8 @@ postDocs =
                 ]
       , active = True
       }
-      ]
+    ]
+
 
 phdStudents : List (Person msg)
 phdStudents =
@@ -323,7 +325,44 @@ phdStudents =
 
 mastersStudents : List (Person msg)
 mastersStudents =
-    [ { pictureUrl = "/static/images/people/gangliu.jpg"
+    [ { pictureUrl = "/static/images/people/benorton.jpg"
+      , name = "Ben Orton"
+      , associatedLab = Nothing
+      , email = Just "s1704921@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Ben completed his undergraduate degree in Biochemistry at the
+                    University of Edinburgh. He is now undertaking a Master’s in Systems
+                    and Synthetic Biology and is carrying out his research project with
+                    the Wells Wood Lab. Ben is working with Mert to incorporate
+                    unnatural cofactors into computationally designed proteins.
+                    """
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/haoruowei.jpg"
+      , name = "Haoruo Wei"
+      , associatedLab = Nothing
+      , email = Just "h.wei-13@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Haoruo completed his undergraduate degree in Bioengineering at
+                    Harbin Institute of Technology, and is undertaking his master degree
+                    in Biotechnology in University of Edinburgh and performing research
+                    project in the Wells Wood Lab. Right now, he is assisting with the
+                    experimental evaluation of our protein design TIMED with the help of
+                    Jack.
+                    """
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/gangliu.jpg"
       , name = "Gang Liu"
       , associatedLab = Nothing
       , email = Just "g.liu-15@sms.ed.ac.uk"
