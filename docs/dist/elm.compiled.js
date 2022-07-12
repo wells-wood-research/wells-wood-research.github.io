@@ -13257,7 +13257,6 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		n: '17',
 		o: '2021'
 	},
-		{g: 'O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S\r\n            ', h: 'Biorxiv', i: 'https://doi.org/10.1101/2021.04.16.440193', k: '_', l: $elm$core$Maybe$Nothing, O: 'Preprint - Generation of photocaged nanobodies for in vivo applications\r\n            using genetic code expansion and computationally guided protein engineering\r\n            ', n: '_', o: '2021'},
 		{
 		g: 'Stam MJ and Wood CW',
 		h: 'Protein Engineering, Design and Selection',
@@ -13268,7 +13267,17 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		n: '34',
 		o: '2021'
 	},
-		{g: 'Castorina LV, Petrenas R, Subr K and Wood CW', h: 'arXiv', i: 'https://arxiv.org/abs/2109.07925', k: '_', l: $elm$core$Maybe$Nothing, O: 'Preprint - PDBench: Evaluating Computational Methods for Protein Sequence\r\n            Design\r\n            ', n: '_', o: '2021'}
+		{g: 'Castorina LV, Petrenas R, Subr K and Wood CW', h: 'arXiv', i: 'https://arxiv.org/abs/2109.07925', k: '_', l: $elm$core$Maybe$Nothing, O: 'Preprint - PDBench: Evaluating Computational Methods for Protein Sequence\r\n            Design\r\n            ', n: '_', o: '2021'},
+		{
+		g: 'O’Shea JM, Goutou A, Brydon J, Sethna CR, Wood CW, Greiss S\r\n            ',
+		h: 'ChemBioChem',
+		i: 'https://doi.org/10.1002/cbic.202200321',
+		k: 'e202200321',
+		l: $elm$core$Maybe$Just('https://doi.org/10.1101/2021.04.16.440193'),
+		O: 'Generation of photocaged nanobodies for in vivo applications\r\n            using genetic code expansion and computationally guided protein engineering\r\n            ',
+		n: '_',
+		o: '2022'
+	}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
