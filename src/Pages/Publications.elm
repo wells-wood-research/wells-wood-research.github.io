@@ -258,20 +258,6 @@ allPublications =
       , pages = "2100472"
       , year = "2021"
       }
-    , { authors =
-            """O’Shea JM, Goutou A, Sethna C, Wood CW, Greiss S
-            """
-      , title =
-            """Preprint - Generation of photocaged nanobodies for in vivo applications
-            using genetic code expansion and computationally guided protein engineering
-            """
-      , journal = "Biorxiv"
-      , link = "https://doi.org/10.1101/2021.04.16.440193"
-      , preprintLink = Nothing
-      , volume = "_"
-      , pages = "_"
-      , year = "2021"
-      }
     , { authors = "Stam MJ and Wood CW"
       , title =
             """DE-STRESS: A user-friendly web application for the evaluation
@@ -295,5 +281,19 @@ allPublications =
       , volume = "_"
       , pages = "_"
       , year = "2021"
+      }
+    , { authors =
+            """O’Shea JM, Goutou A, Brydon J, Sethna CR, Wood CW, Greiss S
+            """
+      , title =
+            """Generation of photocaged nanobodies for in vivo applications
+            using genetic code expansion and computationally guided protein engineering
+            """
+      , journal = "ChemBioChem"
+      , link = "https://doi.org/10.1002/cbic.202200321"
+      , preprintLink = Just "https://doi.org/10.1101/2021.04.16.440193"
+      , volume = "_"
+      , pages = "e202200321"
+      , year = "2022"
       }
     ]
