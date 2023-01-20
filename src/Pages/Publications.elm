@@ -270,18 +270,6 @@ allPublications =
       , pages = "gzab029"
       , year = "2021"
       }
-    , { authors = "Castorina LV, Petrenas R, Subr K and Wood CW"
-      , title =
-            """Preprint - PDBench: Evaluating Computational Methods for Protein Sequence
-            Design
-            """
-      , journal = "arXiv"
-      , link = "https://arxiv.org/abs/2109.07925"
-      , preprintLink = Nothing
-      , volume = "_"
-      , pages = "_"
-      , year = "2021"
-      }
     , { authors =
             """O’Shea JM, Goutou A, Brydon J, Sethna CR, Wood CW, Greiss S
             """
@@ -295,5 +283,15 @@ allPublications =
       , volume = "_"
       , pages = "e202200321"
       , year = "2022"
+      }
+    , { authors = "Castorina LV, Petrenas R, Subr K and Wood CW"
+      , title =
+            """PDBench: Evaluating Computational Methods for Protein Sequence Design"""
+      , journal = "Bioinformatics"
+      , link = "https://doi.org/10.1093/bioinformatics/btad027"
+      , preprintLink = Just "https://arxiv.org/abs/2109.07925"
+      , volume = "Accepted Manuscript"
+      , pages = "btad027"
+      , year = "2023"
       }
     ]
