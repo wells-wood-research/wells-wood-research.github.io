@@ -3,6 +3,8 @@ module Pages.News exposing (Model, Msg, Params, page)
 import Element exposing (..)
 import Element.Border as Border
 import Element.Font as Font
+import Html
+import Html.Attributes as HAtt
 import Shared.Style as Style exposing (defaultEach)
 import Spa.Document exposing (Document)
 import Spa.Page as Page exposing (Page)
@@ -70,7 +72,154 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2022-04-22"
+    [ { date = "2022-01-14"
+      , title =
+            """Benchmarking Protein Sequence Design"""
+      , category = "New Article"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ paragraph []
+                    [ text <|
+                        """Leo and Rokas's work on benchmarking protein sequence design
+                        methods has just been published in Bioinformatics. We've
+                        developed a robust framework for evaluating the performance of
+                        sequence design methods, with an aim to shine a light on the
+                        biological implications of the sequences that are generated.
+                        This method has been really important to guide the development
+                        of our deep-learning based design methods (more on those to be
+                        published soon), and hopefully it will be useful to other groups
+                        too! Well done to Leo and Rokas, and thanks for your hard work!
+                        """
+                    ]
+                , paragraph []
+                    [ text <|
+                        """The paper is open access, and you can read it for free """
+                    , newTabLink
+                        Style.linkStyling
+                        { url = "https://doi.org/10.1093/bioinformatics/btad027"
+                        , label = text "here"
+                        }
+                    , text <|
+                        """. Leo also wrote a """
+                    , newTabLink
+                        Style.linkStyling
+                        { url =
+                            "https://twitter.com/leocastorina/status/1614180921480970240?s=20&t=LqJhfQBbGBJcKuim2yF2Og"
+                        , label = text "really nice Twitter thread"
+                        }
+                    , text <|
+                        """ summarising the results, which you might find
+                          interesting."""
+                    ]
+                ]
+      }
+    , { date = "2022-09-23"
+      , title =
+            """BBSRC sLOLA Award"""
+      , category = "Funding"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ paragraph []
+                    [ text <|
+                        """I'm very excited to announce that we are part of a team that
+                        have been awarded a BBSRC sLOLA grant. The team is led by Nigel
+                        Scrutton from University of Manchester (UoM), along with Perdita
+                        Barran (UoM) and Dek Woolfson (University of Bristol). Our plan
+                        is to use design and engineering to gain a deep understanding of
+                        photoactive enzymes, with a view to making new enzymes that have
+                        useful applications in industrial biotechnology.
+                        """
+                    ]
+                , paragraph []
+                    [ text <|
+                        """You can read more about the project in the """
+                    , newTabLink
+                        Style.linkStyling
+                        { url =
+                            "https://www.ukri.org/news/19-million-to-investigate-bold-ideas-in-bioscience-research/"
+                        , label = text "BBSRC's official announcement"
+                        }
+                    , text "."
+                    ]
+                ]
+      }
+    , { date = "2022-07-10"
+      , title =
+            """Royal Society Summer Exhibition"""
+      , category = "Public Engagement"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 400 ]
+                    { src = "/static/images/news/2022-07-10-rsse.jpeg"
+                    , description = "The team standing outside the Royal Society."
+                    }
+                , paragraph []
+                    [ text <|
+                        """We were fortunate enough to be selected to present an exhibit
+                        at the Royal Society Summer Science Exhibition this year. We had
+                        a wonderful time telling thousands of people all about proteins
+                        and protein design. For the exhibit, we developed a game that
+                        demonstrated the difficulty brute forcing the sequence design
+                        problem, which was a big hit, especially with the school
+                        children that attended. It was a huge amount of work and really
+                        tiring, but it was a great experience. Thanks to Kartic Subr for
+                        suggesting that we put in an application in the first place and
+                        to all the PhD students that volunteered to help with the whole
+                        thing."""
+                    ]
+                ]
+      }
+    , { date = "2022-06-22"
+      , title =
+            """Engineered light responsive protein-protein interactions in worms!"""
+      , category = "New Article"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ paragraph []
+                    [ text <|
+                        """Jack O'Shea's amazing work on engineering protein-protein
+                        interfaces in worms to be light responsive, is now available in
+                        ChemBioChem. It was a long road to get to this point, and Jack
+                        put in a heroic amount of work. Well done and thank you to him!
+                        You can access it online """
+                    , newTabLink
+                        Style.linkStyling
+                        { url = "https://doi.org/10.1002/cbic.202200321"
+                        , label = text "here"
+                        }
+                    , text "."
+                    ]
+                ]
+      }
+    , { date = "2022-06-07"
+      , title =
+            """Protein Folding with People!"""
+      , category = "Public Engagement"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ Html.iframe
+                    [ HAtt.height 400
+                    , HAtt.src "https://www.youtube.com/embed/Am45c83iLg4"
+                    , HAtt.title "YouTube video player"
+                    , HAtt.attribute "frameborder" "0"
+                    , HAtt.attribute "allow"
+                        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    , HAtt.attribute "allowfullscreen" ""
+                    ]
+                    []
+                    |> html
+                    |> el [ centerX, width <| maximum 700 <| fill ]
+                , paragraph []
+                    [ text <|
+                        """We made a promotional video for our Royal Society Summer
+                        Science exhibit, which includes a protein folding simulation
+                        using people instead of amino acids! It was a lot of fun to
+                        make, thanks to all the people that came out to help with the
+                        demonstration!"""
+                    ]
+                ]
+      }
+    , { date = "2022-04-22"
       , title =
             """APFED 2022"""
       , category = "Conference"
@@ -92,15 +241,13 @@ newsItems =
                         really exciting presentations, and some even more interesting
                         discussions at the poster sessions and meals, some of which have
                         already led to new collaborations.""" ]
-
                 , paragraph []
                     [ text <|
                         """I presented an overview of our lab's work, while Leo and Michael
                         brought along posters presenting their work on TIMED (our DNN based
                         sequence design algorithm) and DE-STRESS (our design evaluation
                         pipeline) respectively."""
-                        ]
-
+                    ]
                 , paragraph []
                     [ text <|
                         """I really hope there's an APFED 2023 or 2024, and if there is,

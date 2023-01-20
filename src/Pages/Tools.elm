@@ -115,6 +115,21 @@ locally when they need to scale up analysis."""
                 ]
       , backgroundImageLink = Just "/static/images/tools/destress.jpg"
       }
+    , { name = "PDBench"
+      , application = Nothing
+      , source = Just "https://github.com/wells-wood-research/PDBench"
+      , description =
+            paragraph []
+                [ text
+                    """PDBench is a dataset and software package for evaluating
+                    fixed-backbone sequence design algorithms. The structures included
+                    in PDBench have been chosen to account for the diversity and quality
+                    of observed protein structures, giving a more holistic view of
+                    performance.
+                    """
+                ]
+      , backgroundImageLink = Nothing
+      }
     , { name = "ISAMBARD"
       , application = Nothing
       , source = Just "https://github.com/isambard-uob/isambard"

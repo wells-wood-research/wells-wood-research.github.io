@@ -341,7 +341,7 @@ mastersStudents =
                     unnatural cofactors into computationally designed proteins.
                     """
                 ]
-      , active = True
+      , active = False
       }
     , { pictureUrl = "/static/images/people/haoruowei.jpg"
       , name = "Haoruo Wei"
@@ -360,7 +360,7 @@ mastersStudents =
                     Jack.
                     """
                 ]
-      , active = True
+      , active = False
       }
     , { pictureUrl = "/static/images/people/gangliu.jpg"
       , name = "Gang Liu"

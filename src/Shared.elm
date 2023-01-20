@@ -202,10 +202,14 @@ footer =
                     }
             }
         , Style.subHeading """Funded By"""
-        , wrappedRow [ centerX ]
+        , wrappedRow [ centerX, spacing 10 ]
             [ image [ width (px 200) ]
-                { src = "/static/images/epsrc.svg"
+                { src = "/static/images/epsrc.png"
                 , description = "EPSRC Logo"
+                }
+            , image [ width (px 200) ]
+                { src = "/static/images/bbsrc.png"
+                , description = "BBSRC Logo"
                 }
             ]
         ]

@@ -1,6 +1,8 @@
 module Pages.Top exposing (Model, Msg, Params, page)
 
 import Element exposing (..)
+import Html
+import Html.Attributes as HAtt
 import Shared.Advert exposing (advert)
 import Shared.Style as Style
 import Spa.Document exposing (Document)
@@ -43,6 +45,19 @@ body =
     textColumn
         Style.sectionStyling
         [ Style.heading "About Us"
+        , Html.iframe
+            [ HAtt.height 400
+            , HAtt.src "https://www.youtube.com/embed/Am45c83iLg4"
+            , HAtt.title "YouTube video player"
+            , HAtt.attribute "frameborder" "0"
+            , HAtt.attribute "allow"
+                "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            , HAtt.attribute "allowfullscreen" ""
+            ]
+            []
+            |> html
+            |> el [ centerX, width <| maximum 700 <| fill ]
+            |> el [ width fill ]
         , Style.subHeading "Making protein design more accessible"
         , paragraph []
             [ Style.simpleText
