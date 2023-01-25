@@ -245,7 +245,7 @@ allPublications =
     , { authors =
             """Galloway JM, Bray HEV, Shoemark DK, Hodgson LR, Coombs J, Mantell JM,
             Rose RS, Ross JF, Morris C, Harniman RL, Wood CW, Arthur C, Verkade P,
-            Woolfson DN
+            Woolfson DN*
             """
       , title =
             """De Novo Designed Peptide and Protein Hairpins Self‐Assemble into Sheets
@@ -258,7 +258,7 @@ allPublications =
       , pages = "2100472"
       , year = "2021"
       }
-    , { authors = "Stam MJ and Wood CW"
+    , { authors = "Stam MJ and Wood CW*"
       , title =
             """DE-STRESS: A user-friendly web application for the evaluation
             of protein designs
@@ -271,7 +271,7 @@ allPublications =
       , year = "2021"
       }
     , { authors =
-            """O’Shea JM, Goutou A, Brydon J, Sethna CR, Wood CW, Greiss S
+            """O’Shea JM, Goutou A, Brydon J, Sethna CR, Wood CW, Greiss S*
             """
       , title =
             """Generation of photocaged nanobodies for in vivo applications
@@ -284,7 +284,7 @@ allPublications =
       , pages = "e202200321"
       , year = "2022"
       }
-    , { authors = "Castorina LV, Petrenas R, Subr K and Wood CW"
+    , { authors = "Castorina LV, Petrenas R, Subr K and Wood CW*"
       , title =
             """PDBench: Evaluating Computational Methods for Protein Sequence Design"""
       , journal = "Bioinformatics"
@@ -292,6 +292,21 @@ allPublications =
       , preprintLink = Just "https://arxiv.org/abs/2109.07925"
       , volume = "Accepted Manuscript"
       , pages = "btad027"
+      , year = "2023"
+      }
+    , { authors =
+            """Dawson WM*, Shelley KL, Fletcher JM, Scott DA, Lombardi L, Rhys GG,
+            LaGambina TJ, Obst U, Burton AJ, Cross JA, Davies G, Martin FJO, Wiseman FJ,
+            Brady RL, Tew D, Wood CW*, Woolfson DN*
+            """
+      , title =
+            """Differential sensing with arrays of de novo designed peptide assemblies
+            """
+      , link = "https://doi.org/10.1038/s41467-023-36024-y"
+      , preprintLink = Nothing
+      , journal = "Nature Communications"
+      , volume = "14"
+      , pages = "383"
       , year = "2023"
       }
     ]
