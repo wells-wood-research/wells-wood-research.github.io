@@ -74,6 +74,69 @@ newsItems : List (NewsItem msg)
 newsItems =
     [ { date = "2022-01-14"
       , title =
+            """Differential Sensing with Arrays of De Novo Designed Peptide Assemblies"""
+      , category = "New Article"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 400 ]
+                    { src = "static/images/news/2023-01-25-badass.jpeg"
+                    , description = "Overview of differential sensing with designed peptides."
+                    }
+                , paragraph []
+                    [ text <|
+                        """Our work on differential sensing with designed peptides,
+                        led by Dek Woolfson, has just been published in Nature
+                        Communications. It has been a long and winding road to
+                        get to this point. The project, known as BADASS (Barrel
+                        Array Diagnostics And SenSing) to those in the know,
+                        started in 2016 with a conversation between Dek and
+                        Dave Tew (GSK), while I was a PDRA in Dek's lab. They
+                        had come up with this idea to use our peptides to make
+                        a sensing array that mimics mammalian olfaction. Dek
+                        told me about this and I got very excited, partly
+                        because it was just a cool idea, but also because I
+                        suggested that we use machine learning (ML) to identify
+                        analytes and the robotics platforms to setup the
+                        assays.
+                        """
+                    ]
+                , paragraph []
+                    [ text <|
+                        """Me and a few members of the lab (Will Dawson, Guto
+                        Rhys and Arne Scott) tried it out, and it worked
+                        spectacularly well, which made us all very concerned as
+                        that's not usually how science goes! I was particularly
+                        concerned as I knew that there was a risk I was
+                        overfitting the data. We continued to work on it and
+                        overtime we became more confident that it was working
+                        as intended. Eventually, Dek was so convinced that he
+                        established a company around the technology called Rosa
+                        Biotech.
+                        """
+                    ]
+                , paragraph []
+                    [ text <|
+                        """Over the next few years, my wife and I had two
+                        children, I got a fellowship and moved to Edinburgh to
+                        start my own group. Kathryn Shelley took over the ML
+                        and did a fantastic job, really rigourous work. I
+                        remained involved, helping to supervise the ML work and
+                        producing the manuscript.  And that's how we got here!
+                        I'm really pleased how the paper turned out, well done
+                        and thank you to everyone involved, especially Will,
+                        Kathryn and, of course, Dek. You can access the paper 
+                        """
+                    , newTabLink
+                        Style.linkStyling
+                        { url = "https://doi.org/10.1038/s41467-023-36024-y"
+                        , label = text "here"
+                        }
+                    , text "."
+                    ]
+                ]
+      }
+    , { date = "2022-01-14"
+      , title =
             """Benchmarking Protein Sequence Design"""
       , category = "New Article"
       , newsContent =
