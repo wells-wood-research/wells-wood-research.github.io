@@ -129,7 +129,30 @@ chrisWellsWood =
 
 postDocs : List (Person msg)
 postDocs =
-    [ { pictureUrl = "/static/images/people/jackoshea.jpg"
+    [ { pictureUrl = "/static/images/people/eugeneshrimptonphoenix.jpg"
+      , name = "Eugene Shrimpton-Phoenix"
+      , associatedLab = Nothing
+      , email = Just "eshrimpt@ed.ac.uk"
+      , twitter = Nothing
+      , github = Just "https://github.com/ESPhoenix"
+      , bio =
+            paragraph []
+                [ text
+                    """Eugene studied Chemistry at the University of Manchester
+                    for his integrated masters degree. He completed his PhD in
+                    the lab of Prof. Michael Bühl and Dr. John Mitchell at the
+                    University of St Andrews. In his PhD, Eugene applied hybrid
+                    quantum mechanical/ molecular mechanical (QM/MM) techniques
+                    to explore the catalytic mechanism of Is-PETase, an enzyme
+                    capable of degrading poly(ethylene) terephthalate. He is
+                    now working on a project in the Wells Wood lab to develop
+                    machine learning models that can be used to design
+                    photo-activated flavin-dependent enzymes.
+                    """
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/jackoshea.jpg"
       , name = "Jack O'Shea"
       , associatedLab = Nothing
       , email = Just "j.m.o'shea@sms.ed.ac.uk"
@@ -149,7 +172,7 @@ postDocs =
                     novel pipeline for high-throughput design of protein based sensors.
                     """
                 ]
-      , active = True
+      , active = False
       }
     ]
 
@@ -296,7 +319,7 @@ phdStudents =
                     encapsulins to enable novel metal nanoparticle synthesis
                     using synthetic biology."""
                 ]
-      , active = True
+      , active = False
       }
     , { pictureUrl = "/static/images/people/nataliaszlachetka.jpg"
       , name = "Natalia Szlachetka"
