@@ -309,4 +309,18 @@ allPublications =
       , pages = "383"
       , year = "2023"
       }
+    , { authors =
+            """Gurusaran M, Biemans JJ, Wood CW, Davies OR*
+            """
+      , title =
+            """Molecular insights into LINC complex architecture through the crystal 
+            structure of a luminal trimeric coiled-coil domain of SUN1
+            """
+      , link = "https://doi.org/10.3389/fcell.2023.1144277"
+      , preprintLink = Nothing
+      , journal = "Frontiers in Cell and Developmental Biology"
+      , volume = "11"
+      , pages = "-"
+      , year = "2023"
+      }
     ]

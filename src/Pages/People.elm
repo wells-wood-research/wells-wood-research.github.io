@@ -199,6 +199,30 @@ phdStudents =
                 ]
       , active = True
       }
+    , { pictureUrl = "/static/images/people/evanotari.jpg"
+      , name = "Evangelia Notari"
+      , associatedLab =
+            Style.simpleLink
+                { url = "https://www.julienmichel.net/lab/"
+                , label = "Michel Lab, UoE"
+                }
+                |> Just
+      , email = Just "e.notari@sms.ed.ac.uk"
+      , twitter = Just "https://twitter.com/EvaNotari"
+      , github = Just "https://github.com/eva-not"
+      , bio =
+            paragraph []
+                [ text
+                    """Eva received her integrated Masters in Chemical Engineering from
+                    the National Technical University of Athens and then did a Masters
+                    in Biotechnology at the University of Edinburgh. She is now
+                    undertaking her PhD in the Michel lab as part of the EASTBIO DTP,
+                    and is collaborating with the Wells Wood lab to design multi-state
+                    proteins with the aid of molecular-dynamics simulations and machine
+                    learning."""
+                ]
+      , active = True
+      }
     , { pictureUrl = "/static/images/people/michaeljamesstam.jpg"
       , name = "Michael James Stam"
       , associatedLab = Nothing
@@ -216,6 +240,28 @@ phdStudents =
                     Artificial Intelligence programme, where he is looking at optimising
                     the reliability of de novo protein design, by understanding the
                     different reasons why most protein designs fail."""
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/nataliaszlachetka.jpg"
+      , name = "Natalia Szlachetka"
+      , associatedLab =
+            Style.simpleLink
+                { url = "https://www.ed.ac.uk/profile/jelena-baranovic"
+                , label = "Baranovic Lab, UoE"
+                }
+                |> Just
+      , email = Just "s1510509@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Natalia is currently in the PhD stage of the UKRI CDT in
+                    Biomedical Artificial Intelligence programme. She completed her
+                    undergraduate degree in Biotechnology at the University of
+                    Edinburgh.
+                    """
                 ]
       , active = True
       }
@@ -268,30 +314,6 @@ phdStudents =
                 ]
       , active = False
       }
-    , { pictureUrl = "/static/images/people/evanotari.jpg"
-      , name = "Evangelia Notari"
-      , associatedLab =
-            Style.simpleLink
-                { url = "https://www.julienmichel.net/lab/"
-                , label = "Michel Lab, UoE"
-                }
-                |> Just
-      , email = Just "e.notari@sms.ed.ac.uk"
-      , twitter = Just "https://twitter.com/EvaNotari"
-      , github = Just "https://github.com/eva-not"
-      , bio =
-            paragraph []
-                [ text
-                    """Eva received her integrated Masters in Chemical Engineering from
-                    the National Technical University of Athens and then did a Masters
-                    in Biotechnology at the University of Edinburgh. She is now
-                    undertaking her PhD in the Michel lab as part of the EASTBIO DTP,
-                    and is collaborating with the Wells Wood lab to design multi-state
-                    proteins with the aid of molecular-dynamics simulations and machine
-                    learning."""
-                ]
-      , active = True
-      }
     , { pictureUrl = "/static/images/people/mattscheier.jpg"
       , name = "Matthew Scheier"
       , associatedLab =
@@ -320,28 +342,6 @@ phdStudents =
                     using synthetic biology."""
                 ]
       , active = False
-      }
-    , { pictureUrl = "/static/images/people/nataliaszlachetka.jpg"
-      , name = "Natalia Szlachetka"
-      , associatedLab =
-            Style.simpleLink
-                { url = "https://www.ed.ac.uk/profile/jelena-baranovic"
-                , label = "Baranovic Lab, UoE"
-                }
-                |> Just
-      , email = Just "s1510509@sms.ed.ac.uk"
-      , twitter = Nothing
-      , github = Nothing
-      , bio =
-            paragraph []
-                [ text
-                    """Natalia is currently in the PhD stage of the UKRI CDT in
-                    Biomedical Artificial Intelligence programme. She completed her
-                    undergraduate degree in Biotechnology at the University of
-                    Edinburgh.
-                    """
-                ]
-      , active = True
       }
     ]
 
