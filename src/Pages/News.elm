@@ -72,7 +72,7 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2022-01-14"
+    [ { date = "2023-01-14"
       , title =
             """Differential Sensing with Arrays of De Novo Designed Peptide Assemblies"""
       , category = "New Article"
@@ -135,7 +135,7 @@ newsItems =
                     ]
                 ]
       }
-    , { date = "2022-01-14"
+    , { date = "2023-01-14"
       , title =
             """Benchmarking Protein Sequence Design"""
       , category = "New Article"

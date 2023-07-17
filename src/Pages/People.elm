@@ -199,6 +199,24 @@ phdStudents =
                 ]
       , active = True
       }
+    , { pictureUrl = "/static/images/people/tadaskluonis.jpg"
+      , name = "Tadas Kluonis"
+      , associatedLab = Nothing
+      , email = Just "t.kluonis@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Just "https://github.com/profdocpizza"
+      , bio =
+            paragraph []
+                [ text
+                    """Tadas Kluonis is currently pursuing a PhD position in
+                    the Wells Wood lab, where his research focuses on utilizing
+                    generative algorithms to explore the dark matter of protein
+                    space. He obtained his undergraduate degree in
+                    Biotechnology from the University of Edinburgh.
+                    """
+                ]
+      , active = True
+      }
     , { pictureUrl = "/static/images/people/evanotari.jpg"
       , name = "Evangelia Notari"
       , associatedLab =
