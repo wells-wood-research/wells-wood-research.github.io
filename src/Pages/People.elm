@@ -199,6 +199,29 @@ phdStudents =
                 ]
       , active = True
       }
+    , { pictureUrl = "/static/images/people/martachronowska.jpg"
+      , name = "Marta Chronowska"
+      , associatedLab = Nothing
+      , email = Just "m.chronowska@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Just "https://github.com/LunaPrau"
+      , bio =
+            paragraph []
+                [ text
+                    """Marta obtained her integrated Master’s degree in
+                    Chemistry at the University of Edinburgh. Her final year
+                    project completed at the Nagoya University in Japan
+                    explored use of lasers to control chemical reactions. She
+                    is now continuing her studies in Edinburgh by pursuing a
+                    PhD in collaboration between the Wells Wood lab and the
+                    Jarvis Group, thanks to the EASTBIO DTP funding. Her
+                    research will span chemistry, biology and computer science
+                    to develop data-driven methods for de novo design of
+                    flavoprotein-based light-activated novel enzymes.
+                    """
+                ]
+      , active = True
+      }
     , { pictureUrl = "/static/images/people/tadaskluonis.jpg"
       , name = "Tadas Kluonis"
       , associatedLab = Nothing
