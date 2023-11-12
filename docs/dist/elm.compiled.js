@@ -12187,7 +12187,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 					_List_Nil,
 					_List_fromArray(
 						[
-							$mdgriffith$elm_ui$Element$text('Over the next few years, my wife and I had two\r\n                        children, I got a fellowship and moved to Edinburgh to\r\n                        start my own group. Kathryn Shelley took over the ML\r\n                        and did a fantastic job, really rigourous work. I\r\n                        remained involved, helping to supervise the ML work and\r\n                        producing the manuscript.  And that\'s how we got here!\r\n                        I\'m really pleased how the paper turned out, well done\r\n                        and thank you to everyone involved, especially Will,\r\n                        Kathryn and, of course, Dek. You can access the paper \r\n                        '),
+							$mdgriffith$elm_ui$Element$text('Over the next few years, my wife and I had two\r\n                        children, then I got a fellowship and moved to Edinburgh to\r\n                        start my own group. Kathryn Shelley took over the ML\r\n                        and did a fantastic job, really rigourous work. I\r\n                        remained involved, helping to supervise the ML work and\r\n                        producing the manuscript.  And that\'s how we got here!\r\n                        I\'m really pleased how the paper turned out, well done\r\n                        and thank you to everyone involved, especially Will,\r\n                        Kathryn and, of course, Dek. You can access the paper \r\n                        '),
 							A2(
 							$mdgriffith$elm_ui$Element$newTabLink,
 							$author$project$Shared$Style$linkStyling,
