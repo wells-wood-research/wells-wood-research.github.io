@@ -8670,7 +8670,7 @@ var $mdgriffith$elm_ui$Internal$Model$fontName = function (font) {
 			var url = font.b;
 			return '\"' + (name + '\"');
 		default:
-			var name = font.a.h;
+			var name = font.a.l;
 			return '\"' + (name + '\"');
 	}
 };
@@ -11559,7 +11559,7 @@ var $mdgriffith$elm_ui$Internal$Model$ImportFont = F2(
 	});
 var $mdgriffith$elm_ui$Element$Font$external = function (_v0) {
 	var url = _v0.e8;
-	var name = _v0.h;
+	var name = _v0.l;
 	return A2($mdgriffith$elm_ui$Internal$Model$ImportFont, name, url);
 };
 var $mdgriffith$elm_ui$Internal$Model$FontFamily = F2(
@@ -11597,7 +11597,7 @@ var $mdgriffith$elm_ui$Internal$Model$renderFontClassName = F2(
 							$elm$core$String$words(
 								$elm$core$String$toLower(name)));
 					default:
-						var name = font.a.h;
+						var name = font.a.l;
 						return A2(
 							$elm$core$String$join,
 							'-',
@@ -11621,7 +11621,7 @@ var $author$project$Shared$Style$titleFont = $mdgriffith$elm_ui$Element$Font$fam
 	_List_fromArray(
 		[
 			$mdgriffith$elm_ui$Element$Font$external(
-			{h: 'Poiret One', e8: 'https://fonts.googleapis.com/css?family=Poiret+One'}),
+			{l: 'Poiret One', e8: 'https://fonts.googleapis.com/css?family=Poiret+One'}),
 			$mdgriffith$elm_ui$Element$Font$serif
 		]));
 var $author$project$Shared$Style$heading = function (label) {
@@ -12611,7 +12611,7 @@ var $author$project$Shared$Style$contentFont = $mdgriffith$elm_ui$Element$Font$f
 	_List_fromArray(
 		[
 			$mdgriffith$elm_ui$Element$Font$external(
-			{h: 'Raleway', e8: 'https://fonts.googleapis.com/css?family=Raleway'}),
+			{l: 'Raleway', e8: 'https://fonts.googleapis.com/css?family=Raleway'}),
 			$mdgriffith$elm_ui$Element$Font$sansSerif
 		]));
 var $author$project$Shared$Style$contentStyling = _List_fromArray(
@@ -12697,7 +12697,7 @@ var $author$project$Pages$People$chrisWellsWood = {
 			])),
 	p: $elm$core$Maybe$Just('chris.wood@ed.ac.uk'),
 	q: $elm$core$Maybe$Just('https://github.com/ChrisWellsWood'),
-	h: 'Chris Wells Wood',
+	l: 'Chris Wells Wood',
 	s: '/static/images/people/chriswellswood.jpg',
 	t: $elm$core$Maybe$Just('https://twitter.com/ChrisWellsWood')
 };
@@ -12715,7 +12715,7 @@ var $author$project$Pages$People$mastersStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('s1704921@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Nothing,
-		h: 'Ben Orton',
+		l: 'Ben Orton',
 		s: '/static/images/people/benorton.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -12731,7 +12731,7 @@ var $author$project$Pages$People$mastersStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('h.wei-13@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Nothing,
-		h: 'Haoruo Wei',
+		l: 'Haoruo Wei',
 		s: '/static/images/people/haoruowei.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -12747,7 +12747,7 @@ var $author$project$Pages$People$mastersStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('g.liu-15@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Nothing,
-		h: 'Gang Liu',
+		l: 'Gang Liu',
 		s: '/static/images/people/gangliu.jpg',
 		t: $elm$core$Maybe$Nothing
 	}
@@ -13119,7 +13119,7 @@ var $author$project$Pages$People$personView = function (person) {
 										$mdgriffith$elm_ui$Element$width(
 										$mdgriffith$elm_ui$Element$px(250))
 									]),
-								{aP: person.h, aV: person.s}),
+								{aP: person.l, aV: person.s}),
 								A2(
 								$mdgriffith$elm_ui$Element$row,
 								_List_fromArray(
@@ -13188,7 +13188,7 @@ var $author$project$Pages$People$personView = function (person) {
 							]),
 						_List_fromArray(
 							[
-								$author$project$Shared$Style$subHeading(person.h),
+								$author$project$Shared$Style$subHeading(person.l),
 								function () {
 								var _v3 = person.m;
 								if (!_v3.$) {
@@ -13235,7 +13235,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('leonardo.castorina@ed.ac.uk'),
 		q: $elm$core$Maybe$Just('https://github.com/universvm'),
-		h: 'Leonardo Castorina',
+		l: 'Leonardo Castorina',
 		s: '/static/images/people/leocastorina.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -13251,7 +13251,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('m.chronowska@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Just('https://github.com/LunaPrau'),
-		h: 'Marta Chronowska',
+		l: 'Marta Chronowska',
 		s: '/static/images/people/martachronowska.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -13267,7 +13267,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('t.kluonis@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Just('https://github.com/profdocpizza'),
-		h: 'Tadas Kluonis',
+		l: 'Tadas Kluonis',
 		s: '/static/images/people/tadaskluonis.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -13285,7 +13285,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('e.notari@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Just('https://github.com/eva-not'),
-		h: 'Evangelia Notari',
+		l: 'Evangelia Notari',
 		s: '/static/images/people/evanotari.jpg',
 		t: $elm$core$Maybe$Just('https://twitter.com/EvaNotari')
 	},
@@ -13301,7 +13301,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('michael.stam@ed.ac.uk'),
 		q: $elm$core$Maybe$Just('https://github.com/MichaelJamesStam'),
-		h: 'Michael James Stam',
+		l: 'Michael James Stam',
 		s: '/static/images/people/michaeljamesstam.jpg',
 		t: $elm$core$Maybe$Just('https://twitter.com/mjstam')
 	},
@@ -13319,7 +13319,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('s1510509@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Nothing,
-		h: 'Natalia Szlachetka',
+		l: 'Natalia Szlachetka',
 		s: '/static/images/people/nataliaszlachetka.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -13335,7 +13335,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('s.m.unal@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Nothing,
-		h: 'Mert Ünal',
+		l: 'Mert Ünal',
 		s: '/static/images/people/mertunal.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -13353,7 +13353,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('j.morales-espinoza@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Nothing,
-		h: 'Jonathan Morales-Espinoza',
+		l: 'Jonathan Morales-Espinoza',
 		s: '/static/images/people/jonathanmorales.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -13374,7 +13374,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('matthew.scheier@ed.ac.uk'),
 		q: $elm$core$Maybe$Just('https://github.com/mscheier'),
-		h: 'Matthew Scheier',
+		l: 'Matthew Scheier',
 		s: '/static/images/people/mattscheier.jpg',
 		t: $elm$core$Maybe$Nothing
 	}
@@ -13393,7 +13393,7 @@ var $author$project$Pages$People$postDocs = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('eshrimpt@ed.ac.uk'),
 		q: $elm$core$Maybe$Just('https://github.com/ESPhoenix'),
-		h: 'Eugene Shrimpton-Phoenix',
+		l: 'Eugene Shrimpton-Phoenix',
 		s: '/static/images/people/eugeneshrimptonphoenix.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -13409,7 +13409,7 @@ var $author$project$Pages$People$postDocs = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('j.m.o\'shea@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Just('https://github.com/97joshea'),
-		h: 'Jack O\'Shea',
+		l: 'Jack O\'Shea',
 		s: '/static/images/people/jackoshea.jpg',
 		t: $elm$core$Maybe$Just('https://twitter.com/jack_oshea97')
 	}
@@ -13428,7 +13428,7 @@ var $author$project$Pages$People$undergraduateStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Just('s1706179@sms.ed.ac.uk'),
 		q: $elm$core$Maybe$Just('https://github.com/rokaske199'),
-		h: 'Rokas Petrenas',
+		l: 'Rokas Petrenas',
 		s: '/static/images/people/rokaspetrenas.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
@@ -13444,7 +13444,7 @@ var $author$project$Pages$People$undergraduateStudents = _List_fromArray(
 				])),
 		p: $elm$core$Maybe$Nothing,
 		q: $elm$core$Maybe$Nothing,
-		h: 'Cecilia Hong',
+		l: 'Cecilia Hong',
 		s: '/static/images/people/ceciliahong.jpg',
 		t: $elm$core$Maybe$Nothing
 	}
@@ -13522,69 +13522,70 @@ var $author$project$Pages$People$page = $author$project$Spa$Page$static(
 	{e9: $author$project$Pages$People$view});
 var $author$project$Pages$Publications$allPublications = _List_fromArray(
 	[
-		{e: 'Wood CW*, Bruning M, Ibarra AA, Bartlett Gail J, Thomson AR,\r\n            Sessions RB, Brady RL, Woolfson DN*', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/30/21/3029/2422267', i: '3029-3035', j: $elm$core$Maybe$Nothing, y: 'CCBuilder: an interactive web-based tool for building, designing\r\n            and assessing coiled-coil protein assemblies', k: '30', l: '2014'},
-		{e: 'Thomson AR, Wood CW, Burton AJ, Bartlett GJ, Sessions RB,\r\n            Brady RL, Woolfson DN*', f: 'Science', g: 'http://science.sciencemag.org/content/346/6208/485', i: '485-488', j: $elm$core$Maybe$Nothing, y: 'Computational design of water-soluble α-helical barrels', k: '346', l: '2014'},
-		{e: 'Woolfson DN*, Bartlett GJ, Burton AJ, Heal JW, Niitsu A,\r\n            Thomson AR, Wood CW', f: 'Current opinion in structural biology', g: 'https://www.sciencedirect.com/science/article/pii/S0959440X1500069X', i: '16-26', j: $elm$core$Maybe$Nothing, y: 'De novo protein design: how do we expand into the universe of\r\n            possible protein structures?', k: '33', l: '2015'},
-		{e: 'Burgess NC, Sharp TH, Thomas F, Wood CW, Thomson AR,\r\n            Zaccai NR, Brady RL, Serpell LC, Woolfson DN*', f: 'Journal of the American Chemical Society', g: 'https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973', i: '10554-10562', j: $elm$core$Maybe$Nothing, y: 'Modular design of self-assembling peptide-based nanotubes', k: '137', l: '2015'},
-		{e: 'Wood CW*, Heal JW, Thomson AR, Bartlett GJ, Ibarra AÁ, Brady RL,\r\n            Sessions RB, Woolfson DN*"\r\n            ', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/33/19/3043/3861331', i: '3043-3050', j: $elm$core$Maybe$Nothing, y: 'ISAMBARD: an open-source computational environment for\r\n            biomolecular analysis, modelling and design', k: '33', l: '2017'},
-		{e: 'Wood CW and Woolfson DN', f: 'Protein Science', g: 'https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279', i: '103-111', j: $elm$core$Maybe$Nothing, y: 'CCBuilder 2.0: Powerful and accessible coiled‐coil modeling', k: '27', l: '2018'},
-		{e: 'Pellizzoni MM, Schwizer F, Wood CW, Sabatino V, Cotelle Y,\r\n            Matile S, Woolfson DN, Ward TR*', f: 'ACS Catalysis', g: 'https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773', i: '1476-1484', j: $elm$core$Maybe$Nothing, y: 'Chimeric Streptavidins as Host Proteins for Artificial ' + 'Metalloenzymes', k: '8', l: '2018'},
-		{e: 'Heal JW, Bartlett GJ, Wood CW, Thomson AR, Woolfson DN*', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/34/19/3316/4990824', i: '3316-3323', j: $elm$core$Maybe$Nothing, y: 'Applying graph theory to protein structures: an atlas of coiled\r\n            coils', k: '34', l: '2018'},
-		{e: 'Rhys GG, Wood CW, Lang EJM, Mulholland AJ, Brady RL,\r\n            Thomson AR, Woolfson DN*', f: 'Nature Communications', g: 'https://www.nature.com/articles/s41467-018-06391-y', i: '4132', j: $elm$core$Maybe$Nothing, y: 'Maintaining and breaking symmetry in homomeric coiled-coil\r\n          assemblies', k: '9', l: '2018'},
+		{e: 'Wood CW*, Bruning M, Ibarra AA, Bartlett Gail J, Thomson AR,\r\n            Sessions RB, Brady RL, Woolfson DN*', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/30/21/3029/2422267', h: '3029-3035', i: $elm$core$Maybe$Nothing, y: 'CCBuilder: an interactive web-based tool for building, designing\r\n            and assessing coiled-coil protein assemblies', j: '30', k: '2014'},
+		{e: 'Thomson AR, Wood CW, Burton AJ, Bartlett GJ, Sessions RB,\r\n            Brady RL, Woolfson DN*', f: 'Science', g: 'http://science.sciencemag.org/content/346/6208/485', h: '485-488', i: $elm$core$Maybe$Nothing, y: 'Computational design of water-soluble α-helical barrels', j: '346', k: '2014'},
+		{e: 'Woolfson DN*, Bartlett GJ, Burton AJ, Heal JW, Niitsu A,\r\n            Thomson AR, Wood CW', f: 'Current opinion in structural biology', g: 'https://www.sciencedirect.com/science/article/pii/S0959440X1500069X', h: '16-26', i: $elm$core$Maybe$Nothing, y: 'De novo protein design: how do we expand into the universe of\r\n            possible protein structures?', j: '33', k: '2015'},
+		{e: 'Burgess NC, Sharp TH, Thomas F, Wood CW, Thomson AR,\r\n            Zaccai NR, Brady RL, Serpell LC, Woolfson DN*', f: 'Journal of the American Chemical Society', g: 'https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973', h: '10554-10562', i: $elm$core$Maybe$Nothing, y: 'Modular design of self-assembling peptide-based nanotubes', j: '137', k: '2015'},
+		{e: 'Wood CW*, Heal JW, Thomson AR, Bartlett GJ, Ibarra AÁ, Brady RL,\r\n            Sessions RB, Woolfson DN*"\r\n            ', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/33/19/3043/3861331', h: '3043-3050', i: $elm$core$Maybe$Nothing, y: 'ISAMBARD: an open-source computational environment for\r\n            biomolecular analysis, modelling and design', j: '33', k: '2017'},
+		{e: 'Wood CW and Woolfson DN', f: 'Protein Science', g: 'https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279', h: '103-111', i: $elm$core$Maybe$Nothing, y: 'CCBuilder 2.0: Powerful and accessible coiled‐coil modeling', j: '27', k: '2018'},
+		{e: 'Pellizzoni MM, Schwizer F, Wood CW, Sabatino V, Cotelle Y,\r\n            Matile S, Woolfson DN, Ward TR*', f: 'ACS Catalysis', g: 'https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773', h: '1476-1484', i: $elm$core$Maybe$Nothing, y: 'Chimeric Streptavidins as Host Proteins for Artificial ' + 'Metalloenzymes', j: '8', k: '2018'},
+		{e: 'Heal JW, Bartlett GJ, Wood CW, Thomson AR, Woolfson DN*', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/34/19/3316/4990824', h: '3316-3323', i: $elm$core$Maybe$Nothing, y: 'Applying graph theory to protein structures: an atlas of coiled\r\n            coils', j: '34', k: '2018'},
+		{e: 'Rhys GG, Wood CW, Lang EJM, Mulholland AJ, Brady RL,\r\n            Thomson AR, Woolfson DN*', f: 'Nature Communications', g: 'https://www.nature.com/articles/s41467-018-06391-y', h: '4132', i: $elm$core$Maybe$Nothing, y: 'Maintaining and breaking symmetry in homomeric coiled-coil\r\n          assemblies', j: '9', k: '2018'},
 		{
 		e: 'Rhys GG, Wood CW, Beesley JL, Zaccai NR, Burton AJ,\r\n            Brady RL, Thomson AR, Woolfson DN*',
 		f: 'Journal of the American Chemical Society',
 		g: 'https://pubs.acs.org/doi/10.1021/jacs.8b13354',
-		i: '8787-8797',
-		j: $elm$core$Maybe$Just('https://www.biorxiv.org/content/early/2018/12/21/503698'),
+		h: '8787-8797',
+		i: $elm$core$Maybe$Just('https://www.biorxiv.org/content/early/2018/12/21/503698'),
 		y: 'Navigating the structural landscape of de novo α-helical bundles',
-		k: '141',
-		l: '2019'
+		j: '141',
+		k: '2019'
 	},
-		{e: 'Juan J, Baker EG, Wood CW, Bath J, Woolfson DN*,\r\n            Turberfield AJ*', f: 'ACS Nano', g: 'https://pubs.acs.org/doi/10.1021/acsnano.9b04251', i: '9927-9935', j: $elm$core$Maybe$Nothing, y: 'Peptide Assembly Directed and Quantified Using Megadalton DNA\r\n          Nanostructures', k: '13', l: '2019'},
-		{e: 'Wood CW*, Ibarra AA, Bartlett GJ, Wilson AJ, Woolfson DN,\r\n            Sessions RB*', f: 'Bioinformatics', g: 'https://doi.org/10.1093/bioinformatics/btaa026', i: '2917-2919', j: $elm$core$Maybe$Nothing, y: 'BAlaS: fast, interactive and accessible computational alanine-scanning\r\n            using BudeAlaScan', k: '36', l: '2020'},
+		{e: 'Juan J, Baker EG, Wood CW, Bath J, Woolfson DN*,\r\n            Turberfield AJ*', f: 'ACS Nano', g: 'https://pubs.acs.org/doi/10.1021/acsnano.9b04251', h: '9927-9935', i: $elm$core$Maybe$Nothing, y: 'Peptide Assembly Directed and Quantified Using Megadalton DNA\r\n          Nanostructures', j: '13', k: '2019'},
+		{e: 'Wood CW*, Ibarra AA, Bartlett GJ, Wilson AJ, Woolfson DN,\r\n            Sessions RB*', f: 'Bioinformatics', g: 'https://doi.org/10.1093/bioinformatics/btaa026', h: '2917-2919', i: $elm$core$Maybe$Nothing, y: 'BAlaS: fast, interactive and accessible computational alanine-scanning\r\n            using BudeAlaScan', j: '36', k: '2020'},
 		{
 		e: 'Galloway JM, Bray HEV, Shoemark DK, Hodgson LR, Coombs J, Mantell JM,\r\n            Rose RS, Ross JF, Morris C, Harniman RL, Wood CW, Arthur C, Verkade P,\r\n            Woolfson DN*\r\n            ',
 		f: 'Small',
 		g: 'https://doi.org/10.1002/smll.202100472',
-		i: '2100472',
-		j: $elm$core$Maybe$Just('https://www.biorxiv.org/content/10.1101/2020.08.14.251462v2'),
+		h: '2100472',
+		i: $elm$core$Maybe$Just('https://www.biorxiv.org/content/10.1101/2020.08.14.251462v2'),
 		y: 'De Novo Designed Peptide and Protein Hairpins Self‐Assemble into Sheets\r\n            and Nanoparticles\r\n            ',
-		k: '17',
-		l: '2021'
+		j: '17',
+		k: '2021'
 	},
 		{
 		e: 'Stam MJ and Wood CW*',
 		f: 'Protein Engineering, Design and Selection',
 		g: 'https://doi.org/10.1093/protein/gzab029',
-		i: 'gzab029',
-		j: $elm$core$Maybe$Just('https://doi.org/10.1101/2021.04.28.441790'),
+		h: 'gzab029',
+		i: $elm$core$Maybe$Just('https://doi.org/10.1101/2021.04.28.441790'),
 		y: 'DE-STRESS: A user-friendly web application for the evaluation\r\n            of protein designs\r\n            ',
-		k: '34',
-		l: '2021'
+		j: '34',
+		k: '2021'
 	},
 		{
 		e: 'O’Shea JM, Goutou A, Brydon J, Sethna CR, Wood CW, Greiss S*\r\n            ',
 		f: 'ChemBioChem',
 		g: 'https://doi.org/10.1002/cbic.202200321',
-		i: 'e202200321',
-		j: $elm$core$Maybe$Just('https://doi.org/10.1101/2021.04.16.440193'),
+		h: 'e202200321',
+		i: $elm$core$Maybe$Just('https://doi.org/10.1101/2021.04.16.440193'),
 		y: 'Generation of photocaged nanobodies for in vivo applications\r\n            using genetic code expansion and computationally guided protein engineering\r\n            ',
-		k: '_',
-		l: '2022'
+		j: '_',
+		k: '2022'
 	},
 		{
 		e: 'Castorina LV, Petrenas R, Subr K and Wood CW*',
 		f: 'Bioinformatics',
 		g: 'https://doi.org/10.1093/bioinformatics/btad027',
-		i: 'btad027',
-		j: $elm$core$Maybe$Just('https://arxiv.org/abs/2109.07925'),
+		h: 'btad027',
+		i: $elm$core$Maybe$Just('https://arxiv.org/abs/2109.07925'),
 		y: 'PDBench: Evaluating Computational Methods for Protein Sequence Design',
-		k: 'Accepted Manuscript',
-		l: '2023'
+		j: 'Accepted Manuscript',
+		k: '2023'
 	},
-		{e: 'Dawson WM*, Shelley KL, Fletcher JM, Scott DA, Lombardi L, Rhys GG,\r\n            LaGambina TJ, Obst U, Burton AJ, Cross JA, Davies G, Martin FJO, Wiseman FJ,\r\n            Brady RL, Tew D, Wood CW*, Woolfson DN*\r\n            ', f: 'Nature Communications', g: 'https://doi.org/10.1038/s41467-023-36024-y', i: '383', j: $elm$core$Maybe$Nothing, y: 'Differential sensing with arrays of de novo designed peptide assemblies\r\n            ', k: '14', l: '2023'},
-		{e: 'Gurusaran M, Biemans JJ, Wood CW, Davies OR*\r\n            ', f: 'Frontiers in Cell and Developmental Biology', g: 'https://doi.org/10.3389/fcell.2023.1144277', i: '-', j: $elm$core$Maybe$Nothing, y: 'Molecular insights into LINC complex architecture through the crystal \r\n            structure of a luminal trimeric coiled-coil domain of SUN1\r\n            ', k: '11', l: '2023'}
+		{e: 'Dawson WM*, Shelley KL, Fletcher JM, Scott DA, Lombardi L, Rhys GG,\r\n            LaGambina TJ, Obst U, Burton AJ, Cross JA, Davies G, Martin FJO, Wiseman FJ,\r\n            Brady RL, Tew D, Wood CW*, Woolfson DN*\r\n            ', f: 'Nature Communications', g: 'https://doi.org/10.1038/s41467-023-36024-y', h: '383', i: $elm$core$Maybe$Nothing, y: 'Differential sensing with arrays of de novo designed peptide assemblies\r\n            ', j: '14', k: '2023'},
+		{e: 'Gurusaran M, Biemans JJ, Wood CW, Davies OR*\r\n            ', f: 'Frontiers in Cell and Developmental Biology', g: 'https://doi.org/10.3389/fcell.2023.1144277', h: '-', i: $elm$core$Maybe$Nothing, y: 'Molecular insights into LINC complex architecture through the crystal \r\n            structure of a luminal trimeric coiled-coil domain of SUN1\r\n            ', j: '11', k: '2023'},
+		{e: 'O\'Shea JM*, Richardson A, Doerner PW, Wood CW*\r\n            ', f: 'Biorxiv', g: 'https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1', h: '-', i: $elm$core$Maybe$Nothing, y: 'Computational Design of Periplasmic Binding Protein Biosensors\r\n            Guided by Molecular Dynamics\r\n            ', j: '-', k: '2023'}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
@@ -13617,9 +13618,9 @@ var $author$project$Pages$Publications$publicationView = function (publication) 
 					e8: publication.g
 				}),
 				$author$project$Shared$Style$simpleText(publication.e),
-				$author$project$Shared$Style$simpleText(publication.f + (', ' + (publication.k + (', ' + (publication.i + (', ' + (publication.l + '.'))))))),
+				$author$project$Shared$Style$simpleText(publication.f + (', ' + (publication.j + (', ' + (publication.h + (', ' + (publication.k + '.'))))))),
 				function () {
-				var _v0 = publication.j;
+				var _v0 = publication.i;
 				if (!_v0.$) {
 					var preprintLink = _v0.a;
 					return A2(
@@ -13675,7 +13676,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 					{u: 'ISAMBARD', e8: 'https://github.com/isambard-uob/isambard'}),
 					$mdgriffith$elm_ui$Element$text(', users can download and run the scanning engine\r\nlocally when they need to scale up analysis.')
 				])),
-		h: 'BAlaS',
+		l: 'BAlaS',
 		ax: $elm$core$Maybe$Just('https://github.com/wells-wood-research/BAlaS')
 	},
 		{
@@ -13691,7 +13692,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 					{u: 'α-helical barrels', e8: 'http://science.sciencemag.org/content/346/6208/485'}),
 					$mdgriffith$elm_ui$Element$text('.')
 				])),
-		h: 'CCBuilder/CCBuilder 2',
+		l: 'CCBuilder/CCBuilder 2',
 		ax: $elm$core$Maybe$Just('https://github.com/woolfson-group/ccbuilder2')
 	},
 		{
@@ -13704,7 +13705,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 				[
 					$mdgriffith$elm_ui$Element$text('DE-STRESS (DEsigned STRucture Evaluation ServiceS) provides a\r\n                    suite of tools for evaluating protein designs. Our aim is to help\r\n                    make protein design more reliable, by providing tools to help you\r\n                    select the most promising designs to take into the lab.\r\n                    ')
 				])),
-		h: 'DE-STRESS',
+		l: 'DE-STRESS',
 		ax: $elm$core$Maybe$Just('https://github.com/wells-wood-research/de-stress')
 	},
 		{
@@ -13717,7 +13718,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 				[
 					$mdgriffith$elm_ui$Element$text('PDBench is a dataset and software package for evaluating\r\n                    fixed-backbone sequence design algorithms. The structures included\r\n                    in PDBench have been chosen to account for the diversity and quality\r\n                    of observed protein structures, giving a more holistic view of\r\n                    performance.\r\n                    ')
 				])),
-		h: 'PDBench',
+		l: 'PDBench',
 		ax: $elm$core$Maybe$Just('https://github.com/wells-wood-research/PDBench')
 	},
 		{
@@ -13730,7 +13731,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 				[
 					$mdgriffith$elm_ui$Element$text('ISAMBARD (Intelligent System for Analysis, Model Building\r\n                    And Rational Design) is a Python library for structural\r\n                    analysis and rational design of biomolecules, with a\r\n                    particular focus on parametric modelling of proteins.')
 				])),
-		h: 'ISAMBARD',
+		l: 'ISAMBARD',
 		ax: $elm$core$Maybe$Just('https://github.com/isambard-uob/isambard')
 	}
 	]);
@@ -13759,7 +13760,7 @@ var $author$project$Pages$Tools$toolView = function (tool) {
 			]),
 		A2(
 			$elm$core$List$cons,
-			$author$project$Shared$Style$subHeading(tool.h),
+			$author$project$Shared$Style$subHeading(tool.l),
 			_Utils_ap(
 				function () {
 					if (toolLinks.a.$ === 1) {
