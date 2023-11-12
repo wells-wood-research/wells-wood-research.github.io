@@ -117,7 +117,7 @@ newsItems =
                 , paragraph []
                     [ text <|
                         """Over the next few years, my wife and I had two
-                        children, I got a fellowship and moved to Edinburgh to
+                        children, then I got a fellowship and moved to Edinburgh to
                         start my own group. Kathryn Shelley took over the ML
                         and did a fantastic job, really rigourous work. I
                         remained involved, helping to supervise the ML work and
