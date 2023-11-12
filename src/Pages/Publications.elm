@@ -323,4 +323,18 @@ allPublications =
       , pages = "-"
       , year = "2023"
       }
+    , { authors =
+            """O'Shea JM*, Richardson A, Doerner PW, Wood CW*
+            """
+      , title =
+            """Computational Design of Periplasmic Binding Protein Biosensors
+            Guided by Molecular Dynamics
+            """
+      , link = "https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1"
+      , preprintLink = Nothing
+      , journal = "Biorxiv"
+      , volume = "-"
+      , pages = "-"
+      , year = "2023"
+      }
     ]
