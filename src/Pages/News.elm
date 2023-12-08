@@ -72,7 +72,29 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2023-01-14"
+    [ { date = "2023-12-06"
+      , title =
+            """Christmas Night Out 2023"""
+      , category = "Group"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 400 ]
+                    { src = "static/images/news/2023-12-06-xmas-night-out.jpg"
+                    , description = "Group photo taken during our Christmas dinner."
+                    }
+                , paragraph []
+                    [ text <|
+                        """We had a really fun day on the 6th, with a brain storming
+                        session and followed by a Christmas meal and some drinks.
+                        Thank you to everyone in and associated with the group, 
+                        it's an absolute pleasure to work with you all. Special thanks
+                        to Eugene for organising the day. Merry Christmas and a Happy
+                        New Year to you all!
+                        """
+                    ]
+                ]
+      }
+    , { date = "2023-02-20"
       , title =
             """Differential Sensing with Arrays of De Novo Designed Peptide Assemblies"""
       , category = "New Article"
