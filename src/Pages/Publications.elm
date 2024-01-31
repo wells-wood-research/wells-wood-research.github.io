@@ -337,4 +337,18 @@ allPublications =
       , pages = "-"
       , year = "2023"
       }
+    , { authors =
+            """Castorina LV, Ünal SM, Subr K, Wood CW*
+            """
+      , title =
+            """TIMED-Design: Flexible and Accessible Protein Sequence Design
+            with Convolutional Neural Networks
+            """
+      , link = "https://doi.org/10.1093/protein/gzae002"
+      , preprintLink = Nothing
+      , journal = "Protein Engineering, Design and Selection"
+      , volume = "Accepted Manuscript"
+      , pages = "-"
+      , year = "2024"
+      }
     ]
