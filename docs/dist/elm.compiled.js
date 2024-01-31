@@ -13553,17 +13553,17 @@ var $author$project$Pages$People$page = $author$project$Spa$Page$static(
 	{e9: $author$project$Pages$People$view});
 var $author$project$Pages$Publications$allPublications = _List_fromArray(
 	[
-		{e: 'Wood CW*, Bruning M, Ibarra AA, Bartlett Gail J, Thomson AR,\r\n            Sessions RB, Brady RL, Woolfson DN*', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/30/21/3029/2422267', h: '3029-3035', i: $elm$core$Maybe$Nothing, x: 'CCBuilder: an interactive web-based tool for building, designing\r\n            and assessing coiled-coil protein assemblies', j: '30', k: '2014'},
-		{e: 'Thomson AR, Wood CW, Burton AJ, Bartlett GJ, Sessions RB,\r\n            Brady RL, Woolfson DN*', f: 'Science', g: 'http://science.sciencemag.org/content/346/6208/485', h: '485-488', i: $elm$core$Maybe$Nothing, x: 'Computational design of water-soluble α-helical barrels', j: '346', k: '2014'},
-		{e: 'Woolfson DN*, Bartlett GJ, Burton AJ, Heal JW, Niitsu A,\r\n            Thomson AR, Wood CW', f: 'Current opinion in structural biology', g: 'https://www.sciencedirect.com/science/article/pii/S0959440X1500069X', h: '16-26', i: $elm$core$Maybe$Nothing, x: 'De novo protein design: how do we expand into the universe of\r\n            possible protein structures?', j: '33', k: '2015'},
-		{e: 'Burgess NC, Sharp TH, Thomas F, Wood CW, Thomson AR,\r\n            Zaccai NR, Brady RL, Serpell LC, Woolfson DN*', f: 'Journal of the American Chemical Society', g: 'https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973', h: '10554-10562', i: $elm$core$Maybe$Nothing, x: 'Modular design of self-assembling peptide-based nanotubes', j: '137', k: '2015'},
-		{e: 'Wood CW*, Heal JW, Thomson AR, Bartlett GJ, Ibarra AÁ, Brady RL,\r\n            Sessions RB, Woolfson DN*"\r\n            ', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/33/19/3043/3861331', h: '3043-3050', i: $elm$core$Maybe$Nothing, x: 'ISAMBARD: an open-source computational environment for\r\n            biomolecular analysis, modelling and design', j: '33', k: '2017'},
-		{e: 'Wood CW and Woolfson DN', f: 'Protein Science', g: 'https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279', h: '103-111', i: $elm$core$Maybe$Nothing, x: 'CCBuilder 2.0: Powerful and accessible coiled‐coil modeling', j: '27', k: '2018'},
-		{e: 'Pellizzoni MM, Schwizer F, Wood CW, Sabatino V, Cotelle Y,\r\n            Matile S, Woolfson DN, Ward TR*', f: 'ACS Catalysis', g: 'https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773', h: '1476-1484', i: $elm$core$Maybe$Nothing, x: 'Chimeric Streptavidins as Host Proteins for Artificial ' + 'Metalloenzymes', j: '8', k: '2018'},
-		{e: 'Heal JW, Bartlett GJ, Wood CW, Thomson AR, Woolfson DN*', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/34/19/3316/4990824', h: '3316-3323', i: $elm$core$Maybe$Nothing, x: 'Applying graph theory to protein structures: an atlas of coiled\r\n            coils', j: '34', k: '2018'},
-		{e: 'Rhys GG, Wood CW, Lang EJM, Mulholland AJ, Brady RL,\r\n            Thomson AR, Woolfson DN*', f: 'Nature Communications', g: 'https://www.nature.com/articles/s41467-018-06391-y', h: '4132', i: $elm$core$Maybe$Nothing, x: 'Maintaining and breaking symmetry in homomeric coiled-coil\r\n          assemblies', j: '9', k: '2018'},
+		{d: 'Wood CW*, Bruning M, Ibarra AA, Bartlett Gail J, Thomson AR,\r\n            Sessions RB, Brady RL, Woolfson DN*', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/30/21/3029/2422267', h: '3029-3035', i: $elm$core$Maybe$Nothing, x: 'CCBuilder: an interactive web-based tool for building, designing\r\n            and assessing coiled-coil protein assemblies', j: '30', k: '2014'},
+		{d: 'Thomson AR, Wood CW, Burton AJ, Bartlett GJ, Sessions RB,\r\n            Brady RL, Woolfson DN*', f: 'Science', g: 'http://science.sciencemag.org/content/346/6208/485', h: '485-488', i: $elm$core$Maybe$Nothing, x: 'Computational design of water-soluble α-helical barrels', j: '346', k: '2014'},
+		{d: 'Woolfson DN*, Bartlett GJ, Burton AJ, Heal JW, Niitsu A,\r\n            Thomson AR, Wood CW', f: 'Current opinion in structural biology', g: 'https://www.sciencedirect.com/science/article/pii/S0959440X1500069X', h: '16-26', i: $elm$core$Maybe$Nothing, x: 'De novo protein design: how do we expand into the universe of\r\n            possible protein structures?', j: '33', k: '2015'},
+		{d: 'Burgess NC, Sharp TH, Thomas F, Wood CW, Thomson AR,\r\n            Zaccai NR, Brady RL, Serpell LC, Woolfson DN*', f: 'Journal of the American Chemical Society', g: 'https://pubs.acs.org/doi/abs/10.1021/jacs.5b03973', h: '10554-10562', i: $elm$core$Maybe$Nothing, x: 'Modular design of self-assembling peptide-based nanotubes', j: '137', k: '2015'},
+		{d: 'Wood CW*, Heal JW, Thomson AR, Bartlett GJ, Ibarra AÁ, Brady RL,\r\n            Sessions RB, Woolfson DN*"\r\n            ', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/33/19/3043/3861331', h: '3043-3050', i: $elm$core$Maybe$Nothing, x: 'ISAMBARD: an open-source computational environment for\r\n            biomolecular analysis, modelling and design', j: '33', k: '2017'},
+		{d: 'Wood CW and Woolfson DN', f: 'Protein Science', g: 'https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3279', h: '103-111', i: $elm$core$Maybe$Nothing, x: 'CCBuilder 2.0: Powerful and accessible coiled‐coil modeling', j: '27', k: '2018'},
+		{d: 'Pellizzoni MM, Schwizer F, Wood CW, Sabatino V, Cotelle Y,\r\n            Matile S, Woolfson DN, Ward TR*', f: 'ACS Catalysis', g: 'https://pubs.acs.org/doi/abs/10.1021/acscatal.7b03773', h: '1476-1484', i: $elm$core$Maybe$Nothing, x: 'Chimeric Streptavidins as Host Proteins for Artificial ' + 'Metalloenzymes', j: '8', k: '2018'},
+		{d: 'Heal JW, Bartlett GJ, Wood CW, Thomson AR, Woolfson DN*', f: 'Bioinformatics', g: 'https://academic.oup.com/bioinformatics/article/34/19/3316/4990824', h: '3316-3323', i: $elm$core$Maybe$Nothing, x: 'Applying graph theory to protein structures: an atlas of coiled\r\n            coils', j: '34', k: '2018'},
+		{d: 'Rhys GG, Wood CW, Lang EJM, Mulholland AJ, Brady RL,\r\n            Thomson AR, Woolfson DN*', f: 'Nature Communications', g: 'https://www.nature.com/articles/s41467-018-06391-y', h: '4132', i: $elm$core$Maybe$Nothing, x: 'Maintaining and breaking symmetry in homomeric coiled-coil\r\n          assemblies', j: '9', k: '2018'},
 		{
-		e: 'Rhys GG, Wood CW, Beesley JL, Zaccai NR, Burton AJ,\r\n            Brady RL, Thomson AR, Woolfson DN*',
+		d: 'Rhys GG, Wood CW, Beesley JL, Zaccai NR, Burton AJ,\r\n            Brady RL, Thomson AR, Woolfson DN*',
 		f: 'Journal of the American Chemical Society',
 		g: 'https://pubs.acs.org/doi/10.1021/jacs.8b13354',
 		h: '8787-8797',
@@ -13572,10 +13572,10 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		j: '141',
 		k: '2019'
 	},
-		{e: 'Juan J, Baker EG, Wood CW, Bath J, Woolfson DN*,\r\n            Turberfield AJ*', f: 'ACS Nano', g: 'https://pubs.acs.org/doi/10.1021/acsnano.9b04251', h: '9927-9935', i: $elm$core$Maybe$Nothing, x: 'Peptide Assembly Directed and Quantified Using Megadalton DNA\r\n          Nanostructures', j: '13', k: '2019'},
-		{e: 'Wood CW*, Ibarra AA, Bartlett GJ, Wilson AJ, Woolfson DN,\r\n            Sessions RB*', f: 'Bioinformatics', g: 'https://doi.org/10.1093/bioinformatics/btaa026', h: '2917-2919', i: $elm$core$Maybe$Nothing, x: 'BAlaS: fast, interactive and accessible computational alanine-scanning\r\n            using BudeAlaScan', j: '36', k: '2020'},
+		{d: 'Juan J, Baker EG, Wood CW, Bath J, Woolfson DN*,\r\n            Turberfield AJ*', f: 'ACS Nano', g: 'https://pubs.acs.org/doi/10.1021/acsnano.9b04251', h: '9927-9935', i: $elm$core$Maybe$Nothing, x: 'Peptide Assembly Directed and Quantified Using Megadalton DNA\r\n          Nanostructures', j: '13', k: '2019'},
+		{d: 'Wood CW*, Ibarra AA, Bartlett GJ, Wilson AJ, Woolfson DN,\r\n            Sessions RB*', f: 'Bioinformatics', g: 'https://doi.org/10.1093/bioinformatics/btaa026', h: '2917-2919', i: $elm$core$Maybe$Nothing, x: 'BAlaS: fast, interactive and accessible computational alanine-scanning\r\n            using BudeAlaScan', j: '36', k: '2020'},
 		{
-		e: 'Galloway JM, Bray HEV, Shoemark DK, Hodgson LR, Coombs J, Mantell JM,\r\n            Rose RS, Ross JF, Morris C, Harniman RL, Wood CW, Arthur C, Verkade P,\r\n            Woolfson DN*\r\n            ',
+		d: 'Galloway JM, Bray HEV, Shoemark DK, Hodgson LR, Coombs J, Mantell JM,\r\n            Rose RS, Ross JF, Morris C, Harniman RL, Wood CW, Arthur C, Verkade P,\r\n            Woolfson DN*\r\n            ',
 		f: 'Small',
 		g: 'https://doi.org/10.1002/smll.202100472',
 		h: '2100472',
@@ -13585,7 +13585,7 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		k: '2021'
 	},
 		{
-		e: 'Stam MJ and Wood CW*',
+		d: 'Stam MJ and Wood CW*',
 		f: 'Protein Engineering, Design and Selection',
 		g: 'https://doi.org/10.1093/protein/gzab029',
 		h: 'gzab029',
@@ -13595,7 +13595,7 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		k: '2021'
 	},
 		{
-		e: 'O’Shea JM, Goutou A, Brydon J, Sethna CR, Wood CW, Greiss S*\r\n            ',
+		d: 'O’Shea JM, Goutou A, Brydon J, Sethna CR, Wood CW, Greiss S*\r\n            ',
 		f: 'ChemBioChem',
 		g: 'https://doi.org/10.1002/cbic.202200321',
 		h: 'e202200321',
@@ -13605,7 +13605,7 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		k: '2022'
 	},
 		{
-		e: 'Castorina LV, Petrenas R, Subr K and Wood CW*',
+		d: 'Castorina LV, Petrenas R, Subr K and Wood CW*',
 		f: 'Bioinformatics',
 		g: 'https://doi.org/10.1093/bioinformatics/btad027',
 		h: 'btad027',
@@ -13614,9 +13614,10 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		j: 'Accepted Manuscript',
 		k: '2023'
 	},
-		{e: 'Dawson WM*, Shelley KL, Fletcher JM, Scott DA, Lombardi L, Rhys GG,\r\n            LaGambina TJ, Obst U, Burton AJ, Cross JA, Davies G, Martin FJO, Wiseman FJ,\r\n            Brady RL, Tew D, Wood CW*, Woolfson DN*\r\n            ', f: 'Nature Communications', g: 'https://doi.org/10.1038/s41467-023-36024-y', h: '383', i: $elm$core$Maybe$Nothing, x: 'Differential sensing with arrays of de novo designed peptide assemblies\r\n            ', j: '14', k: '2023'},
-		{e: 'Gurusaran M, Biemans JJ, Wood CW, Davies OR*\r\n            ', f: 'Frontiers in Cell and Developmental Biology', g: 'https://doi.org/10.3389/fcell.2023.1144277', h: '-', i: $elm$core$Maybe$Nothing, x: 'Molecular insights into LINC complex architecture through the crystal \r\n            structure of a luminal trimeric coiled-coil domain of SUN1\r\n            ', j: '11', k: '2023'},
-		{e: 'O\'Shea JM*, Richardson A, Doerner PW, Wood CW*\r\n            ', f: 'Biorxiv', g: 'https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1', h: '-', i: $elm$core$Maybe$Nothing, x: 'Computational Design of Periplasmic Binding Protein Biosensors\r\n            Guided by Molecular Dynamics\r\n            ', j: '-', k: '2023'}
+		{d: 'Dawson WM*, Shelley KL, Fletcher JM, Scott DA, Lombardi L, Rhys GG,\r\n            LaGambina TJ, Obst U, Burton AJ, Cross JA, Davies G, Martin FJO, Wiseman FJ,\r\n            Brady RL, Tew D, Wood CW*, Woolfson DN*\r\n            ', f: 'Nature Communications', g: 'https://doi.org/10.1038/s41467-023-36024-y', h: '383', i: $elm$core$Maybe$Nothing, x: 'Differential sensing with arrays of de novo designed peptide assemblies\r\n            ', j: '14', k: '2023'},
+		{d: 'Gurusaran M, Biemans JJ, Wood CW, Davies OR*\r\n            ', f: 'Frontiers in Cell and Developmental Biology', g: 'https://doi.org/10.3389/fcell.2023.1144277', h: '-', i: $elm$core$Maybe$Nothing, x: 'Molecular insights into LINC complex architecture through the crystal \r\n            structure of a luminal trimeric coiled-coil domain of SUN1\r\n            ', j: '11', k: '2023'},
+		{d: 'O\'Shea JM*, Richardson A, Doerner PW, Wood CW*\r\n            ', f: 'Biorxiv', g: 'https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1', h: '-', i: $elm$core$Maybe$Nothing, x: 'Computational Design of Periplasmic Binding Protein Biosensors\r\n            Guided by Molecular Dynamics\r\n            ', j: '-', k: '2023'},
+		{d: 'Castorina LV, Ünal SM, Subr K, Wood CW*\r\n            ', f: 'Protein Engineering, Design and Selection', g: 'https://doi.org/10.1093/protein/gzae002', h: '-', i: $elm$core$Maybe$Nothing, x: 'TIMED-Design: Flexible and Accessible Protein Sequence Design\r\n            with Convolutional Neural Networks\r\n            ', j: 'Accepted Manuscript', k: '2024'}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
@@ -13648,7 +13649,7 @@ var $author$project$Pages$Publications$publicationView = function (publication) 
 					u: $author$project$Shared$Style$subHeading(publication.x),
 					e8: publication.g
 				}),
-				$author$project$Shared$Style$simpleText(publication.e),
+				$author$project$Shared$Style$simpleText(publication.d),
 				$author$project$Shared$Style$simpleText(publication.f + (', ' + (publication.j + (', ' + (publication.h + (', ' + (publication.k + '.'))))))),
 				function () {
 				var _v0 = publication.i;
