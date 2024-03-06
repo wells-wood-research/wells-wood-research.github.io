@@ -72,7 +72,47 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2023-12-06"
+    [ { date = "2024-01-30"
+      , title =
+            """TIMED-Design: flexible and accessible protein sequence design
+            with convolutional neural networks"""
+      , category = "New Article"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ paragraph []
+                    [ text <|
+                        """Our paper on using convolutional neural networks to design
+                        proteins has just been published in Protein Engineering,
+                        Design and Selection. We've been working on our methods for
+                        around 5 years and this was a nice opportunity to show what
+                        we've been working on. It's especially nice to share it as
+                        the first author, Leo Castorina, initially started working on
+                        this during his undergraduate project."""
+                    ]
+                , paragraph []
+                    [ text <|
+                        """We released all our models, as well as other convolutional
+                        neural networks that have been published previously, but were
+                        unavailable to the community, that we implemented and retrained. 
+                        Leo made a nice """
+                    , newTabLink
+                        Style.linkStyling
+                        { url = "https://pragmaticproteindesign.bio.ed.ac.uk/timed"
+                        , label = text "user interface"
+                        }
+                    , text <|
+                        """ where you can test the models. The paper is open access, 
+                        and you can read it for free """
+                    , newTabLink
+                        Style.linkStyling
+                        { url = "https://doi.org/10.1093/protein/gzae002"
+                        , label = text "here"
+                        }
+                    , text ". Well done and thank you to everyone involved."
+                    ]
+                ]
+      }
+    , { date = "2023-12-06"
       , title =
             """Christmas Night Out 2023"""
       , category = "Group"
@@ -85,7 +125,7 @@ newsItems =
                 , paragraph []
                     [ text <|
                         """We had a really fun day on the 6th, with a brain storming
-                        session and followed by a Christmas meal and some drinks.
+                        session followed by a Christmas meal and some drinks.
                         Thank you to everyone in and associated with the group, 
                         it's an absolute pleasure to work with you all. Special thanks
                         to Eugene for organising the day. Merry Christmas and a Happy

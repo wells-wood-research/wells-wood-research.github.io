@@ -62,7 +62,7 @@ people =
             (undergraduateStudents
                 |> List.filter .active
             )
-        , peopleSection "Previous Members"
+        , previousPeopleSection "Previous Members"
             ((postDocs ++ phdStudents ++ mastersStudents ++ undergraduateStudents)
                 |> List.filter (not << .active)
             )
@@ -81,6 +81,19 @@ peopleSection headingText peopleInSection =
             Style.subHeading headingText
                 :: (peopleInSection
                         |> List.map personView
+                   )
+
+
+previousPeopleSection : String -> List (Person msg) -> Element msg
+previousPeopleSection headingText peopleInSection =
+    if List.isEmpty peopleInSection then
+        none
+
+    else
+        column [] <|
+            Style.subHeading headingText
+                :: (peopleInSection
+                        |> List.map previousPersonView
                    )
 
 
@@ -149,6 +162,26 @@ postDocs =
                     machine learning models that can be used to design
                     photo-activated flavin-dependent enzymes.
                     """
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/michaeljamesstam.jpg"
+      , name = "Michael James Stam"
+      , associatedLab = Nothing
+      , email = Just "michael.stam@ed.ac.uk"
+      , twitter = Just "https://twitter.com/mjstam"
+      , github = Just "https://github.com/MichaelJamesStam"
+      , bio =
+            paragraph []
+                [ text
+                    """Michael Stam received his undergraduate degree in Mathematics
+                    from the University of Edinburgh. After graduating, he went to work
+                    in financial services for four years, where he applied statistical
+                    analysis and machine learning techniques to financial data.
+                    He has recently submitted his thesis for the PhD stage of the UKRI CDT in Biomedical
+                    Artificial Intelligence programme, where he was looking at optimising
+                    the reliability of de novo protein design, by understanding the
+                    different reasons why most protein designs fail."""
                 ]
       , active = True
       }
@@ -264,26 +297,6 @@ phdStudents =
                 ]
       , active = True
       }
-    , { pictureUrl = "/static/images/people/michaeljamesstam.jpg"
-      , name = "Michael James Stam"
-      , associatedLab = Nothing
-      , email = Just "michael.stam@ed.ac.uk"
-      , twitter = Just "https://twitter.com/mjstam"
-      , github = Just "https://github.com/MichaelJamesStam"
-      , bio =
-            paragraph []
-                [ text
-                    """Michael Stam received his undergraduate degree in Mathematics
-                    from the University of Edinburgh. After graduating, he went to work
-                    in financial services for four years, where he applied statistical
-                    analysis and machine learning techniques to financial data.
-                    Currently, he is in the PhD stage of the UKRI CDT in Biomedical
-                    Artificial Intelligence programme, where he is looking at optimising
-                    the reliability of de novo protein design, by understanding the
-                    different reasons why most protein designs fail."""
-                ]
-      , active = True
-      }
     , { pictureUrl = "/static/images/people/nataliaszlachetka.jpg"
       , name = "Natalia Szlachetka"
       , associatedLab =
@@ -383,6 +396,25 @@ phdStudents =
                     using synthetic biology."""
                 ]
       , active = False
+      }
+    , { pictureUrl = "/static/images/people/handingwang.jpg"
+      , name = "Handing Wang"
+      , associatedLab = Nothing
+      , email = Just "h.wang-243@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text """Handing is currently pursuing his Ph.D. in the Wood lab in
+                    collaboration with Prof. Baojun Wang at ZJU, where his
+                    interest lies in designing sensing domains using
+                    computational modeling tools. Before starting his doctoral
+                    studies, he received his Master's at Zhejiang University,
+                    where he conducted research in CRISPR screening and
+                    Nanopore sequencing in yeast.
+                    """
+                ]
+      , active = True
       }
     ]
 
@@ -539,6 +571,75 @@ personView person =
                     ]
                 ]
             , column [ spacing 10, width fill ]
+                [ Style.subHeading person.name
+                , case person.associatedLab of
+                    Just associatedLab ->
+                        paragraph [ Font.italic ]
+                            [ text "Primary supervisor: "
+                            , associatedLab
+                            ]
+
+                    Nothing ->
+                        none
+                , person.bio
+                ]
+            ]
+        ]
+
+
+previousPersonView : Person msg -> Element msg
+previousPersonView person =
+    column
+        [ paddingXY 0 30
+        , spacing 30
+        ]
+        [ wrappedRow [ spacing 30 ]
+            [ column [ spacing 10 ]
+                [ image [ centerX, width (px 125) ]
+                    { src = person.pictureUrl, description = person.name }
+                , row [ centerX, spacing 10 ]
+                    [ case person.email of
+                        Just emailAccount ->
+                            newTabLink
+                                []
+                                { url = "mailto:" ++ emailAccount
+                                , label =
+                                    FeatherIcons.mail
+                                        |> FeatherIcons.toHtml []
+                                        |> html
+                                }
+
+                        Nothing ->
+                            none
+                    , case person.twitter of
+                        Just twitterAccount ->
+                            newTabLink
+                                []
+                                { url = twitterAccount
+                                , label =
+                                    FeatherIcons.twitter
+                                        |> FeatherIcons.toHtml []
+                                        |> html
+                                }
+
+                        Nothing ->
+                            none
+                    , case person.github of
+                        Just githubAccount ->
+                            newTabLink
+                                []
+                                { url = githubAccount
+                                , label =
+                                    FeatherIcons.github
+                                        |> FeatherIcons.toHtml []
+                                        |> html
+                                }
+
+                        Nothing ->
+                            none
+                    ]
+                ]
+            , column [ spacing 10, width fill, Font.size 16 ]
                 [ Style.subHeading person.name
                 , case person.associatedLab of
                     Just associatedLab ->
