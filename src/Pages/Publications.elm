@@ -351,4 +351,18 @@ allPublications =
       , pages = "-"
       , year = "2024"
       }
+    , { authors =
+            """Stam MJ, Oyarzún DA, Laohakunakorn N, Wood CW
+            """
+      , title =
+            """Large scale analysis of predicted protein structures
+            links model features to in vivo behaviour
+            """
+      , link = "https://doi.org/10.1101/2024.04.10.588835"
+      , preprintLink = Nothing
+      , journal = "Biorxiv"
+      , volume = "-"
+      , pages = "-"
+      , year = "2024"
+      }
     ]
