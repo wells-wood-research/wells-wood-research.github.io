@@ -115,8 +115,7 @@ chrisWellsWood =
     , name = "Chris Wells Wood"
     , associatedLab = Nothing
     , email = Just "chris.wood@ed.ac.uk"
-    , twitter = Just "https://twitter.com/ChrisWellsWood"
-    , github = Just "https://github.com/ChrisWellsWood"
+    , twitter = Just "https://twitter.com/ChrisWellsWood" , github = Just "https://github.com/ChrisWellsWood"
     , bio =
         paragraph []
             [ text
@@ -185,8 +184,7 @@ postDocs =
                 ]
       , active = True
       }
-    , { pictureUrl = "/static/images/people/jackoshea.jpg"
-      , name = "Jack O'Shea"
+    , { pictureUrl = "/static/images/people/jackoshea.jpg" , name = "Jack O'Shea"
       , associatedLab = Nothing
       , email = Just "j.m.o'shea@sms.ed.ac.uk"
       , twitter = Just "https://twitter.com/jack_oshea97"
@@ -212,8 +210,7 @@ postDocs =
 
 phdStudents : List (Person msg)
 phdStudents =
-    [ { pictureUrl = "/static/images/people/leocastorina.jpg"
-      , name = "Leonardo Castorina"
+    [ { pictureUrl = "/static/images/people/leocastorina.jpg" , name = "Leonardo Castorina"
       , associatedLab = Nothing
       , email = Just "leonardo.castorina@ed.ac.uk"
       , twitter = Nothing
@@ -294,6 +291,31 @@ phdStudents =
                     and is collaborating with the Wells Wood lab to design multi-state
                     proteins with the aid of molecular-dynamics simulations and machine
                     learning."""
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/anaroblesmartin.jpg"
+      , name = "Ana Robles Martin"
+      , associatedLab = Nothing
+      , email = Nothing
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Ana Robles Martin is a PhD candidate at the Barcelona
+                    Supercomputing Center and the University of Barcelona. She
+                    studied Biochemistry at the University of Seville and later
+                    pursued a Master's in Bioinformatics at the Autonomous
+                    University of Barcelona. Her research focuses on
+                    computational de novo design of hydrolase active sites for
+                    polyethylene terephthalate (PET) degradation using
+                    molecular modeling techniques such as Monte Carlo and
+                    Molecular Dynamics simulations. Currently, Ana is
+                    completing a Visiting Research Internship at the Wells Wood
+                    lab, investigating enzymes involved in PET monomers
+                    upcycling and applying methods to potentially modify the
+                    substrate specificity of these enzymes."""
                 ]
       , active = True
       }
