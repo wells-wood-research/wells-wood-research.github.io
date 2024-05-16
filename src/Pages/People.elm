@@ -297,6 +297,31 @@ phdStudents =
                 ]
       , active = True
       }
+    , { pictureUrl = "/static/images/people/anaroblesmartin.jpg"
+      , name = "Ana Robles Martin"
+      , associatedLab = Nothing
+      , email = Nothing
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Ana Robles Martin is a PhD candidate at the Barcelona
+                    Supercomputing Center and the University of Barcelona. She
+                    studied Biochemistry at the University of Seville and later
+                    pursued a Master's in Bioinformatics at the Autonomous
+                    University of Barcelona. Her research focuses on
+                    computational de novo design of hydrolase active sites for
+                    polyethylene terephthalate (PET) degradation using
+                    molecular modeling techniques such as Monte Carlo and
+                    Molecular Dynamics simulations. Currently, Ana is
+                    completing a Visiting Research Internship at the Wells Wood
+                    lab, investigating enzymes involved in PET monomers
+                    upcycling and applying methods to potentially modify the
+                    substrate specificity of these enzymes."""
+                ]
+      , active = True
+      }
     , { pictureUrl = "/static/images/people/nataliaszlachetka.jpg"
       , name = "Natalia Szlachetka"
       , associatedLab =

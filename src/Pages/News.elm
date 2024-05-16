@@ -72,7 +72,31 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2024-01-30"
+    [ { date = "2024-05-14"
+      , title =
+            """Congratulations Dr Stam!"""
+      , category = "Group"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 400 ]
+                    { src = "static/images/news/2024-05-14-michaels-viva.jpg"
+                    , description = "Group photo with Michael after he passed his viva."
+                    }
+                , paragraph []
+                    [ text <|
+                        """Many congratulations to Michael Stam, who passed his viva
+                        with flying colours. Michael was the first PhD student to join
+                        the group and he has been a joy to supervise. Despite starting
+                        in the midst of the COVID pandemic, he took everything in his
+                        stride and has worked diligently to produce some excellent
+                        research. Michael is staying on in the group to undertake a
+                        PDRA position. Many thanks to Birte Höcker and Ajitha Rajan
+                        for examining.
+                        """
+                    ]
+                ]
+      }
+    , { date = "2024-01-30"
       , title =
             """TIMED-Design: flexible and accessible protein sequence design
             with convolutional neural networks"""
