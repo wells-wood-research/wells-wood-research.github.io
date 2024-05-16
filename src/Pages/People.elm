@@ -115,7 +115,8 @@ chrisWellsWood =
     , name = "Chris Wells Wood"
     , associatedLab = Nothing
     , email = Just "chris.wood@ed.ac.uk"
-    , twitter = Just "https://twitter.com/ChrisWellsWood" , github = Just "https://github.com/ChrisWellsWood"
+    , twitter = Just "https://twitter.com/ChrisWellsWood"
+    , github = Just "https://github.com/ChrisWellsWood"
     , bio =
         paragraph []
             [ text
@@ -184,7 +185,8 @@ postDocs =
                 ]
       , active = True
       }
-    , { pictureUrl = "/static/images/people/jackoshea.jpg" , name = "Jack O'Shea"
+    , { pictureUrl = "/static/images/people/jackoshea.jpg"
+      , name = "Jack O'Shea"
       , associatedLab = Nothing
       , email = Just "j.m.o'shea@sms.ed.ac.uk"
       , twitter = Just "https://twitter.com/jack_oshea97"
@@ -210,7 +212,8 @@ postDocs =
 
 phdStudents : List (Person msg)
 phdStudents =
-    [ { pictureUrl = "/static/images/people/leocastorina.jpg" , name = "Leonardo Castorina"
+    [ { pictureUrl = "/static/images/people/leocastorina.jpg"
+      , name = "Leonardo Castorina"
       , associatedLab = Nothing
       , email = Just "leonardo.castorina@ed.ac.uk"
       , twitter = Nothing
