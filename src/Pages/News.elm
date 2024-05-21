@@ -78,7 +78,7 @@ newsItems =
       , category = "Group"
       , newsContent =
             textColumn [ spacing 16, width fill ]
-                [ image [ centerX, width <| px 400 ]
+                [ image [ centerX, width <| px 600 ]
                     { src = "static/images/news/2024-05-14-michaels-viva.jpg"
                     , description = "Group photo with Michael after he passed his viva."
                     }
@@ -92,6 +92,26 @@ newsItems =
                         research. Michael is staying on in the group to undertake a
                         PDRA position. Many thanks to Birte Höcker and Ajitha Rajan
                         for examining.
+                        """
+                    ]
+                ]
+      }
+    , { date = "2024-05-01"
+      , title =
+            """Firbush Lab Retreat"""
+      , category = "Group"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 600 ]
+                    { src = "static/images/news/2024-05-01-firbush.jpg"
+                    , description = "Wood lab members at Firbush."
+                    }
+                , paragraph []
+                    [ text <|
+                        """Some members of the lab went on a retreat to the University
+                        of Edinburgh's cabin on Loch Tay with the Wallace and Regan
+                        groups. It was a fun mix of science, water sports, walking,
+                        cycling and socialising.
                         """
                     ]
                 ]
