@@ -324,20 +324,6 @@ allPublications =
       , year = "2023"
       }
     , { authors =
-            """O'Shea JM*, Richardson A, Doerner PW, Wood CW*
-            """
-      , title =
-            """Computational Design of Periplasmic Binding Protein Biosensors
-            Guided by Molecular Dynamics
-            """
-      , link = "https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1"
-      , preprintLink = Nothing
-      , journal = "Biorxiv"
-      , volume = "-"
-      , pages = "-"
-      , year = "2023"
-      }
-    , { authors =
             """Castorina LV, Ünal SM, Subr K, Wood CW*
             """
       , title =
@@ -361,6 +347,20 @@ allPublications =
       , link = "https://doi.org/10.1101/2024.04.10.588835"
       , preprintLink = Nothing
       , journal = "Biorxiv"
+      , volume = "-"
+      , pages = "-"
+      , year = "2024"
+      }
+    , { authors =
+            """O'Shea JM*, Richardson A, Doerner PW, Wood CW*
+            """
+      , title =
+            """Computational Design of Periplasmic Binding Protein Biosensors
+            Guided by Molecular Dynamics
+            """
+      , link = "https://doi.org/10.1371/journal.pcbi.1012212"
+      , preprintLink = Just "https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1"
+      , journal = "PLoS Computational Biology"
       , volume = "-"
       , pages = "-"
       , year = "2024"
