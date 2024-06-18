@@ -13892,9 +13892,18 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 	},
 		{d: 'Dawson WM*, Shelley KL, Fletcher JM, Scott DA, Lombardi L, Rhys GG,\r\n            LaGambina TJ, Obst U, Burton AJ, Cross JA, Davies G, Martin FJO, Wiseman FJ,\r\n            Brady RL, Tew D, Wood CW*, Woolfson DN*\r\n            ', e: 'Nature Communications', f: 'https://doi.org/10.1038/s41467-023-36024-y', g: '383', h: $elm$core$Maybe$Nothing, s: 'Differential sensing with arrays of de novo designed peptide assemblies\r\n            ', j: '14', k: '2023'},
 		{d: 'Gurusaran M, Biemans JJ, Wood CW, Davies OR*\r\n            ', e: 'Frontiers in Cell and Developmental Biology', f: 'https://doi.org/10.3389/fcell.2023.1144277', g: '-', h: $elm$core$Maybe$Nothing, s: 'Molecular insights into LINC complex architecture through the crystal \r\n            structure of a luminal trimeric coiled-coil domain of SUN1\r\n            ', j: '11', k: '2023'},
-		{d: 'O\'Shea JM*, Richardson A, Doerner PW, Wood CW*\r\n            ', e: 'Biorxiv', f: 'https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1', g: '-', h: $elm$core$Maybe$Nothing, s: 'Computational Design of Periplasmic Binding Protein Biosensors\r\n            Guided by Molecular Dynamics\r\n            ', j: '-', k: '2023'},
 		{d: 'Castorina LV, Ünal SM, Subr K, Wood CW*\r\n            ', e: 'Protein Engineering, Design and Selection', f: 'https://doi.org/10.1093/protein/gzae002', g: '-', h: $elm$core$Maybe$Nothing, s: 'TIMED-Design: Flexible and Accessible Protein Sequence Design\r\n            with Convolutional Neural Networks\r\n            ', j: 'Accepted Manuscript', k: '2024'},
-		{d: 'Stam MJ, Oyarzún DA, Laohakunakorn N, Wood CW\r\n            ', e: 'Biorxiv', f: 'https://doi.org/10.1101/2024.04.10.588835', g: '-', h: $elm$core$Maybe$Nothing, s: 'Large scale analysis of predicted protein structures\r\n            links model features to in vivo behaviour\r\n            ', j: '-', k: '2024'}
+		{d: 'Stam MJ, Oyarzún DA, Laohakunakorn N, Wood CW\r\n            ', e: 'Biorxiv', f: 'https://doi.org/10.1101/2024.04.10.588835', g: '-', h: $elm$core$Maybe$Nothing, s: 'Large scale analysis of predicted protein structures\r\n            links model features to in vivo behaviour\r\n            ', j: '-', k: '2024'},
+		{
+		d: 'O\'Shea JM*, Richardson A, Doerner PW, Wood CW*\r\n            ',
+		e: 'PLoS Computational Biology',
+		f: 'https://doi.org/10.1371/journal.pcbi.1012212',
+		g: '-',
+		h: $elm$core$Maybe$Just('https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1'),
+		s: 'Computational Design of Periplasmic Binding Protein Biosensors\r\n            Guided by Molecular Dynamics\r\n            ',
+		j: '-',
+		k: '2024'
+	}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
