@@ -83,7 +83,7 @@ locally when they need to scale up analysis."""
       , backgroundImageLink = Just "/static/images/tools/balas.jpg"
       }
     , { name = "CCBuilder/CCBuilder 2"
-      , application = Just "http://coiledcoils.chm.bris.ac.uk/ccbuilder2/builder"
+      , application = Just "https://pragmaticproteindesign.bio.ed.ac.uk/builder/"
       , source = Just "https://github.com/woolfson-group/ccbuilder2"
       , description =
             paragraph []

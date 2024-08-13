@@ -320,7 +320,7 @@ phdStudents =
                     upcycling and applying methods to potentially modify the
                     substrate specificity of these enzymes."""
                 ]
-      , active = True
+      , active = False
       }
     , { pictureUrl = "/static/images/people/nataliaszlachetka.jpg"
       , name = "Natalia Szlachetka"
