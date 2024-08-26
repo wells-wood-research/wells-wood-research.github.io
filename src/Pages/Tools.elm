@@ -56,7 +56,23 @@ type alias Tool msg =
 
 allTools : List (Tool msg)
 allTools =
-    [ { name = "BAlaS"
+    [ { name = "The Protein Design Archive"
+      , application = Just "https://pragmaticproteindesign.bio.ed.ac.uk/pda/"
+      , source = Just "https://github.com/wells-wood-research/protein-design-archive"
+      , description =
+            paragraph []
+                [ text
+                    """An comprehensive archive of designed protein structures.
+                    Using the web application, you can browse designs, search for
+                    specific authors and keywords, and export data on the designs
+                    for further analysis. We hope that this resource provides the
+                    protein design community with a useful resource to track
+                    past triumphs and remaining challenges of the field.
+                    """
+                ]
+      , backgroundImageLink = Just "/static/images/tools/pda.jpg"
+      }
+    , { name = "BAlaS"
       , application = Just "https://balas.app"
       , source = Just "https://github.com/wells-wood-research/BAlaS"
       , description =
