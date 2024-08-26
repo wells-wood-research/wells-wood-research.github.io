@@ -365,4 +365,16 @@ allPublications =
       , pages = "-"
       , year = "2024"
       }
+    , { authors =
+            """Thornton EL, Paterson SM, Stam MJ, Wood CW, Laohakunakorn N, Regan L*
+            """
+      , title =
+            """Applications of cell free protein synthesis in protein design"""
+      , link = "https://doi.org/10.1002/pro.5148"
+      , preprintLink = Nothing
+      , journal = "Protein Science"
+      , volume = "33"
+      , pages = "e5148"
+      , year = "2024"
+      }
     ]
