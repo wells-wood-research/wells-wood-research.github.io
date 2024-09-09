@@ -72,7 +72,56 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2024-05-14"
+    [ { date = "2024-09-09"
+      , title =
+            """The Protein Design Archive"""
+      , category = "New Article"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 600 ]
+                    { src = "static/images/news/2024-08-09-pda.jpg"
+                    , description = "Front page of the PDA."
+                    }
+                , paragraph []
+                    [ text <|
+                        """We have just released the first iteration of "The Protein Design
+                        Archive". We are aiming for this resource to be the first place people
+                        look to find information on designed proteins. It presents a structure-centric
+                        view of protein design over time, although we're planning on expanding
+                        it to proteins that are not structurally characterised in the future.
+                        """
+                    ]
+                , paragraph []
+                    [ text <|
+                        """We also performed some analysis of the designed proteins in the database and
+                        discovered some interesting things, although many of them will not be a surprise
+                        to the protein design community. For example, alpha-helical regions
+                        are over represented in designed proteins compared to natural proteins, and
+                        sequence complexity is generally lower. Although this opens an interesting discussion
+                        around whether we should be aiming to design proteins that look like natural proteins
+                        in the first place! Regardless, they're useful numbers to have at hand. See the """
+                    , newTabLink
+                        Style.linkStyling
+                        { url = "https://doi.org/10.1101/2024.09.05.611465"
+                        , label = text "preprint"
+                        }
+                    , text <|
+                        """ for more information."""
+                    ]
+                , paragraph []
+                    [ text <|
+                        """Thank you to Marta and Michael for all their hard work putting this together, and
+                        thank you to our wonderful collaborators Luigi and Dek. Here's link to the web
+                        application, please let us know if you have any feedback: """
+                    , newTabLink
+                        Style.linkStyling
+                        { url = "https://pragmaticproteindesign.bio.ed.ac.uk/pda"
+                        , label = text "https://pragmaticproteindesign.bio.ed.ac.uk/pda"
+                        }
+                    ]
+                ]
+      }
+    , { date = "2024-05-14"
       , title =
             """Congratulations Dr Stam!"""
       , category = "Group"

@@ -338,7 +338,7 @@ allPublications =
       , year = "2024"
       }
     , { authors =
-            """Stam MJ, Oyarzún DA, Laohakunakorn N, Wood CW
+            """Stam MJ, Oyarzún DA, Laohakunakorn N, Wood CW*
             """
       , title =
             """Large scale analysis of predicted protein structures
@@ -375,6 +375,18 @@ allPublications =
       , journal = "Protein Science"
       , volume = "33"
       , pages = "e5148"
+      , year = "2024"
+      }
+    , { authors =
+            """Chronowsha M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*
+            """
+      , title =
+            """The Protein Design Archive (PDA): insights from 40 years of protein design"""
+      , link = "https://doi.org/10.1101/2024.09.05.611465"
+      , preprintLink = Nothing
+      , journal = "Biorxiv"
+      , volume = "-"
+      , pages = "-"
       , year = "2024"
       }
     ]
