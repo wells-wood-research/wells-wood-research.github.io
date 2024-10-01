@@ -133,7 +133,8 @@ chrisWellsWood =
                 EPSRC postdoctoral fellowship and moved to the University of
                 Edinburgh to establish his research group. In 2020, he attained a
                 permanent position in the School of Biological Science as a
-                Lecturer in Biotechnology.
+                Lecturer in Biotechnology, and was promoted to Senior Lecturer in
+                2024.
                 """
             ]
     , active = True
