@@ -72,6 +72,22 @@ allTools =
                 ]
       , backgroundImageLink = Just "/static/images/tools/pda.jpg"
       }
+    , { name = "TIMED"
+      , application = Just "https://pragmaticproteindesign.bio.ed.ac.uk/timed/"
+      , source = Just "https://github.com/wells-wood-research/timed-design"
+      , description =
+            paragraph []
+                [ text
+                    """
+                    timed-design is a library to use protein sequence design models
+                    and analyse predictions. We feature retrained Keras models for
+                    novel models (TIMED and TIMED-rotamer) as well as re-implementations
+                    of well known models for which code or model are not publically available
+                    (ProDCoNN, DenseCPD, DenseNet).
+                    """
+                ]
+      , backgroundImageLink = Nothing
+      }
     , { name = "BAlaS"
       , application = Just "https://balas.app"
       , source = Just "https://github.com/wells-wood-research/BAlaS"
