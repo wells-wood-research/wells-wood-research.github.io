@@ -12891,7 +12891,7 @@ var $author$project$Pages$People$chrisWellsWood = {
 				$mdgriffith$elm_ui$Element$text('Chris took his undergraduate degree in Molecular and\n                Cellular Biology at the University of Glasgow. He then went\n                on to undertake a PhD and postdoc in the lab of '),
 				$author$project$Shared$Style$simpleLink(
 				{q: 'Prof. Dek Woolfson', e8: 'https://woolfsonlab.wordpress.com/'}),
-				$mdgriffith$elm_ui$Element$text(', where he worked on developing and applying tools for\n                computational protein design. In 2018 he was awarded an\n                EPSRC postdoctoral fellowship and moved to the University of\n                Edinburgh to establish his research group. In 2020, he attained a\n                permanent position in the School of Biological Science as a\n                Lecturer in Biotechnology.\n                ')
+				$mdgriffith$elm_ui$Element$text(', where he worked on developing and applying tools for\n                computational protein design. In 2018 he was awarded an\n                EPSRC postdoctoral fellowship and moved to the University of\n                Edinburgh to establish his research group. In 2020, he attained a\n                permanent position in the School of Biological Science as a\n                Lecturer in Biotechnology, and was promoted to Senior Lecturer in\n                2024.\n                ')
 			])),
 	n: $elm$core$Maybe$Just('chris.wood@ed.ac.uk'),
 	p: $elm$core$Maybe$Just('https://github.com/ChrisWellsWood'),
