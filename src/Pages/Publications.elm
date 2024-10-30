@@ -389,4 +389,16 @@ allPublications =
       , pages = "-"
       , year = "2024"
       }
+    , { authors =
+            """MacAulay A, Klemencic E, Brewster R, Unal SM, Notari E, Wood CW, Jarvis A, Campopiano DJ
+            """
+      , title =
+            """Installation of an organocatalyst into a protein scaffold creates an artificial Stetterase"""
+      , link = "https://doi.org/10.1039/D4CC05182C"
+      , preprintLink = Nothing
+      , journal = "Chemical Communications"
+      , volume = "-"
+      , pages = "-"
+      , year = "2024"
+      }
     ]
