@@ -72,7 +72,33 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2024-09-09"
+    [ { date = "2024-10-09"
+      , title =
+            """2024 Nobel Prize in Chemistry"""
+      , category = "Group"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 600 ]
+                    { src = "static/images/news/2024-10-09-group-photo.jpg"
+                    , description = "Group photo Oct 2024"
+                    }
+                , paragraph []
+                    [ text <|
+                        """The lab got together to eat pizza and celebrate the 2024 Nobel
+                        Prize in Chemistry being awarded to David Baker, for computational
+                        protein design, and John Jumper and Demis Hassabis, for protein
+                        structure prediction. The prize was thoroughly well deserved by all
+                        parties and it's no exaggeration to say that the research of both
+                        groups has had a transformational affect on the field of protein science.
+                        """
+                    ]
+                , paragraph []
+                    [ text <|
+                        "Many congratulations!"
+                    ]
+                ]
+      }
+    , { date = "2024-09-09"
       , title =
             """The Protein Design Archive"""
       , category = "New Article"
