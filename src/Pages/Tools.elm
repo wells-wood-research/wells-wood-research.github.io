@@ -56,7 +56,28 @@ type alias Tool msg =
 
 allTools : List (Tool msg)
 allTools =
-    [ { name = "The Protein Design Archive"
+    [ { name = "drMD: Molecular Dynamics for Experimentalists"
+      , application = Nothing
+      , source = Just "https://github.com/wells-wood-research/drMD"
+      , description =
+            paragraph []
+                [ text
+                    """drMD is an automated pipeline for running molecular
+                    dynamics simulations using the OpenMM molecular mechanics toolkit. We have
+                    created drMD with non-experts in computational biology in mind and it
+                    has several functions that automatically handle routine procedures
+                    associated with running molecular dynamics simulations. This greatly reduces
+                    the expertise required to run MD simulations. We have also introduced
+                    a series of quality-of-life features to make the process of running MD
+                    simulations both easier and more pleasant. Finally, drMD explains the steps
+                    it is taking interactively and, where useful, provides relevant references so
+                    the user can learn more. All these features make drMD an effective tool for
+                    learning molecular dynamics while running publication-quality simulations.
+                    """
+                ]
+      , backgroundImageLink = Just "/static/images/tools/drmd.jpg"
+      }
+    , { name = "The Protein Design Archive"
       , application = Just "https://pragmaticproteindesign.bio.ed.ac.uk/pda/"
       , source = Just "https://github.com/wells-wood-research/protein-design-archive"
       , description =

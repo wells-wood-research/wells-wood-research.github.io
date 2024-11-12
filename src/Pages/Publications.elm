@@ -43,7 +43,7 @@ publications =
     textColumn
         Style.sectionStyling
         (Style.heading "Publications"
-            :: List.map publicationView (List.reverse allPublications)
+            :: (List.indexedMap publicationView allPublications |> List.reverse)
         )
 
 
@@ -59,8 +59,8 @@ type alias Publication =
     }
 
 
-publicationView : Publication -> Element msg
-publicationView publication =
+publicationView : Int -> Publication -> Element msg
+publicationView pubNumber publication =
     column
         [ paddingXY 0 30
         , spacing 15
@@ -69,7 +69,13 @@ publicationView publication =
         ]
         [ newTabLink
             Style.linkStyling
-            { url = publication.link, label = Style.subHeading publication.title }
+            { url = publication.link
+            , label =
+                String.fromInt (pubNumber + 1)
+                    ++ ". "
+                    ++ publication.title
+                    |> Style.subHeading
+            }
         , Style.simpleText publication.authors
         , Style.simpleText <|
             publication.journal
@@ -333,8 +339,8 @@ allPublications =
       , link = "https://doi.org/10.1093/protein/gzae002"
       , preprintLink = Nothing
       , journal = "Protein Engineering, Design and Selection"
-      , volume = "Accepted Manuscript"
-      , pages = "-"
+      , volume = "37"
+      , pages = "gzae002"
       , year = "2024"
       }
     , { authors =
@@ -397,6 +403,17 @@ allPublications =
       , link = "https://doi.org/10.1039/D4CC05182C"
       , preprintLink = Nothing
       , journal = "Chemical Communications"
+      , volume = "-"
+      , pages = "-"
+      , year = "2024"
+      }
+    , { authors =
+            """Shrimpton-Phoenix E*, Notari E, Wood CW*"""
+      , title =
+            """drMD: Molecular Dynamics for Experimentalists"""
+      , link = "https://doi.org/10.1101/2024.10.29.620839"
+      , preprintLink = Nothing
+      , journal = "Biorxiv"
       , volume = "-"
       , pages = "-"
       , year = "2024"
