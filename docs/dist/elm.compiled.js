@@ -14005,7 +14005,16 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		{b: 'Thornton EL, Paterson SM, Stam MJ, Wood CW, Laohakunakorn N, Regan L*\n            ', c: 'Protein Science', d: 'https://doi.org/10.1002/pro.5148', e: 'e5148', f: $elm$core$Maybe$Nothing, k: 'Applications of cell free protein synthesis in protein design', g: '33', h: '2024'},
 		{b: 'Chronowsha M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*\n            ', c: 'Biorxiv', d: 'https://doi.org/10.1101/2024.09.05.611465', e: '-', f: $elm$core$Maybe$Nothing, k: 'The Protein Design Archive (PDA): insights from 40 years of protein design', g: '-', h: '2024'},
 		{b: 'MacAulay A, Klemencic E, Brewster R, Unal SM, Notari E, Wood CW, Jarvis A, Campopiano DJ\n            ', c: 'Chemical Communications', d: 'https://doi.org/10.1039/D4CC05182C', e: '-', f: $elm$core$Maybe$Nothing, k: 'Installation of an organocatalyst into a protein scaffold creates an artificial Stetterase', g: '-', h: '2024'},
-		{b: 'Shrimpton-Phoenix E*, Notari E, Wood CW*', c: 'Biorxiv', d: 'https://doi.org/10.1101/2024.10.29.620839', e: '-', f: $elm$core$Maybe$Nothing, k: 'drMD: Molecular Dynamics for Experimentalists', g: '-', h: '2024'}
+		{
+		b: 'Shrimpton-Phoenix E*, Notari E, Kluonis T, Wood CW*',
+		c: 'Journal of Molecular Biology',
+		d: 'https://doi.org/10.1016/j.jmb.2024.168918',
+		e: '-',
+		f: $elm$core$Maybe$Just('https://doi.org/10.1101/2024.10.29.620839'),
+		k: 'drMD: Molecular Dynamics for Experimentalists',
+		g: '-',
+		h: '2024'
+	}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
