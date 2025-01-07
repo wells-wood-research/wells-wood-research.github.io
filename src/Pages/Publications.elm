@@ -408,12 +408,12 @@ allPublications =
       , year = "2024"
       }
     , { authors =
-            """Shrimpton-Phoenix E*, Notari E, Wood CW*"""
+            """Shrimpton-Phoenix E*, Notari E, Kluonis T, Wood CW*"""
       , title =
             """drMD: Molecular Dynamics for Experimentalists"""
-      , link = "https://doi.org/10.1101/2024.10.29.620839"
-      , preprintLink = Nothing
-      , journal = "Biorxiv"
+      , link = "https://doi.org/10.1016/j.jmb.2024.168918"
+      , preprintLink = Just "https://doi.org/10.1101/2024.10.29.620839"
+      , journal = "Journal of Molecular Biology"
       , volume = "-"
       , pages = "-"
       , year = "2024"
