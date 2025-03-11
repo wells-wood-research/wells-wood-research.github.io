@@ -129,7 +129,7 @@ chrisWellsWood =
                 }
             , text
                 """, where he worked on developing and applying tools for
-                computational protein design. In 2018 he was awarded an
+                computational protein design. In 2018, he was awarded an
                 EPSRC postdoctoral fellowship and moved to the University of
                 Edinburgh to establish his research group. In 2020, he attained a
                 permanent position in the School of Biological Science as a
@@ -184,7 +184,7 @@ postDocs =
                     the reliability of de novo protein design, by understanding the
                     different reasons why most protein designs fail."""
                 ]
-      , active = True
+      , active = False
       }
     , { pictureUrl = "/static/images/people/jackoshea.jpg"
       , name = "Jack O'Shea"
@@ -343,7 +343,7 @@ phdStudents =
                     Edinburgh.
                     """
                 ]
-      , active = True
+      , active = False
       }
     , { pictureUrl = "/static/images/people/mertunal.jpg"
       , name = "Mert Ünal"
@@ -370,7 +370,7 @@ phdStudents =
       , associatedLab =
             Style.simpleLink
                 { url = "http://virtualplant.bio.puc.cl/"
-                , label = "GutiÃ©rrez Lab, PUC"
+                , label = "Gutierrez Lab, PUC"
                 }
                 |> Just
       , email = Just "j.morales-espinoza@sms.ed.ac.uk"
