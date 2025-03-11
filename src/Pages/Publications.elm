@@ -418,4 +418,15 @@ allPublications =
       , pages = "-"
       , year = "2024"
       }
+    , { authors =
+            """Notari E, Wood CW, Michael J"""
+      , title =
+            """Assessment of the Topology and Oligomerisation States of Coiled Coils Using Metadynamics with Conformational Restraints"""
+      , link = "https://doi.org/10.1021/acs.jctc.4c01695"
+      , preprintLink = Just "https://doi.org/10.26434/chemrxiv-2024-t02df"
+      , journal = "Journal of Chemical Theory and Computation"
+      , volume = "-"
+      , pages = "-"
+      , year = "2025"
+      }
     ]
