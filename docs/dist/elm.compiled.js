@@ -12929,7 +12929,7 @@ var $author$project$Pages$People$chrisWellsWood = {
 				$mdgriffith$elm_ui$Element$text('Chris took his undergraduate degree in Molecular and\n                Cellular Biology at the University of Glasgow. He then went\n                on to undertake a PhD and postdoc in the lab of '),
 				$author$project$Shared$Style$simpleLink(
 				{t: 'Prof. Dek Woolfson', e8: 'https://woolfsonlab.wordpress.com/'}),
-				$mdgriffith$elm_ui$Element$text(', where he worked on developing and applying tools for\n                computational protein design. In 2018 he was awarded an\n                EPSRC postdoctoral fellowship and moved to the University of\n                Edinburgh to establish his research group. In 2020, he attained a\n                permanent position in the School of Biological Science as a\n                Lecturer in Biotechnology, and was promoted to Senior Lecturer in\n                2024.\n                ')
+				$mdgriffith$elm_ui$Element$text(', where he worked on developing and applying tools for\n                computational protein design. In 2018, he was awarded an\n                EPSRC postdoctoral fellowship and moved to the University of\n                Edinburgh to establish his research group. In 2020, he attained a\n                permanent position in the School of Biological Science as a\n                Lecturer in Biotechnology, and was promoted to Senior Lecturer in\n                2024.\n                ')
 			])),
 	q: $elm$core$Maybe$Just('chris.wood@ed.ac.uk'),
 	s: $elm$core$Maybe$Just('https://github.com/ChrisWellsWood'),
@@ -13542,7 +13542,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 		w: $elm$core$Maybe$Nothing
 	},
 		{
-		i: true,
+		i: false,
 		m: $elm$core$Maybe$Just(
 			$author$project$Shared$Style$simpleLink(
 				{t: 'Baranovic Lab, UoE', e8: 'https://www.ed.ac.uk/profile/jelena-baranovic'})),
@@ -13579,7 +13579,7 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 		i: false,
 		m: $elm$core$Maybe$Just(
 			$author$project$Shared$Style$simpleLink(
-				{t: 'GutiÃ©rrez Lab, PUC', e8: 'http://virtualplant.bio.puc.cl/'})),
+				{t: 'Gutierrez Lab, PUC', e8: 'http://virtualplant.bio.puc.cl/'})),
 		n: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
@@ -13650,7 +13650,7 @@ var $author$project$Pages$People$postDocs = _List_fromArray(
 		w: $elm$core$Maybe$Nothing
 	},
 		{
-		i: true,
+		i: false,
 		m: $elm$core$Maybe$Nothing,
 		n: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
@@ -14014,6 +14014,16 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		k: 'drMD: Molecular Dynamics for Experimentalists',
 		g: '-',
 		h: '2024'
+	},
+		{
+		b: 'Notari E, Wood CW, Michael J',
+		c: 'Journal of Chemical Theory and Computation',
+		d: 'https://doi.org/10.1021/acs.jctc.4c01695',
+		e: '-',
+		f: $elm$core$Maybe$Just('https://doi.org/10.26434/chemrxiv-2024-t02df'),
+		k: 'Assessment of the Topology and Oligomerisation States of Coiled Coils Using Metadynamics with Conformational Restraints',
+		g: '-',
+		h: '2025'
 	}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
