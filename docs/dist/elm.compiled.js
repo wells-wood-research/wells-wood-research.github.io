@@ -14003,7 +14003,6 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		h: '2024'
 	},
 		{b: 'Thornton EL, Paterson SM, Stam MJ, Wood CW, Laohakunakorn N, Regan L*\n            ', c: 'Protein Science', d: 'https://doi.org/10.1002/pro.5148', e: 'e5148', f: $elm$core$Maybe$Nothing, k: 'Applications of cell free protein synthesis in protein design', g: '33', h: '2024'},
-		{b: 'Chronowsha M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*\n            ', c: 'Biorxiv', d: 'https://doi.org/10.1101/2024.09.05.611465', e: '-', f: $elm$core$Maybe$Nothing, k: 'The Protein Design Archive (PDA): insights from 40 years of protein design', g: '-', h: '2024'},
 		{b: 'MacAulay A, Klemencic E, Brewster R, Unal SM, Notari E, Wood CW, Jarvis A, Campopiano DJ\n            ', c: 'Chemical Communications', d: 'https://doi.org/10.1039/D4CC05182C', e: '-', f: $elm$core$Maybe$Nothing, k: 'Installation of an organocatalyst into a protein scaffold creates an artificial Stetterase', g: '-', h: '2024'},
 		{
 		b: 'Shrimpton-Phoenix E*, Notari E, Kluonis T, Wood CW*',
@@ -14022,6 +14021,16 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		e: '-',
 		f: $elm$core$Maybe$Just('https://doi.org/10.26434/chemrxiv-2024-t02df'),
 		k: 'Assessment of the Topology and Oligomerisation States of Coiled Coils Using Metadynamics with Conformational Restraints',
+		g: '-',
+		h: '2025'
+	},
+		{
+		b: 'Chronowsha M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*\n            ',
+		c: 'Nature Biotechnology',
+		d: 'https://www.nature.com/articles/s41587-025-02607-x',
+		e: '-',
+		f: $elm$core$Maybe$Just('https://doi.org/10.1101/2024.09.05.611465'),
+		k: 'The Protein Design Archive (PDA): insights from 40 years of protein design',
 		g: '-',
 		h: '2025'
 	}
