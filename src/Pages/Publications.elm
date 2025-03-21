@@ -384,18 +384,6 @@ allPublications =
       , year = "2024"
       }
     , { authors =
-            """Chronowsha M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*
-            """
-      , title =
-            """The Protein Design Archive (PDA): insights from 40 years of protein design"""
-      , link = "https://doi.org/10.1101/2024.09.05.611465"
-      , preprintLink = Nothing
-      , journal = "Biorxiv"
-      , volume = "-"
-      , pages = "-"
-      , year = "2024"
-      }
-    , { authors =
             """MacAulay A, Klemencic E, Brewster R, Unal SM, Notari E, Wood CW, Jarvis A, Campopiano DJ
             """
       , title =
@@ -425,6 +413,18 @@ allPublications =
       , link = "https://doi.org/10.1021/acs.jctc.4c01695"
       , preprintLink = Just "https://doi.org/10.26434/chemrxiv-2024-t02df"
       , journal = "Journal of Chemical Theory and Computation"
+      , volume = "-"
+      , pages = "-"
+      , year = "2025"
+      }
+    , { authors =
+            """Chronowsha M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*
+            """
+      , title =
+            """The Protein Design Archive (PDA): insights from 40 years of protein design"""
+      , link = "https://www.nature.com/articles/s41587-025-02607-x"
+      , preprintLink = Just "https://doi.org/10.1101/2024.09.05.611465"
+      , journal = "Nature Biotechnology"
       , volume = "-"
       , pages = "-"
       , year = "2025"
