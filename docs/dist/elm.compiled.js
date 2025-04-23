@@ -14025,7 +14025,7 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		h: '2025'
 	},
 		{
-		b: 'Chronowsha M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*\n            ',
+		b: 'Chronowska M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*\n            ',
 		c: 'Nature Biotechnology',
 		d: 'https://www.nature.com/articles/s41587-025-02607-x',
 		e: '-',
