@@ -418,7 +418,7 @@ allPublications =
       , year = "2025"
       }
     , { authors =
-            """Chronowsha M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*
+            """Chronowska M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*
             """
       , title =
             """The Protein Design Archive (PDA): insights from 40 years of protein design"""
