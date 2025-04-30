@@ -72,7 +72,30 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2024-10-09"
+    [ { date = "2025-04-22"
+      , title =
+            """Congratulations Dr Castorina!"""
+      , category = "Group"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 600 ]
+                    { src = "static/images/news/2025-04-22-leos-viva.jpg"
+                    , description = "Group members in the pub with Leo after his viva."
+                    }
+                , paragraph []
+                    [ text <|
+                        """Many congratulations to Dr Leonardo Castorina, who passed the
+                        viva for his thesis title "Towards Efficient and Accessible Protein
+                        Design with Machine Learning". Leo initially joined the lab as an
+                        undergraduate project student, and I've been continually impressed
+                        by his drive. Many thanks to his examiners, Noelia Ferruz and Matteo
+                        Degiacomi. Leo is now off to take up a position at Astra Zeneca
+                        in Cambridge, we wish him all the best and he will be missed!
+                        """
+                    ]
+                ]
+      }
+    , { date = "2024-10-09"
       , title =
             """2024 Nobel Prize in Chemistry"""
       , category = "Group"
