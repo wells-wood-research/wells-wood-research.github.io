@@ -213,7 +213,33 @@ postDocs =
 
 phdStudents : List (Person msg)
 phdStudents =
-    [ { pictureUrl = "/static/images/people/leocastorina.jpg"
+    [ { pictureUrl = "/static/images/people/alexbelo.jpg"
+      , name = "Alex Belo"
+      , associatedLab =
+            Style.simpleLink
+                { url = "https://mey-research.org"
+                , label = "Mey Lab, UoE"
+                }
+                |> Just
+      , email = Just "a.j.wurster-jacome-barros-belo-1@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Alex completed his undergraduate degree in Biochemistry at the
+                    University of Edinburgh. He then joined the CDT of Biomedical AI
+                    programme, where he is currently pursuing his PhD under the supervision
+                    of the Mey Research Group and the Wells Wood Research Group. His
+                    research focuses on curating a crystallographic database of
+                    protein-fragment screens in collaboration with the XChem group at
+                    Diamond Light Source. He aims to leverage this dataset to develop
+                    novel machine-learning algorithms and tools to drive advancements
+                    in drug design and development."""
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/leocastorina.jpg"
       , name = "Leonardo Castorina"
       , associatedLab = Nothing
       , email = Just "leonardo.castorina@ed.ac.uk"
@@ -231,7 +257,7 @@ phdStudents =
                     for de novo protein design using deep learning.
                     """
                 ]
-      , active = True
+      , active = False
       }
     , { pictureUrl = "/static/images/people/martachronowska.jpg"
       , name = "Marta Chronowska"
