@@ -367,8 +367,8 @@ allPublications =
       , link = "https://doi.org/10.1371/journal.pcbi.1012212"
       , preprintLink = Just "https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1"
       , journal = "PLoS Computational Biology"
-      , volume = "-"
-      , pages = "-"
+      , volume = "20"
+      , pages = "e1012212"
       , year = "2024"
       }
     , { authors =
@@ -391,8 +391,8 @@ allPublications =
       , link = "https://doi.org/10.1039/D4CC05182C"
       , preprintLink = Nothing
       , journal = "Chemical Communications"
-      , volume = "-"
-      , pages = "-"
+      , volume = "60"
+      , pages = "13746-13749"
       , year = "2024"
       }
     , { authors =
@@ -403,7 +403,7 @@ allPublications =
       , preprintLink = Just "https://doi.org/10.1101/2024.10.29.620839"
       , journal = "Journal of Molecular Biology"
       , volume = "-"
-      , pages = "-"
+      , pages = "168918"
       , year = "2024"
       }
     , { authors =
@@ -413,8 +413,8 @@ allPublications =
       , link = "https://doi.org/10.1021/acs.jctc.4c01695"
       , preprintLink = Just "https://doi.org/10.26434/chemrxiv-2024-t02df"
       , journal = "Journal of Chemical Theory and Computation"
-      , volume = "-"
-      , pages = "-"
+      , volume = "21"
+      , pages = "3260-3276"
       , year = "2025"
       }
     , { authors =
@@ -425,6 +425,30 @@ allPublications =
       , link = "https://www.nature.com/articles/s41587-025-02607-x"
       , preprintLink = Just "https://doi.org/10.1101/2024.09.05.611465"
       , journal = "Nature Biotechnology"
+      , volume = "-"
+      , pages = "-"
+      , year = "2025"
+      }
+    , { authors =
+            """Castorina LV, Wood CW, Subr K*"""
+      , title =
+            """From Atoms to Fragments: A Coarse Representation for Efficient and Functional Protein Design"""
+      , link = "https://doi.org/10.1101/2025.03.19.644162"
+      , preprintLink = Nothing
+      , journal = "Biorxiv"
+      , volume = "-"
+      , pages = "-"
+      , year = "2025"
+      }
+    , { authors =
+            """Cotet T-S, Krawczuk I, Stocco F, Ferruz N, Gitter A, Kurumida Y, Machado LA, Paesani F, Calia CN, Challacombe CA,
+            Haas N, Qamar A, Correia BE, Pacesa M, Nickel L, Subr K, Castorina LV, Campbell MJ, Ferragu C, Kidger P, Hallee L,
+            Wood CW, Stam MJ, Kluonis T, Ünal SM, Belot E, Naka A, Adaptyv Competition Organizers"""
+      , title =
+            """Crowdsourced Protein Design: Lessons From the Adaptyv EGFR Binder Competition"""
+      , link = "https://doi.org/10.1101/2025.04.17.648362"
+      , preprintLink = Nothing
+      , journal = "Biorxiv"
       , volume = "-"
       , pages = "-"
       , year = "2025"
