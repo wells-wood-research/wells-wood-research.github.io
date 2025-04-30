@@ -95,6 +95,27 @@ newsItems =
                     ]
                 ]
       }
+    , { date = "2024-12-02"
+      , title =
+            """Christmas Night Out 2024"""
+      , category = "Group"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 400 ]
+                    { src = "static/images/news/2024-12-02-christmas.jpg"
+                    , description = "Group photo taken during our Secret Santa."
+                    }
+                , paragraph []
+                    [ text <|
+                        """We all had a great time celebrating Christmas this year,
+                        with us all giving each other gifts with a Secret Santa,
+                        followed by a nice meal. Thank you so much to everyone in
+                        the group and all our collaborators, it's been a fantastic
+                        year!
+                        """
+                    ]
+                ]
+      }
     , { date = "2024-10-09"
       , title =
             """2024 Nobel Prize in Chemistry"""
