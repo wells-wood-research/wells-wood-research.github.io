@@ -13996,19 +13996,19 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		b: 'O\'Shea JM*, Richardson A, Doerner PW, Wood CW*\n            ',
 		c: 'PLoS Computational Biology',
 		d: 'https://doi.org/10.1371/journal.pcbi.1012212',
-		e: '-',
+		e: 'e1012212',
 		f: $elm$core$Maybe$Just('https://www.biorxiv.org/content/10.1101/2023.11.10.566541v1'),
 		k: 'Computational Design of Periplasmic Binding Protein Biosensors\n            Guided by Molecular Dynamics\n            ',
-		g: '-',
+		g: '20',
 		h: '2024'
 	},
 		{b: 'Thornton EL, Paterson SM, Stam MJ, Wood CW, Laohakunakorn N, Regan L*\n            ', c: 'Protein Science', d: 'https://doi.org/10.1002/pro.5148', e: 'e5148', f: $elm$core$Maybe$Nothing, k: 'Applications of cell free protein synthesis in protein design', g: '33', h: '2024'},
-		{b: 'MacAulay A, Klemencic E, Brewster R, Unal SM, Notari E, Wood CW, Jarvis A, Campopiano DJ\n            ', c: 'Chemical Communications', d: 'https://doi.org/10.1039/D4CC05182C', e: '-', f: $elm$core$Maybe$Nothing, k: 'Installation of an organocatalyst into a protein scaffold creates an artificial Stetterase', g: '-', h: '2024'},
+		{b: 'MacAulay A, Klemencic E, Brewster R, Unal SM, Notari E, Wood CW, Jarvis A, Campopiano DJ\n            ', c: 'Chemical Communications', d: 'https://doi.org/10.1039/D4CC05182C', e: '13746-13749', f: $elm$core$Maybe$Nothing, k: 'Installation of an organocatalyst into a protein scaffold creates an artificial Stetterase', g: '60', h: '2024'},
 		{
 		b: 'Shrimpton-Phoenix E*, Notari E, Kluonis T, Wood CW*',
 		c: 'Journal of Molecular Biology',
 		d: 'https://doi.org/10.1016/j.jmb.2024.168918',
-		e: '-',
+		e: '168918',
 		f: $elm$core$Maybe$Just('https://doi.org/10.1101/2024.10.29.620839'),
 		k: 'drMD: Molecular Dynamics for Experimentalists',
 		g: '-',
@@ -14018,10 +14018,10 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		b: 'Notari E, Wood CW, Michael J',
 		c: 'Journal of Chemical Theory and Computation',
 		d: 'https://doi.org/10.1021/acs.jctc.4c01695',
-		e: '-',
+		e: '3260-3276',
 		f: $elm$core$Maybe$Just('https://doi.org/10.26434/chemrxiv-2024-t02df'),
 		k: 'Assessment of the Topology and Oligomerisation States of Coiled Coils Using Metadynamics with Conformational Restraints',
-		g: '-',
+		g: '21',
 		h: '2025'
 	},
 		{
@@ -14033,7 +14033,9 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		k: 'The Protein Design Archive (PDA): insights from 40 years of protein design',
 		g: '-',
 		h: '2025'
-	}
+	},
+		{b: 'Castorina LV, Wood CW, Subr K*', c: 'Biorxiv', d: 'https://doi.org/10.1101/2025.03.19.644162', e: '-', f: $elm$core$Maybe$Nothing, k: 'From Atoms to Fragments: A Coarse Representation for Efficient and Functional Protein Design', g: '-', h: '2025'},
+		{b: 'Cotet T-S, Krawczuk I, Stocco F, Ferruz N, Gitter A, Kurumida Y, Machado LA, Paesani F, Calia CN, Challacombe CA,\n            Haas N, Qamar A, Correia BE, Pacesa M, Nickel L, Subr K, Castorina LV, Campbell MJ, Ferragu C, Kidger P, Hallee L,\n            Wood CW, Stam MJ, Kluonis T, Ünal SM, Belot E, Naka A, Adaptyv Competition Organizers', c: 'Biorxiv', d: 'https://doi.org/10.1101/2025.04.17.648362', e: '-', f: $elm$core$Maybe$Nothing, k: 'Crowdsourced Protein Design: Lessons From the Adaptyv EGFR Binder Competition', g: '-', h: '2025'}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
