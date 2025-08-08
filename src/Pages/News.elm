@@ -72,7 +72,49 @@ newsItemView { date, title, category, newsContent } =
 
 newsItems : List (NewsItem msg)
 newsItems =
-    [ { date = "2025-04-22"
+    [ { date = "2025-07-11"
+      , title =
+            """Summer graduations!"""
+      , category = "Group"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 600 ]
+                    { src = "static/images/news/2025-07-11-graduations.jpg"
+                    , description = "Natalia, Chris and Leo at the summer graduation."
+                    }
+                , paragraph []
+                    [ text <|
+                        """It was wonderful to see Natalia and Leo graduate at the summer
+                        graduation ceremony, and it was a privilage to be part of the
+                        academic procession. Many congratulations to them both, I'm very
+                        excited to see where they go from here!
+                        """
+                    ]
+                ]
+      }
+    , { date = "2025-06-19"
+      , title =
+            """GENPENZ Hackathon"""
+      , category = "Event"
+      , newsContent =
+            textColumn [ spacing 16, width fill ]
+                [ image [ centerX, width <| px 600 ]
+                    { src = "static/images/news/2025-06-19-hackathon.jpg"
+                    , description = "The lab and collaborators from Manchester and Bristol."
+                    }
+                , paragraph []
+                    [ text <|
+                        """We hosted a hackathon as part of our large collaborative project
+                        where we're designing and engineering photoenzymes. It was a hectic
+                        but very fun week, with a huge amount of progress in such a short
+                        period of time. I was thrilled to see everyone working together so
+                        efficiently, and having a wonderful time while doing it! Many thanks
+                        to Eugene for hosting a BBQ for everyone!
+                        """
+                    ]
+                ]
+      }
+    , { date = "2025-04-22"
       , title =
             """Congratulations Dr Castorina!"""
       , category = "Group"
