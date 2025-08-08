@@ -402,7 +402,7 @@ allPublications =
       , link = "https://doi.org/10.1016/j.jmb.2024.168918"
       , preprintLink = Just "https://doi.org/10.1101/2024.10.29.620839"
       , journal = "Journal of Molecular Biology"
-      , volume = "-"
+      , volume = "437"
       , pages = "168918"
       , year = "2024"
       }
@@ -425,8 +425,8 @@ allPublications =
       , link = "https://www.nature.com/articles/s41587-025-02607-x"
       , preprintLink = Just "https://doi.org/10.1101/2024.09.05.611465"
       , journal = "Nature Biotechnology"
-      , volume = "-"
-      , pages = "-"
+      , volume = "43"
+      , pages = "669–671"
       , year = "2025"
       }
     , { authors =
