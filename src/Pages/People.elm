@@ -259,6 +259,30 @@ phdStudents =
                 ]
       , active = False
       }
+    , { pictureUrl = "/static/images/people/jeremyboyle.jpg"
+      , name = "Jeremy Boyle"
+      , associatedLab =
+            Style.simpleLink
+                { url = "https://edwebprofiles.ed.ac.uk/profile/beatrizorosa"
+                , label = "Orosa Lab, UoE"
+                }
+                |> Just
+      , email = Just "J.T.Boyle@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Jeremy is a PhD student on the Wellcome Trust Integrated
+                    Cell Mechanisms Programme. He graduated from the University of Bath studying
+                    Biology with Professional Placement, studying the pathogenesis and evolution of
+                    fungal pathogens. On his PhD project, Jeremy is combining protein engineering
+                    and plant science to engineer the ubiquitin-proteasome to generate novel
+                    resistance against plant pathogens.
+                    """
+                ]
+      , active = True
+      }
     , { pictureUrl = "/static/images/people/martachronowska.jpg"
       , name = "Marta Chronowska"
       , associatedLab = Nothing
@@ -278,6 +302,35 @@ phdStudents =
                     research will span chemistry, biology and computer science
                     to develop data-driven methods for de novo design of
                     flavoprotein-based light-activated novel enzymes.
+                    """
+                ]
+      , active = True
+      }
+    , { pictureUrl = "/static/images/people/samforsyth.jpg"
+      , name = "Sam Forsyth"
+      , associatedLab =
+            Style.simpleLink
+                { url = "https://biology.ed.ac.uk/akiyoshi"
+                , label = "Akiyoshi Lab, UoE"
+                }
+                |> Just
+      , email = Just "S.C.Forsyth@sms.ed.ac.uk"
+      , twitter = Nothing
+      , github = Nothing
+      , bio =
+            paragraph []
+                [ text
+                    """Sam Forsyth received his undergraduate degree in
+                    biomedical sciences from the University of Dundee, undertaking his honours
+                    project in the Mode-of-Action group led by Prof. Susan Wyllie, where he worked
+                    on neglected tropical diseases caused by trypanosomes. In 2024 he joined
+                    the Integrative Cell Mechanisms (iCM) PhD programme as a first-year student,
+                    taking up a joint position between the Wells Wood Group and the Akiyoshi Lab.
+                    Sam’s doctoral research combines in-silico and wet-lab approaches to perform
+                    a computational screen for N-terminal histone methyltransferases that drive
+                    kinetochore recruitment in highly divergent trypanosome species — carrying out the
+                    computational analyses with the Wells-Wood Group and the experimental validation
+                    with the Akiyoshi Lab.
                     """
                 ]
       , active = True
@@ -627,7 +680,7 @@ personView person =
                 , case person.associatedLab of
                     Just associatedLab ->
                         paragraph [ Font.italic ]
-                            [ text "Primary supervisor: "
+                            [ text "Supervised with: "
                             , associatedLab
                             ]
 
