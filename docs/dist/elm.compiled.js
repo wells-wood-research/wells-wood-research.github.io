@@ -12004,8 +12004,8 @@ var $elm$html$Html$Attributes$src = function (url) {
 };
 var $mdgriffith$elm_ui$Element$image = F2(
 	function (attrs, _v0) {
-		var src = _v0.S;
-		var description = _v0.N;
+		var src = _v0.I;
+		var description = _v0.H;
 		var imageAttributes = A2(
 			$elm$core$List$filter,
 			function (a) {
@@ -12079,7 +12079,7 @@ var $author$project$Pages$News$protEngConfNews = _List_fromArray(
 				$mdgriffith$elm_ui$Element$centerX,
 				$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
 			]),
-		{N: 'Protein Engineering II Venue, University of York', S: '/static/images/news/2019-07-15-venue.jpg'}),
+		{H: 'Protein Engineering II Venue, University of York', I: '/static/images/news/2019-07-15-venue.jpg'}),
 		A2(
 		$mdgriffith$elm_ui$Element$paragraph,
 		_List_Nil,
@@ -12149,6 +12149,68 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 	[
 		{
 		l: 'Group',
+		m: '2025-07-11',
+		n: A2(
+			$mdgriffith$elm_ui$Element$textColumn,
+			_List_fromArray(
+				[
+					$mdgriffith$elm_ui$Element$spacing(16),
+					$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$mdgriffith$elm_ui$Element$image,
+					_List_fromArray(
+						[
+							$mdgriffith$elm_ui$Element$centerX,
+							$mdgriffith$elm_ui$Element$width(
+							$mdgriffith$elm_ui$Element$px(600))
+						]),
+					{H: 'Natalia, Chris and Leo at the summer graduation.', I: 'static/images/news/2025-07-11-graduations.jpg'}),
+					A2(
+					$mdgriffith$elm_ui$Element$paragraph,
+					_List_Nil,
+					_List_fromArray(
+						[
+							$mdgriffith$elm_ui$Element$text('It was wonderful to see Natalia and Leo graduate at the summer\n                        graduation ceremony, and it was a privilage to be part of the\n                        academic procession. Many congratulations to them both, I\'m very\n                        excited to see where they go from here!\n                        ')
+						]))
+				])),
+		k: 'Summer graduations!'
+	},
+		{
+		l: 'Event',
+		m: '2025-06-19',
+		n: A2(
+			$mdgriffith$elm_ui$Element$textColumn,
+			_List_fromArray(
+				[
+					$mdgriffith$elm_ui$Element$spacing(16),
+					$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$mdgriffith$elm_ui$Element$image,
+					_List_fromArray(
+						[
+							$mdgriffith$elm_ui$Element$centerX,
+							$mdgriffith$elm_ui$Element$width(
+							$mdgriffith$elm_ui$Element$px(600))
+						]),
+					{H: 'The lab and collaborators from Manchester and Bristol.', I: 'static/images/news/2025-06-19-hackathon.jpg'}),
+					A2(
+					$mdgriffith$elm_ui$Element$paragraph,
+					_List_Nil,
+					_List_fromArray(
+						[
+							$mdgriffith$elm_ui$Element$text('We hosted a hackathon as part of our large collaborative project\n                        where we\'re designing and engineering photoenzymes. It was a hectic\n                        but very fun week, with a huge amount of progress in such a short\n                        period of time. I was thrilled to see everyone working together so\n                        efficiently, and having a wonderful time while doing it! Many thanks\n                        to Eugene for hosting a BBQ for everyone!\n                        ')
+						]))
+				])),
+		k: 'GENPENZ Hackathon'
+	},
+		{
+		l: 'Group',
 		m: '2025-04-22',
 		n: A2(
 			$mdgriffith$elm_ui$Element$textColumn,
@@ -12167,7 +12229,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(600))
 						]),
-					{N: 'Group members in the pub with Leo after his viva.', S: 'static/images/news/2025-04-22-leos-viva.jpg'}),
+					{H: 'Group members in the pub with Leo after his viva.', I: 'static/images/news/2025-04-22-leos-viva.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12198,7 +12260,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(400))
 						]),
-					{N: 'Group photo taken during our Secret Santa.', S: 'static/images/news/2024-12-02-christmas.jpg'}),
+					{H: 'Group photo taken during our Secret Santa.', I: 'static/images/news/2024-12-02-christmas.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12229,7 +12291,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(600))
 						]),
-					{N: 'Group photo Oct 2024', S: 'static/images/news/2024-10-09-group-photo.jpg'}),
+					{H: 'Group photo Oct 2024', I: 'static/images/news/2024-10-09-group-photo.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12267,7 +12329,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(600))
 						]),
-					{N: 'Front page of the PDA.', S: 'static/images/news/2024-08-09-pda.jpg'}),
+					{H: 'Front page of the PDA.', I: 'static/images/news/2024-08-09-pda.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12327,7 +12389,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(600))
 						]),
-					{N: 'Group photo with Michael after he passed his viva.', S: 'static/images/news/2024-05-14-michaels-viva.jpg'}),
+					{H: 'Group photo with Michael after he passed his viva.', I: 'static/images/news/2024-05-14-michaels-viva.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12358,7 +12420,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(600))
 						]),
-					{N: 'Wood lab members at Firbush.', S: 'static/images/news/2024-05-01-firbush.jpg'}),
+					{H: 'Wood lab members at Firbush.', I: 'static/images/news/2024-05-01-firbush.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12434,7 +12496,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(400))
 						]),
-					{N: 'Group photo taken during our Christmas dinner.', S: 'static/images/news/2023-12-06-xmas-night-out.jpg'}),
+					{H: 'Group photo taken during our Christmas dinner.', I: 'static/images/news/2023-12-06-xmas-night-out.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12465,7 +12527,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(400))
 						]),
-					{N: 'Overview of differential sensing with designed peptides.', S: 'static/images/news/2023-01-25-badass.jpeg'}),
+					{H: 'Overview of differential sensing with designed peptides.', I: 'static/images/news/2023-01-25-badass.jpeg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12600,7 +12662,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(400))
 						]),
-					{N: 'The team standing outside the Royal Society.', S: '/static/images/news/2022-07-10-rsse.jpeg'}),
+					{H: 'The team standing outside the Royal Society.', I: '/static/images/news/2022-07-10-rsse.jpeg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12703,7 +12765,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$centerX,
 							$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
 						]),
-					{N: 'Conference attendees for APFED 2022.', S: '/static/images/news/2022-04-22-apfed.jpeg'}),
+					{H: 'Conference attendees for APFED 2022.', I: '/static/images/news/2022-04-22-apfed.jpeg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -12858,7 +12920,7 @@ var $author$project$Pages$News$newsItems = _List_fromArray(
 							$mdgriffith$elm_ui$Element$centerX,
 							$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
 						]),
-					{N: 'Designed anti-parallel tetramers exhibit structural plasticity.', S: '/static/images/news/2019-01-01-tetramers.jpg'}),
+					{H: 'Designed anti-parallel tetramers exhibit structural plasticity.', I: '/static/images/news/2019-01-01-tetramers.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$paragraph,
 					_List_Nil,
@@ -13066,8 +13128,8 @@ var $feathericons$elm_feather$FeatherIcons$defaultAttributes = function (name) {
 var $feathericons$elm_feather$FeatherIcons$makeBuilder = F2(
 	function (name, src) {
 		return {
-			I: $feathericons$elm_feather$FeatherIcons$defaultAttributes(name),
-			S: src
+			K: $feathericons$elm_feather$FeatherIcons$defaultAttributes(name),
+			I: src
 		};
 	});
 var $elm$svg$Svg$trustedNode = _VirtualDom_nodeNS('http://www.w3.org/2000/svg');
@@ -13141,8 +13203,8 @@ var $elm$svg$Svg$Attributes$viewBox = _VirtualDom_attribute('viewBox');
 var $elm$svg$Svg$Attributes$width = _VirtualDom_attribute('width');
 var $feathericons$elm_feather$FeatherIcons$toHtml = F2(
 	function (attributes, _v0) {
-		var src = _v0.S;
-		var attrs = _v0.I;
+		var src = _v0.I;
+		var attrs = _v0.K;
 		var strSize = $elm$core$String$fromFloat(attrs.cH);
 		var baseAttributes = _List_fromArray(
 			[
@@ -13417,7 +13479,7 @@ var $author$project$Pages$People$personView = function (person) {
 										$mdgriffith$elm_ui$Element$width(
 										$mdgriffith$elm_ui$Element$px(250))
 									]),
-								{N: person.j, S: person.s}),
+								{H: person.j, I: person.s}),
 								A2(
 								$mdgriffith$elm_ui$Element$row,
 								_List_fromArray(
@@ -13497,7 +13559,7 @@ var $author$project$Pages$People$personView = function (person) {
 											[$mdgriffith$elm_ui$Element$Font$italic]),
 										_List_fromArray(
 											[
-												$mdgriffith$elm_ui$Element$text('Primary supervisor: '),
+												$mdgriffith$elm_ui$Element$text('Supervised with: '),
 												associatedLab
 											]));
 								} else {
@@ -13557,6 +13619,24 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 	},
 		{
 		i: true,
+		o: $elm$core$Maybe$Just(
+			$author$project$Shared$Style$simpleLink(
+				{w: 'Orosa Lab, UoE', e8: 'https://edwebprofiles.ed.ac.uk/profile/beatrizorosa'})),
+		p: A2(
+			$mdgriffith$elm_ui$Element$paragraph,
+			_List_Nil,
+			_List_fromArray(
+				[
+					$mdgriffith$elm_ui$Element$text('Jeremy is a PhD student on the Wellcome Trust Integrated\n                    Cell Mechanisms Programme. He graduated from the University of Bath studying\n                    Biology with Professional Placement, studying the pathogenesis and evolution of\n                    fungal pathogens. On his PhD project, Jeremy is combining protein engineering\n                    and plant science to engineer the ubiquitin-proteasome to generate novel\n                    resistance against plant pathogens.\n                    ')
+				])),
+		q: $elm$core$Maybe$Just('J.T.Boyle@sms.ed.ac.uk'),
+		r: $elm$core$Maybe$Nothing,
+		j: 'Jeremy Boyle',
+		s: '/static/images/people/jeremyboyle.jpg',
+		t: $elm$core$Maybe$Nothing
+	},
+		{
+		i: true,
 		o: $elm$core$Maybe$Nothing,
 		p: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
@@ -13569,6 +13649,24 @@ var $author$project$Pages$People$phdStudents = _List_fromArray(
 		r: $elm$core$Maybe$Just('https://github.com/LunaPrau'),
 		j: 'Marta Chronowska',
 		s: '/static/images/people/martachronowska.jpg',
+		t: $elm$core$Maybe$Nothing
+	},
+		{
+		i: true,
+		o: $elm$core$Maybe$Just(
+			$author$project$Shared$Style$simpleLink(
+				{w: 'Akiyoshi Lab, UoE', e8: 'https://biology.ed.ac.uk/akiyoshi'})),
+		p: A2(
+			$mdgriffith$elm_ui$Element$paragraph,
+			_List_Nil,
+			_List_fromArray(
+				[
+					$mdgriffith$elm_ui$Element$text('Sam Forsyth received his undergraduate degree in\n                    biomedical sciences from the University of Dundee, undertaking his honours\n                    project in the Mode-of-Action group led by Prof. Susan Wyllie, where he worked\n                    on neglected tropical diseases caused by trypanosomes. In 2024 he joined\n                    the Integrative Cell Mechanisms (iCM) PhD programme as a first-year student,\n                    taking up a joint position between the Wells Wood Group and the Akiyoshi Lab.\n                    Sam’s doctoral research combines in-silico and wet-lab approaches to perform\n                    a computational screen for N-terminal histone methyltransferases that drive\n                    kinetochore recruitment in highly divergent trypanosome species — carrying out the\n                    computational analyses with the Wells-Wood Group and the experimental validation\n                    with the Akiyoshi Lab.\n                    ')
+				])),
+		q: $elm$core$Maybe$Just('S.C.Forsyth@sms.ed.ac.uk'),
+		r: $elm$core$Maybe$Nothing,
+		j: 'Sam Forsyth',
+		s: '/static/images/people/samforsyth.jpg',
 		t: $elm$core$Maybe$Nothing
 	},
 		{
@@ -13796,7 +13894,7 @@ var $author$project$Pages$People$previousPersonView = function (person) {
 										$mdgriffith$elm_ui$Element$width(
 										$mdgriffith$elm_ui$Element$px(125))
 									]),
-								{N: person.j, S: person.s}),
+								{H: person.j, I: person.s}),
 								A2(
 								$mdgriffith$elm_ui$Element$row,
 								_List_fromArray(
@@ -14091,7 +14189,7 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		e: '168918',
 		f: $elm$core$Maybe$Just('https://doi.org/10.1101/2024.10.29.620839'),
 		k: 'drMD: Molecular Dynamics for Experimentalists',
-		g: '-',
+		g: '437',
 		h: '2024'
 	},
 		{
@@ -14108,10 +14206,10 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		b: 'Chronowska M, Stam MJ, Woolfson DN, Di Costanzo LF, Wood CW*\n            ',
 		c: 'Nature Biotechnology',
 		d: 'https://www.nature.com/articles/s41587-025-02607-x',
-		e: '-',
+		e: '669–671',
 		f: $elm$core$Maybe$Just('https://doi.org/10.1101/2024.09.05.611465'),
 		k: 'The Protein Design Archive (PDA): insights from 40 years of protein design',
-		g: '-',
+		g: '43',
 		h: '2025'
 	},
 		{b: 'Castorina LV, Wood CW, Subr K*', c: 'Biorxiv', d: 'https://doi.org/10.1101/2025.03.19.644162', e: '-', f: $elm$core$Maybe$Nothing, k: 'From Atoms to Fragments: A Coarse Representation for Efficient and Functional Protein Design', g: '-', h: '2025'},
@@ -14193,7 +14291,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 		{
 		U: $elm$core$Maybe$Nothing,
 		W: $elm$core$Maybe$Just('/static/images/tools/drmd.jpg'),
-		N: A2(
+		H: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
@@ -14206,7 +14304,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 		{
 		U: $elm$core$Maybe$Just('https://pragmaticproteindesign.bio.ed.ac.uk/pda/'),
 		W: $elm$core$Maybe$Just('/static/images/tools/pda.jpg'),
-		N: A2(
+		H: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
@@ -14219,7 +14317,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 		{
 		U: $elm$core$Maybe$Just('https://pragmaticproteindesign.bio.ed.ac.uk/timed/'),
 		W: $elm$core$Maybe$Nothing,
-		N: A2(
+		H: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
@@ -14232,7 +14330,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 		{
 		U: $elm$core$Maybe$Just('https://balas.app'),
 		W: $elm$core$Maybe$Just('/static/images/tools/balas.jpg'),
-		N: A2(
+		H: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
@@ -14251,7 +14349,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 		{
 		U: $elm$core$Maybe$Just('https://pragmaticproteindesign.bio.ed.ac.uk/builder/'),
 		W: $elm$core$Maybe$Just('/static/images/tools/ccbuilder.jpg'),
-		N: A2(
+		H: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
@@ -14267,7 +14365,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 		{
 		U: $elm$core$Maybe$Just('https://pragmaticproteindesign.bio.ed.ac.uk/de-stress/'),
 		W: $elm$core$Maybe$Just('/static/images/tools/destress.jpg'),
-		N: A2(
+		H: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
@@ -14280,7 +14378,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 		{
 		U: $elm$core$Maybe$Nothing,
 		W: $elm$core$Maybe$Nothing,
-		N: A2(
+		H: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
@@ -14293,7 +14391,7 @@ var $author$project$Pages$Tools$allTools = _List_fromArray(
 		{
 		U: $elm$core$Maybe$Nothing,
 		W: $elm$core$Maybe$Just('/static/images/tools/isambard.jpg'),
-		N: A2(
+		H: A2(
 			$mdgriffith$elm_ui$Element$paragraph,
 			_List_Nil,
 			_List_fromArray(
@@ -14396,7 +14494,7 @@ var $author$project$Pages$Tools$toolView = function (tool) {
 					}
 				}(),
 				_List_fromArray(
-					[tool.N]))));
+					[tool.H]))));
 };
 var $author$project$Pages$Tools$tools = A2(
 	$mdgriffith$elm_ui$Element$column,
@@ -15526,7 +15624,7 @@ var $author$project$Shared$footer = A2(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(200))
 						]),
-					{N: 'University of Edinburgh Logo', S: '/static/images/uoe.svg'}),
+					{H: 'University of Edinburgh Logo', I: '/static/images/uoe.svg'}),
 				e8: 'https://www.ed.ac.uk/'
 			}),
 			$author$project$Shared$Style$subHeading('Funded By'),
@@ -15546,7 +15644,7 @@ var $author$project$Shared$footer = A2(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(200))
 						]),
-					{N: 'EPSRC Logo', S: '/static/images/epsrc.png'}),
+					{H: 'EPSRC Logo', I: '/static/images/epsrc.png'}),
 					A2(
 					$mdgriffith$elm_ui$Element$image,
 					_List_fromArray(
@@ -15554,7 +15652,7 @@ var $author$project$Shared$footer = A2(
 							$mdgriffith$elm_ui$Element$width(
 							$mdgriffith$elm_ui$Element$px(200))
 						]),
-					{N: 'BBSRC Logo', S: '/static/images/bbsrc.png'})
+					{H: 'BBSRC Logo', I: '/static/images/bbsrc.png'})
 				]))
 		]));
 var $mdgriffith$elm_ui$Element$link = F2(
@@ -15647,7 +15745,7 @@ var $author$project$Shared$header = A2(
 									$mdgriffith$elm_ui$Element$width(
 									$mdgriffith$elm_ui$Element$px(100))
 								]),
-							{N: 'Lab Logo', S: '/static/images/logo.svg'})
+							{H: 'Lab Logo', I: '/static/images/logo.svg'})
 						])),
 				e8: '/'
 			})
