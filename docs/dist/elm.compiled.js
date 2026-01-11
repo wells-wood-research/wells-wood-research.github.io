@@ -14213,7 +14213,8 @@ var $author$project$Pages$Publications$allPublications = _List_fromArray(
 		h: '2025'
 	},
 		{b: 'Castorina LV, Wood CW, Subr K*', c: 'Biorxiv', d: 'https://doi.org/10.1101/2025.03.19.644162', e: '-', f: $elm$core$Maybe$Nothing, k: 'From Atoms to Fragments: A Coarse Representation for Efficient and Functional Protein Design', g: '-', h: '2025'},
-		{b: 'Cotet T-S, Krawczuk I, Stocco F, Ferruz N, Gitter A, Kurumida Y, Machado LA, Paesani F, Calia CN, Challacombe CA,\n            Haas N, Qamar A, Correia BE, Pacesa M, Nickel L, Subr K, Castorina LV, Campbell MJ, Ferragu C, Kidger P, Hallee L,\n            Wood CW, Stam MJ, Kluonis T, Ünal SM, Belot E, Naka A, Adaptyv Competition Organizers', c: 'Biorxiv', d: 'https://doi.org/10.1101/2025.04.17.648362', e: '-', f: $elm$core$Maybe$Nothing, k: 'Crowdsourced Protein Design: Lessons From the Adaptyv EGFR Binder Competition', g: '-', h: '2025'}
+		{b: 'Cotet T-S, Krawczuk I, Stocco F, Ferruz N, Gitter A, Kurumida Y, Machado LA, Paesani F, Calia CN, Challacombe CA,\n            Haas N, Qamar A, Correia BE, Pacesa M, Nickel L, Subr K, Castorina LV, Campbell MJ, Ferragu C, Kidger P, Hallee L,\n            Wood CW, Stam MJ, Kluonis T, Ünal SM, Belot E, Naka A, Adaptyv Competition Organizers', c: 'Biorxiv', d: 'https://doi.org/10.1101/2025.04.17.648362', e: '-', f: $elm$core$Maybe$Nothing, k: 'Crowdsourced Protein Design: Lessons From the Adaptyv EGFR Binder Competition', g: '-', h: '2025'},
+		{b: 'Ma J, Kalapothakis JM, Spacey HJ, Johannissen LO, Shrimpton-Phoenix E, Shanmugam M, Sakuma M, Wood CW, Barran PE, Heyes DJ, Scrutton NS', c: 'Biorxiv', d: 'https://doi.org/10.1101/2025.10.10.681628', e: '-', f: $elm$core$Maybe$Nothing, k: 'Triplet Quenching by Active Site Cysteine Residues Improves Photo-stability in Fatty Acid Photodecarboxylase', g: '-', h: '2025'}
 	]);
 var $author$project$Shared$Style$simpleText = function (contentText) {
 	return A2(
