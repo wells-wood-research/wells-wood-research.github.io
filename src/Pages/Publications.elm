@@ -453,4 +453,15 @@ allPublications =
       , pages = "-"
       , year = "2025"
       }
+    , { authors =
+            """Ma J, Kalapothakis JM, Spacey HJ, Johannissen LO, Shrimpton-Phoenix E, Shanmugam M, Sakuma M, Wood CW, Barran PE, Heyes DJ, Scrutton NS"""
+      , title =
+            """Triplet Quenching by Active Site Cysteine Residues Improves Photo-stability in Fatty Acid Photodecarboxylase"""
+      , link = "https://doi.org/10.1101/2025.10.10.681628"
+      , preprintLink = Nothing
+      , journal = "Biorxiv"
+      , volume = "-"
+      , pages = "-"
+      , year = "2025"
+      }
     ]
