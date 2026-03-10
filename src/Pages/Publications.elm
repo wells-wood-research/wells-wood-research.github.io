@@ -464,4 +464,15 @@ allPublications =
       , pages = "-"
       , year = "2025"
       }
+    , { authors =
+            """Wood CW*, Rhys GG and Notari E"""
+      , title =
+            """Sequence prediction, structural modelling and the challenges of plasticity in coiled coils"""
+      , link = "https://doi.org/10.1007/978-3-032-05273-5_1"
+      , preprintLink = Nothing
+      , journal = "Fibrous Proteins: Structures and Mechanisms"
+      , volume = "-"
+      , pages = "1-34"
+      , year = "2026"
+      }
     ]
