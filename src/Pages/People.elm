@@ -375,7 +375,7 @@ phdStudents =
                     proteins with the aid of molecular-dynamics simulations and machine
                     learning."""
                 ]
-      , active = True
+      , active = False
       }
     , { pictureUrl = "/static/images/people/anaroblesmartin.jpg"
       , name = "Ana Robles Martin"
@@ -442,7 +442,7 @@ phdStudents =
                     the computationally designed proteins, in collaboration with the
                     Wallace Lab, UoE."""
                 ]
-      , active = True
+      , active = False
       }
     , { pictureUrl = "/static/images/people/jonathanmorales.jpg"
       , name = "Jonathan Morales-Espinoza"
@@ -699,51 +699,8 @@ previousPersonView person =
         , spacing 30
         ]
         [ wrappedRow [ spacing 30 ]
-            [ column [ spacing 10 ]
-                [ image [ centerX, width (px 125) ]
-                    { src = person.pictureUrl, description = person.name }
-                , row [ centerX, spacing 10 ]
-                    [ case person.email of
-                        Just emailAccount ->
-                            newTabLink
-                                []
-                                { url = "mailto:" ++ emailAccount
-                                , label =
-                                    FeatherIcons.mail
-                                        |> FeatherIcons.toHtml []
-                                        |> html
-                                }
-
-                        Nothing ->
-                            none
-                    , case person.twitter of
-                        Just twitterAccount ->
-                            newTabLink
-                                []
-                                { url = twitterAccount
-                                , label =
-                                    FeatherIcons.twitter
-                                        |> FeatherIcons.toHtml []
-                                        |> html
-                                }
-
-                        Nothing ->
-                            none
-                    , case person.github of
-                        Just githubAccount ->
-                            newTabLink
-                                []
-                                { url = githubAccount
-                                , label =
-                                    FeatherIcons.github
-                                        |> FeatherIcons.toHtml []
-                                        |> html
-                                }
-
-                        Nothing ->
-                            none
-                    ]
-                ]
+            [ image [ centerX, width (px 125) ]
+                { src = person.pictureUrl, description = person.name }
             , column [ spacing 10, width fill, Font.size 16 ]
                 [ Style.subHeading person.name
                 , case person.associatedLab of
