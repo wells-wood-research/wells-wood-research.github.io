@@ -475,4 +475,26 @@ allPublications =
       , pages = "1-34"
       , year = "2026"
       }
+    , { authors =
+            """Shrimpton-Phoenix E, Notari E and Wood CW*"""
+      , title =
+            """drFrankenstein: An Automated Pipeline for the Parameterisation of Non-Canonical Amino Acids"""
+      , link = "https://doi.org/10.64898/2026.03.16.712088"
+      , preprintLink = Nothing
+      , journal = "Biorxiv"
+      , volume = "-"
+      , pages = "-"
+      , year = "2026"
+      }
+    , { authors =
+            """Royer B, Era Y, Valenzuela-Ortega M, Thorpe TW, Trotter CL, Clouston K, Steele JFC, Zeballos N, Shrimpton-Phoenix E, Eiamthong B, Uttamapinant C, Wood CW, Wallace S"""
+      , title =
+            """Microbial upcycling of plastic waste to levodopa"""
+      , link = "https://doi.org/10.1038/s41893-026-01785-z"
+      , preprintLink = Nothing
+      , journal = "Nature Sustainability"
+      , volume = "-"
+      , pages = "1-8"
+      , year = "2026"
+      }
     ]
