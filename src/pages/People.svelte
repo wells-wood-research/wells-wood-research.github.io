@@ -4,8 +4,9 @@
   import { people } from '../lib/content.js';
 
   const leader = people.find((person) => person.group === 'groupLeader');
-  const activePeople = (group) => people.filter((person) => person.group === group && person.active);
-  const previousPeople = people.filter((person) => person.group !== 'groupLeader' && !person.active);
+  const byFirstName = (a, b) => a.name.split(' ')[0].localeCompare(b.name.split(' ')[0]);
+  const activePeople = (group) => people.filter((person) => person.group === group && person.active).sort(byFirstName);
+  const previousPeople = people.filter((person) => person.group !== 'groupLeader' && !person.active).sort(byFirstName);
 </script>
 
 <section class="page-section">

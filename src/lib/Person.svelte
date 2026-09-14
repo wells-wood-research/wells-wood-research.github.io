@@ -24,6 +24,6 @@
   <div class="person-info">
     <h2>{person.name}</h2>
     {#if person.associatedLab}<p class="associated-lab">Supervised with: {person.associatedLab}</p>{/if}
-    <p class="person-bio">{person.bio}</p>
+     {#each person.bio.split(/\n\n/) as paragraph}<p class="person-bio">{paragraph}</p>{/each}
   </div>
 </article>

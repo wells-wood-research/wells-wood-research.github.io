@@ -54,6 +54,29 @@ export const tools = [
 
 export const news = [
   {
+    "date": "2026-07-09",
+    "title": "Congratulations Dr Ünal!",
+    "category": "Group",
+    "image": "/static/images/news/2026-07-09-mert-graduation.jpg",
+    "alt": "Mert Ünal at his graduation ceremony.",
+    "text": "Many congratulations to Dr Mert Ünal, who graduated today! It was a beautiful sunny day, and I was lucky to be part of the academic procession. It was great to be able to share the day with Mert and his family.",
+    "links": []
+  },
+  {
+    "date": "2026-07-08",
+    "title": "CCPBioSim meeting",
+    "category": "Event",
+    "image": "/static/images/news/2026-07-08-eugene-poster-prize.jpg",
+    "alt": "Eugene with his poster after winning the popular poster prize at the CCPBioSim meeting.",
+    "text": "We attended the CCPBioSim meeting in July. It is always an excellent and very useful meeting, and if you have any interest in molecular simulation or bioinformatics, I'd recommend going. Eugene was awarded the popular poster prize for his fantastic poster on drFrankenstein, see the publications for more information. Many thanks to the organising committee of the CCPBioSim meeting, especially Robin Corey and Marc van der Kamp in Bristol.",
+    "links": [
+      {
+        "url": "https://doi.org/10.64898/2026.03.16.712088",
+        "label": "drFrankenstein publication"
+      }
+    ]
+  },
+  {
     "date": "2025-07-11",
     "title": "Summer graduations!",
     "category": "Group",
@@ -372,6 +395,16 @@ export const people = [
     "github": null,
     "associatedLab": "Mey Lab, UoE",
     "bio": "Alex completed his undergraduate degree in Biochemistry at the University of Edinburgh. He then joined the CDT of Biomedical AI programme, where he is currently pursuing his PhD under the supervision of the Mey Research Group and the Wells Wood Research Group. His research focuses on curating a crystallographic database of protein-fragment screens in collaboration with the XChem group at Diamond Light Source. He aims to leverage this dataset to develop novel machine-learning algorithms and tools to drive advancements in drug design and development.",
+    "active": true,
+    "group": "phdStudents"
+  },
+  {
+    "name": "Anna Lindahl",
+    "image": "/static/images/people/annalindhal.jpg",
+    "email": "s1300929@sms.ed.ac.uk",
+    "github": null,
+    "associatedLab": null,
+    "bio": "Anna Lindahl is a biomedical scientist and educator with a background in clinical laboratory science, microbiology and blood sciences. She holds a BSc (Hons) in Applied Biomedical Science and an MSc in Blood Transfusion, Transplantation and Tissue Banking, is a HCPC-registered Biomedical Scientist, Chartered Scientist and a Senior Fellow of the Higher Education Academy.\n\nAnna is a PhD researcher within the UKRI AI CDT in Biomedical Innovation at the University of Edinburgh. Her research focuses on AI-based design and cell-free synthesis of next-generation phage therapeutics, combining artificial intelligence and synthetic biology to develop novel approaches to antimicrobial resistance.",
     "active": true,
     "group": "phdStudents"
   },
@@ -811,12 +844,13 @@ export const publications = [
   {
     "authors": "Castorina LV, Wood CW, Subr K*",
     "title": "From Atoms to Fragments: A Coarse Representation for Efficient and Functional Protein Design",
-    "link": "https://doi.org/10.1101/2025.03.19.644162",
+    "link": "https://doi.org/10.1093/bioinformatics/btag172",
     "preprintLink": null,
-    "journal": "Biorxiv",
-    "volume": "-",
-    "pages": "-",
-    "year": "2025"
+    "journal": "Bioinformatics",
+    "volume": "42",
+    "issue": "5",
+    "pages": "btag172",
+    "year": "2026"
   },
   {
     "authors": "Cotet T-S, Krawczuk I, Stocco F, Ferruz N, Gitter A, Kurumida Y, Machado LA, Paesani F, Calia CN, Challacombe CA,\n            Haas N, Qamar A, Correia BE, Pacesa M, Nickel L, Subr K, Castorina LV, Campbell MJ, Ferragu C, Kidger P, Hallee L,\n            Wood CW, Stam MJ, Kluonis T, Ünal SM, Belot E, Naka A, Adaptyv Competition Organizers",
