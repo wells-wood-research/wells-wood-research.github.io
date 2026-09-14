@@ -12,7 +12,9 @@
   let route = getRoute();
 
   function getRoute() {
-    return window.location.hash.replace(/^#\/?/, '') || 'about';
+    const hashRoute = window.location.hash.replace(/^#\/?/, '');
+    const pathRoute = window.location.pathname.replace(/^\/+|\/+$/g, '');
+    return hashRoute || pathRoute || 'about';
   }
 
   function updateRoute() {
