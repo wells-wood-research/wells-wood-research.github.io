@@ -50,7 +50,7 @@
       <section class="page-section">
         <h1>Page not found</h1>
         <p>The page you requested does not exist.</p>
-        <a href="#/">Return to the home page</a>
+        <a href="/">Return to the home page</a>
       </section>
     {/if}
   </main>
