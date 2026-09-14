@@ -19,14 +19,30 @@
 
   function updateRoute() {
     route = getRoute();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelector('.content')?.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function handleNavigation(event) {
+    const link = event.target.closest('a');
+    if (!link || link.target === '_blank' || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (link.origin !== window.location.origin || link.pathname === window.location.pathname) return;
+
+    event.preventDefault();
+    window.history.pushState({}, '', link.href);
+    updateRoute();
   }
 
   onMount(() => {
     window.addEventListener('hashchange', updateRoute);
+    window.addEventListener('popstate', updateRoute);
+    document.addEventListener('click', handleNavigation);
     updateRoute();
 
-    return () => window.removeEventListener('hashchange', updateRoute);
+    return () => {
+      window.removeEventListener('hashchange', updateRoute);
+      window.removeEventListener('popstate', updateRoute);
+      document.removeEventListener('click', handleNavigation);
+    };
   });
 
   const pages = { about: About, news: News, people: People, publications: Publications, tools: Tools };
@@ -46,14 +62,18 @@
   </aside>
 
   <main id="main-content" class="content">
-    {#if Page}
-      <svelte:component this={Page} />
-    {:else}
-      <section class="page-section">
-        <h1>Page not found</h1>
-        <p>The page you requested does not exist.</p>
-        <a href="/">Return to the home page</a>
-      </section>
-    {/if}
+    {#key route}
+      <div class="page-transition">
+        {#if Page}
+          <svelte:component this={Page} />
+        {:else}
+          <section class="page-section">
+            <h1>Page not found</h1>
+            <p>The page you requested does not exist.</p>
+            <a href="/">Return to the home page</a>
+          </section>
+        {/if}
+      </div>
+    {/key}
   </main>
 </div>
