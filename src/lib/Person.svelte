@@ -21,9 +21,9 @@
       {/if}
     </div>
   </div>
-  <div>
+  <div class="person-info">
     <h2>{person.name}</h2>
     {#if person.associatedLab}<p class="associated-lab">Supervised with: {person.associatedLab}</p>{/if}
-    <p>{person.bio}</p>
+    <p class="person-bio">{person.bio}</p>
   </div>
 </article>

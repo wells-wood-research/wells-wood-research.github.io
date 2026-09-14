@@ -5,8 +5,8 @@
 body { margin: 0; min-width: 320px; }
 a { color: #343434; }
 a:focus-visible { outline: 3px solid #d58b36; outline-offset: 3px; }
-.site-shell { min-height: 100vh; display: grid; grid-template-columns: 300px minmax(0, 960px); margin: 0 auto; }
-.sidebar { min-height: 100vh; display: flex; flex-direction: column; background: #b3b3b3; }
+.site-shell { height: 100vh; display: grid; grid-template-columns: 300px minmax(0, 960px); margin: 0 auto; }
+.sidebar { height: 100vh; display: flex; flex-direction: column; overflow-y: auto; background: #b3b3b3; }
 .site-header { padding: 30px; background: #b3b3b3; }
 .brand { display: grid; gap: 18px; justify-items: center; color: #222; text-align: center; text-decoration: none; }
 .brand-title, .brand-tagline, h1, h2 { font-family: 'Poiret One', serif; font-weight: 400; }
@@ -15,7 +15,7 @@ a:focus-visible { outline: 3px solid #d58b36; outline-offset: 3px; }
 .site-nav { display: grid; }
 .site-nav a { padding: 12px 10px; background: #4d4d4d; color: #fff; text-align: center; text-decoration: none; border-bottom: 1px solid #686868; }
 .site-nav a:hover, .site-nav a.active { background: #686868; }
-.content { min-width: 0; border-right: 2px solid #b3b3b3; }
+.content { min-width: 0; height: 100vh; overflow-y: auto; border-right: 2px solid #b3b3b3; }
 .page-section { max-width: 960px; padding: 25px; }
 h1 { margin: 0 0 25px; font-size: clamp(2rem, 5vw, 3rem); }
 h2 { margin: 15px 0; font-size: clamp(1.45rem, 3vw, 2rem); }
@@ -34,7 +34,7 @@ p { line-height: 1.6; }
 .people-card { display: grid; grid-template-columns: 250px 1fr; gap: 30px; padding-bottom: 30px; }
 .people-card.previous { grid-template-columns: 125px 1fr; gap: 30px; }
 .people-card.previous img { width: 125px; }
-.associated-lab { font-style: italic; }
+.associated-lab { margin: -8px 0 0; color: #666; font-size: .9rem; font-style: italic; }
 .people-card img { width: 250px; max-width: 100%; height: auto; }
 .social-links { display: flex; justify-content: center; gap: 8px; margin-top: 10px; }
 .social-links a { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #686868; border-radius: 50%; color: #343434; }
@@ -45,11 +45,16 @@ p { line-height: 1.6; }
 .tool-links { display: flex; gap: 15px; flex-wrap: wrap; }
 .previous-people { font-size: .95rem; }
 @media (max-width: 760px) {
-  .site-shell { display: block; }
-  .sidebar { min-height: 0; }
+  .site-shell { height: auto; display: block; }
+  .sidebar, .content { height: auto; overflow: visible; }
   .site-header { padding: 20px; }
   .site-footer { display: none; }
-  .people-card { grid-template-columns: 1fr; gap: 15px; }
+  .people-card { display: flex; flex-direction: column; gap: 15px; }
+  .person-info { display: contents; }
+  .person-info h2 { order: 1; margin-bottom: 0; text-align: center; }
+  .person-info .associated-lab { order: 1; margin-top: 0; text-align: center; }
+  .people-card > div:first-child { order: 2; display: flex; flex-direction: column; align-items: center; width: 100%; }
+  .person-info .person-bio { order: 3; }
   .people-card img { width: 180px; margin: auto; }
   .tool-card { margin: 0 -25px; }
 }
