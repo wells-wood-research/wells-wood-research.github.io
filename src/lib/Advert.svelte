@@ -1,0 +1,1 @@
+<p>Fancy automating experiments using state-of-the-art robotics? How about applying the newest methods in machine-learning to design completely novel proteins? If you're interested in joining us, <a href="mailto:chris.wood@ed.ac.uk">get in touch</a> to find out more about current opportunities.</p>
