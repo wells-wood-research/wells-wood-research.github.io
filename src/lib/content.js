@@ -409,6 +409,16 @@ export const people = [
     "group": "phdStudents"
   },
   {
+    "name": "Immy Lucas",
+    "image": "/static/images/people/immylucas.jpg",
+    "email": "immy.lucas@ed.ac.uk",
+    "github": null,
+    "associatedLab": "Jarvis Lab, UoE",
+    "bio": "Immy studied her undergraduate degree at the University of York, completing an integrated Masters of Chemistry. During her final year, she completed a year in industry working in Formulation Development at Syngenta. After graduating, she spent a further year at Syngenta working in the production of Double Haploid wheat and barley. She is now undertaking a PhD using computational methods for the de novo design of metalloenzymes, on the BioAid doctoral training programme, co-supervised by Amanda Jarvis.",
+    "active": true,
+    "group": "phdStudents"
+  },
+  {
     "name": "Leonardo Castorina",
     "image": "/static/images/people/leocastorina.jpg",
     "email": "leonardo.castorina@ed.ac.uk",
