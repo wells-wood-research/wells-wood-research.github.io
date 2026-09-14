@@ -14,12 +14,10 @@
       {
         devShells.default = pkgs.mkShell {
           packages = [
-            pkgs.elmPackages.elm
-            pkgs.nodejs_20
+            pkgs.nodejs_22
           ];
 
           shellHook = ''
-            export ELM_HOME="$PWD/.elm"
             export PATH="$PWD/node_modules/.bin:$PATH"
           '';
         };
