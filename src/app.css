@@ -5,7 +5,7 @@
 body { margin: 0; min-width: 320px; }
 a { color: #343434; }
 a:focus-visible { outline: 3px solid #d58b36; outline-offset: 3px; }
-.site-shell { height: 100vh; display: grid; grid-template-columns: 300px minmax(0, 1040px); margin: 0 auto; background: #fff; box-shadow: 0 0 0 1px #d0d0d0; }
+.site-shell { width: min(100%, 1340px); height: 100vh; display: grid; grid-template-columns: 300px minmax(0, 1040px); margin: 0 auto; background: #fff; box-shadow: 0 0 0 1px #d0d0d0; }
 .sidebar { height: 100vh; display: flex; flex-direction: column; overflow-y: auto; background: #b0b0b0; }
 .site-header { padding: 34px 30px 30px; background: #b0b0b0; }
 .brand { display: grid; gap: 16px; justify-items: center; color: #222; text-align: center; text-decoration: none; }
