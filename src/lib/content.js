@@ -54,6 +54,29 @@ export const tools = [
 
 export const news = [
   {
+    "date": "2026-05-13",
+    "title": "Protein Evolution, Design and Informatics Edinburgh",
+    "category": "Conference",
+    "image": "/static/images/news/2026-05-13-pediedi.jpg",
+    "alt": "Attendees at the inaugural pediEdi conference.",
+    "text": "This week we ran the inaugural Protein Evolution, Design and Informatics Edinburgh meeting (pediEdi). Marta Chronowska and I started discussing the possibility of holding a conference a couple of years ago, and she has really driven it forward. We applied to the Biochemical Society for funding and were delighted when they agreed to support the meeting. I was very fortunate that almost all of the people I asked to speak were able to attend. We had a wonderful array of invited speakers, as well as fantastic selected speakers and poster presentations. I think the meeting was a great success; it was certainly valuable for me and my research group, bringing together a unique mixture of scientists. We also ran a ceilidh, a traditional evening of Scottish dancing, on the Thursday night, and I was very pleased that everyone threw themselves into it with gusto! We are planning to run the meeting again in 2028, so please look out for it and come along if you can. Many thanks to Marta and the Biochemical Society for all their hard work!",
+    "links": [
+      {
+        "url": "https://www.eventsforce.net/biochemsoc/frontend/reg/thome.csp?pageID=136762&eventID=251&CSPCHD=001001000000Qxz6rannpn6M6YvX1wBB$Gak8mMkqd_ZpYBDhj",
+        "label": "More about pediEdi"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "title": "Summer Megameeting",
+    "category": "Group",
+    "image": "/static/images/news/2026-06-09-summer-megameeting.jpg",
+    "alt": "Wells Wood Research Group members during the Summer Megameeting.",
+    "text": "This week we've had the Summer Megameeting, where the whole lab gets together to present their work over two days. It's a great opportunity to get into the fine details of each project. As always, the science was excellent, with so much valuable discussion. We also organised a lab trip to visit Castle Campbell, perhaps my favourite castle in Scotland, nestled at the top of Dollar Glen in Clackmannanshire. It was a wonderful few days and I'm already looking forward to the Winter Megameeting!",
+    "links": []
+  },
+  {
     "date": "2026-07-09",
     "title": "Congratulations Dr Ünal!",
     "category": "Group",

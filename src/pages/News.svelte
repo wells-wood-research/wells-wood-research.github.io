@@ -1,10 +1,12 @@
 <script>
   import { news } from '../lib/content.js';
+
+  const sortedNews = news.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
 </script>
 
 <section class="page-section">
   <h1>News</h1>
-  {#each news as item}
+  {#each sortedNews as item}
     <article class="news-item">
       <h2>{item.title}</h2>
       <p class="meta">{item.date}, {item.category}</p>
