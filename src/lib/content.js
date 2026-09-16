@@ -442,6 +442,16 @@ export const people = [
     "group": "phdStudents"
   },
   {
+    "name": "Jack Cafferkey",
+    "image": "/static/images/people/jackcafferkey.jpg",
+    "email": "j.j.cafferkey@sms.ed.ac.uk",
+    "github": "https://github.com/j-cafferkey",
+    "associatedLab": null,
+    "bio": "Jack studied medicine at the Universities of Exeter and Plymouth and is now a specialty registrar in anaesthesia in Edinburgh. He is pursuing his PhD through the Wellcome-funded Edinburgh Clinical Academic Track, co-supervised by Professor Neil Carragher at the Institute of Genetics and Cancer. He is designing protein binders to cause useful phenotypic changes in oesophageal cancer cells and testing them at scale with both in silico and in vitro approaches.",
+    "active": true,
+    "group": "phdStudents"
+  },
+  {
     "name": "Leonardo Castorina",
     "image": "/static/images/people/leocastorina.jpg",
     "email": "leonardo.castorina@ed.ac.uk",
